@@ -1,0 +1,623 @@
+/* ==========================================================================
+   Ajustes para el contenido importado del sitio original (Elementor).
+   El CSS real de Elementor se carga aparte cuando entras a una página espejada
+   (eso lo hace src/lib/elementor.ts), así que aquí SOLO pongo lo que Elementor
+   no puede resolver sin su JavaScript (los carruseles, por ejemplo) y los
+   ajustes que hice para que todo se vea bien en celular.
+   Regla que me puse: no sobreescribir layout ni colores del original,
+   para que las páginas queden idénticas al sitio real.
+   ========================================================================== */
+
+.site-page {
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.site-page__content {
+  width: 100%;
+}
+
+/* Flecha "Volver" arriba de las páginas de líneas de producto */
+.site-page__back {
+  padding: 22px 0 0;
+}
+
+.site-page__content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================= Móvil (≤767px): portada a escala de celular =================
+   El CSS original de Elementor está pensado para escritorio (margen -385px,
+   colchones de 100-200px, imágenes al 72-88%). Aquí se re-proporciona todo. */
+@media (max-width: 767px) {
+  /* Video protagonista. OJO: el mp4 trae la imagen solo en la franja superior
+     (~44% del cuadro); el resto del archivo es blanco puro. Se recorta esa
+     parte blanca con clip-path y se centra la franja real sobre fondo negro,
+     en un contenedor 3:2 grande, estilo banner cinemático. */
+  .site-page__content .elementor-7 .elementor-element.elementor-element-a5f191b .elementor-wrapper {
+    aspect-ratio: 3 / 2 !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-a5f191b video {
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    object-fit: fill;
+    /* centro de la franja útil = 22% del alto del video */
+    transform: translateY(-22%);
+    clip-path: inset(0 0 55% 0);
+    display: block;
+  }
+
+  /* Sección "Osseous": centrada y con aire, como página móvil de verdad */
+  .site-page__content .elementor-7 .elementor-element.elementor-element-795dcb4 {
+    --margin-top: 0px;
+    --padding-top: 36px;
+    --padding-bottom: 36px;
+    --padding-left: 24px;
+    --padding-right: 24px;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-cc25269 {
+    text-align: center;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-cc25269 img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-255930c {
+    font-size: 19px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-top: 14px;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-4252a95 {
+    font-size: 15px;
+    line-height: 1.9em;
+    text-align: center;
+    color: #4c4c4c;
+    margin-top: 12px;
+    padding: 0 6px;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-1c5f0e4 {
+    --spacer-size: 26px;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-3cef83f .elementor-button-wrapper {
+    text-align: center;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-3cef83f .elementor-button {
+    font-size: 17px;
+    padding: 12px 42px;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-cf6ceb0 {
+    align-items: center;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-212c3d4 {
+    text-align: center;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-212c3d4 img {
+    width: 86%;
+    max-width: 86%;
+    margin: 14px auto 0;
+    border-radius: 14px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.14);
+  }
+
+  /* Sección Productos: sin el colchón gigante (100px arriba / 200px abajo) */
+  .site-page__content .elementor-7 .elementor-element.elementor-element-a59fc19 {
+    --padding-top: 40px;
+    --padding-bottom: 52px;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-56c5556 {
+    font-size: 30px;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-594090f {
+    font-size: 15px;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-6840dd9 {
+    --gap: 36px 0px;
+  }
+
+  /* Círculos de producto: tamaño razonable y sin desbordar su widget
+     (la imagen cuadrada sobresalía del widget y se encimaba al botón) */
+  .site-page__content .elementor-7 .elementor-element.elementor-element-6d8f929,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-bf3c0d0,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-62fde3b,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-2eaa36b {
+    height: auto !important;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-6d8f929 img,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-bf3c0d0 img,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-62fde3b img,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-2eaa36b img {
+    width: 52%;
+    max-width: 52%;
+    height: auto;
+  }
+
+  /* Botón "Ver más" con aire respecto al círculo */
+  .site-page__content .elementor-7 .elementor-element.elementor-element-04b5639,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-c62ab92,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-5cfe7b2,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-f04089d {
+    margin-top: 14px;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-59dae77,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-0485ac1,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-f7731f4,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-7e10f67 {
+    font-size: 18px;
+  }
+  .site-page__content .elementor-7 .elementor-element.elementor-element-04b5639 .elementor-button,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-c62ab92 .elementor-button,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-5cfe7b2 .elementor-button,
+  .site-page__content .elementor-7 .elementor-element.elementor-element-f04089d .elementor-button {
+    font-size: 15px;
+    padding: 10px 36px;
+  }
+
+  /* Páginas espejadas en general: títulos a escala de celular */
+  .site-page .site-page__content h1 {
+    font-size: clamp(28px, 8vw, 36px) !important;
+  }
+  .site-page .site-page__content h2 {
+    font-size: clamp(23px, 6.5vw, 30px) !important;
+  }
+
+  /* Empresa: "Misión" y "Visión" vienen a 58px de escritorio */
+  .site-page__content .elementor-9 .elementor-element.elementor-element-0298e09,
+  .site-page__content .elementor-9 .elementor-element.elementor-element-8544d04 {
+    font-size: 30px !important;
+  }
+
+  /* Banners anchos con texto integrado (1920x590): en una tira de 412px el
+     texto queda ilegible. Se muestran más altos recortando el lado derecho,
+     porque el texto siempre está a la izquierda. */
+  .site-page__content img.osseous-wide-banner {
+    width: 100%;
+    height: clamp(190px, 52vw, 240px);
+    object-fit: cover;
+    object-position: left center;
+  }
+  .site-page__content img.osseous-wide-banner--right {
+    object-position: right center;
+  }
+}
+
+/* Carrusel de imágenes: réplica del swiper original mostrando UNA imagen a la
+   vez con flechas y puntos (el JS de Elementor se sustituye por uno propio). */
+.site-page__content .elementor-image-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.site-page__content .swiper-wrapper {
+  display: block !important;
+  transform: none !important;
+  height: auto !important;
+}
+
+/* Antes de que corra el JS: mostrar solo la primera (evita apilado) */
+.site-page__content .swiper:not(.osseous-carousel) .swiper-slide:not(:first-child) {
+  display: none;
+}
+
+.site-page__content .swiper-slide {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.site-page__content .swiper-slide-inner {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-page__content .swiper-slide-image {
+  max-height: 260px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Flechas de navegación */
+.site-page__content .elementor-swiper-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9aa0a6;
+  background: none;
+  border: none;
+}
+
+.site-page__content .elementor-swiper-button:hover {
+  color: #555;
+}
+
+.site-page__content .elementor-swiper-button svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.site-page__content .elementor-swiper-button-prev {
+  left: 4px;
+}
+
+.site-page__content .elementor-swiper-button-next {
+  right: 4px;
+}
+
+.site-page__content .swiper-pagination {
+  display: none;
+}
+
+/* Puntos de paginación propios */
+.site-page__content .osseous-carousel__dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.site-page__content .osseous-carousel__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: #c9ccd1;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.site-page__content .osseous-carousel__dot.is-active {
+  background: #6b7075;
+}
+
+/* Tarjeta de producto clicable (lleva a la ficha) */
+.site-page__content .osseous-ficha-card {
+  cursor: pointer;
+  border-radius: 14px;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.site-page__content .osseous-ficha-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.1);
+}
+
+.site-page__content .osseous-ficha-card:focus-visible {
+  outline: 2px solid var(--c-ink);
+  outline-offset: 3px;
+}
+
+/* Título del producto: aspecto de enlace */
+.site-page__content .osseous-ficha-card > .elementor-widget-text-editor {
+  cursor: pointer;
+}
+
+/* ===================== Ficha de producto (detalle) ===================== */
+.ficha {
+  background: #fff;
+}
+
+.ficha__breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--c-muted);
+  margin-bottom: 24px;
+}
+
+.ficha__breadcrumb a {
+  color: var(--c-muted);
+}
+
+.ficha__breadcrumb a:hover {
+  color: var(--c-ink);
+}
+
+.ficha__crumb-current {
+  color: var(--c-ink);
+  font-weight: 600;
+}
+
+.ficha__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.ficha__main-image {
+  border: 1px solid var(--c-line);
+  border-radius: 16px;
+  background: #fafbfc;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.ficha__main-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.ficha__thumbs {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.ficha__thumb {
+  width: 84px;
+  height: 84px;
+  border: 1px solid var(--c-line);
+  border-radius: 12px;
+  background: #fafbfc;
+  padding: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.ficha__thumb.is-active {
+  border-color: var(--c-ink);
+}
+
+.ficha__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ficha__eyebrow {
+  margin: 0 0 6px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+}
+
+.ficha__title {
+  margin: 0 0 22px;
+  font-size: clamp(26px, 3.4vw, 38px);
+  color: var(--c-ink);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.ficha__section {
+  border-top: 1px solid var(--c-line);
+  padding: 20px 0;
+}
+
+.ficha__section-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--c-ink);
+}
+
+.ficha__section-body {
+  color: var(--c-text);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.ficha__section-body ol,
+.ficha__section-body ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.ficha__section-body li {
+  margin-bottom: 8px;
+}
+
+/* Dentro de la ficha, abrir los acordeones anidados (p.ej. Medidas) */
+.ficha__section-body .e-n-accordion-item {
+  border: 1px solid var(--c-line);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.ficha__section-body .e-n-accordion-item-title {
+  padding: 12px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--c-soft);
+  list-style: none;
+}
+
+.ficha__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.ficha__empty {
+  color: var(--c-text);
+  margin: 0 0 24px;
+}
+
+@media (max-width: 820px) {
+  .ficha__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+/* Acordeón nativo (<details>): ocultar/mostrar iconos +/- según estado */
+.site-page__content .e-n-accordion-item[open] .e-closed {
+  display: none;
+}
+
+.site-page__content .e-n-accordion-item:not([open]) .e-opened {
+  display: none;
+}
+
+.site-page__content .e-n-accordion-item-title::-webkit-details-marker {
+  display: none;
+}
+
+/* Footer original */
+.site-foot--original {
+  padding: 40px 0;
+}
+
+.site-foot__original {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-foot__brand img {
+  height: 46px;
+  margin-bottom: 10px;
+}
+
+.site-foot__brand p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.site-foot__contact p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.site-foot__icons {
+  display: flex;
+  gap: 10px;
+}
+
+.site-foot__icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: grid;
+  place-items: center;
+}
+
+.site-foot__icons svg {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+/* Nav dropdowns */
+.site-head__nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  min-height: 66px;
+}
+
+.nav-drop {
+  position: relative;
+}
+
+.nav-drop > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 15px 20px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+}
+
+.nav-drop__arrow {
+  font-size: 10px;
+  opacity: 0.85;
+}
+
+.nav-drop__panel {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 260px;
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+  box-shadow: var(--shadow-lg);
+  z-index: 200;
+  padding: 8px 0;
+}
+
+.nav-drop.is-open > .nav-drop__panel {
+  display: block;
+}
+
+.nav-drop__panel > a,
+.nav-drop__panel > .nav-drop > a {
+  display: block;
+  padding: 10px 18px;
+  color: var(--c-ink);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-drop__panel > a:hover,
+.nav-drop__panel > .nav-drop > a:hover {
+  background: var(--c-soft);
+}
+
+.nav-drop--d1 .nav-drop__panel {
+  left: 100%;
+  top: 0;
+}
+
+.nav-drop__panel .nav-drop__panel {
+  display: none;
+}
+
+.nav-drop--d1.is-open > .nav-drop__panel {
+  display: block;
+}
+
+@media (max-width: 760px) {
+  .nav-drop__panel {
+    position: static;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+  }
+
+  .nav-drop__panel > a,
+  .nav-drop__panel > .nav-drop > a {
+    color: #fff;
+  }
+}

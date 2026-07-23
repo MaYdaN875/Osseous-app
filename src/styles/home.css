@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Estilos propios de la portada.
+   Ojo: el diseño de la portada en sí (video, secciones, círculos de productos)
+   viene del contenido original con sus estilos de Elementor, así que aquí solo
+   tengo lo que agregué yo: los botones reutilizables y el popup de entrada.
+   ========================================================================== */
+
+/* Botón negro redondeado que uso en las fichas de producto y otras vistas mías */
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 28px;
+  background: var(--c-black);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background 0.25s var(--ease);
+}
+.home-btn:hover {
+  background: #333;
+}
+/* Variante "fantasma": solo borde, para acciones secundarias */
+.home-btn--outline {
+  background: transparent;
+  color: var(--c-ink);
+  border: 1px solid var(--c-black);
+}
+.home-btn--outline:hover {
+  background: #fff;
+}
+
+/* ================= Popup de entrada =================
+   Réplica del efecto "Brave Popup" del sitio original: entra con zoom desde
+   arriba (1.1s), se queda un momento y se va solo (0.5s). Los tiempos los
+   controla EntryPopup.tsx; aquí solo vive la parte visual. */
+.entry-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 100000; /* encima de absolutamente todo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* El fondo oscurecido detrás de la imagen */
+.entry-popup__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(51, 51, 51, 0.82);
+  animation: popupOverlayIn 0.4s ease both;
+}
+
+.entry-popup__backdrop.is-closing {
+  animation: popupOverlayOut 0.5s ease both;
+}
+
+/* El panel blanco con la imagen de la promo */
+.entry-popup__panel {
+  position: relative;
+  z-index: 1;
+  width: min(1005px, 92vw);
+  max-height: 86vh;
+  background: #fff;
+  border-radius: 10px;
+  overflow: visible;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  animation: bravezoomInTop 1.1s ease both;
+}
+
+.entry-popup__panel.is-closing {
+  animation: bravezoomOutTop 0.5s ease both;
+}
+
+.entry-popup__panel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 86vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Entrada: viene desde arriba, crece de 0.7 a tamaño normal mientras aparece */
+@keyframes bravezoomInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Salida: lo mismo pero al revés, se va hacia arriba encogiéndose */
+@keyframes bravezoomOutTop {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.7);
+  }
+}
+
+@keyframes popupOverlayIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popupOverlayOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Cuando el menú te manda a /#productos, este margen evita que el header fijo
+   tape el título de la sección al hacer scroll */
+#productos {
+  scroll-margin-top: 120px;
+}

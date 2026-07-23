@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# Osseous Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio de [Osseous](https://sitio.osseous.com.mx/) hecho en **React + Vite + TypeScript**, con un **catálogo de productos** agregado (basado en el catálogo de Chunli).
 
-Currently, two official plugins are available:
+La idea del proyecto: replicar el sitio original tal cual (mismo diseño, animaciones, video, popup, todo) y sumarle el catálogo nuevo con un diseño propio que combina con la página.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Qué es qué
 
-## React Compiler
+| Parte | Rutas | De dónde sale |
+|-------|-------|---------------|
+| Sitio Osseous original | `/`, `/empresa`, `/servicios`, `/blog`, `/reemplazo-de-rodilla`, … | Contenido importado del sitio real (idéntico) |
+| Detalle de producto Osseous | `/ficha/:pagina/:num` | Se arma solo a partir del contenido de cada página de productos |
+| Catálogo nuevo | `/catalogo`, `/catalogo/:id`, `/producto/:id` | Catálogo Chunli, diseño propio |
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Cómo correrlo
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev       # abre http://localhost:5173
+npm run build     # genera dist/ listo para subir a Netlify
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Estructura del proyecto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── app/            # El router: aquí están todas las rutas
+├── components/     # Componentes por área: layout (header/footer/buscador),
+│                   # home (popup), catalog (tarjetas) y ui (hero)
+├── config/         # El menú de navegación, textos del catálogo y cosas configurables
+├── content/pages/  # El contenido de cada página del sitio original, como módulos .ts
+├── data/           # catalog-data.json (categorías y productos del catálogo)
+├── hooks/          # useReveal: las animaciones de aparición al hacer scroll
+├── lib/            # Lógica: catálogo, estilos de Elementor y parseo de fichas
+├── pages/          # Las páginas: MirroredPage (las del sitio original),
+│                   # CatalogPage, CategoryPage, ProductPage y FichaPage
+├── styles/         # catalog.css (base + catálogo), home.css (popup y botones),
+│                   # site-content.css (ajustes del contenido importado)
+└── types/          # Tipos de TypeScript del catálogo
+
+scripts/            # Scripts de una sola vez que usé para armar el proyecto:
+                    # descargar el sitio original, importar sus páginas, bajar
+                    # el catálogo de Chunli, optimizar imágenes y fuentes
+```
+
+## Cómo funciona lo del sitio original
+
+El sitio real está hecho con WordPress + Elementor. En vez de rehacer cada página a mano (y que quedara diferente), importé su contenido y lo guardé en `src/content/pages/` como módulos de TypeScript. `MirroredPage.tsx` los renderiza y les agrega con JavaScript lo que Elementor hacía: carruseles, videos, navegación sin recargas, etc. Todos los archivos que necesita (imágenes, video, CSS, fuentes) están descargados en `public/`, así que el sitio no depende del servidor original para nada.
+
+## Despliegue
+
+`npm run build` y subes el contenido de **`dist/`** a Netlify. El archivo `public/_redirects` ya está configurado para que las rutas de React funcionen bien allá.

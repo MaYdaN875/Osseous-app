@@ -1,0 +1,7 @@
+/* El punto de entrada de los estilos: solo junta las tres hojas.
+   - catalog.css: la base del sitio (header, footer, buscador) y todo el catálogo
+   - home.css: botones propios y el popup de entrada
+   - site-content.css: ajustes para el contenido importado del sitio original */
+@import "./catalog.css";
+@import "./home.css";
+@import "./site-content.css";
