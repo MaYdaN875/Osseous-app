@@ -6,7 +6,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, Navigate, useLocation, useNavigate, type NavigateFunction } from "react-router-dom";
 import { useElementorStyles } from "@/lib/elementor";
-import { findProductCards } from "@/lib/osseous-fichas";
+import { findProductCards, getTitle, slugify } from "@/lib/osseous-fichas";
 import { isProductPage } from "@/config/product-pages";
 
 // Aquí junto todas las páginas de src/content/pages. Cada archivo exporta el
@@ -90,13 +90,25 @@ function transformProductCards(root: HTMLElement, slug: string, navigate: Naviga
   const cards = findProductCards(root);
   if (cards.length === 0) return false;
 
+  const slugCounts: Record<string, number> = {};
+
   cards.forEach((card, i) => {
     card.querySelector(":scope > .elementor-widget-n-accordion")?.remove();
     card.classList.add("osseous-ficha-card");
     card.setAttribute("role", "button");
     card.tabIndex = 0;
 
-    const go = () => navigate(`/ficha/${slug}/${i}`);
+    const title = getTitle(card) || `Producto ${i + 1}`;
+    let productSlug = slugify(title);
+    if (!productSlug) productSlug = `producto-${i + 1}`;
+    if (slugCounts[productSlug] !== undefined) {
+      slugCounts[productSlug]++;
+      productSlug = `${productSlug}-${slugCounts[productSlug]}`;
+    } else {
+      slugCounts[productSlug] = 0;
+    }
+
+    const go = () => navigate(`/ficha/${slug}/${productSlug}`);
     card.addEventListener("click", (e) => {
       // Si le picaste a una flecha o puntito del carrusel, eso no cuenta como
       // "abrir el producto"; solo cambia de imagen

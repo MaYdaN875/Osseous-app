@@ -1,0 +1,337 @@
+/* ==========================================================================
+   Estilos para el nuevo módulo de categorías y listado de productos de Osseous.
+   Diseño premium, responsive, con micro-animaciones y glassmorphism.
+   ========================================================================== */
+
+/* Variables de diseño locales (manteniendo armonía con el resto) */
+:root {
+  --primary-glow: rgba(0, 168, 204, 0.15);
+  --primary-blue: #007cc7;
+  --text-dark: #2d3748;
+  --text-muted: #718096;
+  --bg-card-hover: rgba(255, 255, 255, 0.95);
+  --border-radius-premium: 16px;
+  --transition-smooth: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Contenedor principal de categorías */
+.categories-container {
+  padding: 60px 0 100px;
+  background: radial-gradient(circle at 50% 0%, #f7fafc, #edf2f7);
+  min-height: calc(100vh - 200px);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+/* Tarjeta de Categoría Premium */
+.category-card-premium {
+  background: #ffffff;
+  border-radius: var(--border-radius-premium);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-decoration: none;
+}
+
+.category-card-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-blue), #00c9b7);
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.category-card-premium:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 124, 199, 0.2);
+}
+
+.category-card-premium:hover::before {
+  opacity: 1;
+}
+
+.category-card-premium__media {
+  height: 240px;
+  background: #f7fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.category-card-premium__media img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: var(--transition-smooth);
+}
+
+.category-card-premium:hover .category-card-premium__media img {
+  transform: scale(1.08);
+}
+
+.category-card-premium__body {
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.category-card-premium__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+  line-height: 1.3;
+  transition: var(--transition-smooth);
+}
+
+.category-card-premium:hover .category-card-premium__title {
+  color: var(--primary-blue);
+}
+
+.category-card-premium__desc {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.category-card-premium__foot {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--primary-blue);
+}
+
+.category-card-premium__foot .arrow {
+  margin-left: 8px;
+  transition: var(--transition-smooth);
+}
+
+.category-card-premium:hover .category-card-premium__foot .arrow {
+  transform: translateX(6px);
+}
+
+/* ==========================================
+   Estilos de la Lista de Productos
+   ========================================== */
+
+.list-container {
+  padding: 40px 0 100px;
+  background: #f7fafc;
+  min-height: calc(100vh - 200px);
+}
+
+/* Barra de Filtro y Búsqueda */
+.list-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  background: #ffffff;
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.list-search {
+  position: relative;
+  flex-grow: 1;
+  max-width: 480px;
+}
+
+.list-search input {
+  width: 100%;
+  padding: 12px 16px 12px 44px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.list-search input:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.list-search__icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  fill: #94a3b8;
+  pointer-events: none;
+}
+
+.list-stats {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* Cuadrícula de Productos */
+.products-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* Tarjeta de Producto Osseous */
+.product-card-osseous {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.product-card-osseous:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 124, 199, 0.15);
+}
+
+.product-card-osseous__media {
+  height: 200px;
+  background: #fdfdfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  overflow: hidden;
+  border-bottom: 1px solid #f7fafc;
+}
+
+.product-card-osseous__media img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: var(--transition-smooth);
+}
+
+.product-card-osseous:hover .product-card-osseous__media img {
+  transform: scale(1.06);
+}
+
+.product-card-osseous__body {
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card-osseous__category {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+.product-card-osseous__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.4;
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+
+.product-card-osseous__action {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product-card-osseous__action .arrow {
+  margin-left: 4px;
+  transition: var(--transition-smooth);
+}
+
+.product-card-osseous:hover .product-card-osseous__action .arrow {
+  transform: translateX(4px);
+}
+
+/* Estado de lista vacía o sin resultados */
+.list-empty {
+  text-align: center;
+  padding: 60px 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  max-width: 560px;
+  margin: 40px auto 0;
+}
+
+.list-empty h3 {
+  font-size: 20px;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.list-empty p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.list-empty-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ==========================================
+   Responsive Adaptations
+   ========================================== */
+@media (max-width: 768px) {
+  .categories-container {
+    padding: 40px 0 60px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .list-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .list-search {
+    max-width: 100%;
+  }
+}

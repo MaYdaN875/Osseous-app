@@ -34,8 +34,21 @@ export function findProductCards(root: ParentNode): HTMLElement[] {
   return cards;
 }
 
+export function slugify(text: string): string {
+  return text
+    .toString()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // remove accents
+    .replace(/\s+/g, "-")           // replace spaces with -
+    .replace(/[^\w\-]+/g, "")       // remove all non-word chars
+    .replace(/\-\-+/g, "-")         // replace multiple - with single -
+    .replace(/^-+/, "")             // trim leading -
+    .replace(/-+$/, "");            // trim trailing -
+}
+
 // El título del producto es el texto que está junto al carrusel dentro de la tarjeta
-function getTitle(card: HTMLElement): string {
+export function getTitle(card: HTMLElement): string {
   const direct = card.querySelector<HTMLElement>(":scope > .elementor-widget-text-editor");
   const text = (direct ?? card.querySelector<HTMLElement>(".elementor-widget-text-editor"))?.textContent ?? "";
   return text.replace(/\s+/g, " ").trim();
