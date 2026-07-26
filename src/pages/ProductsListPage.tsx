@@ -3,6 +3,105 @@ import { Link, useParams } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
 import categoriesData from "@/data/osseous-products.json";
 
+interface ProductCardProps {
+  product: {
+    id: string;
+    slug: string;
+    title: string;
+    images: string[];
+  };
+  categoryTitle: string;
+  categoryId: string;
+}
+
+function ProductCard({ product, categoryTitle, categoryId }: ProductCardProps) {
+  const [currentIdx, setCurrentIdx] = useState(0);
+
+  const images = product.images && product.images.length > 0 ? product.images : ["/placeholder.png"];
+  const hasMultipleImages = images.length > 1;
+
+  const handlePrev = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setCurrentIdx((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const handleNext = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setCurrentIdx((prev) => (prev + 1) % images.length);
+  };
+
+  const handleDotClick = (e: React.MouseEvent, idx: number) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setCurrentIdx(idx);
+  };
+
+  return (
+    <Link
+      className="product-card-osseous reveal"
+      to={`/ficha/${categoryId}/${product.slug}`}
+    >
+      <div className="product-card-osseous__media">
+        {hasMultipleImages && (
+          <button
+            type="button"
+            className="product-card-osseous__arrow product-card-osseous__arrow--left"
+            onClick={handlePrev}
+            aria-label="Ver imagen anterior"
+          >
+            ‹
+          </button>
+        )}
+
+        <img
+          src={images[currentIdx]}
+          alt={product.title}
+          loading="lazy"
+        />
+
+        {hasMultipleImages && (
+          <button
+            type="button"
+            className="product-card-osseous__arrow product-card-osseous__arrow--right"
+            onClick={handleNext}
+            aria-label="Ver siguiente imagen"
+          >
+            ›
+          </button>
+        )}
+
+        {hasMultipleImages && (
+          <div className="product-card-osseous__dots">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                className={`product-card-osseous__dot${i === currentIdx ? " is-active" : ""}`}
+                onClick={(e) => handleDotClick(e, i)}
+                aria-label={`Ver imagen ${i + 1}`}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+      <div className="product-card-osseous__body">
+        <span className="product-card-osseous__category">
+          {categoryTitle}
+        </span>
+        <h3 className="product-card-osseous__title">
+          {product.title}
+        </h3>
+        <div className="product-card-osseous__action">
+          <span>Ver Ficha Técnica</span>
+          <span className="arrow">→</span>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
 export function ProductsListPage() {
   const { categorySlug } = useParams<{ categorySlug: string }>();
   const [searchQuery, setSearchQuery] = useState("");
@@ -83,37 +182,14 @@ export function ProductsListPage() {
                 </div>
               ) : (
                 <div className="products-list-grid">
-                  {filteredProducts.map((product) => {
-                    const firstImage = product.images[0] || "/placeholder.png";
-
-                    return (
-                      <Link
-                        key={product.id}
-                        className="product-card-osseous reveal"
-                        to={`/ficha/${category.id}/${product.slug}`}
-                      >
-                        <div className="product-card-osseous__media">
-                          <img
-                            src={firstImage}
-                            alt={product.title}
-                            loading="lazy"
-                          />
-                        </div>
-                        <div className="product-card-osseous__body">
-                          <span className="product-card-osseous__category">
-                            {category.title}
-                          </span>
-                          <h3 className="product-card-osseous__title">
-                            {product.title}
-                          </h3>
-                          <div className="product-card-osseous__action">
-                            <span>Ver Ficha Técnica</span>
-                            <span className="arrow">→</span>
-                          </div>
-                        </div>
-                      </Link>
-                    );
-                  })}
+                  {filteredProducts.map((product) => (
+                    <ProductCard
+                      key={product.id}
+                      product={product}
+                      categoryTitle={category.title}
+                      categoryId={category.id}
+                    />
+                  ))}
                 </div>
               )}
             </>
