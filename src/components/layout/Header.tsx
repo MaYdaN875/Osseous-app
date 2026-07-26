@@ -75,7 +75,7 @@ function NavDropdown({ item, depth = 0 }: Readonly<{ item: NavLinkItem; depth?: 
 export function Header() {
   const { pathname } = useLocation();
   // El enlace "Catálogo" se subraya tanto en el catálogo como viendo un producto suyo
-  const isCatalog = pathname.startsWith("/catalogo") || pathname.startsWith("/producto");
+  const isCatalog = pathname.startsWith("/catalogo") || pathname.startsWith("/producto/");
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (

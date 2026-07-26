@@ -15,50 +15,13 @@ export const MAIN_NAV: NavLinkItem[] = [
   { label: "Inicio", to: "/" },
   {
     label: "Productos",
-    to: "/#productos",
+    to: "/productos",
     children: [
-      {
-        label: "Prótesis de Hombro",
-        to: "/protesis-de-hombro",
-        children: [
-          { label: "Cabeza de cerámica", to: "/cabeza-de-ceramica" },
-          { label: "Cabeza femoral metálica", to: "/cabeza-femoral-metalica" },
-          { label: "Copa doble movilidad cementada", to: "/copa-doble-movilidad-cementada" },
-          { label: "Copa doble movilidad no cementada", to: "/copa-doble-movilidad-no-cementada" },
-          { label: "Copa no cementada primaria", to: "/copa-no-cementada-primaria" },
-          { label: "Metaliner", to: "/metaliner" },
-          { label: "PE-Liner", to: "/pe-liner" },
-        ],
-      },
-      {
-        label: "Reemplazo de Rodilla",
-        to: "/reemplazo-de-rodilla",
-        children: [{ label: "Rodilla primaria CR", to: "/rodilla-primaria-cr" }],
-      },
-      {
-        label: "Prótesis de Cadera",
-        to: "/protesis-de-cadera",
-        children: [
-          { label: "Inserto acetabular primario", to: "/inserto-acetabular-primario" },
-          { label: "Vastago Cementado primario con copas", to: "/vastago-cementado-primario-con-copas" },
-          { label: "Vástago Primario no cementado con copas", to: "/vastago-primario-no-cementado-con-copas" },
-          { label: "Vástago revisión cementado con copa", to: "/vastago-revision-cementado-con-copa" },
-          {
-            label: "Vástago revisión no cementado 200 con copas",
-            to: "/vastago-revision-no-cementado-200-con-copas",
-          },
-          {
-            label: "Vástago revisión No cementado 250 con copas",
-            to: "/vastago-revision-no-cementado-250-con-copas",
-          },
-        ],
-      },
-      {
-        label: "Instrumental Quirúrgico",
-        to: "/instrumental-quirurgico",
-        children: [{ label: "Charola cadera primaria", to: "/charola-cadera-primaria" }],
-      },
-      { label: "Catálogo completo", to: "/catalogo" },
+      { label: "Prótesis de Hombro", to: "/productos/protesis-de-hombro" },
+      { label: "Reemplazo de Rodilla", to: "/productos/reemplazo-de-rodilla" },
+      { label: "Prótesis de Cadera", to: "/productos/protesis-de-cadera" },
+      { label: "Instrumental Quirúrgico", to: "/productos/instrumental-quirurgico" },
+      { label: "Catálogo completo (Chunli)", to: "/catalogo" },
     ],
   },
   { label: "Catálogo", to: "/catalogo", highlight: "catalog" },

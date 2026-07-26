@@ -6,7 +6,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, Navigate, useLocation, useNavigate, type NavigateFunction } from "react-router-dom";
 import { useElementorStyles } from "@/lib/elementor";
-import { findProductCards } from "@/lib/osseous-fichas";
+import { findProductCards, getTitle, slugify } from "@/lib/osseous-fichas";
 import { isProductPage } from "@/config/product-pages";
 
 // Aquí junto todas las páginas de src/content/pages. Cada archivo exporta el
@@ -90,13 +90,25 @@ function transformProductCards(root: HTMLElement, slug: string, navigate: Naviga
   const cards = findProductCards(root);
   if (cards.length === 0) return false;
 
+  const slugCounts: Record<string, number> = {};
+
   cards.forEach((card, i) => {
     card.querySelector(":scope > .elementor-widget-n-accordion")?.remove();
     card.classList.add("osseous-ficha-card");
     card.setAttribute("role", "button");
     card.tabIndex = 0;
 
-    const go = () => navigate(`/ficha/${slug}/${i}`);
+    const title = getTitle(card) || `Producto ${i + 1}`;
+    let productSlug = slugify(title);
+    if (!productSlug) productSlug = `producto-${i + 1}`;
+    if (slugCounts[productSlug] !== undefined) {
+      slugCounts[productSlug]++;
+      productSlug = `${productSlug}-${slugCounts[productSlug]}`;
+    } else {
+      slugCounts[productSlug] = 0;
+    }
+
+    const go = () => navigate(`/ficha/${slug}/${productSlug}`);
     card.addEventListener("click", (e) => {
       // Si le picaste a una flecha o puntito del carrusel, eso no cuenta como
       // "abrir el producto"; solo cambia de imagen
@@ -172,9 +184,39 @@ function setupVideos(root: HTMLElement) {
   });
 }
 
+// En la página de inicio, en la sección de productos de abajo, los botones de "Ver más"
+// venían con enlaces incorrectos de WordPress (varios a /cadera/ o /reemplazo-de-rodilla/).
+// Aquí los detecto según el título del producto y los redirecciono a su respectiva página
+// del catálogo moderno (/productos/...) antes de que se registren los enlaces de SPA.
+function fixHomeProductLinks(root: HTMLElement) {
+  const mappings = [
+    { text: "rodilla", path: "/productos/reemplazo-de-rodilla" },
+    { text: "cadera", path: "/productos/protesis-de-cadera" },
+    { text: "hombro", path: "/productos/protesis-de-hombro" },
+    { text: "instrumental", path: "/productos/instrumental-quirurgico" }
+  ];
+
+  root.querySelectorAll(".elementor-widget-button").forEach((btnWidget) => {
+    const container = btnWidget.closest(".e-child");
+    if (!container) return;
+
+    const textContent = container.textContent?.toLowerCase() || "";
+    const match = mappings.find((item) => textContent.includes(item.text));
+    if (match) {
+      const link = btnWidget.querySelector("a");
+      if (link) {
+        link.setAttribute("href", match.path);
+      }
+    }
+  });
+}
+
 // Una vez que el contenido ya está pintado en pantalla, le paso todas las
 // mejoras de arriba en un solo lugar
 function enhanceImportedContent(root: HTMLElement, slug: string, navigate: NavigateFunction) {
+  if (slug === "home") {
+    fixHomeProductLinks(root);
+  }
   root.querySelectorAll<HTMLElement>(".elementor-image-carousel-wrapper").forEach(setupCarousel);
   wireInternalLinks(root, navigate);
   setupVideos(root);

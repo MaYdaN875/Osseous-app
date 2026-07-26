@@ -8,6 +8,8 @@ import { Layout } from "@/components/layout/Layout";
 import { CatalogPage } from "@/pages/CatalogPage";
 import { MirroredPage, MIRRORED_SLUGS } from "@/pages/MirroredPage";
 import { FichaPage } from "@/pages/FichaPage";
+import { ProductsCategoriesPage } from "@/pages/ProductsCategoriesPage";
+import { ProductsListPage } from "@/pages/ProductsListPage";
 import { CategoryRoute, ProductRoute } from "./routes";
 
 // Esto lo hice porque al navegar entre páginas te quedabas a media pantalla:
@@ -50,12 +52,16 @@ export function AppRouter() {
           <Route path="catalogo/:categoryId" element={<CategoryRoute />} />
           <Route path="producto/:productId" element={<ProductRoute />} />
 
+          {/* Módulo de productos nativo en React (reemplaza la página de Elementor) */}
+          <Route path="productos" element={<ProductsCategoriesPage />} />
+          <Route path="productos/:categorySlug" element={<ProductsListPage />} />
+
           {/* Detalle de un producto de las páginas de Rodilla/Cadera/Hombro/Instrumental */}
-          <Route path="ficha/:slug/:pid" element={<FichaPage />} />
+          <Route path="ficha/:slug/:productSlug" element={<FichaPage />} />
 
           {/* Todas las páginas originales de Osseous (empresa, servicios, blog, etc.)
               se generan solas a partir de los archivos que hay en src/content/pages */}
-          {MIRRORED_SLUGS.map((slug) => (
+          {MIRRORED_SLUGS.filter((s) => s !== "productos").map((slug) => (
             <Route key={slug} path={slug} element={<MirroredPage />} />
           ))}
 

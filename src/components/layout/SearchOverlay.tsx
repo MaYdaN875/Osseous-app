@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { MAIN_NAV } from "@/config/navigation";
 import type { NavLinkItem } from "@/config/navigation";
 import { asset, getCategories } from "@/lib/catalog";
+import osseousData from "@/data/osseous-products.json";
 
 // Un resultado de búsqueda: qué texto muestro, a dónde te lleva,
 // en qué grupo lo acomodo y su foto (si es un producto)
@@ -23,12 +24,16 @@ function buildIndex(): Hit[] {
 
   const walk = (items: NavLinkItem[]) => {
     for (const item of items) {
-      if (!item.to.includes("#")) hits.push({ label: item.label, to: item.to, group: "Páginas" });
+      // Excluir enlaces viejos o vacíos y el ancla del menú principal
+      if (!item.to.includes("#") && item.to !== "/productos") {
+        hits.push({ label: item.label, to: item.to, group: "Páginas" });
+      }
       if (item.children) walk(item.children);
     }
   };
   walk(MAIN_NAV);
 
+  // Indexar Catálogo Chunli
   for (const cat of getCategories()) {
     hits.push({ label: cat.title, to: `/catalogo/${cat.id}`, group: "Catálogo" });
     for (const p of cat.products) {
@@ -40,6 +45,20 @@ function buildIndex(): Hit[] {
       });
     }
   }
+
+  // Indexar Productos de Osseous
+  for (const cat of osseousData) {
+    hits.push({ label: cat.title, to: `/productos/${cat.id}`, group: "Productos" });
+    for (const p of cat.products) {
+      hits.push({
+        label: p.title,
+        to: `/ficha/${cat.id}/${p.slug}`,
+        group: cat.title,
+        image: p.images && p.images[0] ? p.images[0] : undefined,
+      });
+    }
+  }
+
   return hits;
 }
 

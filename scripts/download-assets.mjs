@@ -35,6 +35,7 @@ function collectUrls() {
   const scanDirs = [
     path.join(root, "src", "content", "pages"),
     path.join(root, "src", "config"),
+    path.join(root, "src", "data"),
     root,
   ];
   for (const dir of scanDirs) {
