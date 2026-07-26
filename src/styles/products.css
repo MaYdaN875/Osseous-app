@@ -103,9 +103,6 @@
   transition: var(--transition-smooth);
 }
 
-.category-card-premium:hover .category-card-premium__title {
-  color: var(--primary-blue);
-}
 
 .category-card-premium__desc {
   font-size: 15px;
@@ -120,7 +117,8 @@
   align-items: center;
   font-weight: 600;
   font-size: 15px;
-  color: var(--primary-blue);
+  color: var(--text-dark);
+  transition: var(--transition-smooth);
 }
 
 .category-card-premium__foot .arrow {
@@ -200,89 +198,67 @@
   gap: 24px;
 }
 
-/* Tarjeta de Producto Osseous */
+/* Tarjeta de Producto Osseous (Copiada del diseño de /reemplazo-de-rodilla/) */
 .product-card-osseous {
   background: #ffffff;
-  border-radius: 12px;
-  border: 1px solid #edf2f7;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
   overflow: hidden;
-  transition: var(--transition-smooth);
+  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  box-shadow: none;
+  padding: 16px; /* Padding interno igual al de Elementor */
 }
 
 .product-card-osseous:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
-  border-color: rgba(0, 124, 199, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
 }
 
 .product-card-osseous__media {
   height: 200px;
-  background: #fdfdfd;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 0;
   overflow: hidden;
-  border-bottom: 1px solid #f7fafc;
+  position: relative;
+  border-bottom: none;
 }
 
 .product-card-osseous__media img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
-  transition: var(--transition-smooth);
+  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .product-card-osseous:hover .product-card-osseous__media img {
-  transform: scale(1.06);
+  transform: scale(1.04);
 }
 
 .product-card-osseous__body {
-  padding: 20px 18px;
+  padding: 16px 8px 8px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   flex-grow: 1;
-}
-
-.product-card-osseous__category {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--primary-blue);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  margin-bottom: 8px;
 }
 
 .product-card-osseous__title {
   font-size: 16px;
   font-weight: 700;
-  color: var(--text-dark);
+  color: #334155; /* Slate dark color similar to the original site */
   line-height: 1.4;
-  margin-bottom: 12px;
-  flex-grow: 1;
+  margin: 0;
+  transition: color 0.2s ease;
 }
 
-.product-card-osseous__action {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--primary-blue);
-  display: flex;
-  align-items: center;
-  margin-top: auto;
-}
-
-.product-card-osseous__action .arrow {
-  margin-left: 4px;
-  transition: var(--transition-smooth);
-}
-
-.product-card-osseous:hover .product-card-osseous__action .arrow {
-  transform: translateX(4px);
-}
 
 /* Estado de lista vacía o sin resultados */
 .list-empty {
@@ -390,27 +366,25 @@
   right: 12px;
 }
 
+.product-card-osseous__dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
 .product-card-osseous__dots {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   gap: 6px;
   z-index: 5;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 4px 8px;
-  border-radius: 20px;
-  border: 1px solid rgba(226, 232, 240, 0.5);
-  backdrop-filter: blur(4px);
 }
 
 .product-card-osseous__dot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   border: none;
-  background: #cbd5e1;
+  background: #e2e8f0;
   cursor: pointer;
   padding: 0;
   transition: all 0.2s ease;
@@ -421,8 +395,8 @@
 }
 
 .product-card-osseous__dot.is-active {
-  background: var(--primary-blue);
-  transform: scale(1.15);
+  background: #6b7075; /* color gris de los puntos del sitio original */
+  transform: scale(1.1);
 }
 
 /* En pantallas móviles o táctiles, mostrar las flechas siempre */

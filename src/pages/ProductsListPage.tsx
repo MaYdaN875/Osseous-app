@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
 import categoriesData from "@/data/osseous-products.json";
@@ -10,15 +10,26 @@ interface ProductCardProps {
     title: string;
     images: string[];
   };
-  categoryTitle: string;
   categoryId: string;
 }
 
-function ProductCard({ product, categoryTitle, categoryId }: ProductCardProps) {
+function ProductCard({ product, categoryId }: ProductCardProps) {
   const [currentIdx, setCurrentIdx] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   const images = product.images && product.images.length > 0 ? product.images : ["/placeholder.png"];
   const hasMultipleImages = images.length > 1;
+
+  // Autoplay: las imágenes se mueven solas cada 3 segundos, excepto si el usuario pasa el mouse
+  useEffect(() => {
+    if (!hasMultipleImages || isHovered) return;
+
+    const interval = setInterval(() => {
+      setCurrentIdx((prev) => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [hasMultipleImages, isHovered, images.length]);
 
   const handlePrev = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -42,6 +53,8 @@ function ProductCard({ product, categoryTitle, categoryId }: ProductCardProps) {
     <Link
       className="product-card-osseous reveal"
       to={`/ficha/${categoryId}/${product.slug}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="product-card-osseous__media">
         {hasMultipleImages && (
@@ -71,8 +84,10 @@ function ProductCard({ product, categoryTitle, categoryId }: ProductCardProps) {
             ›
           </button>
         )}
+      </div>
 
-        {hasMultipleImages && (
+      {hasMultipleImages && (
+        <div className="product-card-osseous__dots-container">
           <div className="product-card-osseous__dots">
             {images.map((_, i) => (
               <button
@@ -84,19 +99,13 @@ function ProductCard({ product, categoryTitle, categoryId }: ProductCardProps) {
               />
             ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
+
       <div className="product-card-osseous__body">
-        <span className="product-card-osseous__category">
-          {categoryTitle}
-        </span>
         <h3 className="product-card-osseous__title">
           {product.title}
         </h3>
-        <div className="product-card-osseous__action">
-          <span>Ver Ficha Técnica</span>
-          <span className="arrow">→</span>
-        </div>
       </div>
     </Link>
   );
@@ -186,7 +195,6 @@ export function ProductsListPage() {
                     <ProductCard
                       key={product.id}
                       product={product}
-                      categoryTitle={category.title}
                       categoryId={category.id}
                     />
                   ))}
