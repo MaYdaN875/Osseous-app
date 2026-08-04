@@ -621,3 +621,15 @@
     color: #fff;
   }
 }
+
+/* Corrección de bug de renderizado de subpíxeles en Chrome para el video del home */
+.elementor-element-c3fe89c {
+  overflow: hidden !important;
+}
+
+.elementor-element-c3fe89c video.elementor-video {
+  display: block;
+  transform: scale(1.02); /* Escala 2% para recortar el borde negro inferior que renderiza Chrome */
+  transform-origin: center center;
+}
+
