@@ -3,20 +3,22 @@
 // brincar rápido entre categorías sin regresar al catálogo.
 import { Link } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
-import { CATEGORY_DESC, asset, getCategories } from "@/lib/catalog";
+import { getCategories, getCategoryDesc, asset } from "@/lib/catalog";
+import { useLanguage } from "@/context/LanguageContext";
 
 export function CategoryPage({ categoryId }: { categoryId: number }) {
   const categories = getCategories();
   const cat = categories.find((c) => c.id === categoryId);
+  const { lang, t } = useLanguage();
 
   // Si la URL trae un id que no existe, aviso amable y botón de regreso
   if (!cat) {
     return (
       <main className="section">
         <div className="wrap">
-          <p>Categoría no encontrada.</p>
+          <p>{t("catalog.cat_not_found")}</p>
           <Link className="back-link" to="/catalogo">
-            <span className="circle">←</span> Volver al catálogo
+            <span className="circle">←</span> {t("catalog.back")}
           </Link>
         </div>
       </main>
@@ -25,11 +27,11 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
 
   return (
     <>
-      <PageHero title={cat.title} subtitle={CATEGORY_DESC[cat.id] || ""}>
+      <PageHero title={cat.title} subtitle={getCategoryDesc(cat.id, lang)}>
         <nav className="crumbs">
-          <Link to="/">Inicio</Link>
+          <Link to="/">{t("detail.home")}</Link>
           <span className="sep">/</span>
-          <Link to="/catalogo">Catálogo</Link>
+          <Link to="/catalogo">{t("nav.catalog")}</Link>
           <span className="sep">/</span>
           <span>{cat.title}</span>
         </nav>
@@ -37,7 +39,7 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
       <main className="section">
         <div className="wrap">
           <Link className="back-link" to="/catalogo">
-            <span className="circle">←</span> Volver al catálogo
+            <span className="circle">←</span> {t("catalog.back")}
           </Link>
           <div className="pills">
             {categories.map((c) => (
@@ -46,9 +48,15 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
               </Link>
             ))}
           </div>
-          <p className="count-line">
-            <b>{cat.products.length}</b> productos en {cat.title}
-          </p>
+          <p 
+            className="count-line"
+            dangerouslySetInnerHTML={{
+              __html: t("catalog.cat_stats", {
+                count: `<b>${cat.products.length}</b>`,
+                category: cat.title
+              })
+            }}
+          />
           <div className="prod-grid">
             {cat.products.map((p) => (
               <Link className="prod-card" key={p.id} to={`/producto/${p.id}`}>

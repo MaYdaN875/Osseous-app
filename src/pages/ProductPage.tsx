@@ -4,12 +4,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  CATEGORY_DESC,
-  CATEGORY_SPECS,
+  getCategoryDesc,
+  getCategorySpecs,
   asset,
   getProductById,
   makeSku,
 } from "@/lib/catalog";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Un avisito flotante que aparece abajo y se va solo; lo uso para los botones
 // que son demo (consultar disponibilidad, PDF, modelo 3D)
@@ -30,14 +31,15 @@ function showToast(message: string) {
 export function ProductPage({ productId }: { productId: number }) {
   const found = getProductById(productId);
   const [mainSrc, setMainSrc] = useState<string | null>(null);
+  const { lang, t } = useLanguage();
 
   if (!found) {
     return (
       <main className="section">
         <div className="wrap">
-          <p>Producto no encontrado.</p>
+          <p>{t("catalog.prod_not_found")}</p>
           <Link className="back-link" to="/catalogo">
-            <span className="circle">←</span> Volver al catálogo
+            <span className="circle">←</span> {t("catalog.back")}
           </Link>
         </div>
       </main>
@@ -55,22 +57,27 @@ export function ProductPage({ productId }: { productId: number }) {
   const related = [0, 1, 2].map((k) => others[(idx + 2 + k) % others.length]).filter(Boolean);
   const image = mainSrc || asset(product.image);
   // Las especificaciones son por categoría (vienen de config/catalog-meta.ts)
-  const specs = CATEGORY_SPECS[category.id] || [["Línea", category.title]];
+  const specs = getCategorySpecs(category.id, lang);
+  const categoryDesc = getCategoryDesc(category.id, lang);
+
+  const translatedDesc = lang === "en"
+    ? `${categoryDesc}. Product from Osseous's ${category.title} line.`
+    : `${categoryDesc}. Producto de la línea ${category.title} de Osseous.`;
 
   const thumbs = [
     { src: asset(product.image), alt: product.title, active: true },
     ...views.map((v) => ({ src: asset(v.image), alt: v.title, active: false })),
-    { src: asset(product.image), alt: "Video técnico", video: true },
+    { src: asset(product.image), alt: lang === "en" ? "Technical video" : "Video técnico", video: true },
   ];
 
   return (
     <main className="section">
       <div className="wrap">
         <Link className="back-link" to={`/catalogo/${category.id}`}>
-          <span className="circle">←</span> Volver a {category.title}
+          <span className="circle">←</span> {t("detail.back_to", { category: category.title })}
         </Link>
         <nav className="detail-crumbs">
-          <Link to="/catalogo">Productos</Link>
+          <Link to="/catalogo">{t("nav.products")}</Link>
           <span className="sep">›</span>
           <Link to={`/catalogo/${category.id}`}>{category.title}</Link>
           <span className="sep">›</span>
@@ -83,27 +90,27 @@ export function ProductPage({ productId }: { productId: number }) {
               <img id="gallery-main" src={image} alt={product.title} />
             </div>
             <div className="detail__thumbs">
-              {thumbs.map((t, i) => (
+              {thumbs.map((tItem, i) => (
                 <button
                   key={i}
                   type="button"
-                  className={`detail__thumb ${t.active ? "is-active" : ""} ${t.video ? "detail__thumb--video" : ""}`}
+                  className={`detail__thumb ${tItem.active ? "is-active" : ""} ${tItem.video ? "detail__thumb--video" : ""}`}
                   onClick={() => {
-                    if (t.video) {
-                      showToast("Reproducción del video técnico del producto (demo).");
+                    if (tItem.video) {
+                      showToast(t("catalog.video_toast"));
                       return;
                     }
-                    setMainSrc(t.src);
+                    setMainSrc(tItem.src);
                   }}
                 >
-                  {t.video && (
+                  {tItem.video && (
                     <span className="play">
                       <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
                       </svg>
                     </span>
                   )}
-                  <img src={t.src} alt={t.alt} loading="lazy" />
+                  <img src={tItem.src} alt={tItem.alt} loading="lazy" />
                 </button>
               ))}
             </div>
@@ -114,7 +121,7 @@ export function ProductPage({ productId }: { productId: number }) {
               <span className="detail__sku">SKU: {sku}</span>
               <h1 className="detail__title">{product.title}</h1>
               <p className="detail__desc">
-                {CATEGORY_DESC[category.id] || ""}. Producto de la línea {category.title} de Osseous.
+                {translatedDesc}
               </p>
             </div>
             <div className="detail__chips">
@@ -124,7 +131,7 @@ export function ProductPage({ productId }: { productId: number }) {
             </div>
             <hr />
             <div>
-              <h3 className="detail__spec-title">Especificaciones Técnicas</h3>
+              <h3 className="detail__spec-title">{t("catalog.specs")}</h3>
               <div className="spec-table">
                 {specs.map(([k, v]) => (
                   <div className="spec-table__row" key={k}>
@@ -135,15 +142,15 @@ export function ProductPage({ productId }: { productId: number }) {
               </div>
             </div>
             <div className="detail__actions">
-              <button type="button" className="btn-primary" onClick={() => showToast("Solicitud enviada. Un especialista Osseous se pondrá en contacto pronto.")}>
-                Consultar Disponibilidad
+              <button type="button" className="btn-primary" onClick={() => showToast(t("catalog.quote_toast"))}>
+                {t("detail.availability")}
               </button>
               <div className="detail__actions-row">
-                <button type="button" className="btn-secondary" onClick={() => showToast("Descarga del catálogo PDF iniciada (demo).")}>
-                  Catálogo (PDF)
+                <button type="button" className="btn-secondary" onClick={() => showToast(t("catalog.pdf_toast"))}>
+                  {t("catalog.pdf_btn")}
                 </button>
-                <button type="button" className="btn-secondary" onClick={() => showToast("Visor 3D disponible próximamente en la versión final.")}>
-                  Modelo 3D
+                <button type="button" className="btn-secondary" onClick={() => showToast(t("catalog.3d_toast"))}>
+                  {t("catalog.3d_btn")}
                 </button>
               </div>
             </div>
@@ -151,7 +158,7 @@ export function ProductPage({ productId }: { productId: number }) {
         </div>
 
         <section className="related">
-          <h2 className="related__title">Componentes Compatibles</h2>
+          <h2 className="related__title">{t("catalog.compatible")}</h2>
           <div className="related__grid">
             {related.map((r) => (
               <Link className="related-card reveal" key={r.id} to={`/producto/${r.id}`}>
@@ -162,7 +169,7 @@ export function ProductPage({ productId }: { productId: number }) {
                   <span className="related-card__cat">{category.title}</span>
                   <h3 className="related-card__name">{r.title}</h3>
                   <div className="related-card__foot">
-                    <span>Ver detalles</span>
+                    <span>{t("categories.view_details")}</span>
                     <span className="arrow">→</span>
                   </div>
                 </div>

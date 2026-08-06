@@ -1,7 +1,9 @@
 import { useState, useMemo, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
-import categoriesData from "@/data/osseous-products.json";
+import categoriesDataEs from "@/data/osseous-products.json";
+import categoriesDataEn from "@/data/osseous-products-en.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface ProductCardProps {
   product: {
@@ -114,16 +116,19 @@ function ProductCard({ product, categoryId }: ProductCardProps) {
 export function ProductsListPage() {
   const { categorySlug } = useParams<{ categorySlug: string }>();
   const [searchQuery, setSearchQuery] = useState("");
+  const { lang, t } = useLanguage();
+
+  const categoriesData = lang === "en" ? categoriesDataEn : categoriesDataEs;
 
   const category = useMemo(() => {
-    return categoriesData.find((c) => c.id === categorySlug);
-  }, [categorySlug]);
+    return categoriesData.find((c: any) => c.id === categorySlug);
+  }, [categorySlug, categoriesData]);
 
   const filteredProducts = useMemo(() => {
     if (!category) return [];
     const query = searchQuery.toLowerCase().trim();
     if (!query) return category.products;
-    return category.products.filter((p) =>
+    return category.products.filter((p: any) =>
       p.title.toLowerCase().includes(query)
     );
   }, [category, searchQuery]);
@@ -132,9 +137,9 @@ export function ProductsListPage() {
     return (
       <main className="section">
         <div className="wrap">
-          <p>Línea de productos no encontrada.</p>
+          <p>{t("list.line_not_found")}</p>
           <Link className="back-link" to="/productos">
-            <span className="circle">←</span> Volver a Líneas de Productos
+            <span className="circle">←</span> {t("list.back_categories")}
           </Link>
         </div>
       </main>
@@ -147,9 +152,9 @@ export function ProductsListPage() {
     <>
       <PageHero title={category.title} subtitle={category.description}>
         <nav className="crumbs">
-          <Link to="/">Inicio</Link>
+          <Link to="/">{t("detail.home")}</Link>
           <span className="sep">/</span>
-          <Link to="/productos">Productos</Link>
+          <Link to="/productos">{t("nav.products")}</Link>
           <span className="sep">/</span>
           <span>{category.title}</span>
         </nav>
@@ -158,7 +163,7 @@ export function ProductsListPage() {
       <main className="list-container section">
         <div className="wrap">
           <Link className="back-link" to="/productos">
-            <span className="circle">←</span> Volver a Líneas de Productos
+            <span className="circle">←</span> {t("list.back_categories")}
           </Link>
 
           {hasProducts ? (
@@ -170,28 +175,34 @@ export function ProductsListPage() {
                   </svg>
                   <input
                     type="search"
-                    placeholder={`Buscar en ${category.title}...`}
+                    placeholder={t("list.search_placeholder", { category: category.title })}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    aria-label={`Buscar en ${category.title}`}
+                    aria-label={t("list.search_placeholder", { category: category.title })}
                   />
                 </div>
-                <div className="list-stats">
-                  Mostrando <b>{filteredProducts.length}</b> de <b>{category.products.length}</b> productos
-                </div>
+                <div 
+                  className="list-stats"
+                  dangerouslySetInnerHTML={{
+                    __html: t("list.search_stats", {
+                      count: `<b>${filteredProducts.length}</b>`,
+                      total: `<b>${category.products.length}</b>`
+                    })
+                  }}
+                />
               </div>
 
               {filteredProducts.length === 0 ? (
                 <div className="list-empty">
-                  <h3>Sin resultados</h3>
-                  <p>No encontramos ningún producto que coincida con tu búsqueda: “{searchQuery}”.</p>
+                  <h3>{t("list.no_results")}</h3>
+                  <p>{t("list.no_results_desc", { query: searchQuery })}</p>
                   <button className="btn-secondary" onClick={() => setSearchQuery("")}>
-                    Limpiar búsqueda
+                    {t("list.clear_search")}
                   </button>
                 </div>
               ) : (
                 <div className="products-list-grid">
-                  {filteredProducts.map((product) => (
+                  {filteredProducts.map((product: any) => (
                     <ProductCard
                       key={product.id}
                       product={product}
@@ -203,17 +214,14 @@ export function ProductsListPage() {
             </>
           ) : (
             <div className="list-empty">
-              <h3>Catálogo de {category.title}</h3>
-              <p>
-                Actualmente no tenemos cargada la lista individual de productos en esta sección.
-                Puedes descargar las fichas técnicas en PDF o ponerte en contacto con nosotros para recibir asesoría personalizada.
-              </p>
+              <h3>{category.title}</h3>
+              <p>{t("list.empty_desc")}</p>
               <div className="list-empty-buttons">
                 <Link className="btn-primary" to="/contacto" style={{ textDecoration: "none", textAlign: "center" }}>
-                  Contactar Asesor
+                  {t("list.contact_btn")}
                 </Link>
                 <Link className="btn-secondary" to="/fichas-tecnicas" style={{ textDecoration: "none", textAlign: "center" }}>
-                  Ver Fichas PDF
+                  {t("list.pdf_btn")}
                 </Link>
               </div>
             </div>

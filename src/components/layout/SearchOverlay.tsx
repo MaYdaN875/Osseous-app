@@ -6,7 +6,9 @@ import { useNavigate } from "react-router-dom";
 import { MAIN_NAV } from "@/config/navigation";
 import type { NavLinkItem } from "@/config/navigation";
 import { asset, getCategories } from "@/lib/catalog";
-import osseousData from "@/data/osseous-products.json";
+import osseousDataEs from "@/data/osseous-products.json";
+import osseousDataEn from "@/data/osseous-products-en.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Un resultado de búsqueda: qué texto muestro, a dónde te lleva,
 // en qué grupo lo acomodo y su foto (si es un producto)
@@ -19,14 +21,15 @@ type Hit = {
 
 // Armo el índice con todo lo buscable: las páginas del menú (recorriendo también
 // los submenús) más todas las categorías y productos del catálogo
-function buildIndex(): Hit[] {
+function buildIndex(lang: "es" | "en", t: (key: string) => string): Hit[] {
   const hits: Hit[] = [];
+  const osseousData = lang === "en" ? osseousDataEn : osseousDataEs;
 
   const walk = (items: NavLinkItem[]) => {
     for (const item of items) {
       // Excluir enlaces viejos o vacíos y el ancla del menú principal
       if (!item.to.includes("#") && item.to !== "/productos") {
-        hits.push({ label: item.label, to: item.to, group: "Páginas" });
+        hits.push({ label: t(item.labelKey), to: item.to, group: t("search.pages_group") });
       }
       if (item.children) walk(item.children);
     }
@@ -35,7 +38,7 @@ function buildIndex(): Hit[] {
 
   // Indexar Catálogo Chunli
   for (const cat of getCategories()) {
-    hits.push({ label: cat.title, to: `/catalogo/${cat.id}`, group: "Catálogo" });
+    hits.push({ label: cat.title, to: `/catalogo/${cat.id}`, group: t("search.catalog_group") });
     for (const p of cat.products) {
       hits.push({
         label: p.title,
@@ -48,7 +51,7 @@ function buildIndex(): Hit[] {
 
   // Indexar Productos de Osseous
   for (const cat of osseousData) {
-    hits.push({ label: cat.title, to: `/productos/${cat.id}`, group: "Productos" });
+    hits.push({ label: cat.title, to: `/productos/${cat.id}`, group: t("search.products_group") });
     for (const p of cat.products) {
       hits.push({
         label: p.title,
@@ -74,8 +77,10 @@ export function SearchOverlay({ open, onClose }: Readonly<{ open: boolean; onClo
   const navigate = useNavigate();
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
-  // El índice se arma una sola vez y se reutiliza mientras la app viva
-  const index = useMemo(buildIndex, []);
+  const { lang, t } = useLanguage();
+
+  // El índice se re-calcula si el idioma cambia
+  const index = useMemo(() => buildIndex(lang, t), [lang, t]);
 
   // Cada que se abre el buscador: limpio lo que hubiera escrito antes,
   // pongo el cursor en el input y bloqueo el scroll de la página de atrás
@@ -116,10 +121,10 @@ export function SearchOverlay({ open, onClose }: Readonly<{ open: boolean; onClo
         <input
           ref={inputRef}
           type="search"
-          placeholder="Buscar productos, categorías, páginas…"
+          placeholder={t("search.placeholder")}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          aria-label="Buscar en el sitio"
+          aria-label={t("search.placeholder")}
         />
         <button type="button" className="search-overlay__close" onClick={onClose} aria-label="Cerrar buscador">
           ✕
@@ -128,7 +133,7 @@ export function SearchOverlay({ open, onClose }: Readonly<{ open: boolean; onClo
 
       <div className="search-overlay__results">
         {q.length >= 2 && results.length === 0 && (
-          <p className="search-overlay__empty">Sin resultados para “{query.trim()}”.</p>
+          <p className="search-overlay__empty">{t("search.no_results")}</p>
         )}
         {results.map((hit) => (
           <button

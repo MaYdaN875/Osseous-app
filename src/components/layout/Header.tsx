@@ -7,6 +7,7 @@ import { useState } from "react";
 import { MAIN_NAV, SITE_LOGO } from "@/config/navigation";
 import type { NavLinkItem } from "@/config/navigation";
 import { SearchOverlay } from "./SearchOverlay";
+import { useLanguage } from "@/context/LanguageContext";
 
 // ¿Este enlace corresponde a la página donde estoy? (para subrayarlo)
 function isActivePath(pathname: string, to: string) {
@@ -31,18 +32,19 @@ function hasActiveChild(item: NavLinkItem, pathname: string): boolean {
 // y soporta submenús dentro de submenús (Productos > Cadera > cada prótesis).
 function NavDropdown({ item, depth = 0 }: Readonly<{ item: NavLinkItem; depth?: number }>) {
   const { pathname } = useLocation();
+  const { t } = useLanguage();
   const [open, setOpen] = useState(false);
   const hasChildren = Boolean(item.children?.length);
   // "Productos" también se subraya cuando estás viendo la ficha de un producto
   const isActive =
     isActivePath(pathname, item.to) ||
     hasActiveChild(item, pathname) ||
-    (item.label === "Productos" && pathname.startsWith("/ficha"));
+    (item.labelKey === "nav.products" && pathname.startsWith("/ficha"));
 
   if (!hasChildren) {
     return (
       <Link className={isActive ? "is-active" : undefined} to={item.to}>
-        {item.label}
+        {t(item.labelKey)}
       </Link>
     );
   }
@@ -54,16 +56,16 @@ function NavDropdown({ item, depth = 0 }: Readonly<{ item: NavLinkItem; depth?: 
       onMouseLeave={() => setOpen(false)}
     >
       <Link className={isActive ? "is-active" : undefined} to={item.to} onClick={() => setOpen(false)}>
-        {item.label}
+        {t(item.labelKey)}
         <span className="nav-drop__arrow">▾</span>
       </Link>
       <div className="nav-drop__panel">
         {item.children!.map((child) =>
           child.children?.length ? (
-            <NavDropdown key={child.to} item={child} depth={depth + 1} />
+            <NavDropdown key={child.labelKey} item={child} depth={depth + 1} />
           ) : (
-            <Link key={child.to} to={child.to} onClick={() => setOpen(false)}>
-              {child.label}
+            <Link key={child.labelKey} to={child.to} onClick={() => setOpen(false)}>
+              {t(child.labelKey)}
             </Link>
           )
         )}
@@ -72,8 +74,53 @@ function NavDropdown({ item, depth = 0 }: Readonly<{ item: NavLinkItem; depth?: 
   );
 }
 
+export function LanguageSwitcher() {
+  const { lang, setLang } = useLanguage();
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div
+      className={`lang-dropdown ${open ? "is-open" : ""}`}
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <button
+        type="button"
+        className="lang-dropdown__trigger"
+        aria-label="Seleccionar idioma / Select language"
+        onClick={() => setOpen(!open)}
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M415.9 344L225 344C227.9 408.5 242.2 467.9 262.5 511.4C273.9 535.9 286.2 553.2 297.6 563.8C308.8 574.3 316.5 576 320.5 576C324.5 576 332.2 574.3 343.4 563.8C354.8 553.2 367.1 535.8 378.5 511.4C398.8 467.9 413.1 408.5 416 344zM224.9 296L415.8 296C413 231.5 398.7 172.1 378.4 128.6C367 104.2 354.7 86.8 343.3 76.2C332.1 65.7 324.4 64 320.4 64C316.4 64 308.7 65.7 297.5 76.2C286.1 86.8 273.8 104.2 262.4 128.6C242.1 172.1 227.8 231.5 224.9 296zM176.9 296C180.4 210.4 202.5 130.9 234.8 78.7C142.7 111.3 74.9 195.2 65.5 296L176.9 296zM65.5 344C74.9 444.8 142.7 528.7 234.8 561.3C202.5 509.1 180.4 429.6 176.9 344L65.5 344zM463.9 344C460.4 429.6 438.3 509.1 406 561.3C498.1 528.6 565.9 444.8 575.3 344L463.9 344zM575.3 296C565.9 195.2 498.1 111.3 406 78.7C438.3 130.9 460.4 210.4 463.9 296L575.3 296z" /></svg>
+      </button>
+      <div className="lang-dropdown__menu">
+        <button
+          type="button"
+          className={`lang-dropdown__item ${lang === "es" ? "is-active" : ""}`}
+          onClick={() => {
+            setLang("es");
+            setOpen(false);
+          }}
+        >
+          Español
+        </button>
+        <button
+          type="button"
+          className={`lang-dropdown__item ${lang === "en" ? "is-active" : ""}`}
+          onClick={() => {
+            setLang("en");
+            setOpen(false);
+          }}
+        >
+          English
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export function Header() {
   const { pathname } = useLocation();
+  const { t } = useLanguage();
   // El enlace "Catálogo" se subraya tanto en el catálogo como viendo un producto suyo
   const isCatalog = pathname.startsWith("/catalogo") || pathname.startsWith("/producto/");
   const [searchOpen, setSearchOpen] = useState(false);
@@ -95,6 +142,7 @@ export function Header() {
               <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
             </svg>
           </button>
+
           <div className="site-head__social">
             <a href="#" aria-label="Facebook">
               <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
@@ -111,6 +159,7 @@ export function Header() {
                 <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
               </svg>
             </a>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
@@ -118,7 +167,7 @@ export function Header() {
         <div className="wrap site-head__nav-inner">
           {MAIN_NAV.map((item) => {
             if (item.children?.length) {
-              return <NavDropdown key={item.label} item={item} />;
+              return <NavDropdown key={item.labelKey} item={item} />;
             }
             // Cada enlace decide su subrayado: el catálogo tiene su propia regla,
             // "Inicio" solo se marca estando exactamente en "/", y el resto por su ruta
@@ -129,8 +178,8 @@ export function Header() {
                   ? pathname === "/"
                   : isActivePath(pathname, item.to);
             return (
-              <Link key={item.label} className={active ? "is-active" : undefined} to={item.to}>
-                {item.label}
+              <Link key={item.labelKey} className={active ? "is-active" : undefined} to={item.to}>
+                {t(item.labelKey)}
               </Link>
             );
           })}

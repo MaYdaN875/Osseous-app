@@ -9,11 +9,17 @@ import { useElementorStyles } from "@/lib/elementor";
 import { findProductCards, getTitle, slugify } from "@/lib/osseous-fichas";
 import { isProductPage } from "@/config/product-pages";
 
+import { useLanguage } from "@/context/LanguageContext";
+
 // Aquí junto todas las páginas de src/content/pages. Cada archivo exporta el
 // contenido de una página, y Vite las separa en chunks que se cargan solo al visitarlas.
-const pages = import.meta.glob<string>("../content/pages/*.ts", {
+const pagesEs = import.meta.glob<string>("../content/pages/*.ts", {
   import: "default",
 });
+const pagesEn = import.meta.glob<string>("../content/pages/en/*.ts", {
+  import: "default",
+});
+const pages = pagesEs; // para mantener compatibilidad en MIRRORED_SLUGS y rutas
 
 // Los carruseles de imágenes del sitio original funcionaban con Swiper (una librería
 // de WordPress que aquí no tengo), así que hice mi propio mini-carrusel:
@@ -243,6 +249,7 @@ export const MIRRORED_SLUGS = Object.keys(pages)
 export function MirroredPage({ slug: slugProp }: Readonly<{ slug?: string }>) {
   const { pathname } = useLocation();
   const navigate = useNavigate();
+  const { lang } = useLanguage();
   // El slug me puede llegar como prop (la portada) o lo saco de la URL (/empresa -> "empresa")
   const slug = slugProp ?? pathname.replace(/^\//, "").split("/")[0];
   const [html, setHtml] = useState("");
@@ -253,10 +260,12 @@ export function MirroredPage({ slug: slugProp }: Readonly<{ slug?: string }>) {
   // Le inyecto los estilos de Elementor mientras esta página esté abierta
   useElementorStyles(elementorId);
 
-  // Cargo el contenido de la página que toque según el slug
+  // Cargo el contenido de la página que toque según el slug e idioma activo
   useEffect(() => {
-    const key = `../content/pages/${slug}.ts`;
-    const loader = pages[key];
+    const keyEs = `../content/pages/${slug}.ts`;
+    const keyEn = `../content/pages/en/${slug}.ts`;
+    const loader = lang === "en" ? (pagesEn[keyEn] || pagesEs[keyEs]) : pagesEs[keyEs];
+
     if (!loader) {
       setMissing(true);
       setHtml("");
@@ -272,7 +281,7 @@ export function MirroredPage({ slug: slugProp }: Readonly<{ slug?: string }>) {
         setElementorId(match?.[1] ?? null);
       })
       .catch(() => setMissing(true));
-  }, [slug]);
+  }, [slug, lang]);
 
   // Cuando el contenido ya se pintó, le agrego los carruseles, enlaces SPA, videos, etc.
   useEffect(() => {
