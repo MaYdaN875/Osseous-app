@@ -4,8 +4,22 @@
 import type { CatalogData, Category, Product } from "@/types/catalog";
 import raw from "@/data/catalog-data.json";
 
-// Re-exporto las descripciones y especificaciones para importar todo de un solo lugar
-export { CATEGORY_DESC, CATEGORY_SPECS } from "@/config/catalog-meta";
+import {
+  CATEGORY_DESC_ES,
+  CATEGORY_SPECS_ES,
+  CATEGORY_DESC_EN,
+  CATEGORY_SPECS_EN,
+} from "@/config/catalog-meta";
+
+export function getCategoryDesc(id: number, lang: "es" | "en"): string {
+  const dict = lang === "en" ? CATEGORY_DESC_EN : CATEGORY_DESC_ES;
+  return dict[id] ?? "";
+}
+
+export function getCategorySpecs(id: number, lang: "es" | "en"): [string, string][] {
+  const dict = lang === "en" ? CATEGORY_SPECS_EN : CATEGORY_SPECS_ES;
+  return dict[id] ?? [];
+}
 
 const data = raw as CatalogData;
 

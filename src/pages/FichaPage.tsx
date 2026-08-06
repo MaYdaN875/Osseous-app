@@ -1,12 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useElementorStyles } from "@/lib/elementor";
-import { PRODUCT_PAGE_TITLES } from "@/config/product-pages";
-import categoriesData from "@/data/osseous-products.json";
+import categoriesDataEs from "@/data/osseous-products.json";
+import categoriesDataEn from "@/data/osseous-products-en.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 export function FichaPage() {
   // slug = la categoría de donde viene (ej. "reemplazo-de-rodilla"), productSlug = slug del producto
   const { slug = "", productSlug = "" } = useParams();
+  const { lang, t } = useLanguage();
   // Cuál foto de la galería está en grande
   const [active, setActive] = useState(0);
 
@@ -14,27 +16,32 @@ export function FichaPage() {
   // vienen del contenido original y los necesitan para verse bien
   useElementorStyles(null);
 
+  const categoriesData = lang === "en" ? categoriesDataEn : categoriesDataEs;
+
+  const category = useMemo(() => {
+    return categoriesData.find((c: any) => c.id === slug);
+  }, [slug, categoriesData]);
+
   // Buscamos el producto directamente en nuestro JSON de productos estructurado
   const ficha = useMemo(() => {
-    const category = categoriesData.find((c) => c.id === slug);
     if (!category) return null;
-    return category.products.find((p) => p.slug === productSlug);
-  }, [slug, productSlug]);
+    return category.products.find((p: any) => p.slug === productSlug);
+  }, [category, productSlug]);
 
   // Si cambias de producto, la galería vuelve a empezar en la primera foto
   useEffect(() => {
     setActive(0);
   }, [productSlug]);
 
-  const parentTitle = PRODUCT_PAGE_TITLES[slug] ?? "Productos";
+  const parentTitle = category?.title ?? t("nav.products");
 
   if (!ficha) {
     return (
       <main className="section">
         <div className="wrap">
-          <h1>Producto no encontrado</h1>
+          <h1>{t("search.no_results")}</h1>
           <Link className="home-btn" to={`/productos/${slug}`}>
-            Volver a {parentTitle}
+            {t("detail.back_to", { category: parentTitle })}
           </Link>
         </div>
       </main>
@@ -47,10 +54,10 @@ export function FichaPage() {
     <main className="ficha section">
       <div className="wrap">
         <Link className="back-link" to={`/productos/${slug}`}>
-          <span className="circle">←</span> Volver a {parentTitle}
+          <span className="circle">←</span> {t("detail.back_to", { category: parentTitle })}
         </Link>
         <nav className="ficha__breadcrumb">
-          <Link to="/">Inicio</Link>
+          <Link to="/">{t("detail.home")}</Link>
           <span>/</span>
           <Link to={`/productos/${slug}`}>{parentTitle}</Link>
           <span>/</span>
@@ -64,7 +71,7 @@ export function FichaPage() {
             </div>
             {ficha.images.length > 1 && (
               <div className="ficha__thumbs">
-                {ficha.images.map((src, i) => (
+                {ficha.images.map((src: string, i: number) => (
                   <button
                     key={src}
                     type="button"
@@ -85,7 +92,7 @@ export function FichaPage() {
 
             {ficha.sections.length > 0 ? (
               <div className="ficha__sections site-page__content elementor-kit-6">
-                {ficha.sections.map((section) => (
+                {ficha.sections.map((section: any) => (
                   <section key={section.label} className="ficha__section">
                     <h2 className="ficha__section-title">{section.label}</h2>
                     <div
@@ -97,16 +104,16 @@ export function FichaPage() {
               </div>
             ) : (
               <p className="ficha__empty">
-                Solicita información detallada de este producto con nuestro equipo.
+                {t("detail.empty_info")}
               </p>
             )}
 
             <div className="ficha__actions">
               <Link className="home-btn" to="/contacto">
-                Consultar disponibilidad
+                {t("detail.availability")}
               </Link>
               <Link className="home-btn home-btn--outline" to={`/productos/${slug}`}>
-                Ver más productos
+                {t("detail.more_products")}
               </Link>
             </div>
           </div>

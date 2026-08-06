@@ -12,6 +12,8 @@ import { ProductsCategoriesPage } from "@/pages/ProductsCategoriesPage";
 import { ProductsListPage } from "@/pages/ProductsListPage";
 import { CategoryRoute, ProductRoute } from "./routes";
 
+import { LanguageProvider } from "@/context/LanguageContext";
+
 // Esto lo hice porque al navegar entre páginas te quedabas a media pantalla:
 // cada que cambias de ruta (o usas atrás/adelante del navegador) te sube hasta arriba.
 // Si la URL trae ancla (por ejemplo /#productos), en vez de subir te lleva a esa sección.
@@ -39,9 +41,10 @@ function ScrollToTop() {
 
 export function AppRouter() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
+    <LanguageProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
         {/* Todo va dentro del Layout para que el header, footer y popup salgan en todas las páginas */}
         <Route element={<Layout />}>
           {/* La portada es el HTML original del sitio, idéntico, con todo y su video */}
@@ -70,5 +73,6 @@ export function AppRouter() {
         </Route>
       </Routes>
     </BrowserRouter>
+  </LanguageProvider>
   );
 }

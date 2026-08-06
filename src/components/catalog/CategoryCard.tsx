@@ -1,10 +1,12 @@
 // La tarjeta de cada categoría en la página del catálogo. Toda la tarjeta es un
 // enlace que te lleva a los productos de esa categoría.
 import { Link } from "react-router-dom";
-import { CATEGORY_DESC, asset, getCategories } from "@/lib/catalog";
+import { getCategoryDesc, asset, getCategories } from "@/lib/catalog";
+import { useLanguage } from "@/context/LanguageContext";
 
 export function CategoryCard({ id, index }: { id: number; index: number }) {
   const cat = getCategories().find((c) => c.id === id)!;
+  const { lang, t } = useLanguage();
   // Para la parte visual agarro hasta 5 productos con foto: la primera va grande
   // y las otras cuatro como miniaturas al lado
   const imgs = cat.products.filter((p) => p.image).slice(0, 5);
@@ -17,7 +19,7 @@ export function CategoryCard({ id, index }: { id: number; index: number }) {
     <Link className="cat-card" to={`/catalogo/${cat.id}`}>
       <div className="cat-card__media">
         <span className="cat-card__num">{num}</span>
-        <span className="cat-card__count">{cat.products.length} productos</span>
+        <span className="cat-card__count">{t("catalog.prod_count", { count: cat.products.length })}</span>
         <div className="cat-card__main">
           <img src={asset(main?.image || cat.image)} alt={cat.title} loading="lazy" />
         </div>
@@ -34,10 +36,10 @@ export function CategoryCard({ id, index }: { id: number; index: number }) {
       <div className="cat-card__body">
         <div>
           <div className="cat-card__title">{cat.title}</div>
-          <div className="cat-card__desc">{CATEGORY_DESC[cat.id] || ""}</div>
+          <div className="cat-card__desc">{getCategoryDesc(cat.id, lang)}</div>
         </div>
         <span className="cat-card__cta">
-          Ver productos <span className="arrow">→</span>
+          {t("catalog.view_products")} <span className="arrow">→</span>
         </span>
       </div>
     </Link>

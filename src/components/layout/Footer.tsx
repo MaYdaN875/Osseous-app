@@ -2,17 +2,20 @@
 // el copyright y los iconos de contacto (teléfono y correo) que llevan a /contacto.
 import { Link } from "react-router-dom";
 import { FOOTER_LOGO } from "@/config/navigation";
+import { useLanguage } from "@/context/LanguageContext";
 
 export function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="site-foot site-foot--original">
       <div className="wrap site-foot__original">
         <div className="site-foot__brand">
           <img src={FOOTER_LOGO} alt="Osseous" />
-          <p>2025 – Copyright</p>
+          <p>{t("footer.rights")}</p>
         </div>
         <div className="site-foot__contact">
-          <p>Contáctanos para más información y atención:</p>
+          <p>{t("footer.contact")}</p>
           <div className="site-foot__icons">
             <Link to="/contacto" aria-label="Teléfono">
               <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
-import categoriesData from "@/data/osseous-products.json";
+import categoriesDataEs from "@/data/osseous-products.json";
+import categoriesDataEn from "@/data/osseous-products-en.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Mapeo de imágenes representativas premium para cada categoría (del sitio original)
 const CATEGORY_IMAGES: Record<string, string> = {
@@ -11,26 +13,23 @@ const CATEGORY_IMAGES: Record<string, string> = {
 };
 
 export function ProductsCategoriesPage() {
+  const { lang, t } = useLanguage();
+  const categoriesData = lang === "en" ? categoriesDataEn : categoriesDataEs;
+
   return (
     <>
       <PageHero
-        title="Líneas de Productos"
-        subtitle={
-          <>
-            Explora nuestras soluciones avanzadas para cirugía ortopédica,
-            <br />
-            diseñadas con tecnología médica de alta precisión.
-          </>
-        }
+        title={t("categories.title")}
+        subtitle={t("categories.subtitle")}
       />
       <main className="categories-container section">
         <div className="wrap">
           <Link className="back-link" to="/">
-            <span className="circle">←</span> Volver al inicio
+            <span className="circle">←</span> {t("categories.back_home")}
           </Link>
 
           <div className="categories-grid">
-            {categoriesData.map((category) => {
+            {categoriesData.map((category: any) => {
               const imageUrl = CATEGORY_IMAGES[category.id] || category.image;
               const productCount = category.products?.length || 0;
 
@@ -57,8 +56,8 @@ export function ProductsCategoriesPage() {
                     <div className="category-card-premium__foot">
                       <span>
                         {productCount > 0
-                          ? `Ver ${productCount} productos`
-                          : "Ver detalles"}
+                          ? t("categories.view_products", { count: productCount })
+                          : t("categories.view_details")}
                       </span>
                       <span className="arrow">→</span>
                     </div>
