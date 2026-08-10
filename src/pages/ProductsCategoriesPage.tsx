@@ -9,7 +9,8 @@ const CATEGORY_IMAGES: Record<string, string> = {
   "reemplazo-de-rodilla": "/wp-content/uploads/2025/02/img-21-2.png",
   "protesis-de-cadera": "/wp-content/uploads/2025/02/img-22-2.png",
   "protesis-de-hombro": "/wp-content/uploads/2025/02/img-20-3.png",
-  "instrumental-quirurgico": "/wp-content/uploads/2025/02/img-23-2.png"
+  "instrumental-quirurgico": "/wp-content/uploads/2025/02/img-23-2.png",
+  "medicina-deportiva": "/wp-content/uploads/2025/01/p2.jpg",
 };
 
 export function ProductsCategoriesPage() {

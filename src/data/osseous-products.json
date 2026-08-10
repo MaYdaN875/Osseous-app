@@ -1440,5 +1440,55 @@
     "description": "Herramientas quirúrgicas de alta gama y charolas de precisión que asisten y respaldan al equipo médico en cada etapa del procedimiento.",
     "image": "/wp-content/uploads/2025/02/img-23-2.png",
     "products": []
+  },
+  {
+    "id": "medicina-deportiva",
+    "title": "Medicina Deportiva",
+    "description": "Soluciones de fijación y sutura para cirugía artroscópica y medicina deportiva: anclajes de alta resistencia e hilos de polietileno de última generación.",
+    "image": "/wp-content/uploads/2025/01/p2.jpg",
+    "products": [
+      {
+        "id": "medicina-deportiva-anclaje-de-titanio-impreso-3d",
+        "slug": "anclaje-de-titanio-impreso-3d",
+        "title": "Anclaje de titanio impreso 3D",
+        "images": [
+          "/wp-content/uploads/2025/01/p2.jpg"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-9610\" class=\"elementor-element elementor-element-773de314 e-con-full e-flex e-con e-child\" data-id=\"773de314\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-9610\" class=\"elementor-element elementor-element-1c844db5 e-flex e-con-boxed e-con e-child\" data-id=\"1c844db5\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-27911ec elementor-widget elementor-widget-text-editor\" data-id=\"27911ec\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>El ancla adopta un diseño de doble rosca alta-baja con la misma estructura que el ancla de metal, que puede proporcionar una mejor fuerza de fijación que el ancla de metal.</li><li>Combine y combine con suturas de la misma serie para proporcionar una variedad de soluciones de combinación según las necesidades del médico.</li><li>El ancla tiene un excelente rendimiento autorroscante y se puede utilizar para perforar anclajes de metal sin la<br>necesidad de perforar agujeros previamente.</li><li>El ancla utiliza un diseño de orificio de alambre independiente para evitar que las suturas se enreden y se anude.</li></ol> </div> </div> </div> </div> </div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-peek",
+        "slug": "anclaje-de-sutura-peek",
+        "title": "Anclaje de Sutura PEEK",
+        "images": [
+          "/wp-content/uploads/2025/01/p1.jpg"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-5520\" class=\"elementor-element elementor-element-66ebd9e9 e-con-full e-flex e-con e-child\" data-id=\"66ebd9e9\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-5520\" class=\"elementor-element elementor-element-123e158c e-flex e-con-boxed e-con e-child\" data-id=\"123e158c\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-2b30eabd elementor-widget elementor-widget-text-editor\" data-id=\"2b30eabd\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>El ancla está hecha de material de polieteretercetona (PEEK), y la luz quirúrgica no tiene artefactos metálicos.</li><li>Tamaño completo y especificaciones para satisfacer las necesidades de la cirugía.</li><li>El tipo MB(II) es parcialmente de doble rosca, y el tipo MB(III) proporciona una fuerza de fijación más fuerte para la<br>doble rosca.</li><li>Preestablezca una o dos suturas de alta resistencia.</li><li>La combinación de sutura blanca pura y sutura azul y blanca se utiliza para facilitar el reconocimiento intraoperatorio de<br>suturas y nudos.</li><li>La varilla del tornillo de inserción tiene la línea marcadora de profundidad de inserción, y el proceso de inserción es claro.</li></ol> </div> </div> </div> </div> </div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-hilo-de-polietileno",
+        "slug": "hilo-de-polietileno",
+        "title": "Hilo de Polietileno",
+        "images": [
+          "/wp-content/uploads/2025/01/p16.jpg"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1150\" class=\"elementor-element elementor-element-26d6f939 e-con-full e-flex e-con e-child\" data-id=\"26d6f939\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1150\" class=\"elementor-element elementor-element-21c6a85e e-flex e-con-boxed e-con e-child\" data-id=\"21c6a85e\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6e3128ed elementor-widget elementor-widget-text-editor\" data-id=\"6e3128ed\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Las suturas están tejidas con hilo de polietileno de peso molecular ultraalto, que tiene una reacción tisular mínima y buena biocompatibilidad.</li><li>Disponibles en colores azul, blanco y blanco-azul para facilitar la identificación y el manejo de las suturas durante las operaciones quirúrgicas.</li><li>Combinaciones de diferentes suturas y agujas de sutura, especificaciones completas del producto, pueden satisfacer las diversas necesidades de los clientes.</li><li>La superficie de la sutura es lisa, uniforme, sin nudos y no se desvanece, flexible, resistente al desgaste, con excelente rendimiento de anudado y resistencia a la tracción que supera con creces los requisitos estándar.</li><li>La aguja de sutura está hecha de acero inoxidable médico, con excelente material, buena elasticidad y tenacidad, y la conexión del hilo de la aguja es; Suave, y la cola de la aguja debe ser suave después de la conexión y con una alta resistencia de conexión.</li></ol> </div> </div> </div> </div> </div>"
+          }
+        ]
+      }
+    ]
   }
 ]

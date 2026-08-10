@@ -21,13 +21,14 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.blog": "Blog",
     "nav.specs": "Fichas técnicas",
     "nav.contact": "Contacto",
-    "nav.catalog_full": "Catálogo completo (Chunli)",
+    "nav.catalog_full": "Catálogo completo (Osseous)",
     
     // Categories/Submenus
     "cat.shoulder": "Prótesis de Hombro",
-    "cat.knee": "Reemplazo de Rodilla",
+    "cat.knee": "Prótesis de Rodilla",
     "cat.hip": "Prótesis de Cadera",
     "cat.surgical": "Instrumental Quirúrgico",
+    "cat.sports": "Medicina Deportiva",
     "categories.title": "Líneas de Productos",
     "categories.subtitle": "Explora nuestras soluciones avanzadas para cirugía ortopédica, diseñadas con tecnología médica de alta precisión.",
     "categories.back_home": "Volver al inicio",
@@ -115,13 +116,14 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.blog": "Blog",
     "nav.specs": "Specs",
     "nav.contact": "Contact",
-    "nav.catalog_full": "Complete Catalog (Chunli)",
+    "nav.catalog_full": "Complete Catalog (Osseous)",
     
     // Categories/Submenus
     "cat.shoulder": "Shoulder Prosthesis",
-    "cat.knee": "Knee Replacement",
+    "cat.knee": "Knee Prosthesis",
     "cat.hip": "Hip Prosthesis",
     "cat.surgical": "Surgical Instruments",
+    "cat.sports": "Sports Medicine",
     "categories.title": "Product Lines",
     "categories.subtitle": "Explore our advanced solutions for orthopedic surgery, designed with high-precision medical technology.",
     "categories.back_home": "Back to Home",

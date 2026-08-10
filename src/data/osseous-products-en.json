@@ -1440,5 +1440,55 @@
     "description": "High-end surgical tools and precision trays that assist and support the medical team in every stage of the procedure.",
     "image": "/wp-content/uploads/2025/02/img-23-2.png",
     "products": []
+  },
+  {
+    "id": "medicina-deportiva",
+    "title": "Sports Medicine",
+    "description": "Fixation and suture solutions for arthroscopic surgery and sports medicine: high-strength anchors and next-generation polyethylene sutures.",
+    "image": "/wp-content/uploads/2025/01/p2.jpg",
+    "products": [
+      {
+        "id": "medicina-deportiva-anclaje-de-titanio-impreso-3d",
+        "slug": "anclaje-de-titanio-impreso-3d",
+        "title": "3D Printed Titanium Anchor",
+        "images": [
+          "/wp-content/uploads/2025/01/p2.jpg"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-9610\" class=\"elementor-element elementor-element-773de314 e-con-full e-flex e-con e-child\" data-id=\"773de314\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-9610\" class=\"elementor-element elementor-element-1c844db5 e-flex e-con-boxed e-con e-child\" data-id=\"1c844db5\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-27911ec elementor-widget elementor-widget-text-editor\" data-id=\"27911ec\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The anchor adopts a high-low double-thread design with the same structure as the metal anchor, which can provide better fixation strength than the metal anchor.</li><li>Mix and match with sutures of the same series to provide a variety of combination solutions according to the physician's needs.</li><li>The anchor has excellent self-tapping performance and can be used to insert metal anchors without the<br>need for pre-drilling.</li><li>The anchor features an independent suture eyelet design to prevent suture tangles and knotting.</li></ol> </div> </div> </div> </div> </div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-peek",
+        "slug": "anclaje-de-sutura-peek",
+        "title": "PEEK Suture Anchor",
+        "images": [
+          "/wp-content/uploads/2025/01/p1.jpg"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-5520\" class=\"elementor-element elementor-element-66ebd9e9 e-con-full e-flex e-con e-child\" data-id=\"66ebd9e9\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-5520\" class=\"elementor-element elementor-element-123e158c e-flex e-con-boxed e-con e-child\" data-id=\"123e158c\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-2b30eabd elementor-widget elementor-widget-text-editor\" data-id=\"2b30eabd\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The anchor is made of polyetheretherketone (PEEK) material, and the surgical field is free of metal artifacts.</li><li>Complete sizing and specifications to meet surgical needs.</li><li>The MB(II) type is partially double-threaded, and the MB(III) type provides a stronger fixation force for the<br>double thread.</li><li>Pre-load one or two high-strength sutures.</li><li>The combination of pure white suture and blue-and-white suture is used to facilitate intraoperative recognition of<br>sutures and knots.</li><li>The inserter screw shaft features an insertion depth marker line, making the insertion process clear.</li></ol> </div> </div> </div> </div> </div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-hilo-de-polietileno",
+        "slug": "hilo-de-polietileno",
+        "title": "Polyethylene Suture",
+        "images": [
+          "/wp-content/uploads/2025/01/p16.jpg"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1150\" class=\"elementor-element elementor-element-26d6f939 e-con-full e-flex e-con e-child\" data-id=\"26d6f939\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1150\" class=\"elementor-element elementor-element-21c6a85e e-flex e-con-boxed e-con e-child\" data-id=\"21c6a85e\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6e3128ed elementor-widget elementor-widget-text-editor\" data-id=\"6e3128ed\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Sutures are braided with ultra-high-molecular-weight polyethylene thread, which features minimal tissue reaction and good biocompatibility.</li><li>Available in blue, white, and white-blue colors to facilitate identification and suture management during surgical procedures.</li><li>Combinations of different sutures and suture needles, with complete product specifications, can satisfy various customer needs.</li><li>The suture surface is smooth, uniform, knotless and non-fading, flexible, wear-resistant, with excellent knotting performance and tensile strength that far exceeds standard requirements.</li><li>The suture needle is made of medical-grade stainless steel, featuring excellent material quality, good elasticity, and toughness, with a smooth needle-thread transition; the needle tail remains smooth after attachment and offers high connection strength.</li></ol> </div> </div> </div> </div> </div>"
+          }
+        ]
+      }
+    ]
   }
 ]
