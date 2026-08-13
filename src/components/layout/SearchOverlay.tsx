@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { MAIN_NAV } from "@/config/navigation";
 import type { NavLinkItem } from "@/config/navigation";
-import { asset, getCategories } from "@/lib/catalog";
+import { asset, getCategories, getCategoryTitle, getProductTitle } from "@/lib/catalog";
 import osseousDataEs from "@/data/osseous-products.json";
 import osseousDataEn from "@/data/osseous-products-en.json";
 import { useLanguage } from "@/context/LanguageContext";
@@ -38,12 +38,14 @@ function buildIndex(lang: "es" | "en", t: (key: string) => string): Hit[] {
 
   // Indexar Catálogo Chunli
   for (const cat of getCategories()) {
-    hits.push({ label: cat.title, to: `/catalogo/${cat.id}`, group: t("search.catalog_group") });
+    const catTitle = getCategoryTitle(cat.id, cat.title, lang);
+    hits.push({ label: catTitle, to: `/catalogo/${cat.id}`, group: t("search.catalog_group") });
     for (const p of cat.products) {
+      const prodTitle = getProductTitle(p.id, p.title, lang);
       hits.push({
-        label: p.title,
+        label: prodTitle,
         to: `/producto/${p.id}`,
-        group: cat.title,
+        group: catTitle,
         image: p.image ? asset(p.image) : undefined,
       });
     }

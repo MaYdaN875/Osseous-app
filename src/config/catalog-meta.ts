@@ -2,6 +2,26 @@
 // originales solo traen nombres e imágenes y quedaba muy pelón.
 
 // ==========================================
+// Títulos de categorías traducidos
+// ==========================================
+
+export const CATEGORY_TITLE_ES: Record<number, string> = {
+  9: "Robot quirúrgico",
+  6: "Productos articulares",
+  4: "Productos de columna",
+  2: "Medicina deportiva",
+  5: "Instrumental motorizado ortopédico",
+};
+
+export const CATEGORY_TITLE_EN: Record<number, string> = {
+  9: "Surgical robot",
+  6: "Joint products",
+  4: "Spinal products",
+  2: "Sports medicine products",
+  5: "Orthopedic Power",
+};
+
+// ==========================================
 // Versión en Español (ES)
 // ==========================================
 

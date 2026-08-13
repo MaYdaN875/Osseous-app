@@ -1,12 +1,13 @@
 // La tarjeta de cada categoría en la página del catálogo. Toda la tarjeta es un
 // enlace que te lleva a los productos de esa categoría.
 import { Link } from "react-router-dom";
-import { getCategoryDesc, asset, getCategories } from "@/lib/catalog";
+import { getCategoryDesc, getCategoryTitle, asset, getCategories } from "@/lib/catalog";
 import { useLanguage } from "@/context/LanguageContext";
 
 export function CategoryCard({ id, index }: { id: number; index: number }) {
   const cat = getCategories().find((c) => c.id === id)!;
   const { lang, t } = useLanguage();
+  const categoryTitle = getCategoryTitle(cat.id, cat.title, lang);
   // Para la parte visual agarro hasta 5 productos con foto: la primera va grande
   // y las otras cuatro como miniaturas al lado
   const imgs = cat.products.filter((p) => p.image).slice(0, 5);
@@ -21,13 +22,13 @@ export function CategoryCard({ id, index }: { id: number; index: number }) {
         <span className="cat-card__num">{num}</span>
         <span className="cat-card__count">{t("catalog.prod_count", { count: cat.products.length })}</span>
         <div className="cat-card__main">
-          <img src={asset(main?.image || cat.image)} alt={cat.title} loading="lazy" />
+          <img src={asset(main?.image || cat.image)} alt={categoryTitle} loading="lazy" />
         </div>
         {side.length > 0 && (
           <div className="cat-card__side">
             {side.map((p) => (
               <div className="cat-card__thumb" key={p.id}>
-                <img src={asset(p.image)} alt={p.title} loading="lazy" />
+                <img src={asset(p.image)} alt={categoryTitle} loading="lazy" />
               </div>
             ))}
           </div>
@@ -35,7 +36,7 @@ export function CategoryCard({ id, index }: { id: number; index: number }) {
       </div>
       <div className="cat-card__body">
         <div>
-          <div className="cat-card__title">{cat.title}</div>
+          <div className="cat-card__title">{categoryTitle}</div>
           <div className="cat-card__desc">{getCategoryDesc(cat.id, lang)}</div>
         </div>
         <span className="cat-card__cta">

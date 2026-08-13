@@ -3,6 +3,8 @@
 // y aquí tengo las funciones para consultarlo desde cualquier parte de la app.
 import type { CatalogData, Category, Product } from "@/types/catalog";
 import raw from "@/data/catalog-data.json";
+import titlesEs from "@/data/catalog-titles-es.json";
+import titlesEn from "@/data/catalog-titles-en.json";
 
 import {
   CATEGORY_DESC_ES,
@@ -10,6 +12,16 @@ import {
   CATEGORY_DESC_EN,
   CATEGORY_SPECS_EN,
 } from "@/config/catalog-meta";
+
+export function getCategoryTitle(id: number, originalTitle: string, lang: "es" | "en"): string {
+  const dict = lang === "en" ? titlesEn.categories : titlesEs.categories;
+  return (dict as Record<string, string>)[String(id)] ?? originalTitle;
+}
+
+export function getProductTitle(id: number, originalTitle: string, lang: "es" | "en"): string {
+  const dict = lang === "en" ? titlesEn.products : titlesEs.products;
+  return (dict as Record<string, string>)[String(id)] ?? originalTitle;
+}
 
 export function getCategoryDesc(id: number, lang: "es" | "en"): string {
   const dict = lang === "en" ? CATEGORY_DESC_EN : CATEGORY_DESC_ES;

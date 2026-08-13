@@ -3,7 +3,7 @@
 // brincar rápido entre categorías sin regresar al catálogo.
 import { Link } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
-import { getCategories, getCategoryDesc, asset } from "@/lib/catalog";
+import { getCategories, getCategoryDesc, getCategoryTitle, getProductTitle, asset } from "@/lib/catalog";
 import { useLanguage } from "@/context/LanguageContext";
 
 export function CategoryPage({ categoryId }: { categoryId: number }) {
@@ -25,15 +25,17 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
     );
   }
 
+  const categoryTitle = getCategoryTitle(cat.id, cat.title, lang);
+
   return (
     <>
-      <PageHero title={cat.title} subtitle={getCategoryDesc(cat.id, lang)}>
+      <PageHero title={categoryTitle} subtitle={getCategoryDesc(cat.id, lang)}>
         <nav className="crumbs">
           <Link to="/">{t("detail.home")}</Link>
           <span className="sep">/</span>
           <Link to="/catalogo">{t("nav.catalog")}</Link>
           <span className="sep">/</span>
-          <span>{cat.title}</span>
+          <span>{categoryTitle}</span>
         </nav>
       </PageHero>
       <main className="section">
@@ -44,7 +46,7 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
           <div className="pills">
             {categories.map((c) => (
               <Link key={c.id} className={`pill ${c.id === cat.id ? "is-active" : ""}`} to={`/catalogo/${c.id}`}>
-                {c.title}
+                {getCategoryTitle(c.id, c.title, lang)}
               </Link>
             ))}
           </div>
@@ -53,25 +55,28 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
             dangerouslySetInnerHTML={{
               __html: t("catalog.cat_stats", {
                 count: `<b>${cat.products.length}</b>`,
-                category: cat.title
+                category: categoryTitle
               })
             }}
           />
           <div className="prod-grid">
-            {cat.products.map((p) => (
-              <Link className="prod-card" key={p.id} to={`/producto/${p.id}`}>
-                <div className="prod-card__media">
-                  <img src={asset(p.image)} alt={p.title} loading="lazy" />
-                </div>
-                <div className="prod-card__body">
-                  <span className="prod-card__tag">
-                    <span className="dot" />
-                    {cat.title}
-                  </span>
-                  <h3 className="prod-card__title">{p.title}</h3>
-                </div>
-              </Link>
-            ))}
+            {cat.products.map((p) => {
+              const productTitle = getProductTitle(p.id, p.title, lang);
+              return (
+                <Link className="prod-card" key={p.id} to={`/producto/${p.id}`}>
+                  <div className="prod-card__media">
+                    <img src={asset(p.image)} alt={productTitle} loading="lazy" />
+                  </div>
+                  <div className="prod-card__body">
+                    <span className="prod-card__tag">
+                      <span className="dot" />
+                      {categoryTitle}
+                    </span>
+                    <h3 className="prod-card__title">{productTitle}</h3>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </main>

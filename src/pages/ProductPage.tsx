@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import {
   getCategoryDesc,
   getCategorySpecs,
+  getCategoryTitle,
+  getProductTitle,
   asset,
   getProductById,
   makeSku,
@@ -48,6 +50,9 @@ export function ProductPage({ productId }: { productId: number }) {
 
   const { product, category } = found;
   const sku = makeSku(category.id, product.id);
+  const categoryTitle = getCategoryTitle(category.id, category.title, lang);
+  const productTitle = getProductTitle(product.id, product.title, lang);
+
   // Del resto de productos de la categoría saco 2 como "vistas" extra para la
   // galería y otros 3 como compatibles. Uso el índice del producto con módulo
   // para que a cada producto le toquen distintos y no se repitan entre sí.
@@ -61,12 +66,12 @@ export function ProductPage({ productId }: { productId: number }) {
   const categoryDesc = getCategoryDesc(category.id, lang);
 
   const translatedDesc = lang === "en"
-    ? `${categoryDesc}. Product from Osseous's ${category.title} line.`
-    : `${categoryDesc}. Producto de la línea ${category.title} de Osseous.`;
+    ? `${categoryDesc}. Product from Osseous's ${categoryTitle} line.`
+    : `${categoryDesc}. Producto de la línea ${categoryTitle} de Osseous.`;
 
   const thumbs = [
-    { src: asset(product.image), alt: product.title, active: true },
-    ...views.map((v) => ({ src: asset(v.image), alt: v.title, active: false })),
+    { src: asset(product.image), alt: productTitle, active: true },
+    ...views.map((v) => ({ src: asset(v.image), alt: getProductTitle(v.id, v.title, lang), active: false })),
     { src: asset(product.image), alt: lang === "en" ? "Technical video" : "Video técnico", video: true },
   ];
 
@@ -74,20 +79,20 @@ export function ProductPage({ productId }: { productId: number }) {
     <main className="section">
       <div className="wrap">
         <Link className="back-link" to={`/catalogo/${category.id}`}>
-          <span className="circle">←</span> {t("detail.back_to", { category: category.title })}
+          <span className="circle">←</span> {t("detail.back_to", { category: categoryTitle })}
         </Link>
         <nav className="detail-crumbs">
           <Link to="/catalogo">{t("nav.products")}</Link>
           <span className="sep">›</span>
-          <Link to={`/catalogo/${category.id}`}>{category.title}</Link>
+          <Link to={`/catalogo/${category.id}`}>{categoryTitle}</Link>
           <span className="sep">›</span>
-          <span className="current">{product.title}</span>
+          <span className="current">{productTitle}</span>
         </nav>
 
         <div className="detail">
           <div id="product-gallery" className="detail__gallery reveal reveal--left">
             <div className="detail__stage">
-              <img id="gallery-main" src={image} alt={product.title} />
+              <img id="gallery-main" src={image} alt={productTitle} />
             </div>
             <div className="detail__thumbs">
               {thumbs.map((tItem, i) => (
@@ -119,7 +124,7 @@ export function ProductPage({ productId }: { productId: number }) {
           <div className="detail__info reveal reveal--right">
             <div>
               <span className="detail__sku">SKU: {sku}</span>
-              <h1 className="detail__title">{product.title}</h1>
+              <h1 className="detail__title">{productTitle}</h1>
               <p className="detail__desc">
                 {translatedDesc}
               </p>
@@ -160,21 +165,24 @@ export function ProductPage({ productId }: { productId: number }) {
         <section className="related">
           <h2 className="related__title">{t("catalog.compatible")}</h2>
           <div className="related__grid">
-            {related.map((r) => (
-              <Link className="related-card reveal" key={r.id} to={`/producto/${r.id}`}>
-                <div className="related-card__media">
-                  <img src={asset(r.image)} alt={r.title} loading="lazy" />
-                </div>
-                <div className="related-card__body">
-                  <span className="related-card__cat">{category.title}</span>
-                  <h3 className="related-card__name">{r.title}</h3>
-                  <div className="related-card__foot">
-                    <span>{t("categories.view_details")}</span>
-                    <span className="arrow">→</span>
+            {related.map((r) => {
+              const relProdTitle = getProductTitle(r.id, r.title, lang);
+              return (
+                <Link className="related-card reveal" key={r.id} to={`/producto/${r.id}`}>
+                  <div className="related-card__media">
+                    <img src={asset(r.image)} alt={relProdTitle} loading="lazy" />
                   </div>
-                </div>
-              </Link>
-            ))}
+                  <div className="related-card__body">
+                    <span className="related-card__cat">{categoryTitle}</span>
+                    <h3 className="related-card__name">{relProdTitle}</h3>
+                    <div className="related-card__foot">
+                      <span>{t("categories.view_details")}</span>
+                      <span className="arrow">→</span>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </section>
       </div>
