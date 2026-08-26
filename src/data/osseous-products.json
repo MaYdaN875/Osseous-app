@@ -27,7 +27,7 @@
       {
         "id": "reemplazo-de-rodilla-protesis-de-rodilla-xa",
         "slug": "protesis-de-rodilla-xa",
-        "title": "Prótesis de rodilla XA",
+        "title": "Prótesis de Rodilla Anatómica",
         "images": [
           "/wp-content/uploads/2026/06/image-removebg-preview-1.png",
           "/wp-content/uploads/2026/06/image__3_-removebg-preview.png"
@@ -46,7 +46,7 @@
       {
         "id": "reemplazo-de-rodilla-protesis-de-rodilla-tipo-xq",
         "slug": "protesis-de-rodilla-tipo-xq",
-        "title": "Prótesis de rodilla tipo XQ",
+        "title": "Prótesis de rodilla tipo sistema quirurgico",
         "images": [
           "/wp-content/uploads/2026/06/image__4_-removebg-preview.png",
           "/wp-content/uploads/2026/06/image__6_-removebg-preview.png"
@@ -65,7 +65,7 @@
       {
         "id": "reemplazo-de-rodilla-aumentos-cck",
         "slug": "aumentos-cck",
-        "title": "Aumentos CCK",
+        "title": "Prótesis de rodilla Aumentos",
         "images": [
           "/wp-content/uploads/2025/01/p4.jpg"
         ],
@@ -73,20 +73,6 @@
           {
             "label": "Información",
             "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1300\" class=\"elementor-element elementor-element-15ad45c0 e-con-full e-flex e-con e-child\" data-id=\"15ad45c0\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1300\" class=\"elementor-element elementor-element-65cc0446 e-flex e-con-boxed e-con e-child\" data-id=\"65cc0446\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-653d073d elementor-widget elementor-widget-text-editor\" data-id=\"653d073d\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Se utiliza principalmente para defectos óseos unilaterales o bilaterales no inclusivos de tamaño mediano, cubriendo la mayoría de las necesidades de relleno de defectos óseos.</li><li>La estructura trabecular ósea biónica con alta porosidad es útil para el crecimiento y la remodelación óseos.</li><li>Puede combinarse con una variedad de prótesis de rodilla de la serie XN.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-bandeja-tibial",
-        "slug": "bandeja-tibial",
-        "title": "Bandeja Tibial",
-        "images": [
-          "/wp-content/uploads/2025/01/p5.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Información",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1590\" class=\"elementor-element elementor-element-39a69a88 e-con-full e-flex e-con e-child\" data-id=\"39a69a88\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1590\" class=\"elementor-element elementor-element-5367616b e-flex e-con-boxed e-con e-child\" data-id=\"5367616b\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-117a4b42 elementor-widget elementor-widget-text-editor\" data-id=\"117a4b42\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>El diseño del ala de quilla proporciona estabilidad de implantación inicial.</li><li>Con un ángulo de retroversión de 5°, evita la colisión de la corteza frontal.</li><li>El diseño de bloqueo preciso y estable reduce el movimiento.</li><li>Amplia gama de AP/ML, proporciona una mejor cobertura de la meseta tibial.</li><li>Puede combinarse con PS&amp;CR dos tipos de inserto tibial.</li><li>El diseño anatómico de la meseta tibial, mejor cobertura y menor hundimiento.</li></ol> </div> </div> </div> </div> </div>"
           }
         ]
       },
@@ -107,7 +93,7 @@
       {
         "id": "reemplazo-de-rodilla-xn-ps",
         "slug": "xn-ps",
-        "title": "XN-PS",
+        "title": "Prótesis de Rodilla Primaria PS",
         "images": [
           "/wp-content/uploads/2025/01/p14.jpg"
         ],
@@ -121,7 +107,7 @@
       {
         "id": "reemplazo-de-rodilla-xn-cr",
         "slug": "xn-cr",
-        "title": "XN-CR",
+        "title": "Prótesis de Rodilla Primaria CR",
         "images": [
           "/wp-content/uploads/2025/01/p13.jpg"
         ],
@@ -129,20 +115,6 @@
           {
             "label": "Información",
             "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1740\" class=\"elementor-element elementor-element-2bef1c00 e-con-full e-flex e-con e-child\" data-id=\"2bef1c00\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1740\" class=\"elementor-element elementor-element-712ca211 e-flex e-con-boxed e-con e-child\" data-id=\"712ca211\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6d1a8f29 elementor-widget elementor-widget-text-editor\" data-id=\"6d1a8f29\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <p>Los implantes de tamaño común difieren solo en 1 mm, lo que puede satisfacer mejor las necesidades de los pacientes.</p><p>El tamaño del implante es denso y casi personalizado. Los tamaños AP y ML en el tamaño del implante no están distribuidos de manera uniforme para satisfacer las necesidades de los pacientes.</p> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-sistema-de-reparacion-del-menisco",
-        "slug": "sistema-de-reparacion-del-menisco",
-        "title": "Sistema de reparación del menisco",
-        "images": [
-          "/wp-content/uploads/2025/01/p15.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Información",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-4700\" class=\"elementor-element elementor-element-68316def e-con-full e-flex e-con e-child\" data-id=\"68316def\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-4700\" class=\"elementor-element elementor-element-1b1e77f5 e-flex e-con-boxed e-con e-child\" data-id=\"1b1e77f5\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6afc079e elementor-widget elementor-widget-text-editor\" data-id=\"6afc079e\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Seguridad: el manguito de límite de profundidad ajusta la profundidad para evitar dañar el nervio vascular, lo que lo<br>hace más seguro y confiable.</li><li>Mínimamente invasivo: la barra fija es de tamaño pequeño y se usa junto con una sutura de ultra alta resistencia de 2-0<br># para reducir el daño al menisco.</li><li>Conveniencia: barra fija activada activamente con una sola mano de 360°, que controla el momento de inserción, lo que la hace más conveniente.</li><li>Múltiples opciones: diseñada con curvas hacia adelante y hacia atrás de 12° y ángulos rectos, lo que brinda más opciones.</li><li>Comodidad: basada en el principio ergonómico, la superficie del mango está diseñada para ser antideslizante, lo que la<br>hace más cómoda durante la operación.</li></ol> </div> </div> </div> </div> </div>"
           }
         ]
       }
@@ -618,6 +590,20 @@
           {
             "label": "Información",
             "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1150\" class=\"elementor-element elementor-element-26d6f939 e-con-full e-flex e-con e-child\" data-id=\"26d6f939\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1150\" class=\"elementor-element elementor-element-21c6a85e e-flex e-con-boxed e-con e-child\" data-id=\"21c6a85e\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6e3128ed elementor-widget elementor-widget-text-editor\" data-id=\"6e3128ed\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Las suturas están tejidas con hilo de polietileno de peso molecular ultraalto, que tiene una reacción tisular mínima y buena biocompatibilidad.</li><li>Disponibles en colores azul, blanco y blanco-azul para facilitar la identificación y el manejo de las suturas durante las operaciones quirúrgicas.</li><li>Combinaciones de diferentes suturas y agujas de sutura, especificaciones completas del producto, pueden satisfacer las diversas necesidades de los clientes.</li><li>La superficie de la sutura es lisa, uniforme, sin nudos y no se desvanece, flexible, resistente al desgaste, con excelente rendimiento de anudado y resistencia a la tracción que supera con creces los requisitos estándar.</li><li>La aguja de sutura está hecha de acero inoxidable médico, con excelente material, buena elasticidad y tenacidad, y la conexión del hilo de la aguja es; Suave, y la cola de la aguja debe ser suave después de la conexión y con una alta resistencia de conexión.</li></ol> </div> </div> </div> </div> </div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-sistema-de-reparacion-del-menisco",
+        "slug": "sistema-de-reparacion-del-menisco",
+        "title": "Sistema de reparación del menisco",
+        "images": [
+          "/wp-content/uploads/2025/01/p15.jpg"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-4700\" class=\"elementor-element elementor-element-68316def e-con-full e-flex e-con e-child\" data-id=\"68316def\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-4700\" class=\"elementor-element elementor-element-1b1e77f5 e-flex e-con-boxed e-con e-child\" data-id=\"1b1e77f5\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6afc079e elementor-widget elementor-widget-text-editor\" data-id=\"6afc079e\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Seguridad: el manguito de límite de profundidad ajusta la profundidad para evitar dañar el nervio vascular, lo que lo<br>hace más seguro y confiable.</li><li>Mínimamente invasivo: la barra fija es de tamaño pequeño y se usa junto con una sutura de ultra alta resistencia de 2-0<br># para reducir el daño al menisco.</li><li>Conveniencia: barra fija activada activamente con una sola mano de 360°, que controla el momento de inserción, lo que la hace más conveniente.</li><li>Múltiples opciones: diseñada con curvas hacia adelante y hacia atrás de 12° y ángulos rectos, lo que brinda más opciones.</li><li>Comodidad: basada en el principio ergonómico, la superficie del mango está diseñada para ser antideslizante, lo que la<br>hace más cómoda durante la operación.</li></ol> </div> </div> </div> </div> </div>"
           }
         ]
       }
