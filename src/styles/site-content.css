@@ -370,6 +370,27 @@
   list-style: none;
 }
 
+/* Modificar el interior del acordeón para que las listas se muestren en línea (píldoras)
+   y no ocupen mucho espacio vertical. */
+.ficha-detail-section__body .e-n-accordion-item ul,
+.ficha-detail-section__body .e-n-accordion-item ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 16px !important;
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+.ficha-detail-section__body .e-n-accordion-item li {
+  margin: 0 !important;
+  background: var(--c-line);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  list-style: none !important;
+}
+
 /* Los botones secundarios (Links) dentro de detail__actions necesitan
    alineación de texto centrada para verse como los del catálogo */
 .ficha .btn-secondary {
