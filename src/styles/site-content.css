@@ -354,12 +354,19 @@
   margin-bottom: 8px;
 }
 
+/* Grid para los acordeones anidados para que no ocupen tanta altura */
+.ficha-detail-section__body .e-n-accordion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
 /* Acordeones anidados (p.ej. Medidas) — misma estética que antes */
 .ficha-detail-section__body .e-n-accordion-item {
   border: 1px solid var(--c-line);
   border-radius: 10px;
-  margin-bottom: 8px;
   overflow: hidden;
+  margin: 0 !important; /* overrides previous margin-bottom */
 }
 
 .ficha-detail-section__body .e-n-accordion-item-title {

@@ -195,6 +195,7 @@ export function FichaPage() {
               </div>
             )}
 
+
             {/* Botones de acción */}
             <div className="detail__actions">
               <button
