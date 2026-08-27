@@ -7,6 +7,7 @@ import { useElementorStyles } from "@/lib/elementor";
 import categoriesDataEs from "@/data/osseous-products.json";
 import categoriesDataEn from "@/data/osseous-products-en.json";
 import { useLanguage } from "@/context/LanguageContext";
+import { getCategorySpecs, asset } from "@/lib/catalog";
 
 // Avisito flotante (reutilizo la misma lógica del catálogo)
 function showToast(message: string) {
@@ -47,49 +48,43 @@ export function FichaPage() {
     setActive(0);
   }, [productSlug]);
 
-  // Forzar que todos los acordeones (<details>) estén abiertos para que
-  // se rendericen como filas de la tabla de especificaciones (CSS grid).
-  useEffect(() => {
-    const details = document.querySelectorAll(".ficha-detail-section__body details");
-    details.forEach((d) => {
-      d.setAttribute("open", "true");
-    });
-  }, [ficha]);
-
   // Productos relacionados: otros de la misma categoría (hasta 3)
   const related = useMemo(() => {
     if (!category || !ficha) return [];
-    return category.products
-      .filter((p: any) => p.slug !== productSlug && p.images?.length > 0)
-      .slice(0, 3);
+    return category.products.filter((p: any) => p.slug !== productSlug && p.images?.length > 0).slice(0, 3);
   }, [category, ficha, productSlug]);
 
-  const parentTitle = category?.title ?? t("nav.products");
-
-  if (!ficha) {
+  if (!category || !ficha) {
     return (
       <main className="section">
         <div className="wrap">
           <p>{t("search.no_results")}</p>
           <Link className="back-link" to={`/productos/${slug}`}>
-            <span className="circle">←</span> {t("detail.back_to", { category: parentTitle })}
+            {t("detail.back_to", { category: category?.title ?? "" })}
           </Link>
         </div>
       </main>
     );
   }
 
-  const mainImage = ficha.images[active] ?? ficha.images[0];
+  // Título de categoría como SKU (ej: PRÓTESIS DE RODILLA)
+  const parentTitle = t(`categories.${category.id}`) || category.title;
+  
+  // Mapeo de slug a ID de categoría para sacar las especificaciones correctas
+  const SLUG_TO_CAT_ID: Record<string, number> = {
+    "reemplazo-de-rodilla": 6,
+    "protesis-de-cadera": 6,
+    "protesis-de-hombro": 6,
+    "instrumental-quirurgico": 5,
+    "medicina-deportiva": 2
+  };
+  const catId = SLUG_TO_CAT_ID[slug || ""] || 6;
+  const specs = getCategorySpecs(catId, lang);
 
   return (
     <main className="ficha section">
       <div className="wrap">
-        {/* Back link — mismo estilo que catálogo */}
-        <Link className="back-link" to={`/productos/${slug}`}>
-          <span className="circle">←</span> {t("detail.back_to", { category: parentTitle })}
-        </Link>
-
-        {/* Breadcrumb — estilo catálogo con › */}
+        {/* Breadcrumb idéntico al catálogo */}
         <nav className="detail-crumbs">
           <Link to="/">{t("detail.home")}</Link>
           <span className="sep">›</span>
@@ -98,35 +93,30 @@ export function FichaPage() {
           <span className="current">{ficha.title}</span>
         </nav>
 
-        {/* Grid principal: galería + info — misma estructura que ProductPage */}
         <div className="detail">
+          {/* Columna Izquierda: Galería */}
           <div className="detail__gallery">
-            {/* Imagen principal grande */}
             <div className="detail__stage">
-              {mainImage ? (
-                <img id="gallery-main" src={mainImage} alt={ficha.title} />
-              ) : null}
+              <img src={asset(ficha.images[active])} alt={ficha.title} />
             </div>
-            {/* Miniaturas en grid de 4 columnas */}
             {ficha.images.length > 1 && (
               <div className="detail__thumbs">
-                {ficha.images.map((src: string, i: number) => (
+                {ficha.images.map((img: string, i: number) => (
                   <button
-                    key={src}
+                    key={i}
                     type="button"
-                    className={`detail__thumb${i === active ? " is-active" : ""}`}
+                    className={`detail__thumb ${i === active ? "is-active" : ""}`}
                     onClick={() => setActive(i)}
-                    aria-label={`Ver imagen ${i + 1}`}
                   >
-                    <img src={src} alt={`${ficha.title} ${i + 1}`} loading="lazy" />
+                    <img src={asset(img)} alt={`Thumb ${i}`} />
                   </button>
                 ))}
               </div>
             )}
           </div>
 
+          {/* Columna Derecha: Info */}
           <div className="detail__info">
-            {/* Badge de categoría (como el SKU del catálogo) */}
             <div>
               <span className="detail__sku">{parentTitle.toUpperCase()}</span>
               <h1 className="detail__title">{ficha.title}</h1>
@@ -138,7 +128,6 @@ export function FichaPage() {
               )}
             </div>
 
-            {/* Chips de certificación — mismo que catálogo */}
             <div className="detail__chips">
               <span className="chip">ISO 13485</span>
               <span className="chip">FDA Approved</span>
@@ -147,9 +136,24 @@ export function FichaPage() {
 
             <hr />
 
+            {/* Especificaciones Técnicas (Igual que el catálogo) */}
+            {specs && specs.length > 0 && (
+              <div>
+                <h3 className="detail__spec-title">{t("catalog.specs")}</h3>
+                <div className="spec-table">
+                  {specs.map(([k, v]) => (
+                    <div className="spec-table__row" key={k}>
+                      <div>{k}</div>
+                      <div>{v}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Secciones del producto (Medidas, etc.) */}
-            {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").length > 0 ? (
-              <div className="ficha-detail-sections site-page__content elementor-kit-6">
+            {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").length > 0 && (
+              <div className="ficha-detail-sections site-page__content elementor-kit-6" style={{marginTop: specs?.length ? '30px' : '0'}}>
                 {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").map((section: any) => (
                   <div key={section.label} className="ficha-detail-section">
                     <h3 className="detail__spec-title">{section.label}</h3>
@@ -160,15 +164,9 @@ export function FichaPage() {
                   </div>
                 ))}
               </div>
-            ) : (
-              !ficha.sections.find((s: any) => s.label === "Información" || s.label === "Information") && (
-                <p className="detail__desc">
-                  {t("detail.empty_info")}
-                </p>
-              )
             )}
 
-            {/* Botones de acción — misma estructura que catálogo */}
+            {/* Botones de acción */}
             <div className="detail__actions">
               <button
                 type="button"
@@ -178,18 +176,18 @@ export function FichaPage() {
                 {t("detail.availability")}
               </button>
               <div className="detail__actions-row">
-                <Link className="btn-secondary" to={`/productos/${slug}`}>
-                  {t("detail.more_products")}
-                </Link>
-                <Link className="btn-secondary" to="/contacto">
-                  {t("nav.contact")}
-                </Link>
+                <button type="button" className="btn-secondary" onClick={() => showToast(t("catalog.pdf_toast"))}>
+                  {t("catalog.pdf_btn")}
+                </button>
+                <button type="button" className="btn-secondary" onClick={() => showToast(t("catalog.3d_toast"))}>
+                  {t("catalog.3d_btn")}
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Productos relacionados — misma sección que catálogo */}
+        {/* Productos relacionados */}
         {related.length > 0 && (
           <section className="related">
             <h2 className="related__title">{t("catalog.compatible")}</h2>

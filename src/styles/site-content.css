@@ -338,84 +338,36 @@
   padding-top: 0;
 }
 
-/* Modificadores para la descripción que se saca de las secciones (Información) */
-.ficha-desc-override {
-  margin-top: 14px;
-}
-.ficha-desc-override .elementor-widget-container, 
-.ficha-desc-override ol, 
-.ficha-desc-override ul {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-.ficha-desc-override li {
-  margin-bottom: 8px;
-}
-
 .ficha-detail-section__body {
   color: var(--c-text);
   font-size: 15px;
   line-height: 1.7;
 }
 
-/* El widget del acordeón simulando .spec-table */
-.ficha-detail-section__body .e-n-accordion {
+.ficha-detail-section__body ol,
+.ficha-detail-section__body ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.ficha-detail-section__body li {
+  margin-bottom: 8px;
+}
+
+/* Acordeones anidados (p.ej. Medidas) — misma estética que antes */
+.ficha-detail-section__body .e-n-accordion-item {
   border: 1px solid var(--c-line);
-  border-radius: 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
   overflow: hidden;
 }
 
-/* Cada acordeón simula una fila de tabla (.spec-table__row) */
-.ficha-detail-section__body details.e-n-accordion-item {
-  border: none;
-  border-bottom: 1px solid var(--c-line);
-  border-radius: 0;
-  margin-bottom: 0;
-  display: grid !important;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  background: transparent;
-}
-
-.ficha-detail-section__body details.e-n-accordion-item:last-child {
-  border-bottom: none;
-}
-
-.ficha-detail-section__body details.e-n-accordion-item:nth-child(odd) {
-  background: var(--c-soft);
-}
-
-/* Título de la fila */
 .ficha-detail-section__body .e-n-accordion-item-title {
-  padding: 14px 20px;
+  padding: 12px 16px;
   font-weight: 600;
-  cursor: default;
-  background: transparent !important;
+  cursor: pointer;
+  background: var(--c-soft);
   list-style: none;
-  font-size: 14px;
-  color: var(--c-text);
-  pointer-events: none; /* Desactiva el clic */
-}
-
-/* Contenido de la fila (siempre visible) */
-.ficha-detail-section__body details.e-n-accordion-item > div {
-  display: block !important;
-  padding: 14px 20px;
-  font-size: 14px;
-  color: var(--c-text);
-}
-
-/* Limpiar listas dentro del acordeón (Medidas) */
-.ficha-detail-section__body details.e-n-accordion-item > div ul,
-.ficha-detail-section__body details.e-n-accordion-item > div ol {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.ficha-detail-section__body details.e-n-accordion-item > div li {
-  margin-bottom: 0;
-  display: inline-block;
-  margin-right: 12px;
 }
 
 /* Los botones secundarios (Links) dentro de detail__actions necesitan
