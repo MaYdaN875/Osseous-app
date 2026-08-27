@@ -136,9 +136,24 @@ export function FichaPage() {
 
             <hr />
 
+            {/* Especificaciones Técnicas (Igual que el catálogo) */}
+            {specs && specs.length > 0 && (
+              <div>
+                <h3 className="detail__spec-title">{t("catalog.specs")}</h3>
+                <div className="spec-table">
+                  {specs.map(([k, v]) => (
+                    <div className="spec-table__row" key={k}>
+                      <div>{k}</div>
+                      <div></div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Secciones del producto (Medidas, etc.) */}
             {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").length > 0 && (
-              <div className="ficha-detail-sections site-page__content elementor-kit-6">
+              <div className="ficha-detail-sections site-page__content elementor-kit-6" style={{marginTop: specs?.length ? '30px' : '0'}}>
                 {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").map((section: any) => (
                   <div key={section.label} className="ficha-detail-section">
                     <h3 className="detail__spec-title">{section.label}</h3>
