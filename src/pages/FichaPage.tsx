@@ -47,6 +47,15 @@ export function FichaPage() {
     setActive(0);
   }, [productSlug]);
 
+  // Forzar que todos los acordeones (<details>) estén abiertos para que
+  // se rendericen como filas de la tabla de especificaciones (CSS grid).
+  useEffect(() => {
+    const details = document.querySelectorAll(".ficha-detail-section__body details");
+    details.forEach((d) => {
+      d.setAttribute("open", "true");
+    });
+  }, [ficha]);
+
   // Productos relacionados: otros de la misma categoría (hasta 3)
   const related = useMemo(() => {
     if (!category || !ficha) return [];
@@ -121,6 +130,12 @@ export function FichaPage() {
             <div>
               <span className="detail__sku">{parentTitle.toUpperCase()}</span>
               <h1 className="detail__title">{ficha.title}</h1>
+              {ficha.sections.find((s: any) => s.label === "Información" || s.label === "Information") && (
+                <div 
+                  className="detail__desc ficha-desc-override"
+                  dangerouslySetInnerHTML={{ __html: ficha.sections.find((s: any) => s.label === "Información" || s.label === "Information").html }} 
+                />
+              )}
             </div>
 
             {/* Chips de certificación — mismo que catálogo */}
@@ -132,10 +147,10 @@ export function FichaPage() {
 
             <hr />
 
-            {/* Secciones del producto (Información, Medidas, etc.) */}
-            {ficha.sections.length > 0 ? (
+            {/* Secciones del producto (Medidas, etc.) */}
+            {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").length > 0 ? (
               <div className="ficha-detail-sections site-page__content elementor-kit-6">
-                {ficha.sections.map((section: any) => (
+                {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").map((section: any) => (
                   <div key={section.label} className="ficha-detail-section">
                     <h3 className="detail__spec-title">{section.label}</h3>
                     <div
@@ -146,9 +161,11 @@ export function FichaPage() {
                 ))}
               </div>
             ) : (
-              <p className="detail__desc">
-                {t("detail.empty_info")}
-              </p>
+              !ficha.sections.find((s: any) => s.label === "Información" || s.label === "Information") && (
+                <p className="detail__desc">
+                  {t("detail.empty_info")}
+                </p>
+              )
             )}
 
             {/* Botones de acción — misma estructura que catálogo */}
