@@ -70,16 +70,43 @@ export function FichaPage() {
   // Título de categoría como SKU (ej: PRÓTESIS DE RODILLA)
   const parentTitle = t(`categories.${category.id}`) || category.title;
   
-  // Mapeo de slug a ID de categoría para sacar las especificaciones correctas
-  const SLUG_TO_CAT_ID: Record<string, number> = {
-    "reemplazo-de-rodilla": 6,
-    "protesis-de-cadera": 6,
-    "protesis-de-hombro": 6,
-    "instrumental-quirurgico": 5,
-    "medicina-deportiva": 2
-  };
-  const catId = SLUG_TO_CAT_ID[slug || ""] || 6;
-  const specs = getCategorySpecs(catId, lang);
+  // Extraer la sección de Información
+  const infoSection = ficha.sections.find((s: any) => s.label === "Información" || s.label === "Information");
+  
+  // Generar especificaciones dinámicas a partir del texto de Información
+  const dynamicSpecs = useMemo(() => {
+    if (!infoSection) return [];
+    
+    // Extraer items de lista <li>
+    const html = infoSection.html;
+    const regex = /<li[^>]*>(.*?)<\/li>/gi;
+    let match;
+    const extracted: [string, string][] = [];
+    
+    let counter = 1;
+    while ((match = regex.exec(html)) !== null) {
+      let text = match[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      let lower = text.toLowerCase();
+      let key = "Característica " + counter;
+      
+      if (lower.includes('aleación') || lower.includes('acero') || lower.includes('titanio') || lower.includes('material')) {
+        key = "Material";
+      } else if (lower.includes('tamaño') || lower.includes('diámetro') || lower.includes('talla') || lower.includes('conicidad')) {
+        key = "Dimensiones";
+      } else if (lower.includes('tecnología') || lower.includes('precisión') || lower.includes('superficie')) {
+        key = "Fabricación";
+      } else if (lower.includes('uso') || lower.includes('aplicación') || lower.includes('indicación')) {
+        key = "Aplicación";
+      }
+      
+      extracted.push([key, text]);
+      counter++;
+    }
+    
+    return extracted;
+  }, [infoSection]);
+
+  const specs = dynamicSpecs;
 
   return (
     <main className="ficha section">
@@ -87,6 +114,8 @@ export function FichaPage() {
         {/* Breadcrumb idéntico al catálogo */}
         <nav className="detail-crumbs">
           <Link to="/">{t("detail.home")}</Link>
+          <span className="sep">›</span>
+          <Link to="/productos">{t("nav.products")}</Link>
           <span className="sep">›</span>
           <Link to={`/productos/${slug}`}>{parentTitle}</Link>
           <span className="sep">›</span>
@@ -120,10 +149,10 @@ export function FichaPage() {
             <div>
               <span className="detail__sku">{parentTitle.toUpperCase()}</span>
               <h1 className="detail__title">{ficha.title}</h1>
-              {ficha.sections.find((s: any) => s.label === "Información" || s.label === "Information") && (
+              {infoSection && (
                 <div 
                   className="detail__desc ficha-desc-override"
-                  dangerouslySetInnerHTML={{ __html: ficha.sections.find((s: any) => s.label === "Información" || s.label === "Information").html }} 
+                  dangerouslySetInnerHTML={{ __html: infoSection.html }} 
                 />
               )}
             </div>
@@ -136,15 +165,15 @@ export function FichaPage() {
 
             <hr />
 
-            {/* Especificaciones Técnicas (Igual que el catálogo) */}
+            {/* Especificaciones Técnicas dinámicas extraídas del texto del producto */}
             {specs && specs.length > 0 && (
               <div>
                 <h3 className="detail__spec-title">{t("catalog.specs")}</h3>
                 <div className="spec-table">
-                  {specs.map(([k, v]) => (
-                    <div className="spec-table__row" key={k}>
+                  {specs.map(([k, v], idx) => (
+                    <div className="spec-table__row" key={idx}>
                       <div>{k}</div>
-                      <div></div>
+                      <div>{v}</div>
                     </div>
                   ))}
                 </div>
