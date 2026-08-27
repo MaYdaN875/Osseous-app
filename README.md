@@ -17,7 +17,7 @@ La idea del proyecto: replicar el sitio original tal cual (mismo diseño, animac
 ```bash
 npm install
 npm run dev       # abre http://localhost:5173
-npm run build     # genera dist/ listo para subir a Netlify
+npm run build     # para ver que no haya fallas y todo fine
 ```
 
 ## Estructura del proyecto
@@ -49,4 +49,4 @@ El sitio real está hecho con WordPress + Elementor. En vez de rehacer cada pág
 
 ## Despliegue
 
-`npm run build` y subes el contenido de **`dist/`** a Netlify. El archivo `public/_redirects` ya está configurado para que las rutas de React funcionen bien allá.
+`npm run build` y subes el contenido de **`dist/`** a Netlify (por si se necesita un link para mostrar de prueba de la pagina). El archivo `public/_redirects` ya está configurado para que las rutas de React funcionen bien allá.
