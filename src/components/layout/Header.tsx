@@ -3,8 +3,8 @@
 // no hay que tocar este archivo. En celular el CSS lo reacomoda (logo centrado
 // arriba y las opciones en renglones abajo).
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
-import { MAIN_NAV, SITE_LOGO } from "@/config/navigation";
+import { useState, useEffect } from "react";
+import { FOOTER_LOGO, MAIN_NAV, SITE_LOGO } from "@/config/navigation";
 import type { NavLinkItem } from "@/config/navigation";
 import { SearchOverlay } from "./SearchOverlay";
 import { useLanguage } from "@/context/LanguageContext";
@@ -30,7 +30,15 @@ function hasActiveChild(item: NavLinkItem, pathname: string): boolean {
 
 // Un elemento del menú con submenú desplegable. Se abre al pasar el mouse
 // y soporta submenús dentro de submenús (Productos > Cadera > cada prótesis).
-function NavDropdown({ item, depth = 0 }: Readonly<{ item: NavLinkItem; depth?: number }>) {
+function isMobileNav() {
+  return window.matchMedia("(max-width: 760px)").matches;
+}
+
+function NavDropdown({
+  item,
+  depth = 0,
+  onNavigate,
+}: Readonly<{ item: NavLinkItem; depth?: number; onNavigate?: () => void }>) {
   const { pathname } = useLocation();
   const { t } = useLanguage();
   const [open, setOpen] = useState(false);
@@ -43,7 +51,7 @@ function NavDropdown({ item, depth = 0 }: Readonly<{ item: NavLinkItem; depth?: 
 
   if (!hasChildren) {
     return (
-      <Link className={isActive ? "is-active" : undefined} to={item.to}>
+      <Link className={isActive ? "is-active" : undefined} to={item.to} onClick={onNavigate}>
         {t(item.labelKey)}
       </Link>
     );
@@ -52,19 +60,31 @@ function NavDropdown({ item, depth = 0 }: Readonly<{ item: NavLinkItem; depth?: 
   return (
     <div
       className={`nav-drop nav-drop--d${depth}${open ? " is-open" : ""}`}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onMouseEnter={() => { if (!isMobileNav()) setOpen(true); }}
+      onMouseLeave={() => { if (!isMobileNav()) setOpen(false); }}
     >
-      <Link className={isActive ? "is-active" : undefined} to={item.to} onClick={() => setOpen(false)}>
+      <Link
+        className={isActive ? "is-active" : undefined}
+        to={item.to}
+        onClick={(e) => {
+          if (isMobileNav()) {
+            e.preventDefault();
+            setOpen((value) => !value);
+            return;
+          }
+          setOpen(false);
+          onNavigate?.();
+        }}
+      >
         {t(item.labelKey)}
-        <span className="nav-drop__arrow">▾</span>
+        <span className="nav-drop__arrow">▼</span>
       </Link>
       <div className="nav-drop__panel">
         {item.children!.map((child) =>
           child.children?.length ? (
-            <NavDropdown key={child.labelKey} item={child} depth={depth + 1} />
+            <NavDropdown key={child.labelKey} item={child} depth={depth + 1} onNavigate={onNavigate} />
           ) : (
-            <Link key={child.labelKey} to={child.to} onClick={() => setOpen(false)}>
+            <Link key={child.labelKey} to={child.to} onClick={() => { setOpen(false); onNavigate?.(); }}>
               {t(child.labelKey)}
             </Link>
           )
@@ -121,9 +141,19 @@ export function LanguageSwitcher() {
 export function Header() {
   const { pathname } = useLocation();
   const { t } = useLanguage();
-  // El enlace "Catálogo" se subraya tanto en el catálogo como viendo un producto suyo
   const isCatalog = pathname.startsWith("/catalogo") || pathname.startsWith("/producto/");
   const [searchOpen, setSearchOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Cerrar menú al cambiar de ruta
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.classList.toggle("menu-open", mobileMenuOpen);
+    return () => document.body.classList.remove("menu-open");
+  }, [mobileMenuOpen]);
 
   return (
     <header className="site-head">
@@ -132,18 +162,20 @@ export function Header() {
           <Link className="site-head__logo" to="/" aria-label="Osseous inicio">
             <img src={SITE_LOGO} alt="Osseous" />
           </Link>
-          <button
-            type="button"
-            className="site-head__search"
-            onClick={() => setSearchOpen(true)}
-            aria-label="Buscar"
-          >
-            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-            </svg>
-          </button>
 
-          <div className="site-head__social">
+          <div className="site-head__actions">
+            <button
+              type="button"
+              className="site-head__search"
+              onClick={() => setSearchOpen(true)}
+              aria-label="Buscar"
+            >
+              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+              </svg>
+            </button>
+
+            <div className="site-head__social">
             <a href="#" aria-label="Facebook">
               <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
                 <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
@@ -160,14 +192,41 @@ export function Header() {
               </svg>
             </a>
             <LanguageSwitcher />
+            </div>
+
+            <button
+              type="button"
+              className={`site-head__hamburger ${mobileMenuOpen ? "is-open" : ""}`}
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Menú"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </div>
       </div>
-      <nav className="site-head__nav">
+      <div className={`site-head__nav-overlay ${mobileMenuOpen ? "is-active" : ""}`} onClick={() => setMobileMenuOpen(false)}></div>
+      <nav className={`site-head__nav ${mobileMenuOpen ? "is-mobile-open" : ""}`}>
+        {/* Encabezado del menú móvil (oculto en escritorio) */}
+        <div className="site-head__nav-mobile-header">
+          <Link className="site-head__logo" to="/" onClick={() => setMobileMenuOpen(false)}>
+            <img src={FOOTER_LOGO} alt="Osseous" />
+            <span className="site-head__logo-tagline">Innovación, confianza y resultados.</span>
+          </Link>
+        </div>
+
         <div className="wrap site-head__nav-inner">
           {MAIN_NAV.map((item) => {
             if (item.children?.length) {
-              return <NavDropdown key={item.labelKey} item={item} />;
+              return (
+                <NavDropdown
+                  key={item.labelKey}
+                  item={item}
+                  onNavigate={() => setMobileMenuOpen(false)}
+                />
+              );
             }
             // Cada enlace decide su subrayado: el catálogo tiene su propia regla,
             // "Inicio" solo se marca estando exactamente en "/", y el resto por su ruta
@@ -178,11 +237,29 @@ export function Header() {
                   ? pathname === "/"
                   : isActivePath(pathname, item.to);
             return (
-              <Link key={item.labelKey} className={active ? "is-active" : undefined} to={item.to}>
+              <Link key={item.labelKey} className={active ? "is-active" : undefined} to={item.to} onClick={() => setMobileMenuOpen(false)}>
                 {t(item.labelKey)}
               </Link>
             );
           })}
+        </div>
+
+        {/* Footer del menú móvil (oculto en escritorio) */}
+        <div className="site-head__nav-mobile-footer">
+          <Link to="/contacto" className="btn-contact-mobile" onClick={() => setMobileMenuOpen(false)}>
+            Contáctanos
+          </Link>
+          <div className="mobile-social">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" /></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" /></svg>
+            </a>
+          </div>
         </div>
       </nav>
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
