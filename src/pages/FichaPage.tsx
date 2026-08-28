@@ -106,6 +106,14 @@ export function FichaPage() {
     return extracted;
   }, [infoSection]);
 
+  // Texto restante de la descripción (quitando las listas que ya pasamos a la tabla)
+  const remainingDesc = useMemo(() => {
+    if (!infoSection) return null;
+    const cleaned = infoSection.html.replace(/<(ul|ol)[^>]*>.*?<\/\1>/gis, '').trim();
+    const justText = cleaned.replace(/<[^>]+>/g, '').trim();
+    return justText.length > 0 ? cleaned : null;
+  }, [infoSection]);
+
   const specs = dynamicSpecs;
 
   return (
@@ -149,19 +157,19 @@ export function FichaPage() {
             <div>
               <span className="detail__sku">{parentTitle.toUpperCase()}</span>
               <h1 className="detail__title">{ficha.title}</h1>
-              {infoSection && (
+              {remainingDesc ? (
                 <div 
                   className="detail__desc ficha-desc-override"
-                  dangerouslySetInnerHTML={{ __html: infoSection.html }} 
+                  dangerouslySetInnerHTML={{ __html: remainingDesc }} 
                 />
+              ) : (
+                <div className="detail__desc ficha-desc-override" style={{ color: "var(--c-text)", lineHeight: "1.5" }}>
+                  <p>Producto especializado de la línea <strong>{t(parentTitle)}</strong> de Osseous, diseñado para ofrecer los más altos estándares de calidad y precisión en cirugía ortopédica.</p>
+                </div>
               )}
             </div>
 
-            <div className="detail__chips">
-              <span className="chip">ISO 13485</span>
-              <span className="chip">FDA Approved</span>
-              <span className="chip">CE Mark</span>
-            </div>
+
 
             <hr />
 
