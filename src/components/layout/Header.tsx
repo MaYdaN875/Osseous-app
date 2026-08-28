@@ -188,17 +188,8 @@ export function Header() {
         <div className="site-head__nav-mobile-header">
           <Link className="site-head__logo" to="/" onClick={() => setMobileMenuOpen(false)}>
             <img src={SITE_LOGO} alt="Osseous" />
+            <span className="site-head__logo-tagline">Innovación, confianza y resultados.</span>
           </Link>
-          <button
-            type="button"
-            className="site-head__hamburger is-open"
-            onClick={() => setMobileMenuOpen(false)}
-            aria-label="Cerrar menú"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
         </div>
 
         <div className="wrap site-head__nav-inner">
