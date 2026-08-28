@@ -117,7 +117,39 @@ export function FichaPage() {
   const specs = dynamicSpecs;
 
   return (
-    <main className="ficha section">
+    <main className="ficha section" style={{ background: '#f7f9fa', minHeight: '100vh' }}>
+      <style>{`
+        .detail__stage img {
+          max-width: 65% !important;
+          max-height: 65% !important;
+          object-fit: contain !important;
+          filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.16)) !important;
+        }
+        .ficha-detail-section__body .e-n-accordion-item > div {
+          padding-bottom: 20px !important;
+        }
+        .ficha-detail-section__body .e-n-accordion-item ul,
+        .ficha-detail-section__body .e-n-accordion-item ol {
+          display: flex !important;
+          flex-wrap: wrap !important;
+          gap: 10px !important;
+          padding: 20px 20px 0 20px !important;
+          margin: 0 !important;
+          list-style: none !important;
+          width: 100% !important;
+        }
+        .ficha-detail-section__body .e-n-accordion-item li {
+          margin: 0 !important;
+          background: #f1f3f5 !important;
+          color: var(--c-ink) !important;
+          font-weight: 500 !important;
+          padding: 8px 16px !important;
+          border-radius: 999px !important;
+          font-size: 13.5px !important;
+          list-style: none !important;
+          border: 1px solid var(--c-line) !important;
+        }
+      `}</style>
       <div className="wrap">
         {/* Breadcrumb idéntico al catálogo */}
         <nav className="detail-crumbs">
