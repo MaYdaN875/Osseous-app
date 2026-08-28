@@ -670,10 +670,10 @@ img { max-width: 100%; display: block; }
   }
   .site-head__top .wrap { justify-content: space-between; }
   
-  /* Use the exact dark logo with no filter, matching Netlify */
+  /* Use brightness filter to make the dark logo lighter (silver/white tone) matching Netlify */
   .site-head__logo img { 
     width: 132px; 
-    filter: none; 
+    filter: brightness(1.85); 
   }
   
   .site-head__actions {
