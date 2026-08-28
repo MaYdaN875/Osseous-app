@@ -4,7 +4,7 @@
 // arriba y las opciones en renglones abajo).
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { MAIN_NAV, SITE_LOGO } from "@/config/navigation";
+import { FOOTER_LOGO, MAIN_NAV, SITE_LOGO } from "@/config/navigation";
 import type { NavLinkItem } from "@/config/navigation";
 import { SearchOverlay } from "./SearchOverlay";
 import { useLanguage } from "@/context/LanguageContext";
@@ -30,7 +30,15 @@ function hasActiveChild(item: NavLinkItem, pathname: string): boolean {
 
 // Un elemento del menú con submenú desplegable. Se abre al pasar el mouse
 // y soporta submenús dentro de submenús (Productos > Cadera > cada prótesis).
-function NavDropdown({ item, depth = 0 }: Readonly<{ item: NavLinkItem; depth?: number }>) {
+function isMobileNav() {
+  return window.matchMedia("(max-width: 760px)").matches;
+}
+
+function NavDropdown({
+  item,
+  depth = 0,
+  onNavigate,
+}: Readonly<{ item: NavLinkItem; depth?: number; onNavigate?: () => void }>) {
   const { pathname } = useLocation();
   const { t } = useLanguage();
   const [open, setOpen] = useState(false);
@@ -43,7 +51,7 @@ function NavDropdown({ item, depth = 0 }: Readonly<{ item: NavLinkItem; depth?: 
 
   if (!hasChildren) {
     return (
-      <Link className={isActive ? "is-active" : undefined} to={item.to}>
+      <Link className={isActive ? "is-active" : undefined} to={item.to} onClick={onNavigate}>
         {t(item.labelKey)}
       </Link>
     );
@@ -52,19 +60,31 @@ function NavDropdown({ item, depth = 0 }: Readonly<{ item: NavLinkItem; depth?: 
   return (
     <div
       className={`nav-drop nav-drop--d${depth}${open ? " is-open" : ""}`}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onMouseEnter={() => { if (!isMobileNav()) setOpen(true); }}
+      onMouseLeave={() => { if (!isMobileNav()) setOpen(false); }}
     >
-      <Link className={isActive ? "is-active" : undefined} to={item.to} onClick={() => setOpen(false)}>
+      <Link
+        className={isActive ? "is-active" : undefined}
+        to={item.to}
+        onClick={(e) => {
+          if (isMobileNav()) {
+            e.preventDefault();
+            setOpen((value) => !value);
+            return;
+          }
+          setOpen(false);
+          onNavigate?.();
+        }}
+      >
         {t(item.labelKey)}
-        <span className="nav-drop__arrow">▾</span>
+        <span className="nav-drop__arrow">▼</span>
       </Link>
       <div className="nav-drop__panel">
         {item.children!.map((child) =>
           child.children?.length ? (
-            <NavDropdown key={child.labelKey} item={child} depth={depth + 1} />
+            <NavDropdown key={child.labelKey} item={child} depth={depth + 1} onNavigate={onNavigate} />
           ) : (
-            <Link key={child.labelKey} to={child.to} onClick={() => setOpen(false)}>
+            <Link key={child.labelKey} to={child.to} onClick={() => { setOpen(false); onNavigate?.(); }}>
               {t(child.labelKey)}
             </Link>
           )
@@ -130,6 +150,11 @@ export function Header() {
     setMobileMenuOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    document.body.classList.toggle("menu-open", mobileMenuOpen);
+    return () => document.body.classList.remove("menu-open");
+  }, [mobileMenuOpen]);
+
   return (
     <header className="site-head">
       <div className="site-head__top">
@@ -187,7 +212,7 @@ export function Header() {
         {/* Encabezado del menú móvil (oculto en escritorio) */}
         <div className="site-head__nav-mobile-header">
           <Link className="site-head__logo" to="/" onClick={() => setMobileMenuOpen(false)}>
-            <img src={SITE_LOGO} alt="Osseous" />
+            <img src={FOOTER_LOGO} alt="Osseous" />
             <span className="site-head__logo-tagline">Innovación, confianza y resultados.</span>
           </Link>
         </div>
@@ -195,7 +220,13 @@ export function Header() {
         <div className="wrap site-head__nav-inner">
           {MAIN_NAV.map((item) => {
             if (item.children?.length) {
-              return <NavDropdown key={item.labelKey} item={item} />;
+              return (
+                <NavDropdown
+                  key={item.labelKey}
+                  item={item}
+                  onNavigate={() => setMobileMenuOpen(false)}
+                />
+              );
             }
             // Cada enlace decide su subrayado: el catálogo tiene su propia regla,
             // "Inicio" solo se marca estando exactamente en "/", y el resto por su ruta

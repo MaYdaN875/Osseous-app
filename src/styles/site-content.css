@@ -545,16 +545,24 @@
 }
 
 @media (max-width: 760px) {
+  .site-head__nav-inner {
+    min-height: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
   .nav-drop__panel {
     position: static;
     box-shadow: none;
-    background: rgba(0, 0, 0, 0.15);
+    background: #f7f7f7;
     border-radius: 0;
   }
 
   .nav-drop__panel > a,
   .nav-drop__panel > .nav-drop > a {
-    color: #fff;
+    color: var(--c-ink);
   }
 }
 
