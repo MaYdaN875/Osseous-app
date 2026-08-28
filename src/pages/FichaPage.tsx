@@ -119,28 +119,53 @@ export function FichaPage() {
   return (
     <main className="ficha section" style={{ background: '#f7f9fa', minHeight: '100vh' }}>
       <style>{`
-        .detail__stage img {
-          max-width: 65% !important;
-          max-height: 65% !important;
+        .ficha .detail__stage {
+          background: #ffffff !important;
+          padding: 40px !important;
+          box-shadow: inset 0 2px 12px rgba(0,0,0,0.06), 0 4px 20px rgba(0,0,0,0.04) !important;
+          border: 1px solid #e0e0e0 !important;
+        }
+        .ficha .detail__stage img {
+          max-width: 75% !important;
+          max-height: 75% !important;
           object-fit: contain !important;
           filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.16)) !important;
         }
+        .ficha .detail__thumb {
+          padding: 12px !important;
+        }
+        .ficha .detail__thumb img {
+          max-width: 80% !important;
+          max-height: 80% !important;
+        }
+        .ficha-detail-section__body .e-n-accordion-item {
+          border: 1px solid var(--c-line) !important;
+          border-radius: 10px !important;
+          overflow: hidden !important;
+        }
+        .ficha-detail-section__body .e-n-accordion-item-title {
+          padding: 12px 16px !important;
+          font-weight: 600 !important;
+          cursor: pointer !important;
+          background: var(--c-soft) !important;
+          list-style: none !important;
+        }
         .ficha-detail-section__body .e-n-accordion-item > div {
-          padding-bottom: 20px !important;
+          padding-bottom: 16px !important;
         }
         .ficha-detail-section__body .e-n-accordion-item ul,
         .ficha-detail-section__body .e-n-accordion-item ol {
           display: flex !important;
           flex-wrap: wrap !important;
           gap: 10px !important;
-          padding: 20px 20px 0 20px !important;
+          padding: 16px !important;
           margin: 0 !important;
           list-style: none !important;
           width: 100% !important;
         }
         .ficha-detail-section__body .e-n-accordion-item li {
           margin: 0 !important;
-          background: #f1f3f5 !important;
+          background: #ffffff !important;
           color: var(--c-ink) !important;
           font-weight: 500 !important;
           padding: 8px 16px !important;
@@ -148,6 +173,7 @@ export function FichaPage() {
           font-size: 13.5px !important;
           list-style: none !important;
           border: 1px solid var(--c-line) !important;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
         }
       `}</style>
       <div className="wrap">
@@ -220,18 +246,75 @@ export function FichaPage() {
               </div>
             )}
 
-            {/* Secciones del producto (Medidas, etc.) */}
+            {/* Secciones del producto (Medidas, etc.) — renderizado limpio */}
             {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").length > 0 && (
-              <div className="ficha-detail-sections site-page__content elementor-kit-6" style={{marginTop: specs?.length ? '30px' : '0'}}>
-                {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").map((section: any) => (
-                  <div key={section.label} className="ficha-detail-section">
-                    <h3 className="detail__spec-title">{section.label}</h3>
-                    <div
-                      className="ficha-detail-section__body"
-                      dangerouslySetInnerHTML={{ __html: section.html }}
-                    />
-                  </div>
-                ))}
+              <div style={{marginTop: specs?.length ? '30px' : '0'}}>
+                {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").map((section: any) => {
+                  // Parsear acordeones internos (Medidas con CRCO sizes)
+                  const hasAccordion = section.html.includes('e-n-accordion-item');
+                  
+                  if (hasAccordion) {
+                    // Extraer cada item: título + lista de valores
+                    const itemRegex = /<div class="e-n-accordion-item-title-text">\s*(.*?)\s*<\/div>/gi;
+                    const listRegex = /<li>(.*?)<\/li>/gi;
+                    
+                    // Partir el HTML por cada <details> para extraer pares título-valores
+                    const detailsBlocks = section.html.split(/<details[^>]*>/i).filter((b: string) => b.includes('accordion-item-title-text'));
+                    
+                    const parsedItems: { title: string; values: string[] }[] = [];
+                    
+                    for (const block of detailsBlocks) {
+                      const titleMatch = /<div class="e-n-accordion-item-title-text">\s*(.*?)\s*<\/div>/i.exec(block);
+                      const title = titleMatch ? titleMatch[1].trim() : '';
+                      const values: string[] = [];
+                      let m;
+                      const lrx = /<li>(.*?)<\/li>/gi;
+                      while ((m = lrx.exec(block)) !== null) {
+                        values.push(m[1].replace(/<[^>]+>/g, '').trim());
+                      }
+                      if (title) parsedItems.push({ title, values });
+                    }
+                    
+                    if (parsedItems.length > 0) {
+                      return (
+                        <div key={section.label}>
+                          <h3 className="detail__spec-title">{section.label}</h3>
+                          <div className="spec-table" style={{ overflow: 'hidden' }}>
+                            {parsedItems.map((item, idx) => (
+                              <div className="spec-table__row" key={idx}>
+                                <div style={{ fontWeight: 600, whiteSpace: 'nowrap' }}>{item.title}</div>
+                                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', padding: '10px 14px' }}>
+                                  {item.values.map((v, vi) => (
+                                    <span key={vi} style={{
+                                      background: '#f5f5f5',
+                                      border: '1px solid #e0e0e0',
+                                      borderRadius: '999px',
+                                      padding: '4px 14px',
+                                      fontSize: '13px',
+                                      fontWeight: 500,
+                                      color: '#222'
+                                    }}>{v}</span>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    }
+                  }
+                  
+                  // Fallback: secciones sin acordeón, render normal
+                  return (
+                    <div key={section.label} className="ficha-detail-section">
+                      <h3 className="detail__spec-title">{section.label}</h3>
+                      <div
+                        className="ficha-detail-section__body site-page__content elementor-kit-6"
+                        dangerouslySetInnerHTML={{ __html: section.html }}
+                      />
+                    </div>
+                  );
+                })}
               </div>
             )}
 
