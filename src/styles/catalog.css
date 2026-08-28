@@ -666,14 +666,14 @@ img { max-width: 100%; display: block; }
   /* Header mobile: Logo on left, Search + Globe + Hamburger on right */
   .site-head__top { 
     padding: 14px 0; 
-    background: #333333; /* Exact match with Netlify's dark bar (same as footer) */
+    background: var(--grad); /* Exact match with Netlify's gradient */
   }
   .site-head__top .wrap { justify-content: space-between; }
   
-  /* Invert logo to light grey to match the "titulo del logo" exactly */
+  /* Use the exact dark logo with no filter, matching Netlify */
   .site-head__logo img { 
     width: 132px; 
-    filter: invert(1); 
+    filter: none; 
   }
   
   .site-head__actions {
@@ -689,8 +689,11 @@ img { max-width: 100%; display: block; }
     transform: none; 
     display: block; 
   }
-  /* Make language globe white */
+  
+  /* Make language globe white and remove its grey circle background */
+  .lang-dropdown__trigger { background: transparent !important; }
   .lang-dropdown__trigger svg { fill: #ffffff !important; }
+  .lang-dropdown__trigger i.ic.ueicon-globe { background-color: #ffffff !important; }
   
   .site-head__search {
     display: grid;
