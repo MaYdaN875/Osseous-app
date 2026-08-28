@@ -753,8 +753,8 @@ body.menu-open { overflow: hidden; }
     top: 0;
     right: 0;
     left: auto;
-    width: 82%;
-    max-width: none;
+    width: 348px;
+    max-width: 81vw;
     height: 100dvh;
     background: #ffffff;
     z-index: 1002;

@@ -13,8 +13,8 @@
   header.site-head nav.site-head__nav {
     left: auto !important;
     right: 0 !important;
-    width: 82% !important;
-    max-width: none !important;
+    width: 348px !important;
+    max-width: 81vw !important;
     transform: translateX(100%);
   }
   header.site-head nav.site-head__nav.is-mobile-open {
