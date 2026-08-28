@@ -3,7 +3,7 @@
 // no hay que tocar este archivo. En celular el CSS lo reacomoda (logo centrado
 // arriba y las opciones en renglones abajo).
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MAIN_NAV, SITE_LOGO } from "@/config/navigation";
 import type { NavLinkItem } from "@/config/navigation";
 import { SearchOverlay } from "./SearchOverlay";
@@ -121,9 +121,14 @@ export function LanguageSwitcher() {
 export function Header() {
   const { pathname } = useLocation();
   const { t } = useLanguage();
-  // El enlace "Catálogo" se subraya tanto en el catálogo como viendo un producto suyo
   const isCatalog = pathname.startsWith("/catalogo") || pathname.startsWith("/producto/");
   const [searchOpen, setSearchOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Cerrar menú al cambiar de ruta
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="site-head">
@@ -132,18 +137,20 @@ export function Header() {
           <Link className="site-head__logo" to="/" aria-label="Osseous inicio">
             <img src={SITE_LOGO} alt="Osseous" />
           </Link>
-          <button
-            type="button"
-            className="site-head__search"
-            onClick={() => setSearchOpen(true)}
-            aria-label="Buscar"
-          >
-            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-            </svg>
-          </button>
 
-          <div className="site-head__social">
+          <div className="site-head__actions">
+            <button
+              type="button"
+              className="site-head__search"
+              onClick={() => setSearchOpen(true)}
+              aria-label="Buscar"
+            >
+              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+              </svg>
+            </button>
+
+            <div className="site-head__social">
             <a href="#" aria-label="Facebook">
               <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
                 <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
@@ -160,10 +167,22 @@ export function Header() {
               </svg>
             </a>
             <LanguageSwitcher />
+            </div>
+
+            <button
+              type="button"
+              className={`site-head__hamburger ${mobileMenuOpen ? "is-open" : ""}`}
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Menú"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </div>
       </div>
-      <nav className="site-head__nav">
+      <nav className={`site-head__nav ${mobileMenuOpen ? "is-mobile-open" : ""}`}>
         <div className="wrap site-head__nav-inner">
           {MAIN_NAV.map((item) => {
             if (item.children?.length) {

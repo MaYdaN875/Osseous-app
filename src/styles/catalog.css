@@ -663,34 +663,118 @@ img { max-width: 100%; display: block; }
   .cat-card__media { height: 260px; }
 }
 @media (max-width: 760px) {
-  /* Header como el de escritorio pero compactado: logo y redes arriba,
-     y las opciones del menú visibles en filas sobre la barra oscura. */
-  .site-head__top { padding: 14px 0; }
-  .site-head__logo img { width: 132px; }
-  .site-head__social { right: 12px; gap: 8px; }
-  .site-head__social a { width: 28px; height: 28px; }
-  .site-head__social svg { width: 12px; height: 12px; }
-
-  /* Lupa del buscador a la izquierda de la barra clara */
+  /* Header mobile: Logo on left, Search + Globe + Hamburger on right */
+  .site-head__top { 
+    padding: 14px 0; 
+    background: var(--c-dark); /* Dark background matching Netlify */
+  }
+  .site-head__top .wrap { justify-content: space-between; }
+  
+  /* Invert logo to white on dark background */
+  .site-head__logo img { 
+    width: 132px; 
+    filter: invert(1) brightness(2); 
+  }
+  
+  .site-head__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  /* Hide all social links except the language dropdown */
+  .site-head__social a { display: none; }
+  .site-head__social { 
+    position: static; 
+    transform: none; 
+    display: block; 
+  }
+  /* Make language globe white */
+  .lang-dropdown__trigger svg { fill: #ffffff !important; }
+  
   .site-head__search {
     display: grid;
-    left: 10px;
+    position: static;
+    transform: none;
+    width: 28px;
+    height: 28px;
   }
-  .site-head__search svg { fill: #3a3a3a; }
+  .site-head__search svg { fill: #ffffff; width: 18px; height: 18px; }
 
-  /* Opciones en filas centradas, cómodas de tocar */
+  /* Hamburger Button */
+  .site-head__hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+  }
+  .site-head__hamburger span {
+    width: 100%;
+    height: 2px;
+    background: #ffffff; /* White hamburger lines */
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+  .site-head__hamburger.is-open span:first-child {
+    transform: rotate(45deg);
+  }
+  .site-head__hamburger.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+  .site-head__hamburger.is-open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  /* Nav menu on mobile */
+  .site-head__nav {
+    display: none;
+    background: var(--c-dark);
+  }
+  .site-head__nav.is-mobile-open {
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
   .site-head__nav .wrap {
-    min-height: 0;
-    padding: 5px 8px 9px;
-    gap: 0 2px;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 0;
   }
   .site-head__nav a {
-    padding: 9px 13px;
-    font-size: 13.5px;
+    padding: 14px 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .site-head__nav a.is-active {
+    box-shadow: none;
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+  }
+  .nav-drop__panel {
+    position: static;
+    box-shadow: none;
+    background: rgba(255,255,255,0.02);
+    border: none;
+    padding-left: 20px;
+    display: none;
+  }
+  .nav-drop.is-open .nav-drop__panel {
+    display: block;
   }
 
   .hero__content { padding: 30px 0; width: 100%; }
   .hero .wrap { justify-content: flex-start; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: none; }
 }
 @media (max-width: 540px) {
   .cat-grid { grid-template-columns: 1fr; gap: 18px; }
