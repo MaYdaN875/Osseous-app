@@ -666,14 +666,14 @@ img { max-width: 100%; display: block; }
   /* Header mobile: Logo on left, Search + Globe + Hamburger on right */
   .site-head__top { 
     padding: 14px 0; 
-    background: var(--c-dark); /* Dark background matching Netlify */
+    background: #333333; /* Exact match with Netlify's dark bar (same as footer) */
   }
   .site-head__top .wrap { justify-content: space-between; }
   
-  /* Invert logo to white on dark background */
+  /* Invert logo to light grey to match the "titulo del logo" exactly */
   .site-head__logo img { 
     width: 132px; 
-    filter: invert(1) brightness(2); 
+    filter: invert(1); 
   }
   
   .site-head__actions {
