@@ -7,6 +7,7 @@ import { useElementorStyles } from "@/lib/elementor";
 import categoriesDataEs from "@/data/osseous-products.json";
 import categoriesDataEn from "@/data/osseous-products-en.json";
 import { useLanguage } from "@/context/LanguageContext";
+import { getCategorySpecs, asset } from "@/lib/catalog";
 
 // Avisito flotante (reutilizo la misma lógica del catálogo)
 function showToast(message: string) {
@@ -50,108 +51,275 @@ export function FichaPage() {
   // Productos relacionados: otros de la misma categoría (hasta 3)
   const related = useMemo(() => {
     if (!category || !ficha) return [];
-    return category.products
-      .filter((p: any) => p.slug !== productSlug && p.images?.length > 0)
-      .slice(0, 3);
+    return category.products.filter((p: any) => p.slug !== productSlug && p.images?.length > 0).slice(0, 3);
   }, [category, ficha, productSlug]);
 
-  const parentTitle = category?.title ?? t("nav.products");
-
-  if (!ficha) {
+  if (!category || !ficha) {
     return (
       <main className="section">
         <div className="wrap">
           <p>{t("search.no_results")}</p>
           <Link className="back-link" to={`/productos/${slug}`}>
-            <span className="circle">←</span> {t("detail.back_to", { category: parentTitle })}
+            {t("detail.back_to", { category: category?.title ?? "" })}
           </Link>
         </div>
       </main>
     );
   }
 
-  const mainImage = ficha.images[active] ?? ficha.images[0];
+  // Título de categoría como SKU (ej: PRÓTESIS DE RODILLA)
+  const parentTitle = t(`categories.${category.id}`) || category.title;
+  
+  // Extraer la sección de Información
+  const infoSection = ficha.sections.find((s: any) => s.label === "Información" || s.label === "Information");
+  
+  // Generar especificaciones dinámicas a partir del texto de Información
+  const dynamicSpecs = useMemo(() => {
+    if (!infoSection) return [];
+    
+    // Extraer items de lista <li>
+    const html = infoSection.html;
+    const regex = /<li[^>]*>(.*?)<\/li>/gi;
+    let match;
+    const extracted: [string, string][] = [];
+    
+    let counter = 1;
+    while ((match = regex.exec(html)) !== null) {
+      let text = match[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      let lower = text.toLowerCase();
+      let key = "Característica " + counter;
+      
+      if (lower.includes('aleación') || lower.includes('acero') || lower.includes('titanio') || lower.includes('material')) {
+        key = "Material";
+      } else if (lower.includes('tamaño') || lower.includes('diámetro') || lower.includes('talla') || lower.includes('conicidad')) {
+        key = "Dimensiones";
+      } else if (lower.includes('tecnología') || lower.includes('precisión') || lower.includes('superficie')) {
+        key = "Fabricación";
+      } else if (lower.includes('uso') || lower.includes('aplicación') || lower.includes('indicación')) {
+        key = "Aplicación";
+      }
+      
+      extracted.push([key, text]);
+      counter++;
+    }
+    
+    return extracted;
+  }, [infoSection]);
+
+  // Texto restante de la descripción (quitando las listas que ya pasamos a la tabla)
+  const remainingDesc = useMemo(() => {
+    if (!infoSection) return null;
+    const cleaned = infoSection.html.replace(/<(ul|ol)[^>]*>.*?<\/\1>/gis, '').trim();
+    const justText = cleaned.replace(/<[^>]+>/g, '').trim();
+    return justText.length > 0 ? cleaned : null;
+  }, [infoSection]);
+
+  const specs = dynamicSpecs;
 
   return (
-    <main className="ficha section">
+    <main className="ficha section" style={{ background: '#f7f9fa', minHeight: '100vh' }}>
+      <style>{`
+        .ficha .detail__stage {
+          background: #ffffff !important;
+          padding: 40px !important;
+          box-shadow: inset 0 2px 12px rgba(0,0,0,0.06), 0 4px 20px rgba(0,0,0,0.04) !important;
+          border: 1px solid #e0e0e0 !important;
+        }
+        .ficha .detail__stage img {
+          max-width: 75% !important;
+          max-height: 75% !important;
+          object-fit: contain !important;
+          filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.16)) !important;
+        }
+        .ficha .detail__thumb {
+          padding: 12px !important;
+        }
+        .ficha .detail__thumb img {
+          max-width: 80% !important;
+          max-height: 80% !important;
+        }
+        .ficha-detail-section__body .e-n-accordion-item {
+          border: 1px solid var(--c-line) !important;
+          border-radius: 10px !important;
+          overflow: hidden !important;
+        }
+        .ficha-detail-section__body .e-n-accordion-item-title {
+          padding: 12px 16px !important;
+          font-weight: 600 !important;
+          cursor: pointer !important;
+          background: var(--c-soft) !important;
+          list-style: none !important;
+        }
+        .ficha-detail-section__body .e-n-accordion-item > div {
+          padding-bottom: 16px !important;
+        }
+        .ficha-detail-section__body .e-n-accordion-item ul,
+        .ficha-detail-section__body .e-n-accordion-item ol {
+          display: flex !important;
+          flex-wrap: wrap !important;
+          gap: 10px !important;
+          padding: 16px !important;
+          margin: 0 !important;
+          list-style: none !important;
+          width: 100% !important;
+        }
+        .ficha-detail-section__body .e-n-accordion-item li {
+          margin: 0 !important;
+          background: #ffffff !important;
+          color: var(--c-ink) !important;
+          font-weight: 500 !important;
+          padding: 8px 16px !important;
+          border-radius: 999px !important;
+          font-size: 13.5px !important;
+          list-style: none !important;
+          border: 1px solid var(--c-line) !important;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
+        }
+      `}</style>
       <div className="wrap">
-        {/* Back link — mismo estilo que catálogo */}
-        <Link className="back-link" to={`/productos/${slug}`}>
-          <span className="circle">←</span> {t("detail.back_to", { category: parentTitle })}
-        </Link>
-
-        {/* Breadcrumb — estilo catálogo con › */}
+        {/* Breadcrumb idéntico al catálogo */}
         <nav className="detail-crumbs">
           <Link to="/">{t("detail.home")}</Link>
+          <span className="sep">›</span>
+          <Link to="/productos">{t("nav.products")}</Link>
           <span className="sep">›</span>
           <Link to={`/productos/${slug}`}>{parentTitle}</Link>
           <span className="sep">›</span>
           <span className="current">{ficha.title}</span>
         </nav>
 
-        {/* Grid principal: galería + info — misma estructura que ProductPage */}
         <div className="detail">
+          {/* Columna Izquierda: Galería */}
           <div className="detail__gallery">
-            {/* Imagen principal grande */}
             <div className="detail__stage">
-              {mainImage ? (
-                <img id="gallery-main" src={mainImage} alt={ficha.title} />
-              ) : null}
+              <img src={asset(ficha.images[active])} alt={ficha.title} />
             </div>
-            {/* Miniaturas en grid de 4 columnas */}
             {ficha.images.length > 1 && (
               <div className="detail__thumbs">
-                {ficha.images.map((src: string, i: number) => (
+                {ficha.images.map((img: string, i: number) => (
                   <button
-                    key={src}
+                    key={i}
                     type="button"
-                    className={`detail__thumb${i === active ? " is-active" : ""}`}
+                    className={`detail__thumb ${i === active ? "is-active" : ""}`}
                     onClick={() => setActive(i)}
-                    aria-label={`Ver imagen ${i + 1}`}
                   >
-                    <img src={src} alt={`${ficha.title} ${i + 1}`} loading="lazy" />
+                    <img src={asset(img)} alt={`Thumb ${i}`} />
                   </button>
                 ))}
               </div>
             )}
           </div>
 
+          {/* Columna Derecha: Info */}
           <div className="detail__info">
-            {/* Badge de categoría (como el SKU del catálogo) */}
             <div>
               <span className="detail__sku">{parentTitle.toUpperCase()}</span>
               <h1 className="detail__title">{ficha.title}</h1>
+              {remainingDesc ? (
+                <div 
+                  className="detail__desc ficha-desc-override"
+                  dangerouslySetInnerHTML={{ __html: remainingDesc }} 
+                />
+              ) : (
+                <div className="detail__desc ficha-desc-override" style={{ color: "var(--c-text)", lineHeight: "1.5" }}>
+                  <p>Producto especializado de la línea <strong>{t(parentTitle)}</strong> de Osseous, diseñado para ofrecer los más altos estándares de calidad y precisión en cirugía ortopédica.</p>
+                </div>
+              )}
             </div>
 
-            {/* Chips de certificación — mismo que catálogo */}
-            <div className="detail__chips">
-              <span className="chip">ISO 13485</span>
-              <span className="chip">FDA Approved</span>
-              <span className="chip">CE Mark</span>
-            </div>
+
 
             <hr />
 
-            {/* Secciones del producto (Información, Medidas, etc.) */}
-            {ficha.sections.length > 0 ? (
-              <div className="ficha-detail-sections site-page__content elementor-kit-6">
-                {ficha.sections.map((section: any) => (
-                  <div key={section.label} className="ficha-detail-section">
-                    <h3 className="detail__spec-title">{section.label}</h3>
-                    <div
-                      className="ficha-detail-section__body"
-                      dangerouslySetInnerHTML={{ __html: section.html }}
-                    />
-                  </div>
-                ))}
+            {/* Especificaciones Técnicas dinámicas extraídas del texto del producto */}
+            {specs && specs.length > 0 && (
+              <div>
+                <h3 className="detail__spec-title">{t("catalog.specs")}</h3>
+                <div className="spec-table">
+                  {specs.map(([k, v], idx) => (
+                    <div className="spec-table__row" key={idx}>
+                      <div>{k}</div>
+                      <div>{v}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ) : (
-              <p className="detail__desc">
-                {t("detail.empty_info")}
-              </p>
             )}
 
-            {/* Botones de acción — misma estructura que catálogo */}
+            {/* Secciones del producto (Medidas, etc.) — renderizado limpio */}
+            {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").length > 0 && (
+              <div style={{marginTop: specs?.length ? '30px' : '0'}}>
+                {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").map((section: any) => {
+                  // Parsear acordeones internos (Medidas con CRCO sizes)
+                  const hasAccordion = section.html.includes('e-n-accordion-item');
+                  
+                  if (hasAccordion) {
+                    // Extraer cada item: título + lista de valores
+                    const itemRegex = /<div class="e-n-accordion-item-title-text">\s*(.*?)\s*<\/div>/gi;
+                    const listRegex = /<li>(.*?)<\/li>/gi;
+                    
+                    // Partir el HTML por cada <details> para extraer pares título-valores
+                    const detailsBlocks = section.html.split(/<details[^>]*>/i).filter((b: string) => b.includes('accordion-item-title-text'));
+                    
+                    const parsedItems: { title: string; values: string[] }[] = [];
+                    
+                    for (const block of detailsBlocks) {
+                      const titleMatch = /<div class="e-n-accordion-item-title-text">\s*(.*?)\s*<\/div>/i.exec(block);
+                      const title = titleMatch ? titleMatch[1].trim() : '';
+                      const values: string[] = [];
+                      let m;
+                      const lrx = /<li>(.*?)<\/li>/gi;
+                      while ((m = lrx.exec(block)) !== null) {
+                        values.push(m[1].replace(/<[^>]+>/g, '').trim());
+                      }
+                      if (title) parsedItems.push({ title, values });
+                    }
+                    
+                    if (parsedItems.length > 0) {
+                      return (
+                        <div key={section.label}>
+                          <h3 className="detail__spec-title">{section.label}</h3>
+                          <div className="spec-table" style={{ overflow: 'hidden' }}>
+                            {parsedItems.map((item, idx) => (
+                              <div className="spec-table__row" key={idx}>
+                                <div style={{ fontWeight: 600, whiteSpace: 'nowrap' }}>{item.title}</div>
+                                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', padding: '10px 14px' }}>
+                                  {item.values.map((v, vi) => (
+                                    <span key={vi} style={{
+                                      background: '#f5f5f5',
+                                      border: '1px solid #e0e0e0',
+                                      borderRadius: '999px',
+                                      padding: '4px 14px',
+                                      fontSize: '13px',
+                                      fontWeight: 500,
+                                      color: '#222'
+                                    }}>{v}</span>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    }
+                  }
+                  
+                  // Fallback: secciones sin acordeón, render normal
+                  return (
+                    <div key={section.label} className="ficha-detail-section">
+                      <h3 className="detail__spec-title">{section.label}</h3>
+                      <div
+                        className="ficha-detail-section__body site-page__content elementor-kit-6"
+                        dangerouslySetInnerHTML={{ __html: section.html }}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+
+            {/* Botones de acción */}
             <div className="detail__actions">
               <button
                 type="button"
@@ -161,18 +329,18 @@ export function FichaPage() {
                 {t("detail.availability")}
               </button>
               <div className="detail__actions-row">
-                <Link className="btn-secondary" to={`/productos/${slug}`}>
-                  {t("detail.more_products")}
-                </Link>
-                <Link className="btn-secondary" to="/contacto">
-                  {t("nav.contact")}
-                </Link>
+                <button type="button" className="btn-secondary" onClick={() => showToast(t("catalog.pdf_toast"))}>
+                  {t("catalog.pdf_btn")}
+                </button>
+                <button type="button" className="btn-secondary" onClick={() => showToast(t("catalog.3d_toast"))}>
+                  {t("catalog.3d_btn")}
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Productos relacionados — misma sección que catálogo */}
+        {/* Productos relacionados */}
         {related.length > 0 && (
           <section className="related">
             <h2 className="related__title">{t("catalog.compatible")}</h2>

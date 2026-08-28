@@ -354,12 +354,19 @@
   margin-bottom: 8px;
 }
 
+/* Grid para los acordeones anidados para que no ocupen tanta altura */
+.ficha-detail-section__body .e-n-accordion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
 /* Acordeones anidados (p.ej. Medidas) — misma estética que antes */
 .ficha-detail-section__body .e-n-accordion-item {
   border: 1px solid var(--c-line);
   border-radius: 10px;
-  margin-bottom: 8px;
   overflow: hidden;
+  margin: 0 !important; /* overrides previous margin-bottom */
 }
 
 .ficha-detail-section__body .e-n-accordion-item-title {
@@ -368,6 +375,31 @@
   cursor: pointer;
   background: var(--c-soft);
   list-style: none;
+}
+
+/* Modificar el interior del acordeón para que las listas se muestren en línea (píldoras)
+   y no ocupen mucho espacio vertical. */
+.ficha-detail-section__body .e-n-accordion-item ul,
+.ficha-detail-section__body .e-n-accordion-item ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px !important;
+  margin: 0 !important;
+  list-style: none !important;
+  width: 100%;
+}
+
+.ficha-detail-section__body .e-n-accordion-item li {
+  margin: 0 !important;
+  background: #f1f3f5;
+  color: var(--c-ink);
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  list-style: none !important;
+  border: 1px solid var(--c-line);
 }
 
 /* Los botones secundarios (Links) dentro de detail__actions necesitan
@@ -650,3 +682,8 @@
 }
 
 
+
+/* Fondo para que las cajas blancas destaquen */
+.site-page {
+  background: #f7f9fa;
+}

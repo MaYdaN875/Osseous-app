@@ -249,7 +249,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
 }
 .detail__stage img {
-  max-width: 100%; max-height: 100%;
+  max-width: 65% !important; max-height: 65% !important;
   object-fit: contain;
   filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.16));
   transition: transform 0.6s var(--ease);
@@ -333,7 +333,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
-.spec-table__row { display: grid; grid-template-columns: 1fr 1.4fr; border-bottom: 1px solid var(--c-line); }
+.spec-table__row { display: grid; grid-template-columns: 1fr 2.5fr; border-bottom: 1px solid var(--c-line); }
 .spec-table__row:last-child { border-bottom: 0; }
 .spec-table__row:nth-child(odd) { background: var(--c-soft); }
 .spec-table__row > div { padding: 12px 14px; font-size: 14px; }
