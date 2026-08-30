@@ -671,6 +671,11 @@ body.menu-open { overflow: hidden; }
   .cat-card__media { height: 260px; }
 }
 @media (max-width: 760px) {
+  .site-head {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
   .site-head__top {
     padding: 14px 0;
     background: var(--grad);

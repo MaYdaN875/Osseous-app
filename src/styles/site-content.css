@@ -632,15 +632,16 @@
   min-width: 120px;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transform: translateY(10px);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Hover or open class triggers menu visibility */
-.lang-dropdown.is-open .lang-dropdown__menu,
-.lang-dropdown:hover .lang-dropdown__menu {
+/* Open class triggers menu visibility */
+.lang-dropdown.is-open .lang-dropdown__menu {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
   transform: translateY(0);
 }
 

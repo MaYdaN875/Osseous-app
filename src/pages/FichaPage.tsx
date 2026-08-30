@@ -7,7 +7,7 @@ import { useElementorStyles } from "@/lib/elementor";
 import categoriesDataEs from "@/data/osseous-products.json";
 import categoriesDataEn from "@/data/osseous-products-en.json";
 import { useLanguage } from "@/context/LanguageContext";
-import { getCategorySpecs, asset } from "@/lib/catalog";
+import { asset } from "@/lib/catalog";
 
 // Avisito flotante (reutilizo la misma lógica del catálogo)
 function showToast(message: string) {
@@ -254,10 +254,6 @@ export function FichaPage() {
                   const hasAccordion = section.html.includes('e-n-accordion-item');
                   
                   if (hasAccordion) {
-                    // Extraer cada item: título + lista de valores
-                    const itemRegex = /<div class="e-n-accordion-item-title-text">\s*(.*?)\s*<\/div>/gi;
-                    const listRegex = /<li>(.*?)<\/li>/gi;
-                    
                     // Partir el HTML por cada <details> para extraer pares título-valores
                     const detailsBlocks = section.html.split(/<details[^>]*>/i).filter((b: string) => b.includes('accordion-item-title-text'));
                     

@@ -10,6 +10,11 @@
 /* Menú móvil: estas reglas van al final para que ganen a Elementor y queden
    iguales a Netlify (panel delgado, sale por la derecha, lista pegada al header). */
 @media (max-width: 760px) {
+  header.site-head {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+  }
   header.site-head nav.site-head__nav {
     left: auto !important;
     right: 0 !important;
