@@ -549,8 +549,13 @@
     min-height: 0;
     justify-content: flex-start;
     align-items: stretch;
+    flex-direction: column;
     flex-wrap: nowrap;
+    overflow-y: auto;
+    overflow-x: hidden;
     gap: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .nav-drop__panel {

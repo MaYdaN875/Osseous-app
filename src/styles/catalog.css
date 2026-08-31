@@ -761,6 +761,9 @@ body.menu-open { overflow: hidden; }
     width: 348px;
     max-width: 81vw;
     height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+    overflow-x: hidden;
     background: #ffffff;
     z-index: 1002;
     transform: translateX(100%);
@@ -805,16 +808,19 @@ body.menu-open { overflow: hidden; }
   .site-head__nav .site-head__nav-inner {
     display: flex !important;
     flex-direction: column !important;
+    flex-wrap: nowrap !important;
     justify-content: flex-start !important;
     align-items: stretch !important;
     padding: 0 !important;
     margin: 0 !important;
     gap: 0 !important;
     overflow-y: auto;
-    flex: 0 1 auto;
+    overflow-x: hidden;
+    flex: 1 1 auto;
     width: 100%;
     max-width: none !important;
     min-height: 0 !important;
+    box-sizing: border-box !important;
   }
 
   .site-head__nav .site-head__nav-inner > a,
