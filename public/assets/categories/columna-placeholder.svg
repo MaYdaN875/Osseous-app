@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350" width="350" height="350">
+  <defs>
+    <radialGradient id="spineBg" cx="50%" cy="50%" r="50%" fx="35%" fy="35%">
+      <stop offset="0%" stop-color="#3a3a3a" />
+      <stop offset="60%" stop-color="#181818" />
+      <stop offset="100%" stop-color="#080808" />
+    </radialGradient>
+    <linearGradient id="spineGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#a0a0a0" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+  <!-- Circle background -->
+  <circle cx="175" cy="175" r="165" fill="url(#spineBg)" />
+  
+  <!-- Stylized Spine Illustration -->
+  <g transform="translate(175, 175) scale(0.62)" stroke="url(#spineGlow)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Vertebra 1 (Top) -->
+    <path d="M-30 -140 C-15 -155, 15 -155, 30 -140 C45 -125, 35 -115, 0 -115 C-35 -115, -45 -125, -30 -140 Z" fill="#ffffff" fill-opacity="0.15" stroke-width="6" />
+    <path d="M-60 -130 Q-30 -130 0 -115 Q30 -130 60 -130" stroke-width="5" />
+    
+    <!-- Vertebra 2 -->
+    <path d="M-34 -95 C-18 -110, 18 -110, 34 -95 C50 -80, 40 -70, 0 -70 C-40 -70, -50 -80, -34 -95 Z" fill="#ffffff" fill-opacity="0.2" stroke-width="6" />
+    <path d="M-70 -85 Q-35 -85 0 -70 Q35 -85 70 -85" stroke-width="5" />
+    
+    <!-- Vertebra 3 -->
+    <path d="M-38 -50 C-20 -65, 20 -65, 38 -50 C55 -35, 45 -25, 0 -25 C-45 -25, -55 -35, -38 -50 Z" fill="#ffffff" fill-opacity="0.25" stroke-width="6" />
+    <path d="M-78 -40 Q-40 -40 0 -25 Q40 -40 78 -40" stroke-width="5.5" />
+    
+    <!-- Vertebra 4 (Center) -->
+    <path d="M-42 -5 C-22 -20, 22 -20, 42 -5 C60 10, 50 20, 0 20 C-50 20, -60 10, -42 -5 Z" fill="#ffffff" fill-opacity="0.3" stroke-width="6.5" />
+    <path d="M-85 5 Q-45 5 0 20 Q45 5 85 5" stroke-width="6" />
+    
+    <!-- Vertebra 5 -->
+    <path d="M-45 40 C-25 25, 25 25, 45 40 C65 55, 55 65, 0 65 C-55 65, -65 55, -45 40 Z" fill="#ffffff" fill-opacity="0.25" stroke-width="6" />
+    <path d="M-80 50 Q-40 50 0 65 Q40 50 80 50" stroke-width="5.5" />
+    
+    <!-- Vertebra 6 -->
+    <path d="M-40 85 C-20 70, 20 70, 40 85 C58 100, 48 110, 0 110 C-48 110, -58 100, -40 85 Z" fill="#ffffff" fill-opacity="0.2" stroke-width="6" />
+    <path d="M-70 95 Q-35 95 0 110 Q35 95 70 95" stroke-width="5" />
+    
+    <!-- Sacrum / Base -->
+    <path d="M-30 125 C-15 115, 15 115, 30 125 C40 145, 20 160, 0 165 C-20 160, -40 145, -30 125 Z" fill="#ffffff" fill-opacity="0.15" stroke-width="5" />
+    
+    <!-- Central spinal cord beam -->
+    <line x1="0" y1="-150" x2="0" y2="165" stroke="#ffffff" stroke-width="4" stroke-dasharray="4,6" opacity="0.6" />
+  </g>
+</svg>

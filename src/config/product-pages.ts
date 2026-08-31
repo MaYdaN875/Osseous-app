@@ -6,6 +6,7 @@ export const PRODUCT_PAGE_TITLES: Record<string, string> = {
   "protesis-de-cadera": "Prótesis de Cadera",
   "protesis-de-hombro": "Prótesis de Hombro",
   "instrumental-quirurgico": "Instrumental Quirúrgico",
+  "cirugia-de-columna": "Cirugía de Columna",
 };
 
 // ¿Esta página es un listado de productos?

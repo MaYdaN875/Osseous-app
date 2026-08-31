@@ -25,6 +25,7 @@ export const MAIN_NAV: NavLinkItem[] = [
       { label: "Prótesis de Cadera", labelKey: "cat.hip", to: "/productos/protesis-de-cadera" },
       { label: "Prótesis de Hombro", labelKey: "cat.shoulder", to: "/productos/protesis-de-hombro" },
       { label: "Prótesis de Rodilla", labelKey: "cat.knee", to: "/productos/reemplazo-de-rodilla" },
+      { label: "Cirugía de Columna", labelKey: "cat.spine", to: "/productos/cirugia-de-columna" },
     ],
   },
   { label: "Catálogo", labelKey: "nav.catalog", to: "/catalogo", highlight: "catalog" },

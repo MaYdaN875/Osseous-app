@@ -692,5 +692,12 @@
         ]
       }
     ]
+  },
+  {
+    "id": "cirugia-de-columna",
+    "title": "Cirugía de Columna",
+    "description": "Soluciones e implantes de alta precisión para procedimientos quirúrgicos, fijación y reconstrucción de la columna vertebral.",
+    "image": "/assets/categories/columna-placeholder.svg",
+    "products": []
   }
 ]

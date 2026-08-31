@@ -1574,5 +1574,12 @@
         ]
       }
     ]
+  },
+  {
+    "id": "cirugia-de-columna",
+    "title": "Spine Surgery",
+    "description": "High-precision solutions and implants for surgical procedures, fixation, and spine reconstruction.",
+    "image": "/assets/categories/columna-placeholder.svg",
+    "products": []
   }
 ]
