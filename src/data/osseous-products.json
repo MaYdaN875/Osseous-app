@@ -117,6 +117,90 @@
             "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1740\" class=\"elementor-element elementor-element-2bef1c00 e-con-full e-flex e-con e-child\" data-id=\"2bef1c00\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1740\" class=\"elementor-element elementor-element-712ca211 e-flex e-con-boxed e-con e-child\" data-id=\"712ca211\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6d1a8f29 elementor-widget elementor-widget-text-editor\" data-id=\"6d1a8f29\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <p>Los implantes de tamaño común difieren solo en 1 mm, lo que puede satisfacer mejor las necesidades de los pacientes.</p><p>El tamaño del implante es denso y casi personalizado. Los tamaños AP y ML en el tamaño del implante no están distribuidos de manera uniforme para satisfacer las necesidades de los pacientes.</p> </div> </div> </div> </div> </div>"
           }
         ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-protesis-de-articulacion-de-rodilla-nuevo-tipo-axial",
+        "slug": "protesis-de-articulacion-de-rodilla-nuevo-tipo-axial",
+        "title": "Prótesis de articulación de rodilla (Nuevo tipo axial)",
+        "images": [
+          "/assets/products/22ba3749abe2b6b875929fcd44ad375a.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Diseño axial avanzado para una cinemática articular natural y óptima estabilidad rotacional.</li><li>Fabricado en aleación biocompatible de alta resistencia (Co-Cr-Mo / Ti) para máxima durabilidad.</li><li>Estructura optimizada que promueve la preservación ósea y una fijación segura.</li><li>Amplia gama de tamaños y ajustes anatómicos para satisfacer las necesidades clínicas individuales.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-plantilla-de-moldeado-de-cemento-oseo-para-rodilla",
+        "slug": "plantilla-de-moldeado-de-cemento-oseo-para-rodilla",
+        "title": "Plantilla de moldeado de cemento óseo para rodilla",
+        "images": [
+          "/assets/products/8e5cca9b3612fb74af9c646db449303a.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Diseño ergonómico y preciso para el moldeo uniforme y exacto de cemento óseo en procedimientos de rodilla.</li><li>Facilita la creación de espaciadores de cemento con geometría anatómica consistente.</li><li>Material antiadherente de grado médico que asegura un desmoldeo limpio y eficiente.</li><li>Múltiples opciones de dimensiones para adaptarse a diferentes morfologías de pacientes.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-protesis-modular-de-rodilla",
+        "slug": "protesis-modular-de-rodilla",
+        "title": "Prótesis modular de rodilla",
+        "images": [
+          "/assets/products/81b59d02bad56aba7cbd8cb98e1c8439.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Sistema modular flexible diseñado para reconstrucciones complejas y cirugías de revisión de rodilla.</li><li>Múltiples opciones de vástagos, aumentos y conos metafisarios para adaptarse a diferentes grados de pérdida ósea.</li><li>Excelente estabilidad mecánica y distribución de cargas fisiológicas.</li><li>Fijación segura que reduce el micromovimiento y optimiza la osteointegración.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-protesis-unicompartimental-de-rodilla",
+        "slug": "protesis-unicompartimental-de-rodilla",
+        "title": "Prótesis unicompartimental de rodilla",
+        "images": [
+          "/assets/products/456bc070c7c903553fea94c298b94999.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Solución mínimamente invasiva para la artrosis unicompartimental medial o lateral de rodilla.</li><li>Preserva los ligamentos cruzados y el compartimento sano, permitiendo una recuperación rápida y movilidad natural.</li><li>Superficie de deslizamiento de ultra bajo desgaste y fijación ósea de alta precisión.</li><li>Diseño anatómico con excelente congruencia articular y mínima resección ósea.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-protesis-total-de-rodilla-de-tipo-biologico",
+        "slug": "protesis-total-de-rodilla-de-tipo-biologico",
+        "title": "Prótesis total de rodilla de tipo biológico",
+        "images": [
+          "/assets/products/c21f19fcbadf206f4a2a8f0b22f38ef5.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Recubrimiento poroso trabecular biológico que facilita la osteointegración y fijación biológica sin cemento.</li><li>Diseño anatómico que reproduce el movimiento natural de flexión y rotación de la articulación de la rodilla.</li><li>Alta biocompatibilidad y excelente estabilidad a largo plazo para pacientes activos.</li><li>Distribución homogénea de tensiones para minimizar el apantallamiento de tensiones (stress shielding).</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-espaciador-de-articulacion-de-rodilla",
+        "slug": "espaciador-de-articulacion-de-rodilla",
+        "title": "Espaciador de articulación de rodilla",
+        "images": [
+          "/assets/products/8383949875d5352547eef6b3592df183.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Espaciador articular temporal con liberación controlada de antibióticos para el tratamiento de infecciones protésicas de rodilla en dos tiempos.</li><li>Mantiene la longitud articular, el rango de movimiento y la tensión de los tejidos blandos durante el periodo de tratamiento.</li><li>Estructura resistente que permite una carga parcial controlada.</li><li>Diseño preformado que reduce el tiempo quirúrgico y facilita el procedimiento de reimplante.</li></ol></div></div></div>"
+          }
+        ]
       }
     ]
   },

@@ -313,6 +313,90 @@
             "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1440\" class=\"elementor-element elementor-element-19a9bff2 e-con-full e-flex e-con e-child\" data-id=\"19a9bff2\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1440\" class=\"elementor-element elementor-element-65db853e e-flex e-con-boxed e-con e-child\" data-id=\"65db853e\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-9b9011 elementor-widget elementor-widget-text-editor\" data-id=\"9b9011\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Safety: the depth limit sleeve adjusts the depth to avoid damaging the neurovascular bundle, making<br>makes it safer and more reliable.</li><li>Minimally invasive: the fixed bar is small and is used in conjunction with a 2-0 ultra-high-strength suture<br># to reduce damage to the meniscus.</li><li>Convenience: 360° actively-activated one-handed fixed bar, controlling the insertion timing, making it more convenient.</li><li>Multiple options: designed with 12° anterior/posterior curves and straight angles, providing more options.</li><li>Comfort: based on ergonomic principles, the handle surface is designed to be non-slip, making it<br>makes it more comfortable during operation.</li></ol> </div> </div> </div> </div> </div>"
           }
         ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-protesis-de-articulacion-de-rodilla-nuevo-tipo-axial",
+        "slug": "protesis-de-articulacion-de-rodilla-nuevo-tipo-axial",
+        "title": "Knee Joint Prosthesis (New Axial Type)",
+        "images": [
+          "/assets/products/22ba3749abe2b6b875929fcd44ad375a.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Advanced axial design for natural joint kinematics and optimal rotational stability.</li><li>Manufactured from high-strength biocompatible alloy (Co-Cr-Mo / Ti) for maximum durability.</li><li>Optimized structure promoting bone preservation and secure fixation.</li><li>Wide range of sizes and anatomical adjustments to meet individual clinical needs.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-plantilla-de-moldeado-de-cemento-oseo-para-rodilla",
+        "slug": "plantilla-de-moldeado-de-cemento-oseo-para-rodilla",
+        "title": "Knee Joint Bone Cement Molding Template",
+        "images": [
+          "/assets/products/8e5cca9b3612fb74af9c646db449303a.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Ergonomic and precise design for uniform, accurate bone cement molding in knee procedures.</li><li>Facilitates the creation of cement spacers with consistent anatomical geometry.</li><li>Medical-grade non-stick material ensuring clean and efficient demolding.</li><li>Multiple sizing options to accommodate diverse patient morphologies.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-protesis-modular-de-rodilla",
+        "slug": "protesis-modular-de-rodilla",
+        "title": "Modular Knee Prosthesis",
+        "images": [
+          "/assets/products/81b59d02bad56aba7cbd8cb98e1c8439.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Flexible modular system designed for complex reconstructions and knee revision surgeries.</li><li>Multiple options of stems, augments, and metaphyseal cones to address varying degrees of bone loss.</li><li>Excellent mechanical stability and physiological load distribution.</li><li>Secure locking mechanism reducing micromotion and optimizing osseointegration.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-protesis-unicompartimental-de-rodilla",
+        "slug": "protesis-unicompartimental-de-rodilla",
+        "title": "Unicompartmental Knee Prosthesis",
+        "images": [
+          "/assets/products/456bc070c7c903553fea94c298b94999.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Minimally invasive solution for medial or lateral unicompartmental knee osteoarthritis.</li><li>Preserves cruciate ligaments and healthy compartment, enabling faster recovery and natural knee kinematics.</li><li>Ultra-low wear bearing surface and high-precision bone fixation.</li><li>Anatomical profile ensuring excellent congruency and minimal bone resection.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-protesis-total-de-rodilla-de-tipo-biologico",
+        "slug": "protesis-total-de-rodilla-de-tipo-biologico",
+        "title": "Biological-type Total Knee Prosthesis",
+        "images": [
+          "/assets/products/c21f19fcbadf206f4a2a8f0b22f38ef5.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Biological porous trabecular coating facilitating cementless osseointegration and biological fixation.</li><li>Anatomical design replicating natural flexion and rotational kinematics of the knee joint.</li><li>High biocompatibility and exceptional long-term stability for active patients.</li><li>Homogeneous stress distribution to minimize stress shielding.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "reemplazo-de-rodilla-espaciador-de-articulacion-de-rodilla",
+        "slug": "espaciador-de-articulacion-de-rodilla",
+        "title": "Knee Joint Spacer",
+        "images": [
+          "/assets/products/8383949875d5352547eef6b3592df183.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Temporary articulating spacer with controlled antibiotic release for two-stage knee periprosthetic joint infection treatment.</li><li>Maintains joint space, range of motion, and soft tissue tension throughout the treatment period.</li><li>Robust structure allowing controlled partial weight-bearing.</li><li>Preformed design reducing operative time and facilitating the reimplantation procedure.</li></ol></div></div></div>"
+          }
+        ]
       }
     ]
   },
