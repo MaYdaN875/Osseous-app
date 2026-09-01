@@ -1320,6 +1320,90 @@
             "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1530\" class=\"elementor-element elementor-element-3276acd2 e-con-full e-flex e-con e-child\" data-id=\"3276acd2\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1530\" class=\"elementor-element elementor-element-78c59b04 e-flex e-con-boxed e-con e-child\" data-id=\"78c59b04\" data-element_type=\"container\"> <div class=\"e-con-inner\"> </div> </div> </div>"
           }
         ]
+      },
+      {
+        "id": "protesis-de-cadera-copa-acetabular-de-metal-trabecular-g40",
+        "slug": "copa-acetabular-de-metal-trabecular-g40",
+        "title": "Hip Prosthesis - Trabecular Metal Acetabular Cup (G40)",
+        "images": [
+          "/assets/products/7387b1340d1448bb0654d209459eae55.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Biomimetic trabecular metal structure providing superior osseointegration and high initial scratch fit.</li><li>G40 cup configuration optimized for secure press-fit fixation in revision and complex acetabular defect cases.</li><li>Multiple screw holes allowing versatile supplemental screw fixation.</li><li>Fully compatible with ultra-high molecular weight polyethylene (UHMWPE) and ceramic liners.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-copa-acetabular-de-metal-trabecular-g20",
+        "slug": "copa-acetabular-de-metal-trabecular-g20",
+        "title": "Hip Prosthesis - Trabecular Metal Acetabular Cup (G20)",
+        "images": [
+          "/assets/products/9cd407cbdf6300742e8cc87c9e84b30b.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Porous trabecular architecture mimicking human cancellous bone structure.</li><li>G20 configuration featuring three polar screw holes for primary arthroplasty and maximum bone stock preservation.</li><li>High friction coefficient surface eliminating immediate postoperative micro-motion.</li><li>Precision taper interface accommodating multiple joint bearing liners.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-protesis-modular-de-cadera",
+        "slug": "protesis-modular-de-cadera",
+        "title": "Modular Hip Prosthesis",
+        "images": [
+          "/assets/products/8d1f22e975484d0eb604d61e067ac9e7.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Modular femoral system engineered for complex hip reconstructions, severe bone defects, and revision surgery.</li><li>Allows independent adjustment of femoral anteversion, leg length, and biomechanical offset.</li><li>Proximal body with biological coating and rotational stability splines.</li><li>Distal fluted tapered stems crafted from high-strength titanium alloy.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-protesis-de-cadera-vastago-femoral-trabecular",
+        "slug": "protesis-de-cadera-vastago-femoral-trabecular",
+        "title": "Hip Prosthesis - Trabecular Femoral Stem",
+        "images": [
+          "/assets/products/ed82aeefa98babaf4185a95b6451ed8b.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Proximal metaphyseal zone featuring trabecular metal technology for accelerated biological bone ingrowth.</li><li>Straight tapered wedge geometry ensuring outstanding axial and rotational primary stability.</li><li>Distal longitudinal grooves minimizing stiffness and reducing stress shielding.</li><li>Standard 12/14 taper compatible with metal and ceramic femoral heads.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-componente-para-protesis-de-articulacion-de-cadera",
+        "slug": "componente-para-protesis-de-articulacion-de-cadera",
+        "title": "Hip Joint Prosthesis Component",
+        "images": [
+          "/assets/products/d94807021a869ff0a206ee694e60402c.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Uncemented anatomical femoral component manufactured from medical-grade titanium alloy.</li><li>Porous micro-textured surface treatment stimulating natural osteoblast migration and bone growth.</li><li>Anatomical proximal contour respecting physiological femoral geometry.</li><li>Proven long-term clinical performance in primary total hip arthroplasty.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-molde-para-moldeado-de-cemento-oseo-de-articulacion-de-cadera",
+        "slug": "molde-para-moldeado-de-cemento-oseo-de-articulacion-de-cadera",
+        "title": "Hip Joint Bone Cement Molding Mold",
+        "images": [
+          "/assets/products/8608c2020ed3095c1a61651d7f4e6ff8.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Specialized non-stick medical grade silicone mold for intraoperative molding of temporary PMMA bone cement hip spacers.</li><li>Preserves limb length, soft tissue tension, and joint space during two-stage management of periprosthetic joint infections.</li><li>Facilitates homogeneous antibiotic incorporation into bone cement with easy release.</li><li>Available in multiple head diameters and stem lengths to match patient anatomy.</li></ol></div></div></div>"
+          }
+        ]
       }
     ]
   },
@@ -1580,6 +1664,273 @@
     "title": "Spine Surgery",
     "description": "High-precision solutions and implants for surgical procedures, fixation, and spine reconstruction.",
     "image": "/assets/categories/columna-placeholder.svg",
-    "products": []
+    "products": [
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-intersomatica-de-tantalio-poroso-cvd",
+        "slug": "caja-de-fusion-intersomatica-de-tantalio-poroso-cvd",
+        "title": "Porous Tantalum Interbody Fusion Cage (CVD)",
+        "images": [
+          "/assets/products/45565580a82460e0776d7d3c228baf60.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Biomimetic porous tantalum structure manufactured via Chemical Vapor Deposition (CVD) with high interconnected porosity (75-85%).</li><li>Modulus of elasticity matching cancellous bone to prevent stress shielding and subsidence.</li><li>High coefficient of friction providing exceptional immediate primary stability.</li><li>Promotes rapid cell adhesion, extensive vascularization, and long-term osseointegration.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-placas-de-fijacion-de-lamina-espinal-impresion-3d",
+        "slug": "sistema-de-placas-de-fijacion-de-lamina-espinal-impresion-3d",
+        "title": "Spinal Lamina Fixation Plate System (3D Printing)",
+        "images": [
+          "/assets/products/67368e0e3883297ca677f4c517c3c697.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Designed via 3D additive manufacturing in medical-grade titanium alloy for expansive cervical laminoplasty.</li><li>Optimized anatomical geometry providing rigid reconstruction of the decompressed spinal canal.</li><li>Porous structure at bone interface zones promoting biological fusion with the lamina and lateral mass.</li><li>Ultra-low profile with angled screw holes for rigid self-tapping screw fixation.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-intersomatica-autoestabilizable",
+        "slug": "caja-de-fusion-intersomatica-autoestabilizable",
+        "title": "Self-Stabilizing Interbody Fusion Cage",
+        "images": [
+          "/assets/products/92cda4ac16644bf352f0947158a8dc22.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Integrated anchoring system with fixation screws/blades eliminating the mandatory need for anterior plates.</li><li>Zero-profile design to prevent soft tissue irritation and postoperative dysphagia in cervical approaches.</li><li>Large central grafting window to maximize bone graft volume and accelerate interbody fusion.</li><li>Anti-migration teeth on superior and inferior surfaces to prevent cage expulsion.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-cable-de-titanio-espinal",
+        "slug": "cable-de-titanio-espinal",
+        "title": "Spinal Titanium Cable",
+        "images": [
+          "/assets/products/fc29d5930944ab5b249b432862694873.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>High-strength titanium braid providing exceptional fatigue resistance and optimal flexibility for sublaminar/subtrochanteric cerclage.</li><li>Secure crimping and locking mechanism maintaining continuous tension without loosening.</li><li>Compatible with complex spinal segment stabilization and reconstructive osteotomies.</li><li>Superior biocompatibility and corrosion resistance under dynamic biomechanical loads.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-implante-de-apofisis-espinosa-de-no-fusion",
+        "slug": "implante-de-apofisis-espinosa-de-no-fusion",
+        "title": "Non-Fusion Spinous Process Implant",
+        "images": [
+          "/assets/products/f6af8d1dfb8e2ff87973b4b84fb64122.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Dynamic interspinous device designed for indirect lumbar canal and foraminal decompression.</li><li>Relieves facet joint stress and restores intervertebral foraminal height.</li><li>Minimally invasive insertion technique preserving the supraspinous ligament complex.</li><li>Preserves segmental kinematics and reduces adjacent-level intradiscal pressures.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-protesis-de-cuerpo-vertebral-poroso",
+        "slug": "protesis-de-cuerpo-vertebral-poroso",
+        "title": "Porous Vertebral Body Prosthesis",
+        "images": [
+          "/assets/products/cbea25a10c1be9537f1580aedff0a685.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Engineered for corpectomy and complex spinal column reconstruction following tumors, trauma, or severe infections.</li><li>3D porous trabecular structure facilitating continuous osseointegration throughout the implant body.</li><li>Anatomical endplates with aggressive anchoring teeth for maximum stability against shear and rotational forces.</li><li>Comprehensive range of heights and lordotic/kyphotic angles for customized alignment.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-posterior-cervicotoracica",
+        "slug": "sistema-de-fijacion-posterior-cervicotoracica",
+        "title": "Posterior Cervicothoracic Fixation System",
+        "images": [
+          "/assets/products/b004add62e36af114973abfbb4cbe254.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Comprehensive polyaxial screw and rod system for occipitocervical, subaxial, and cervicothoracic junction stabilization.</li><li>Broad polyaxial angulation up to 50° facilitating effortless rod alignment without anatomical strain.</li><li>Lateral mass and pedicle screws featuring dual-lead thread pitch for superior pullout resistance.</li><li>Transition rod connectors engineered to withstand high biomechanical bending moments.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-de-cuerpo-vertebral-artificial",
+        "slug": "sistema-de-fijacion-de-cuerpo-vertebral-artificial",
+        "title": "Artificial Vertebral Body Fixation System",
+        "images": [
+          "/assets/products/af6f931786aa2f3d6dcdc77c38e3dd9d.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>In-situ expandable vertebral body replacement device with continuous micrometric height restoration.</li><li>Modular endplates with pivoting capability to conform to adjacent vertebral endplate contours.</li><li>Generous central cavity for extensive autologous or synthetic bone graft filling.</li><li>High-strength titanium alloy construction ensuring reliable immediate anterior load bearing.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-intersomatica-cervical-autoestabilizable",
+        "slug": "caja-de-fusion-intersomatica-cervical-autoestabilizable",
+        "title": "Self-Stabilizing Cervical Interbody Fusion Cage",
+        "images": [
+          "/assets/products/ee0e4739d93b477541f69d521cb4307a.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Stand-alone anterior cervical discectomy and fusion (ACDF) solution with integrated locking screw fixation.</li><li>Screw-locking mechanism providing tactile and visual confirmation to prevent screw backout.</li><li>Anatomical shape with pre-machined lordotic angles restoring physiological sagittal cervical balance.</li><li>Radiopaque tantalum markers allowing accurate intraoperative and postoperative radiographic evaluation.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-placas-de-fijacion-de-lamina-espinal",
+        "slug": "sistema-de-placas-de-fijacion-de-lamina-espinal",
+        "title": "Spinal Lamina Fixation Plate System",
+        "images": [
+          "/assets/products/7be600434625bb99248e9f6bb8db3c38.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Pre-bent titanium mini-plates for rigid fixation of open-door expansive cervical laminoplasty procedures.</li><li>Multiple length and elevation profile options (8mm - 14mm) accommodating patient-specific decompression needs.</li><li>Low-profile self-tapping mini-screws minimizing hardware prominence against surrounding soft tissue.</li><li>Provides immediate and durable stabilization of the newly decompressed spinal canal.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-interna-por-abordaje-posterior-de-columna-minimamente-invasivo",
+        "slug": "sistema-de-fijacion-interna-por-abordaje-posterior-de-columna-minimamente-invasivo",
+        "title": "Spinal Posterior Approach Internal Fixation System (Minimally Invasive)",
+        "images": [
+          "/assets/products/0adac77ea20a0d3dbf77a5c0fea48c57.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Percutaneous MIS system featuring integrated extended-tab screw heads for seamless percutaneous rod delivery.</li><li>Subfascial rod insertion technique minimizing paraspinal muscle dissection and intraoperative blood loss.</li><li>Cannulated polyaxial pedicle screws engineered for precise K-wire guided fluoroscopic placement.</li><li>Accelerates postoperative patient recovery, significantly reducing hospital stay and postoperative pain.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-interna-espinal-iliaco",
+        "slug": "sistema-de-fijacion-interna-espinal-iliaco",
+        "title": "Spinal Internal Fixation System (Iliac)",
+        "images": [
+          "/assets/products/bb5de4312f17c26349f5c33614d5cfdc.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Large-diameter, long-reach iliac and sacroiliac screws for robust pelvic anchoring in complex spinal deformity corrections.</li><li>Ultra low-profile screw heads preventing skin irritation and palpable implant prominence over the sacral/iliac crest.</li><li>Modular offset and inline connectors compatible with standard spinal rod diameters (5.5mm / 6.0mm).</li><li>Engineered to withstand high biomechanical cantilever forces across the lumbosacral junction in long-segment fusions.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-interna-vertebral-posterior-cbt",
+        "slug": "sistema-de-fijacion-interna-vertebral-posterior-cbt",
+        "title": "Posterior Spinal Internal Fixation System (CBT)",
+        "images": [
+          "/assets/products/d43e3ed4c854b80ec1ec22d0c1d25987.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Cortical Bone Trajectory (CBT) pedicle screw system engineered for maximized purchase in osteoporotic bone.</li><li>Dense cortical thread pitch increasing screw pullout resistance by up to 30% compared to traditional trajectories.</li><li>Medialized cortical insertion point minimizing lateral paraspinal soft tissue and muscle retraction.</li><li>Premier fixation strategy for short-segment lumbar fusions and patients with compromised bone mineral density.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-interna-espinal-cemento-oseo",
+        "slug": "sistema-de-fijacion-interna-espinal-cemento-oseo",
+        "title": "Spinal Internal Fixation System (Bone Cement)",
+        "images": [
+          "/assets/products/0e0dcf1fc733c1b9b29e9800fd684d03.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Fenestrated pedicle screws featuring calibrated radial side ports for controlled PMMA bone cement augmentation.</li><li>Homogeneous cement distribution within the vertebral body, preventing posterior leakage into the spinal canal.</li><li>Ideal solution for geriatric patients, severe osteoporosis, and oncological spinal reconstructions.</li><li>High-pressure injection cannula system providing leak-proof and safe cement administration.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-de-abordaje-anterior-para-columna-cervical",
+        "slug": "sistema-de-fijacion-de-abordaje-anterior-para-columna-cervical",
+        "title": "Cervical Spine Anterior Approach Fixation System",
+        "images": [
+          "/assets/products/b9cfa0359971b405f36f35729741cd5b.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Ultra-thin anterior cervical plate with mirror-polished smooth contours to minimize postoperative dysphagia.</li><li>Single-step integrated screw-locking mechanism providing clear visual confirmation of locked screws.</li><li>Fixed and variable-angle screw options enabling tailored rigid or semi-constrained load-sharing constructs.</li><li>Pre-machined lordotic curvature with expansive graft inspection windows for easy fusion monitoring.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-intersomatica-por-fabricacion-aditiva",
+        "slug": "caja-de-fusion-intersomatica-por-fabricacion-aditiva",
+        "title": "Additive Manufacturing Interbody Fusion Cage",
+        "images": [
+          "/assets/products/84de7fb550ecfc8a7d7f050c19185f1b.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>3D-printed titanium alloy interbody cages featuring a porous trabecular lattice mimicking cancellous bone architecture.</li><li>Nanoscale surface roughness enhancing rapid osteoblast attachment and bone growth differentiation in situ.</li><li>Optimized radiographic visualization allowing distinct assessment of continuous bone bridging on CT and X-ray.</li><li>Available in TLIF, PLIF, ALIF, and LLIF configurations with multiple footprints, heights, and lordotic angles.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-intersomatica",
+        "slug": "caja-de-fusion-intersomatica",
+        "title": "Interbody Fusion Cage",
+        "images": [
+          "/assets/products/1b8fba67ae0b9b050911545376636ef0.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Standard radiolucent PEEK interbody fusion cage offering biocompatible elasticity and proven clinical longevity.</li><li>Modulus of elasticity closely approximating human cortical and cancellous bone, reducing subsidence rates.</li><li>Embedded tantalum markers at proximal and distal extremities for precise fluoroscopic localization.</li><li>Bullet-nosed anterior tip and serrated anti-migration teeth facilitating smooth distraction and secure seating.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-espinal",
+        "slug": "caja-de-fusion-espinal",
+        "title": "Spinal Fusion Cage",
+        "images": [
+          "/assets/products/be52eb82866e904ea28ed84ef0f3b158.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Next-generation lumbar interbody fusion device engineered for foraminal decompression and segmental lordosis restoration.</li><li>Optimized footprint maximizing endplate contact area to eliminate focal stress concentrations.</li><li>Versatile compatibility with posterior, transforaminal, and lateral minimally invasive approaches.</li><li>Expansive graft chamber designed to ensure robust, long-lasting 360-degree interbody bony bridging.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-guia-de-osteotomia-espinal-impresa-en-3d",
+        "slug": "guia-de-osteotomia-espinal-impresa-en-3d",
+        "title": "3D-Printed Spinal Osteotomy Guide",
+        "images": [
+          "/assets/products/0e7d1338a2e074a2a60bc8c6bdaa0194.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Patient-specific 3D-printed surgical cutting guide customized from preoperative 3D computed tomography (CT) scans.</li><li>Conformal fit over unique posterior vertebral landmarks for high-precision bone resection in Smith-Petersen and PSO osteotomies.</li><li>Significantly reduces intraoperative surgical time, blood loss, and fluoroscopy radiation exposure.</li><li>Integrated drill sleeves ensuring safe, trajectory-guided pedicle screw pilot hole preparation in severe spinal deformities.</li></ol></div></div></div>"
+          }
+        ]
+      }
+    ]
   }
-]
+]

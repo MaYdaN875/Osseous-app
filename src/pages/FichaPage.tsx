@@ -1,15 +1,21 @@
 // Detalle de producto desde la sección Productos (/ficha/:slug/:productSlug).
-// Ahora comparte el mismo diseño visual que el detalle del catálogo (/producto/:id):
-// galería con stage + thumbs, badges, secciones estilizadas y productos relacionados.
+// Mantiene exactamente el mismo diseño visual, datos, chips y especificaciones del catálogo (/producto/:id).
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useElementorStyles } from "@/lib/elementor";
 import categoriesDataEs from "@/data/osseous-products.json";
 import categoriesDataEn from "@/data/osseous-products-en.json";
+import rawCatalog from "@/data/catalog-data.json";
 import { useLanguage } from "@/context/LanguageContext";
-import { asset } from "@/lib/catalog";
+import {
+  getCategoryDesc,
+  getCategorySpecs,
+  getCategoryTitle,
+  makeSku,
+  asset,
+} from "@/lib/catalog";
 
-// Avisito flotante (reutilizo la misma lógica del catálogo)
+// Avisito flotante
 function showToast(message: string) {
   const existing = document.getElementById("osseous-toast");
   existing?.remove();
@@ -24,12 +30,20 @@ function showToast(message: string) {
   }, 3200);
 }
 
+const CATEGORY_MAP: Record<string, number> = {
+  "cirugia-de-columna": 4,
+  "reemplazo-de-rodilla": 6,
+  "protesis-de-cadera": 6,
+  "protesis-de-hombro": 6,
+  "medicina-deportiva": 2,
+  "instrumental-quirurgico": 5,
+};
+
 export function FichaPage() {
   const { slug = "", productSlug = "" } = useParams();
   const { lang, t } = useLanguage();
   const [active, setActive] = useState(0);
 
-  // Los estilos de Elementor siguen siendo necesarios para el HTML de las secciones
   useElementorStyles(null);
 
   const categoriesData = lang === "en" ? categoriesDataEn : categoriesDataEs;
@@ -43,12 +57,10 @@ export function FichaPage() {
     return category.products.find((p: any) => p.slug === productSlug);
   }, [category, productSlug]);
 
-  // Si cambias de producto, la galería vuelve a empezar en la primera foto
   useEffect(() => {
     setActive(0);
   }, [productSlug]);
 
-  // Productos relacionados: otros de la misma categoría (hasta 3)
   const related = useMemo(() => {
     if (!category || !ficha) return [];
     return category.products.filter((p: any) => p.slug !== productSlug && p.images?.length > 0).slice(0, 3);
@@ -67,132 +79,58 @@ export function FichaPage() {
     );
   }
 
-  // Título de categoría como SKU (ej: PRÓTESIS DE RODILLA)
-  const parentTitle = t(`categories.${category.id}`) || category.title;
-  
-  // Extraer la sección de Información
-  const infoSection = ficha.sections.find((s: any) => s.label === "Información" || s.label === "Information");
-  
-  // Generar especificaciones dinámicas a partir del texto de Información
-  const dynamicSpecs = useMemo(() => {
-    if (!infoSection) return [];
-    
-    // Extraer items de lista <li>
-    const html = infoSection.html;
-    const regex = /<li[^>]*>(.*?)<\/li>/gi;
-    let match;
-    const extracted: [string, string][] = [];
-    
-    let counter = 1;
-    while ((match = regex.exec(html)) !== null) {
-      let text = match[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-      let lower = text.toLowerCase();
-      let key = "Característica " + counter;
-      
-      if (lower.includes('aleación') || lower.includes('acero') || lower.includes('titanio') || lower.includes('material')) {
-        key = "Material";
-      } else if (lower.includes('tamaño') || lower.includes('diámetro') || lower.includes('talla') || lower.includes('conicidad')) {
-        key = "Dimensiones";
-      } else if (lower.includes('tecnología') || lower.includes('precisión') || lower.includes('superficie')) {
-        key = "Fabricación";
-      } else if (lower.includes('uso') || lower.includes('aplicación') || lower.includes('indicación')) {
-        key = "Aplicación";
-      }
-      
-      extracted.push([key, text]);
-      counter++;
-    }
-    
-    return extracted;
-  }, [infoSection]);
+  const catId = CATEGORY_MAP[slug] ?? 6;
+  const categoryTitle = t(`categories.${category.id}`) || category.title;
+  const categoryCatalogTitle = getCategoryTitle(catId, categoryTitle, lang);
+  const categoryDesc = getCategoryDesc(catId, lang) || category.description;
 
-  // Texto restante de la descripción (quitando las listas que ya pasamos a la tabla)
-  const remainingDesc = useMemo(() => {
-    if (!infoSection) return null;
-    const cleaned = infoSection.html.replace(/<(ul|ol)[^>]*>.*?<\/\1>/gis, '').trim();
-    const justText = cleaned.replace(/<[^>]+>/g, '').trim();
-    return justText.length > 0 ? cleaned : null;
-  }, [infoSection]);
+  // Encontrar el producto correspondiente en el catálogo si existe
+  const catalogCategory = rawCatalog.categories.find((c: any) => c.id === catId);
+  const matchedCatalogProduct = catalogCategory?.products.find((cp: any) => {
+    if (!ficha.images?.[0]) return false;
+    const cleanImg = ficha.images[0].replace(/^\//, '');
+    const cleanCpImg = cp.image.replace(/^\//, '');
+    return cleanImg === cleanCpImg || ficha.title.toLowerCase().includes(cp.title.toLowerCase()) || cp.title.toLowerCase().includes(ficha.title.toLowerCase());
+  });
 
-  const specs = dynamicSpecs;
+  const productIndex = category.products.findIndex((p: any) => p.slug === productSlug);
+  const sku = matchedCatalogProduct 
+    ? makeSku(catId, matchedCatalogProduct.id) 
+    : makeSku(catId, productIndex + 1);
+
+  const translatedDesc = lang === "en"
+    ? `${categoryDesc}. Product from Osseous's ${categoryCatalogTitle} line.`
+    : `${categoryDesc}. Producto de la línea ${categoryCatalogTitle} de Osseous.`;
+
+  // Especificaciones técnicas estructuradas del catálogo
+  const catalogSpecs = getCategorySpecs(catId, lang);
+
+  // Extraer secciones adicionales de Elementor si existen (ej. Medidas con acordes)
+  const additionalSections = ficha.sections?.filter(
+    (s: any) => s.label !== "Información" && s.label !== "Information"
+  ) || [];
 
   return (
-    <main className="ficha section" style={{ background: '#f7f9fa', minHeight: '100vh' }}>
-      <style>{`
-        .ficha .detail__stage {
-          background: #ffffff !important;
-          padding: 40px !important;
-          box-shadow: inset 0 2px 12px rgba(0,0,0,0.06), 0 4px 20px rgba(0,0,0,0.04) !important;
-          border: 1px solid #e0e0e0 !important;
-        }
-        .ficha .detail__stage img {
-          max-width: 75% !important;
-          max-height: 75% !important;
-          object-fit: contain !important;
-          filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.16)) !important;
-        }
-        .ficha .detail__thumb {
-          padding: 12px !important;
-        }
-        .ficha .detail__thumb img {
-          max-width: 80% !important;
-          max-height: 80% !important;
-        }
-        .ficha-detail-section__body .e-n-accordion-item {
-          border: 1px solid var(--c-line) !important;
-          border-radius: 10px !important;
-          overflow: hidden !important;
-        }
-        .ficha-detail-section__body .e-n-accordion-item-title {
-          padding: 12px 16px !important;
-          font-weight: 600 !important;
-          cursor: pointer !important;
-          background: var(--c-soft) !important;
-          list-style: none !important;
-        }
-        .ficha-detail-section__body .e-n-accordion-item > div {
-          padding-bottom: 16px !important;
-        }
-        .ficha-detail-section__body .e-n-accordion-item ul,
-        .ficha-detail-section__body .e-n-accordion-item ol {
-          display: flex !important;
-          flex-wrap: wrap !important;
-          gap: 10px !important;
-          padding: 16px !important;
-          margin: 0 !important;
-          list-style: none !important;
-          width: 100% !important;
-        }
-        .ficha-detail-section__body .e-n-accordion-item li {
-          margin: 0 !important;
-          background: #ffffff !important;
-          color: var(--c-ink) !important;
-          font-weight: 500 !important;
-          padding: 8px 16px !important;
-          border-radius: 999px !important;
-          font-size: 13.5px !important;
-          list-style: none !important;
-          border: 1px solid var(--c-line) !important;
-          box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
-        }
-      `}</style>
+    <main className="section">
       <div className="wrap">
-        {/* Breadcrumb idéntico al catálogo */}
+        <Link className="back-link" to={`/productos/${slug}`}>
+          <span className="circle">←</span> {t("detail.back_to", { category: categoryTitle })}
+        </Link>
         <nav className="detail-crumbs">
           <Link to="/">{t("detail.home")}</Link>
           <span className="sep">›</span>
           <Link to="/productos">{t("nav.products")}</Link>
           <span className="sep">›</span>
-          <Link to={`/productos/${slug}`}>{parentTitle}</Link>
+          <Link to={`/productos/${slug}`}>{categoryTitle}</Link>
           <span className="sep">›</span>
           <span className="current">{ficha.title}</span>
         </nav>
 
         <div className="detail">
           {/* Columna Izquierda: Galería */}
-          <div className="detail__gallery">
+          <div id="product-gallery" className="detail__gallery reveal reveal--left">
             <div className="detail__stage">
-              <img src={asset(ficha.images[active])} alt={ficha.title} />
+              <img id="gallery-main" src={asset(ficha.images[active])} alt={ficha.title} />
             </div>
             {ficha.images.length > 1 && (
               <div className="detail__thumbs">
@@ -211,32 +149,27 @@ export function FichaPage() {
           </div>
 
           {/* Columna Derecha: Info */}
-          <div className="detail__info">
+          <div className="detail__info reveal reveal--right">
             <div>
-              <span className="detail__sku">{parentTitle.toUpperCase()}</span>
+              <span className="detail__sku">SKU: {sku}</span>
               <h1 className="detail__title">{ficha.title}</h1>
-              {remainingDesc ? (
-                <div 
-                  className="detail__desc ficha-desc-override"
-                  dangerouslySetInnerHTML={{ __html: remainingDesc }} 
-                />
-              ) : (
-                <div className="detail__desc ficha-desc-override" style={{ color: "var(--c-text)", lineHeight: "1.5" }}>
-                  <p>Producto especializado de la línea <strong>{t(parentTitle)}</strong> de Osseous, diseñado para ofrecer los más altos estándares de calidad y precisión en cirugía ortopédica.</p>
-                </div>
-              )}
+              <p className="detail__desc">{translatedDesc}</p>
             </div>
 
-
+            <div className="detail__chips">
+              <span className="chip">ISO 13485</span>
+              <span className="chip">FDA Approved</span>
+              <span className="chip">CE Mark</span>
+            </div>
 
             <hr />
 
-            {/* Especificaciones Técnicas dinámicas extraídas del texto del producto */}
-            {specs && specs.length > 0 && (
+            {/* Especificaciones Técnicas */}
+            {catalogSpecs && catalogSpecs.length > 0 && (
               <div>
                 <h3 className="detail__spec-title">{t("catalog.specs")}</h3>
                 <div className="spec-table">
-                  {specs.map(([k, v], idx) => (
+                  {catalogSpecs.map(([k, v], idx) => (
                     <div className="spec-table__row" key={idx}>
                       <div>{k}</div>
                       <div>{v}</div>
@@ -246,17 +179,14 @@ export function FichaPage() {
               </div>
             )}
 
-            {/* Secciones del producto (Medidas, etc.) — renderizado limpio */}
-            {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").length > 0 && (
-              <div style={{marginTop: specs?.length ? '30px' : '0'}}>
-                {ficha.sections.filter((s: any) => s.label !== "Información" && s.label !== "Information").map((section: any) => {
-                  // Parsear acordeones internos (Medidas con CRCO sizes)
+            {/* Secciones adicionales (Medidas, etc.) si las tiene */}
+            {additionalSections.length > 0 && (
+              <div style={{ marginTop: '24px' }}>
+                {additionalSections.map((section: any) => {
                   const hasAccordion = section.html.includes('e-n-accordion-item');
                   
                   if (hasAccordion) {
-                    // Partir el HTML por cada <details> para extraer pares título-valores
                     const detailsBlocks = section.html.split(/<details[^>]*>/i).filter((b: string) => b.includes('accordion-item-title-text'));
-                    
                     const parsedItems: { title: string; values: string[] }[] = [];
                     
                     for (const block of detailsBlocks) {
@@ -273,7 +203,7 @@ export function FichaPage() {
                     
                     if (parsedItems.length > 0) {
                       return (
-                        <div key={section.label}>
+                        <div key={section.label} style={{ marginTop: '20px' }}>
                           <h3 className="detail__spec-title">{section.label}</h3>
                           <div className="spec-table" style={{ overflow: 'hidden' }}>
                             {parsedItems.map((item, idx) => (
@@ -300,9 +230,8 @@ export function FichaPage() {
                     }
                   }
                   
-                  // Fallback: secciones sin acordeón, render normal
                   return (
-                    <div key={section.label} className="ficha-detail-section">
+                    <div key={section.label} className="ficha-detail-section" style={{ marginTop: '20px' }}>
                       <h3 className="detail__spec-title">{section.label}</h3>
                       <div
                         className="ficha-detail-section__body site-page__content elementor-kit-6"
@@ -313,7 +242,6 @@ export function FichaPage() {
                 })}
               </div>
             )}
-
 
             {/* Botones de acción */}
             <div className="detail__actions">
@@ -343,19 +271,15 @@ export function FichaPage() {
             <div className="related__grid">
               {related.map((r: any) => (
                 <Link
-                  className="related-card"
+                  className="related-card reveal"
                   key={r.slug}
                   to={`/ficha/${slug}/${r.slug}`}
                 >
                   <div className="related-card__media">
-                    <img
-                      src={r.images[0]}
-                      alt={r.title}
-                      loading="lazy"
-                    />
+                    <img src={asset(r.images[0])} alt={r.title} loading="lazy" />
                   </div>
                   <div className="related-card__body">
-                    <span className="related-card__cat">{parentTitle}</span>
+                    <span className="related-card__cat">{categoryTitle}</span>
                     <h3 className="related-card__name">{r.title}</h3>
                     <div className="related-card__foot">
                       <span>{t("categories.view_details")}</span>

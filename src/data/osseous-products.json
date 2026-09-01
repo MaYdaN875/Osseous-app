@@ -536,6 +536,90 @@
             "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-5090\" class=\"elementor-element elementor-element-7fccf8d e-con-full e-flex e-con e-child\" data-id=\"7fccf8d\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-5090\" class=\"elementor-element elementor-element-feb892f e-flex e-con-boxed e-con e-child\" data-id=\"feb892f\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-5d18970 elementor-widget elementor-widget-text-editor\" data-id=\"5d18970\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Ventajas de la osteointegración: la estructura de malla proporciona un mejor espacio para el crecimiento óseo.</li><li>Ventajas mecánicas: la estructura trabecular ósea biónica se ajusta a la distribución del estrés fisiológico y puede<br>reducir el blindaje del estrés en la mayor medida posible.</li><li>Excelente estabilidad inicial: la superficie externa es rugosa y el coeficiente de fricción con el lecho óseo es grande, lo que es beneficioso para la estabilidad inicial del acetábulo y el vástago femoral después de la implantación.</li><li>Buena compatibilidad: se puede utilizar con copas externas estándar.</li><li>Amplio rango de aplicación: aplicable a los casos de defectos óseos IIB, IlIA y IlIB que pueden requerir el uso de aumentos.</li></ol> </div> </div> </div> </div> </div>"
           }
         ]
+      },
+      {
+        "id": "protesis-de-cadera-copa-acetabular-de-metal-trabecular-g40",
+        "slug": "copa-acetabular-de-metal-trabecular-g40",
+        "title": "Prótesis de cadera - Copa acetabular de metal trabecular (G40)",
+        "images": [
+          "/assets/products/7387b1340d1448bb0654d209459eae55.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Estructura de metal trabecular biomimético que proporciona una excelente osteointegración y alta fricción inicial.</li><li>Diseño de copa G40 optimizado para una fijación press-fit segura en revisiones y defectos acetabulares complejos.</li><li>Múltiples orificios para tornillos que permiten una fijación suplementaria estable.</li><li>Totalmente compatible con insertos de polietileno de ultra alto peso molecular (UHMWPE) y cerámica.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-copa-acetabular-de-metal-trabecular-g20",
+        "slug": "copa-acetabular-de-metal-trabecular-g20",
+        "title": "Prótesis de cadera - Copa acetabular de metal trabecular (G20)",
+        "images": [
+          "/assets/products/9cd407cbdf6300742e8cc87c9e84b30b.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Estructura trabecular porosa que imita la microarquitectura del hueso esponjoso humano.</li><li>Configuración G20 con tres orificios de fijación polar para artroplastia primaria y preservación ósea.</li><li>Superficie de alto coeficiente de fricción que elimina micro-movimientos postoperatorios inmediatos.</li><li>Ajuste cónico de alta precisión para diversos revestimientos articulares.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-protesis-modular-de-cadera",
+        "slug": "protesis-modular-de-cadera",
+        "title": "Prótesis modular de cadera",
+        "images": [
+          "/assets/products/8d1f22e975484d0eb604d61e067ac9e7.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Sistema femoral modular diseñado para reconstrucciones complejas de cadera, defectos óseos y cirugía de revisión.</li><li>Permite el ajuste independiente de la versión femoral, longitud de pierna y offset biomecánico.</li><li>Cuerpo proximal con recubrimiento biológico y estrías de fijación rotacional.</li><li>Vástagos distales ranurados de fijación cónica en aleación de titanio de alta resistencia.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-protesis-de-cadera-vastago-femoral-trabecular",
+        "slug": "protesis-de-cadera-vastago-femoral-trabecular",
+        "title": "Prótesis de cadera - Vástago femoral trabecular",
+        "images": [
+          "/assets/products/ed82aeefa98babaf4185a95b6451ed8b.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Zona metafisaria proximal con tecnología de metal trabecular para una integración ósea acelerada.</li><li>Geometría de cuña cónica recta que garantiza una excelente estabilidad primaria axial y rotacional.</li><li>Ranuras longitudinales distales que reducen la rigidez y el apantallamiento de esfuerzos (stress shielding).</li><li>Cono estándar 12/14 compatible con cabezas femorales metálicas y cerámicas.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-componente-para-protesis-de-articulacion-de-cadera",
+        "slug": "componente-para-protesis-de-articulacion-de-cadera",
+        "title": "Componente para prótesis de articulación de cadera",
+        "images": [
+          "/assets/products/d94807021a869ff0a206ee694e60402c.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Componente femoral anatómico no cementado fabricado en aleación de titanio de grado médico.</li><li>Tratamiento de superficie poroso y microtexturizado que estimula el crecimiento óseo natural.</li><li>Contorno anatómico proximal que respeta la curvatura fisiológica del fémur.</li><li>Excelente desempeño clínico a largo plazo en artroplastia primaria de cadera.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-molde-para-moldeado-de-cemento-oseo-de-articulacion-de-cadera",
+        "slug": "molde-para-moldeado-de-cemento-oseo-de-articulacion-de-cadera",
+        "title": "Molde para moldeado de cemento óseo de articulación de cadera",
+        "images": [
+          "/assets/products/8608c2020ed3095c1a61651d7f4e6ff8.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Molde especializado de silicona médica antiadherente para la confección intraoperatoria de espaciadores temporales de cadera con cemento óseo (PMMA).</li><li>Mantiene la longitud de la extremidad, la tensión de tejidos blandos y el espacio articular durante el tratamiento en dos tiempos de infecciones periprotésicas.</li><li>Permite la incorporación homogénea de antibióticos en el cemento óseo sin adherencias.</li><li>Disponible en múltiples diámetros de cabeza y longitudes de vástago para adaptarse a la anatomía del paciente.</li></ol></div></div></div>"
+          }
+        ]
       }
     ]
   },
@@ -698,6 +782,273 @@
     "title": "Cirugía de Columna",
     "description": "Soluciones e implantes de alta precisión para procedimientos quirúrgicos, fijación y reconstrucción de la columna vertebral.",
     "image": "/assets/categories/columna-placeholder.svg",
-    "products": []
+    "products": [
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-intersomatica-de-tantalio-poroso-cvd",
+        "slug": "caja-de-fusion-intersomatica-de-tantalio-poroso-cvd",
+        "title": "Caja de fusión intersomática de tantalio poroso (CVD)",
+        "images": [
+          "/assets/products/45565580a82460e0776d7d3c228baf60.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Estructura de tantalio poroso biomimético fabricada por deposición química de vapor (CVD) con alta porosidad interconectada (75-85%).</li><li>Módulo elástico similar al hueso esponjoso para evitar el apantallamiento de tensiones y la subsidencia.</li><li>Alto coeficiente de fricción que garantiza una estabilidad primaria superior inmediata.</li><li>Favorece una rápida adhesión celular, vascularización y osteointegración a largo plazo.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-placas-de-fijacion-de-lamina-espinal-impresion-3d",
+        "slug": "sistema-de-placas-de-fijacion-de-lamina-espinal-impresion-3d",
+        "title": "Sistema de placas de fijación de lámina espinal (Impresión 3D)",
+        "images": [
+          "/assets/products/67368e0e3883297ca677f4c517c3c697.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Diseñado mediante manufactura aditiva 3D en aleación de titanio grado médico para laminoplastia expansiva cervical.</li><li>Geometría anatómica optimizada que reconstruye de forma estable el canal espinal descompresivo.</li><li>Estructura porosa en zonas de contacto óseo que promueve la fusión biológica con la lámina y masa lateral.</li><li>Perfil ultrabajo con orificios angulados para tornillos autorroscantes de fijación rígida.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-intersomatica-autoestabilizable",
+        "slug": "caja-de-fusion-intersomatica-autoestabilizable",
+        "title": "Caja de fusión intersomática autoestabilizable",
+        "images": [
+          "/assets/products/92cda4ac16644bf352f0947158a8dc22.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Sistema de anclaje integrado con tornillos/cuchillas de fijación que elimina la necesidad obligatoria de placas anteriores.</li><li>Diseño de perfil cero para prevenir la irritación de tejidos blandos y disfagia postoperatoria en abordajes cervicales.</li><li>Gran ventana central para maximizar el volumen de injerto óseo y acelerar la fusión intersomática.</li><li>Dientes antirretorno en superficies superior e inferior para evitar la migración del implante.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-cable-de-titanio-espinal",
+        "slug": "cable-de-titanio-espinal",
+        "title": "Cable de titanio espinal",
+        "images": [
+          "/assets/products/fc29d5930944ab5b249b432862694873.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Trenzado de titanio de alta resistencia a la fatiga y flexibilidad óptima para lazadas y fijación sublaminar/subtrocantérica.</li><li>Sistema de bloqueo y crimpado seguro que mantiene la tensión constante sin aflojamiento.</li><li>Compatible con fijación de segmentos vertebrales complejos y osteotomías reconstructivas.</li><li>Excelente biocompatibilidad y resistencia a la corrosión bajo cargas dinámicas.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-implante-de-apofisis-espinosa-de-no-fusion",
+        "slug": "implante-de-apofisis-espinosa-de-no-fusion",
+        "title": "Implante de apófisis espinosa de no fusión",
+        "images": [
+          "/assets/products/f6af8d1dfb8e2ff87973b4b84fb64122.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Dispositivo interespinoso dinámico para la descompresión indirecta del canal lumbar y foraminal.</li><li>Alivia el estrés en las facetas articulares y restaura la altura del foramen intervertebral.</li><li>Técnica de inserción mínimamente invasiva conservando los ligamentos supraespinosos.</li><li>Preserva la cinemática segmental y disminuye la presión en los discos adyacentes.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-protesis-de-cuerpo-vertebral-poroso",
+        "slug": "protesis-de-cuerpo-vertebral-poroso",
+        "title": "Prótesis de cuerpo vertebral poroso",
+        "images": [
+          "/assets/products/cbea25a10c1be9537f1580aedff0a685.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Diseñado para corpectomías y reconstrucción vertebral compleja tras tumores, traumatismos o infecciones graves.</li><li>Estructura trabecular porosa 3D que facilita la invasión ósea continua a lo largo de todo el cuerpo del implante.</li><li>Placas terminales anatómicas con dientes de fijación para una máxima estabilidad frente a fuerzas de cizallamiento.</li><li>Amplia gama de alturas y angulaciones de lordosis/cifosis ajustables.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-posterior-cervicotoracica",
+        "slug": "sistema-de-fijacion-posterior-cervicotoracica",
+        "title": "Sistema de fijación posterior cervicotorácica",
+        "images": [
+          "/assets/products/b004add62e36af114973abfbb4cbe254.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Sistema integral de tornillos poliaxiales y barras para la unión y estabilización cervicotorácica occipitocervical y subaxial.</li><li>Ángulo de poliaxialidad amplio de hasta 50° para facilitar la colocación de barras sin forzar la anatomía.</li><li>Tornillos de masa lateral y pediculares con diseño de rosca de doble paso para mayor fuerza de agarre.</li><li>Conectores de transición de barra diseñados para soportar altos momentos de flexión.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-de-cuerpo-vertebral-artificial",
+        "slug": "sistema-de-fijacion-de-cuerpo-vertebral-artificial",
+        "title": "Sistema de fijación de cuerpo vertebral artificial",
+        "images": [
+          "/assets/products/af6f931786aa2f3d6dcdc77c38e3dd9d.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Dispositivo expandible in situ con mecanismo de bloqueo micrométrico para una restauración precisa de la altura vertebral.</li><li>Extremos articulados modulares que se adaptan a las superficies de las plataformas vertebrales adyacentes.</li><li>Cavidad interna generosa para relleno con injerto óseo autólogo o sintético.</li><li>Construcción en aleación de titanio de alta resistencia que garantiza soporte de carga inmediato.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-intersomatica-cervical-autoestabilizable",
+        "slug": "caja-de-fusion-intersomatica-cervical-autoestabilizable",
+        "title": "Caja de fusión intersomática cervical autoestabilizable",
+        "images": [
+          "/assets/products/ee0e4739d93b477541f69d521cb4307a.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Solución stand-alone para artrodesis intersomática cervical anterior (ACDF) con fijación con tornillos integrados.</li><li>Mecanismo de bloqueo de tornillos con confirmación táctil y visual para prevenir el retroceso.</li><li>Perfil anatómico con lordosis preformada para restaurar la alineación sagital cervical fisiológica.</li><li>Marcadores radiopacos de tantalio para una verificación radiológica precisa intra y postoperatoria.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-placas-de-fijacion-de-lamina-espinal",
+        "slug": "sistema-de-placas-de-fijacion-de-lamina-espinal",
+        "title": "Sistema de placas de fijación de lámina espinal",
+        "images": [
+          "/assets/products/7be600434625bb99248e9f6bb8db3c38.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Placas precurvadas de titanio para la fijación rígida de la bisagra y apertura en laminoplastias cervicales tipo puerta abierta.</li><li>Diversas longitudes y perfiles de apertura (8mm - 14mm) para ajustarse a las necesidades de descompresión del paciente.</li><li>Fijación con micro-tornillos autorroscantes de bajo perfil que reducen la prominencia sobre las estructuras circundantes.</li><li>Mantiene la estabilidad del canal medular descompresivo de forma inmediata y definitiva.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-interna-por-abordaje-posterior-de-columna-minimamente-invasivo",
+        "slug": "sistema-de-fijacion-interna-por-abordaje-posterior-de-columna-minimamente-invasivo",
+        "title": "Sistema de fijación interna por abordaje posterior de columna (Mínimamente invasivo)",
+        "images": [
+          "/assets/products/0adac77ea20a0d3dbf77a5c0fea48c57.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Sistema MIS percutáneo con torres de inserción extendidas integradas para colocación percutánea de tornillos y barras.</li><li>Mecanismo de paso de barra subfascial guiado que minimiza la disección muscular y el sangrado perioperatorio.</li><li>Tornillos poliaxiales canulados diseñados para inserción precisa guiada por aguja de Kirschner y fluoroscopia.</li><li>Acelera la recuperación del paciente reduciendo el dolor postoperatorio y el tiempo de hospitalización.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-interna-espinal-iliaco",
+        "slug": "sistema-de-fijacion-interna-espinal-iliaco",
+        "title": "Sistema de fijación interna espinal (Ilíaco)",
+        "images": [
+          "/assets/products/bb5de4312f17c26349f5c33614d5cfdc.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Tornillos ilíacos y sacroilíacos de gran diámetro y longitud para el anclaje pélvico sólido en deformidades espinales complejas.</li><li>Cabeza de tornillo de bajo perfil para evitar molestias cutáneas y prominencias palpables en la región sacra/ilíaca.</li><li>Conectores modulares universales para barras de fijación espinal estándar (5.5mm / 6.0mm).</li><li>Diseñado para soportar elevadas cargas biomecánicas en la unión lumbosacra en cirugías de revisión y fusión larga.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-interna-vertebral-posterior-cbt",
+        "slug": "sistema-de-fijacion-interna-vertebral-posterior-cbt",
+        "title": "Sistema de fijación interna vertebral posterior (CBT)",
+        "images": [
+          "/assets/products/d43e3ed4c854b80ec1ec22d0c1d25987.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Técnica de trayectoria ósea cortical (CBT - Cortical Bone Trajectory) diseñada para maximizar el agarre en hueso osteoporótico.</li><li>Rosca cónica con doble cresta cortical que incrementa hasta un 30% la resistencia al arranque (pullout strength).</li><li>Abordaje quirúrgico más medializado que reduce la disección de los músculos paravertebrales laterales.</li><li>Excelente alternativa para fusiones lumbares cortas y pacientes con calidad ósea comprometida.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-interna-espinal-cemento-oseo",
+        "slug": "sistema-de-fijacion-interna-espinal-cemento-oseo",
+        "title": "Sistema de fijación interna espinal (Cemento óseo)",
+        "images": [
+          "/assets/products/0e0dcf1fc733c1b9b29e9800fd684d03.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Tornillos pediculares fenestrados con orificios laterales distales para inyección controlada de cemento óseo PMMA.</li><li>Distribución radial homogénea del cemento en el cuerpo vertebral, evitando fugas hacia el canal espinal.</li><li>Ideal para pacientes de edad avanzada, osteoporosis severa o reconstrucciones vertebrales oncológicas.</li><li>Sistema de cánula de inyección y cierre hermético que garantiza una aplicación segura y limpia intraoperatoria.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-sistema-de-fijacion-de-abordaje-anterior-para-columna-cervical",
+        "slug": "sistema-de-fijacion-de-abordaje-anterior-para-columna-cervical",
+        "title": "Sistema de fijación de abordaje anterior para columna cervical",
+        "images": [
+          "/assets/products/b9cfa0359971b405f36f35729741cd5b.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Placa cervical anterior de perfil ultrafino y superficie pulida para minimizar la disfagia postoperatoria.</li><li>Sistema de bloqueo de paso único con indicador de seguridad visual integrado en cada orificio.</li><li>Opciones de tornillos de fijación fija y variable (semirrígida) para permitir la dinamización controlada de la carga.</li><li>Curvatura lordótica preformada y ventanas de visualización de injerto intersomático amplias.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-intersomatica-por-fabricacion-aditiva",
+        "slug": "caja-de-fusion-intersomatica-por-fabricacion-aditiva",
+        "title": "Caja de fusión intersomática por fabricación aditiva",
+        "images": [
+          "/assets/products/84de7fb550ecfc8a7d7f050c19185f1b.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Cajas impresas en 3D en aleación de titanio con celosía trabecular porosa que emula la arquitectura del hueso esponjoso.</li><li>Rugosidad superficial nanométrica que acelera la adhesión y diferenciación osteoblástica in situ.</li><li>Excelente radiotransparencia para evaluación precisa del puente de fusión ósea en TC y radiografías.</li><li>Disponible en configuraciones TLIF, PLIF, ALIF y LLIF con múltiples alturas y grados de lordosis.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-intersomatica",
+        "slug": "caja-de-fusion-intersomatica",
+        "title": "Caja de fusión intersomática",
+        "images": [
+          "/assets/products/1b8fba67ae0b9b050911545376636ef0.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Caja intersomática estándar en material PEEK radiotransparente con excelente elasticidad biocompatible.</li><li>Módulo de Young muy próximo al del hueso cortical y esponjoso, reduciendo el riesgo de hundimiento.</li><li>Marcadores de tantalio proximales y distales para verificación de posición bajo radioscopia.</li><li>Superficie estriada y extremo anterior en ojiva que facilitan la inserción guiada y reducen el trauma discal.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-caja-de-fusion-espinal",
+        "slug": "caja-de-fusion-espinal",
+        "title": "Caja de fusión espinal",
+        "images": [
+          "/assets/products/be52eb82866e904ea28ed84ef0f3b158.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Dispositivo intersomático lumbar de última generación para descompresión foraminal y restauración de lordosis segmental.</li><li>Diseño optimizado que maximiza el área de contacto con el platillo vertebral reduciendo picos de tensión focal.</li><li>Compatible con técnicas de abordaje posterior, transforaminal y lateral mínimamente invasivo.</li><li>Cámara de injerto de gran volumen para una fusión ósea sólida y duradera de 360 grados.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "cirugia-de-columna-guia-de-osteotomia-espinal-impresa-en-3d",
+        "slug": "guia-de-osteotomia-espinal-impresa-en-3d",
+        "title": "Guía de osteotomía espinal impresa en 3D",
+        "images": [
+          "/assets/products/0e7d1338a2e074a2a60bc8c6bdaa0194.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Guía quirúrgica personalizada paciente-específica diseñada a partir de tomografía computarizada 3D del paciente.</li><li>Calce perfecto sobre la anatomía posterior vertebral para corte y resección ósea de alta precisión en osteotomías de Smith-Petersen y sustracción pedicular (PSO).</li><li>Reduce significativamente el tiempo quirúrgico, el sangrado y la exposición a radiación intraoperatoria.</li><li>Canales de guía integrados para fresado y colocación segura de tornillos pediculares en anatomías complejas o deformadas.</li></ol></div></div></div>"
+          }
+        ]
+      }
+    ]
   }
 ]
