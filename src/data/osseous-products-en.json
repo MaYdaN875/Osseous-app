@@ -720,16 +720,30 @@
         ]
       },
       {
-        "id": "protesis-de-cadera-aumentos",
-        "slug": "aumentos",
-        "title": "Augments",
+        "id": "protesis-de-cadera-bloque-acetabular-trabecular",
+        "slug": "bloque-acetabular-trabecular",
+        "title": "Trabecular Acetabular Block",
         "images": [
-          "/wp-content/uploads/2024/12/Captura-de-pantalla-2024-12-18-a-las-1.14.23 p.m.png"
+          "/assets/products/6ec50557ceb13e7108bde01f4a751c3f.png"
         ],
         "sections": [
           {
             "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-5090\" class=\"elementor-element elementor-element-7fccf8d e-con-full e-flex e-con e-child\" data-id=\"7fccf8d\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-5090\" class=\"elementor-element elementor-element-feb892f e-flex e-con-boxed e-con e-child\" data-id=\"feb892f\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-5d18970 elementor-widget elementor-widget-text-editor\" data-id=\"5d18970\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Osteointegration advantages: the mesh structure provides a better space for bone growth.</li><li>Mechanical advantages: the bionic bone trabecular structure conforms to physiological stress distribution and can<br>reduce stress shielding to the greatest extent possible.</li><li>Excellent initial stability: the external surface is rough and the coefficient of friction with the bone bed is high, which is beneficial for the initial stability of the acetabulum and femoral stem after implantation.</li><li>Good compatibility: can be used with standard outer cups.</li><li>Wide range of application: applicable to IIB, IIIA, and IIIB bone defect cases that may require the use of augments.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Biomimetic porous trabecular structure designed for the reconstruction of complex acetabular bone defects (Paprosky II and III).</li><li>High surface friction coefficient providing exceptional initial press-fit stability and rigid biomechanical support.</li><li>Enables deep continuous bone ingrowth through its interconnected microporous matrix for permanent biological fixation.</li><li>Fully compatible with standard and revision trabecular metal acetabular cups.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-lingote-de-tantalio-metalico",
+        "slug": "lingote-de-tantalio-metalico",
+        "title": "Tantalum Metal Ingot",
+        "images": [
+          "/assets/products/523af35bf376cc9332e40e234f13ad89.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Manufactured from high-purity medical-grade porous tantalum for structural support and filling of major bone stock loss.</li><li>Modulus of elasticity closely matching human cancellous bone to prevent stress shielding and subsidence.</li><li>Interconnected porosity of 75-85% promoting rapid vascularization, cellular adhesion, and long-term osseointegration.</li><li>Superior biocompatibility and corrosion resistance under high-demand physiological load conditions.</li></ol></div></div></div>"
           }
         ]
       },
@@ -1027,20 +1041,7 @@
           }
         ]
       },
-      {
-        "id": "protesis-de-cadera-aumentos-1",
-        "slug": "aumentos-1",
-        "title": "Augments",
-        "images": [
-          "/wp-content/uploads/2024/12/Captura-de-pantalla-2024-12-18-a-las-1.14.23 p.m.png"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1900\" class=\"elementor-element elementor-element-59320b52 e-con-full e-flex e-con e-child\" data-id=\"59320b52\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1900\" class=\"elementor-element elementor-element-57fc3d44 e-flex e-con-boxed e-con e-child\" data-id=\"57fc3d44\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-783605d1 elementor-widget elementor-widget-text-editor\" data-id=\"783605d1\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Osteointegration advantages: the mesh structure provides a better space for bone growth.</li><li>Mechanical advantages: the bionic bone trabecular structure conforms to physiological stress distribution and can<br>reduce stress shielding to the greatest extent possible.</li><li>Excellent initial stability: the external surface is rough and the coefficient of friction with the bone bed is high, which is beneficial for the initial stability of the acetabulum and femoral stem after implantation.</li><li>Good compatibility: can be used with standard outer cups.</li><li>Wide range of application: applicable to IIB, IIIA, and IIIB bone defect cases that may require the use of augments.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
+
       {
         "id": "protesis-de-cadera-copa-estructura-trabecular-g20-2",
         "slug": "copa-estructura-trabecular-g20-2",
@@ -1470,62 +1471,6 @@
         ]
       },
       {
-        "id": "protesis-de-hombro-anclaje-de-sutura-peek-1",
-        "slug": "anclaje-de-sutura-peek-1",
-        "title": "PEEK Suture Anchor",
-        "images": [
-          "/wp-content/uploads/2025/01/p1.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1360\" class=\"elementor-element elementor-element-a55c488 e-con-full e-flex e-con e-child\" data-id=\"a55c488\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1360\" class=\"elementor-element elementor-element-8f2e685 e-flex e-con-boxed e-con e-child\" data-id=\"8f2e685\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-a3abf4d elementor-widget elementor-widget-text-editor\" data-id=\"a3abf4d\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The anchor is made of polyetheretherketone (PEEK) material, and the surgical field is free of metal artifacts.</li><li>Complete sizing and specifications to meet surgical needs.</li><li>The MB(II) type is partially double-threaded, and the MB(III) type provides a stronger fixation force for the<br>double thread.</li><li>Pre-load one or two high-strength sutures.</li><li>The combination of pure white suture and blue-and-white suture is used to facilitate intraoperative recognition of<br>sutures and knots.</li><li>The inserter screw shaft features an insertion depth marker line, making the insertion process clear.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "protesis-de-hombro-anclaje-de-titanio-impreso-3d-1",
-        "slug": "anclaje-de-titanio-impreso-3d-1",
-        "title": "3D Printed Titanium Anchor",
-        "images": [
-          "/wp-content/uploads/2025/01/p2.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1940\" class=\"elementor-element elementor-element-50f0d9d e-con-full e-flex e-con e-child\" data-id=\"50f0d9d\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1940\" class=\"elementor-element elementor-element-d67057a e-flex e-con-boxed e-con e-child\" data-id=\"d67057a\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-9b4296a elementor-widget elementor-widget-text-editor\" data-id=\"9b4296a\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The anchor adopts a high-low double-thread design with the same structure as the metal anchor, which can provide better fixation strength than the metal anchor.</li><li>Mix and match with sutures of the same series to provide a variety of combination solutions according to the physician's needs.</li><li>The anchor has excellent self-tapping performance and can be used to insert metal anchors without the<br>need for pre-drilling.</li><li>The anchor features an independent suture eyelet design to prevent suture tangles and knotting.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "protesis-de-hombro-cables-1",
-        "slug": "cables-1",
-        "title": "Cables",
-        "images": [
-          "/wp-content/uploads/2025/01/p12.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-2940\" class=\"elementor-element elementor-element-85dc780 e-con-full e-flex e-con e-child\" data-id=\"85dc780\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-2940\" class=\"elementor-element elementor-element-5ac0607 e-flex e-con-boxed e-con e-child\" data-id=\"5ac0607\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-d9360a6 elementor-widget elementor-widget-text-editor\" data-id=\"d9360a6\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <p>The cable is twisted with titanium alloy wire, which offers good flexibility and prevents intraoperative fixation issues and postoperative fatigue fracture associated with single steel wires.</p><p><br>Compared to the traditional Kirschner wire, fixation is convenient and stable, and irritation of the<br>soft tissue.</p> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "protesis-de-hombro-hilo-de-polietileno-1",
-        "slug": "hilo-de-polietileno-1",
-        "title": "Polyethylene Suture",
-        "images": [
-          "/wp-content/uploads/2025/01/p16.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-2490\" class=\"elementor-element elementor-element-88088b8 e-con-full e-flex e-con e-child\" data-id=\"88088b8\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-2490\" class=\"elementor-element elementor-element-77ef790 e-flex e-con-boxed e-con e-child\" data-id=\"77ef790\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-2f14415 elementor-widget elementor-widget-text-editor\" data-id=\"2f14415\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Sutures are braided with ultra-high-molecular-weight polyethylene thread, which features minimal tissue reaction and good biocompatibility.</li><li>Available in blue, white, and white-blue colors to facilitate identification and suture management during surgical procedures.</li><li>Combinations of different sutures and suture needles, with complete product specifications, can satisfy various customer needs.</li><li>The suture surface is smooth, uniform, knotless and non-fading, flexible, wear-resistant, with excellent knotting performance and tensile strength that far exceeds standard requirements.</li><li>The suture needle is made of medical-grade stainless steel, featuring excellent material quality, good elasticity, and toughness, with a smooth needle-thread transition; the needle tail remains smooth after attachment and offers high connection strength.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
         "id": "protesis-de-hombro-artroplastia-inversa-de-hombro",
         "slug": "artroplastia-inversa-de-hombro",
         "title": "Reverse Shoulder Arthroplasty",
@@ -1545,58 +1490,30 @@
         ]
       },
       {
-        "id": "protesis-de-hombro-anclaje-de-sutura-peek-2",
-        "slug": "anclaje-de-sutura-peek-2",
-        "title": "PEEK Suture Anchor",
+        "id": "protesis-de-hombro-protesis-tumoral-de-articulacion-de-hombro",
+        "slug": "protesis-tumoral-de-articulacion-de-hombro",
+        "title": "Tumor Shoulder Joint Prosthesis",
         "images": [
-          "/wp-content/uploads/2025/01/p1.jpg"
+          "/assets/products/acad9e69ec74f47a5dee1ed5ef0c7b4c.png"
         ],
         "sections": [
           {
             "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1610\" class=\"elementor-element elementor-element-4e794935 e-con-full e-flex e-con e-child\" data-id=\"4e794935\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1610\" class=\"elementor-element elementor-element-362dd812 e-flex e-con-boxed e-con e-child\" data-id=\"362dd812\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-400e34c6 elementor-widget elementor-widget-text-editor\" data-id=\"400e34c6\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The anchor is made of polyetheretherketone (PEEK) material, and the surgical field is free of metal artifacts.</li><li>Complete sizing and specifications to meet surgical needs.</li><li>The MB(II) type is partially double-threaded, and the MB(III) type provides a stronger fixation force for the<br>double thread.</li><li>Pre-load one or two high-strength sutures.</li><li>The combination of pure white suture and blue-and-white suture is used to facilitate intraoperative recognition of<br>sutures and knots.</li><li>The inserter screw shaft features an insertion depth marker line, making the insertion process clear.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Engineered for extensive oncological resections and complex limb salvage reconstruction of the proximal humerus and glenohumeral joint.</li><li>Modular segmental architecture with multiple shaft length options and version adjustability to restore anatomical limb length.</li><li>Dedicated suture and soft-tissue reattachment holes for stable refixation of remaining rotators and deltoid muscles.</li><li>Manufactured from high-strength medical-grade titanium alloy offering exceptional fatigue and corrosion resistance.</li></ol></div></div></div>"
           }
         ]
       },
       {
-        "id": "protesis-de-hombro-anclaje-de-titanio-impreso-3d-2",
-        "slug": "anclaje-de-titanio-impreso-3d-2",
-        "title": "3D Printed Titanium Anchor",
+        "id": "protesis-de-hombro-protesis-de-articulacion-de-hombro-para-enfermedad-osea",
+        "slug": "protesis-de-articulacion-de-hombro-para-enfermedad-osea",
+        "title": "Bone Disease Shoulder Joint Prosthesis",
         "images": [
-          "/wp-content/uploads/2025/01/p2.jpg"
+          "/assets/products/212613629916a9edb47f49bd3cf734ce.png"
         ],
         "sections": [
           {
             "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-9620\" class=\"elementor-element elementor-element-42a571ec e-con-full e-flex e-con e-child\" data-id=\"42a571ec\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-9620\" class=\"elementor-element elementor-element-27cccd1f e-flex e-con-boxed e-con e-child\" data-id=\"27cccd1f\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-29fd5ee1 elementor-widget elementor-widget-text-editor\" data-id=\"29fd5ee1\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The anchor adopts a high-low double-thread design with the same structure as the metal anchor, which can provide better fixation strength than the metal anchor.</li><li>Mix and match with sutures of the same series to provide a variety of combination solutions according to the physician's needs.</li><li>The anchor has excellent self-tapping performance and can be used to insert metal anchors without the<br>need for pre-drilling.</li><li>The anchor features an independent suture eyelet design to prevent suture tangles and knotting.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "protesis-de-hombro-cables-2",
-        "slug": "cables-2",
-        "title": "Cables",
-        "images": [
-          "/wp-content/uploads/2025/01/p12.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-5720\" class=\"elementor-element elementor-element-1023c7af e-con-full e-flex e-con e-child\" data-id=\"1023c7af\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-5720\" class=\"elementor-element elementor-element-343dfd39 e-flex e-con-boxed e-con e-child\" data-id=\"343dfd39\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-ab92ef0 elementor-widget elementor-widget-text-editor\" data-id=\"ab92ef0\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <p>The cable is twisted with titanium alloy wire, which offers good flexibility and prevents intraoperative fixation issues and postoperative fatigue fracture associated with single steel wires.</p><p><br>Compared to the traditional Kirschner wire, fixation is convenient and stable, and irritation of the<br>soft tissue.</p> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "protesis-de-hombro-hilo-de-polietileno-2",
-        "slug": "hilo-de-polietileno-2",
-        "title": "Polyethylene Suture",
-        "images": [
-          "/wp-content/uploads/2025/01/p16.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1260\" class=\"elementor-element elementor-element-9334ef5 e-con-full e-flex e-con e-child\" data-id=\"9334ef5\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1260\" class=\"elementor-element elementor-element-62db7310 e-flex e-con-boxed e-con e-child\" data-id=\"62db7310\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-61c277a1 elementor-widget elementor-widget-text-editor\" data-id=\"61c277a1\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Sutures are braided with ultra-high-molecular-weight polyethylene thread, which features minimal tissue reaction and good biocompatibility.</li><li>Available in blue, white, and white-blue colors to facilitate identification and suture management during surgical procedures.</li><li>Combinations of different sutures and suture needles, with complete product specifications, can satisfy various customer needs.</li><li>The suture surface is smooth, uniform, knotless and non-fading, flexible, wear-resistant, with excellent knotting performance and tensile strength that far exceeds standard requirements.</li><li>The suture needle is made of medical-grade stainless steel, featuring excellent material quality, good elasticity, and toughness, with a smooth needle-thread transition; the needle tail remains smooth after attachment and offers high connection strength.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Indicated for severe inflammatory arthropathy, avascular necrosis of the humeral head, and advanced glenohumeral osteoarthritis.</li><li>Anatomic fixation humeral stem with bioactive coating promoting rapid osseointegration and long-term stability.</li><li>Highly polished low-friction humeral head maximizing range of motion and providing effective pain relief.</li><li>Comprehensive selection of head diameters and eccentric offset heights for precise patient-specific reconstruction.</li></ol></div></div></div>"
           }
         ]
       }
@@ -1613,19 +1530,90 @@
     "id": "medicina-deportiva",
     "title": "Sports Medicine",
     "description": "Fixation and suture solutions for arthroscopic surgery and sports medicine: high-strength anchors and next-generation polyethylene sutures.",
-    "image": "/wp-content/uploads/2025/01/p2.jpg",
+    "image": "/wp-content/uploads/2026/07/Mdeicina Deportiva.png",
     "products": [
       {
-        "id": "medicina-deportiva-anclaje-de-titanio-impreso-3d",
-        "slug": "anclaje-de-titanio-impreso-3d",
-        "title": "3D Printed Titanium Anchor",
+        "id": "medicina-deportiva-anclaje-de-aleacion-de-titanio-impreso-en-3d",
+        "slug": "anclaje-de-aleacion-de-titanio-impreso-en-3d",
+        "title": "3D Printed Titanium Alloy Anchor",
         "images": [
+          "/assets/products/5c8068aa5e1ea7ec05bcec9b6d02460d.png",
           "/wp-content/uploads/2025/01/p2.jpg"
         ],
         "sections": [
           {
             "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-9610\" class=\"elementor-element elementor-element-773de314 e-con-full e-flex e-con e-child\" data-id=\"773de314\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-9610\" class=\"elementor-element elementor-element-1c844db5 e-flex e-con-boxed e-con e-child\" data-id=\"1c844db5\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-27911ec elementor-widget elementor-widget-text-editor\" data-id=\"27911ec\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The anchor adopts a high-low double-thread design with the same structure as the metal anchor, which can provide better fixation strength than the metal anchor.</li><li>Mix and match with sutures of the same series to provide a variety of combination solutions according to the physician's needs.</li><li>The anchor has excellent self-tapping performance and can be used to insert metal anchors without the<br>need for pre-drilling.</li><li>The anchor features an independent suture eyelet design to prevent suture tangles and knotting.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Manufactured via 3D additive manufacturing in titanium alloy (Ti-6Al-4V) featuring an osteoconductive trabecular porous lattice.</li><li>High-low dual-lead self-tapping thread design optimizing cortical purchase and maximizing pullout resistance.</li><li>Polished independent suture eyelet preventing suture abrasion and fraying during knot tying.</li><li>Indicated for rotator cuff repair, shoulder instability (Bankart/SLAP), and ligament reconstructions in knee and ankle.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-con-recubrimiento-de-tantalio",
+        "slug": "anclaje-de-sutura-con-recubrimiento-de-tantalio",
+        "title": "Tantalum Coated Suture Anchor",
+        "images": [
+          "/assets/products/6a4855448b64f125a52f92bdea317e7a.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>High-strength titanium core with biomimetic porous tantalum coating for enhanced biocompatibility and bone ingrowth.</li><li>Accelerates early osseointegration and osteoblast adhesion at the bone-implant interface.</li><li>Superior biomechanical resistance against tensile and cyclic pullout forces.</li><li>Pre-loaded with high-strength ultra-high-molecular-weight polyethylene (UHMWPE) sutures.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura",
+        "slug": "anclaje-de-sutura",
+        "title": "Suture Anchor",
+        "images": [
+          "/assets/products/3796bda034e9a5f01c218fd12c57a155.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Precision threaded anchor for solid, reliable soft tissue-to-bone fixation in arthroscopic and open surgery.</li><li>Tapered profile with self-tapping tip facilitating clean, minimally invasive insertion with reduced torque.</li><li>Smooth rounded eyelet providing low-friction passage for multiple suture strands.</li><li>Designed for arthroscopic and mini-open procedures across shoulder, elbow, knee, and ankle.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-no-absorbible",
+        "slug": "anclaje-de-sutura-no-absorbible",
+        "title": "Non-absorbable Suture Anchor",
+        "images": [
+          "/assets/products/0530a8689a84aa5b4814246a3765c71e.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Permanent non-absorbable structure providing continuous mechanical stability and long-term support during tissue healing.</li><li>Deep threads optimized for purchase in both cortical and cancellous bone, preventing loosening.</li><li>Pre-mounted on an ergonomic disposable inserter with clear insertion depth laser marks.</li><li>Includes high-strength sutures with distinct color combinations for easy intraoperative identification.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-no-absorbible-de-doble-rosca",
+        "slug": "anclaje-de-sutura-no-absorbible-de-doble-rosca",
+        "title": "Non-absorbable Suture Anchor (Dual Thread)",
+        "images": [
+          "/assets/products/02c11c66a2579c3b8a94a69985ee7c24.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Specialized dual-thread lead design allowing rapid insertion with fewer rotations and minimized bone heating.</li><li>Exceptional holding power in lower-density bone or compromised cancellous bone stock.</li><li>Recessed eyelet shielding sutures from direct abrasive contact against the bone cortex.</li><li>Ideal for medial row rotator cuff repairs and high-demand tendon reconstruction.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-todo-sutura-all-suture",
+        "slug": "anclaje-todo-sutura-all-suture",
+        "title": "All-Suture Anchor",
+        "images": [
+          "/assets/products/1088602501d6b9dbec365b3a3d360a08.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>100% all-textile soft tissue anchor minimizing bone tunnel diameter (1.4 mm - 1.8 mm pilot drill).</li><li>Sub-cortical expansion mechanism providing rigid fixation upon tensioning the deployment strand.</li><li>Maximizes native bone preservation, ideal for revision surgery and glenoid/acetabular labral repairs.</li><li>Eliminates rigid metal artifacts and risk of loose implant fragments in the joint.</li></ol></div></div></div>"
           }
         ]
       },
@@ -1634,26 +1622,211 @@
         "slug": "anclaje-de-sutura-peek",
         "title": "PEEK Suture Anchor",
         "images": [
+          "/assets/products/95450c4d78d1064bf2b268a4f3d7f335.png",
           "/wp-content/uploads/2025/01/p1.jpg"
         ],
         "sections": [
           {
             "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-5520\" class=\"elementor-element elementor-element-66ebd9e9 e-con-full e-flex e-con e-child\" data-id=\"66ebd9e9\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-5520\" class=\"elementor-element elementor-element-123e158c e-flex e-con-boxed e-con e-child\" data-id=\"123e158c\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-2b30eabd elementor-widget elementor-widget-text-editor\" data-id=\"2b30eabd\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The anchor is made of polyetheretherketone (PEEK) material, and the surgical field is free of metal artifacts.</li><li>Complete sizing and specifications to meet surgical needs.</li><li>The MB(II) type is partially double-threaded, and the MB(III) type provides a stronger fixation force for the<br>double thread.</li><li>Pre-load one or two high-strength sutures.</li><li>The combination of pure white suture and blue-and-white suture is used to facilitate intraoperative recognition of<br>sutures and knots.</li><li>The inserter screw shaft features an insertion depth marker line, making the insertion process clear.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Manufactured from biocompatible radiolucent PEEK polymer, completely artifact-free under MRI and CT imaging.</li><li>Modulus of elasticity close to human cortical bone, ensuring uniform load distribution.</li><li>Outstanding self-tapping mechanical strength for direct insertion without extensive pre-drilling.</li><li>Pre-loaded with high-strength UHMWPE sutures and packaged on an ergonomic inserter with visual depth markers.</li></ol></div></div></div>"
           }
         ]
       },
       {
-        "id": "medicina-deportiva-hilo-de-polietileno",
-        "slug": "hilo-de-polietileno",
-        "title": "Polyethylene Suture",
+        "id": "medicina-deportiva-perno-de-anclaje-roscado-de-material-peek",
+        "slug": "perno-de-anclaje-roscado-de-material-peek",
+        "title": "PEEK Material Threaded Anchor Bolt",
         "images": [
+          "/assets/products/fd6619a3ed49c5ce795a0477ddb8e634.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>High-stability threaded anchor bolt for solid soft tissue and graft fixation inside bone sockets.</li><li>Continuous thread geometry ensuring even compression and preventing graft slippage.</li><li>Inert medical-grade thermoplastic resistant to mechanical fatigue and biological degradation.</li><li>Compatible with quick-connect inserters for high-precision arthroscopic procedures.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-sin-nudos-roscado-peek",
+        "slug": "anclaje-de-sutura-sin-nudos-roscado-peek",
+        "title": "PEEK Screw-In Knotless Suture Anchor",
+        "images": [
+          "/assets/products/811e0ce82d66aea7c4af5c857fa6128d.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Threaded knotless technology allowing stepwise, millimeter-precise tensioning prior to final locking.</li><li>Eliminates knot stacks in the subacromial/joint space, mitigating synovial impingement and cartilage wear.</li><li>High-strength PEEK construction ensuring anatomical footprint compression (SpeedBridge/SutureBridge techniques).</li><li>Intuitive single-step deployment via pre-assembled ergonomic inserter.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-tejido-sin-nudos-peek",
+        "slug": "anclaje-de-sutura-tejido-sin-nudos-peek",
+        "title": "PEEK Knotless Knit-In Suture Anchor",
+        "images": [
+          "/assets/products/5e32bae62c62d8850eea560aa6e75ca2.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Push-in / impaction knotless mechanism with direct mechanical locking of braided suture tapes.</li><li>Ideal for rapid, secure lateral row fixation in double-row rotator cuff repairs.</li><li>PEEK body with barbed retention ribs maximizing purchase in cancellous bone of the tuberosity.</li><li>Facilitates a highly reproducible surgical technique, significantly reducing operative time.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-cuchilla-para-fresador-shaver-desechable",
+        "slug": "cuchilla-para-fresador-shaver-desechable",
+        "title": "Disposable Shaver Blade",
+        "images": [
+          "/assets/products/e582306d36f3b5d5323ba7155e3d2a4d.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Ultra-sharp arthroscopic shaver blade manufactured from medical-grade surgical stainless steel.</li><li>Engineered for efficient resection and debridement of synovial tissue, meniscus, and soft tissue debris.</li><li>Superior concentricity and seamless coupling with standard universal arthroscopic motor consoles.</li><li>Sterile single-use packaging ensuring maximum cutting efficiency and zero cross-contamination risk.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-fresa-shaver-de-un-solo-uso",
+        "slug": "fresa-shaver-de-un-solo-uso",
+        "title": "Single-use Shaver Burr",
+        "images": [
+          "/assets/products/38d438ea3de3435f52af653be6e29453.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>High-speed arthroscopic bone burr with multi-fluted helical cutting head for efficient bone sculpting.</li><li>Indicated for acromioplastia, osteophyte resection, intercondylar notchplasty, and bone bed preparation.</li><li>Integrated suction port continuously evacuates bone debris for an unobstructed surgical view.</li><li>Precision design minimizing vibration and intraoperative bone thermal generation.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-sistema-de-reparacion-de-menisco",
+        "slug": "sistema-de-reparacion-de-menisco",
+        "title": "Meniscus Repair System",
+        "images": [
+          "/assets/products/198f1f4de9365e15de837bd7fb3159f3.png",
+          "/wp-content/uploads/2025/01/p15.jpg"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>All-inside arthroscopic system for anatomical repair and preservation of meniscal tears.</li><li>Low-profile PEEK implants paired with non-absorbable 2-0 UHMWPE high-strength sutures.</li><li>Curved needle with adjustable depth stopper to protect the popliteal neurovascular bundle.</li><li>360° single-handed active deployment mechanism simplifying passage and tensioning of the self-locking knot.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-tornillo-de-interferencia",
+        "slug": "tornillo-de-interferencia",
+        "title": "Interface Screw",
+        "images": [
+          "/assets/products/8e571adcfc80a1d8d7afc591f5e28dcb.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Cannulated interference screw for BTB (bone-tendon-bone) and soft tissue graft fixation in ACL/PCL reconstructions.</li><li>Atraumatic rounded thread profile preventing fiber shearing or graft laceration during insertion.</li><li>Available in medical-grade titanium alloy and radiolucent PEEK polymer for robust primary stability.</li><li>Tapered tip and central cannulation ensuring smooth, accurate guide-wire insertion.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-grapa-quirurgica",
+        "slug": "grapa-quirurgica",
+        "title": "Surgical Staple",
+        "images": [
+          "/assets/products/fb629f320163d7fa4e8a9d76806823be.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Bone and ligament fixation staple manufactured from high-strength titanium alloy or medical stainless steel.</li><li>Sharp barbed legs preventing back-out and ensuring solid cortical purchase.</li><li>Superior compressive strength for osteotomy fixation, small joint arthrodesis, and soft tissue reattachment.</li><li>Low-profile bridge minimizing subcutaneous palpability and soft tissue irritation.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-placa-de-titanio-con-bucle",
+        "slug": "placa-de-titanio-con-bucle",
+        "title": "Titanium Plate with Loop",
+        "images": [
+          "/assets/products/5b105af8c3ad9f564b5826c243b7d0f4.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Suspensory cortical fixation system for anatomical ACL and PCL ligament reconstructions.</li><li>Low-profile titanium button with polished rounded edges and pre-measured continuous braided UHMWPE loop (15 mm to 50 mm).</li><li>Evenly distributes tensile loads across the femoral cortex, providing rigid graft suspension.</li><li>Facilitates secure cortical flipping with clear tactile and fluoroscopic verification.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-placa-de-titanio-de-banda-ajustable",
+        "slug": "placa-de-titanio-de-banda-ajustable",
+        "title": "Adjustable Loop Titanium Plate",
+        "images": [
+          "/assets/products/f171ca5ec07026a58bd420a60f5e5416.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Adjustable cortical fixation plate enabling millimeter-precise graft tensioning and socket filling.</li><li>Unidirectional self-locking mechanism preventing loop elongation under dynamic cyclic loading.</li><li>Allows intraoperative re-tensioning of the graft after tibial fixation to eliminate residual laxity.</li><li>Fully compatible with independent anatomical drilling techniques (anteromedial portal or outside-in).</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-sutura-quirurgica-no-absorbible",
+        "slug": "sutura-quirurgica-no-absorbible",
+        "title": "Non-absorbable Surgical Suture (Polyethylene)",
+        "images": [
+          "/assets/products/1ca3ee9ffafef944cc2bc5e8cf61cde4.png",
           "/wp-content/uploads/2025/01/p16.jpg"
         ],
         "sections": [
           {
             "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1150\" class=\"elementor-element elementor-element-26d6f939 e-con-full e-flex e-con e-child\" data-id=\"26d6f939\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1150\" class=\"elementor-element elementor-element-21c6a85e e-flex e-con-boxed e-con e-child\" data-id=\"21c6a85e\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6e3128ed elementor-widget elementor-widget-text-editor\" data-id=\"6e3128ed\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Sutures are braided with ultra-high-molecular-weight polyethylene thread, which features minimal tissue reaction and good biocompatibility.</li><li>Available in blue, white, and white-blue colors to facilitate identification and suture management during surgical procedures.</li><li>Combinations of different sutures and suture needles, with complete product specifications, can satisfy various customer needs.</li><li>The suture surface is smooth, uniform, knotless and non-fading, flexible, wear-resistant, with excellent knotting performance and tensile strength that far exceeds standard requirements.</li><li>The suture needle is made of medical-grade stainless steel, featuring excellent material quality, good elasticity, and toughness, with a smooth needle-thread transition; the needle tail remains smooth after attachment and offers high connection strength.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Ultra-high-strength surgical suture braided from ultra-high-molecular-weight polyethylene (UHMWPE) fibers.</li><li>Tensile strength substantially exceeding conventional polyester and traditional surgical threads.</li><li>Superior knot security with low-profile flat knots and smooth sliding characteristics.</li><li>Broad range of sizes, color patterns (white, blue, cobraid), and high-grade stainless steel needle configurations.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-engrapadora-dermica-desechable",
+        "slug": "engrapadora-dermica-desechable",
+        "title": "Disposable Skin Stapler",
+        "images": [
+          "/assets/products/36482b274887b991289f62332fe0b947.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Ergonomic sterile skin stapler pre-loaded with 35 medical-grade stainless steel staples for rapid wound closure.</li><li>Smooth trigger mechanism reducing closure time and supporting clean cosmetic healing.</li><li>Clear indicator window displaying remaining staple count at all times.</li><li>Lightweight single-use sterile construction ensuring utmost patient safety.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-canula-para-portal-artroscopico",
+        "slug": "canula-para-portal-artroscopico",
+        "title": "Arthroscopic Portal Cannula",
+        "images": [
+          "/assets/products/c4505cc63f7639d6aae52c0fdc7f8b23.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Translucent threaded arthroscopic cannula establishing stable, repeatable instrument access to the joint cavity.</li><li>External retention ribs preventing unintentional cannula back-out during aggressive instrument passes.</li><li>Flexible silicone seal valve preventing fluid leakage while permitting smooth passage of curved instruments.</li><li>Equipped with dual fluid inflow/outflow ports with stopcock flow control.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-manga-para-portal-artroscopico-esteril-desechable",
+        "slug": "manga-para-portal-artroscopico-esteril-desechable",
+        "title": "Disposable Sterile Arthroscopic Portal Sleeve",
+        "images": [
+          "/assets/products/2ed13157d3cf81d0e42dfa75b7168755.png"
+        ],
+        "sections": [
+          {
+            "label": "Information",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Disposable sterile protective portal sleeve shielding periarticular soft tissues during arthroscopy.</li><li>Minimizes tissue trauma and prevents suture bridge snagging during repeated instrument exchanges.</li><li>Flexible, biocompatible medical-grade polymer construction, completely latex-free.</li><li>Individually packaged and sterile, ready for immediate intraoperative use.</li></ol></div></div></div>"
           }
         ]
       }
@@ -1663,7 +1836,7 @@
     "id": "cirugia-de-columna",
     "title": "Spine Surgery",
     "description": "High-precision solutions and implants for surgical procedures, fixation, and spine reconstruction.",
-    "image": "/assets/categories/columna-placeholder.svg",
+    "image": "/wp-content/uploads/2026/07/cirugia de columna.png",
     "products": [
       {
         "id": "cirugia-de-columna-caja-de-fusion-intersomatica-de-tantalio-poroso-cvd",
@@ -1933,4 +2106,4 @@
       }
     ]
   }
-]
+]

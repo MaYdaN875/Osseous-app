@@ -524,16 +524,30 @@
         ]
       },
       {
-        "id": "protesis-de-cadera-aumentos",
-        "slug": "aumentos",
-        "title": "Aumentos",
+        "id": "protesis-de-cadera-bloque-acetabular-trabecular",
+        "slug": "bloque-acetabular-trabecular",
+        "title": "Bloque acetabular trabecular",
         "images": [
-          "/wp-content/uploads/2024/12/Captura-de-pantalla-2024-12-18-a-las-1.14.23 p.m.png"
+          "/assets/products/6ec50557ceb13e7108bde01f4a751c3f.png"
         ],
         "sections": [
           {
             "label": "Información",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-5090\" class=\"elementor-element elementor-element-7fccf8d e-con-full e-flex e-con e-child\" data-id=\"7fccf8d\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-5090\" class=\"elementor-element elementor-element-feb892f e-flex e-con-boxed e-con e-child\" data-id=\"feb892f\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-5d18970 elementor-widget elementor-widget-text-editor\" data-id=\"5d18970\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Ventajas de la osteointegración: la estructura de malla proporciona un mejor espacio para el crecimiento óseo.</li><li>Ventajas mecánicas: la estructura trabecular ósea biónica se ajusta a la distribución del estrés fisiológico y puede<br>reducir el blindaje del estrés en la mayor medida posible.</li><li>Excelente estabilidad inicial: la superficie externa es rugosa y el coeficiente de fricción con el lecho óseo es grande, lo que es beneficioso para la estabilidad inicial del acetábulo y el vástago femoral después de la implantación.</li><li>Buena compatibilidad: se puede utilizar con copas externas estándar.</li><li>Amplio rango de aplicación: aplicable a los casos de defectos óseos IIB, IlIA y IlIB que pueden requerir el uso de aumentos.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Estructura trabecular biónica altamente porosa diseñada para la reconstrucción de defectos óseos acetabulares complejos (Paprosky II y III).</li><li>Coeficiente de fricción superficial elevado que proporciona una estabilidad inicial sobresaliente y soporte biomecánico rígido.</li><li>Permite el crecimiento óseo profundo continuo a través de sus microporos interconectados para una fijación biológica permanente.</li><li>Compatible con copas acetabulares estándar y de revisión de metal trabecular.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-cadera-lingote-de-tantalio-metalico",
+        "slug": "lingote-de-tantalio-metalico",
+        "title": "Lingote de tantalio metálico",
+        "images": [
+          "/assets/products/523af35bf376cc9332e40e234f13ad89.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Fabricado en tantalio de grado médico de alta pureza para soporte estructural y llenado de grandes pérdidas de sustancia ósea.</li><li>Módulo de elasticidad muy cercano al del hueso esponjoso humano, evitando el apantallamiento de tensiones y la subsidencia.</li><li>Porosidad interconectada del 75-85% que favorece una rápida vascularización, adhesión celular y osteointegración a largo plazo.</li><li>Excelente biocompatibilidad y resistencia a la corrosión bajo cargas fisiológicas de alta demanda.</li></ol></div></div></div>"
           }
         ]
       },
@@ -703,6 +717,34 @@
             "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1181\" class=\"elementor-element elementor-element-1e3f46f e-con-full e-flex e-con e-child\" data-id=\"1e3f46f\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1181\" class=\"elementor-element elementor-element-143d6fff e-flex e-con-boxed e-con e-child\" data-id=\"143d6fff\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-2a175a9f elementor-widget elementor-widget-n-accordion\" data-id=\"2a175a9f\" data-element_type=\"widget\" data-settings=\"{&quot;default_state&quot;:&quot;all_collapsed&quot;,&quot;max_items_expended&quot;:&quot;one&quot;,&quot;n_accordion_animation_duration&quot;:{&quot;unit&quot;:&quot;ms&quot;,&quot;size&quot;:400,&quot;sizes&quot;:[]}}\" data-widget_type=\"nested-accordion.default\"> <div class=\"elementor-widget-container\"> <div class=\"e-n-accordion\" aria-label=\"Accordion. Open links with Enter or Space, close with Escape, and navigate with Arrow Keys\"> <details id=\"e-n-accordion-item-7060\" class=\"e-n-accordion-item\"> <summary class=\"e-n-accordion-item-title\" data-accordion-index=\"1\" tabindex=\"0\" aria-expanded=\"false\" aria-controls=\"e-n-accordion-item-7060\"> <span class=\"e-n-accordion-item-title-header\"><div class=\"e-n-accordion-item-title-text\"> CRCO 22 </div></span> </summary> <div role=\"region region\" aria-labelledby=\"e-n-accordion-item-1181 e-n-accordion-item-7060\" class=\"elementor-element elementor-element-32f1f969 e-con-full e-flex e-con e-child\" data-id=\"32f1f969\" data-element_type=\"container\"> <div role=\"region region\" aria-labelledby=\"e-n-accordion-item-1181 e-n-accordion-item-7060\" class=\"elementor-element elementor-element-f4a9a88 e-flex e-con-boxed e-con e-child\" data-id=\"f4a9a88\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-62e4d510 elementor-widget elementor-widget-text-editor\" data-id=\"62e4d510\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ul><li>0mm</li><li>3mm</li><li>6mm</li><li>9mm</li></ul> </div> </div> </div> </div> </div> </details> <details id=\"e-n-accordion-item-7061\" class=\"e-n-accordion-item\"> <summary class=\"e-n-accordion-item-title\" data-accordion-index=\"2\" tabindex=\"-1\" aria-expanded=\"false\" aria-controls=\"e-n-accordion-item-7061\"> <span class=\"e-n-accordion-item-title-header\"><div class=\"e-n-accordion-item-title-text\"> CRCO 28 </div></span> </summary> <div role=\"region region\" aria-labelledby=\"e-n-accordion-item-1181 e-n-accordion-item-7061\" class=\"elementor-element elementor-element-7cca020b e-con-full e-flex e-con e-child\" data-id=\"7cca020b\" data-element_type=\"container\"> <div role=\"region region\" aria-labelledby=\"e-n-accordion-item-1181 e-n-accordion-item-7061\" class=\"elementor-element elementor-element-7c6e3815 e-flex e-con-boxed e-con e-child\" data-id=\"7c6e3815\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-4d29c1f1 elementor-widget elementor-widget-text-editor\" data-id=\"4d29c1f1\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ul><li>-6mm</li><li>-3mm</li><li>0mm</li><li>3mm</li><li>6mm</li><li>9mm</li></ul> </div> </div> </div> </div> </div> </details> <details id=\"e-n-accordion-item-7062\" class=\"e-n-accordion-item\"> <summary class=\"e-n-accordion-item-title\" data-accordion-index=\"3\" tabindex=\"-1\" aria-expanded=\"false\" aria-controls=\"e-n-accordion-item-7062\"> <span class=\"e-n-accordion-item-title-header\"><div class=\"e-n-accordion-item-title-text\"> CRCO 32 </div></span> </summary> <div role=\"region region\" aria-labelledby=\"e-n-accordion-item-1181 e-n-accordion-item-7062\" class=\"elementor-element elementor-element-6fc48377 e-con-full e-flex e-con e-child\" data-id=\"6fc48377\" data-element_type=\"container\"> <div role=\"region region\" aria-labelledby=\"e-n-accordion-item-1181 e-n-accordion-item-7062\" class=\"elementor-element elementor-element-4cc22cea e-flex e-con-boxed e-con e-child\" data-id=\"4cc22cea\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-744accaf elementor-widget elementor-widget-text-editor\" data-id=\"744accaf\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ul><li>-6mm</li><li>-3mm</li><li>0mm</li><li>3mm</li><li>6mm</li><li>9mm</li></ul> </div> </div> </div> </div> </div> </details> <details id=\"e-n-accordion-item-7063\" class=\"e-n-accordion-item\"> <summary class=\"e-n-accordion-item-title\" data-accordion-index=\"4\" tabindex=\"-1\" aria-expanded=\"false\" aria-controls=\"e-n-accordion-item-7063\"> <span class=\"e-n-accordion-item-title-header\"><div class=\"e-n-accordion-item-title-text\"> CRCO 36 </div></span> </summary> <div role=\"region region\" aria-labelledby=\"e-n-accordion-item-1181 e-n-accordion-item-7063\" class=\"elementor-element elementor-element-656b5be2 e-con-full e-flex e-con e-child\" data-id=\"656b5be2\" data-element_type=\"container\"> <div role=\"region region\" aria-labelledby=\"e-n-accordion-item-1181 e-n-accordion-item-7063\" class=\"elementor-element elementor-element-274e7fac e-flex e-con-boxed e-con e-child\" data-id=\"274e7fac\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-16c435bb elementor-widget elementor-widget-text-editor\" data-id=\"16c435bb\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ul><li>-6mm</li><li>-3mm</li><li>0mm</li><li>3mm</li><li>6mm</li><li>9mm</li></ul> </div> </div> </div> </div> </div> </details> </div> </div> </div> </div> </div> </div>"
           }
         ]
+      },
+      {
+        "id": "protesis-de-hombro-protesis-tumoral-de-articulacion-de-hombro",
+        "slug": "protesis-tumoral-de-articulacion-de-hombro",
+        "title": "Prótesis tumoral de articulación de hombro",
+        "images": [
+          "/assets/products/acad9e69ec74f47a5dee1ed5ef0c7b4c.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Diseñada para resecciones oncológicas extensas y reconstrucciones complejas del húmero proximal y la articulación glenohumeral.</li><li>Sistema modular con múltiples opciones de longitud diafisaria y ajuste de versión para restaurar la longitud anatómica del miembro.</li><li>Orificios y ranuras de reinserción periarticular diseñados para la refijación estable de partes blandas y manguito rotador remanente.</li><li>Fabricada en aleación de titanio de grado médico de alta resistencia mecánica a la fatiga y corrosión.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "protesis-de-hombro-protesis-de-articulacion-de-hombro-para-enfermedad-osea",
+        "slug": "protesis-de-articulacion-de-hombro-para-enfermedad-osea",
+        "title": "Prótesis de articulación de hombro para enfermedad ósea",
+        "images": [
+          "/assets/products/212613629916a9edb47f49bd3cf734ce.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Indicada para artropatías inflamatorias severas, osteonecrosis avascular de la cabeza humeral y artrosis glenohumeral avanzada.</li><li>Vástago humeral de fijación anatómica con recubrimiento bioactivo para promover una rápida osteointegración y fijación duradera.</li><li>Cabeza humeral altamente pulida con baja fricción que maximiza el arco de movimiento y alivia el dolor articular.</li><li>Gran versatilidad en diámetros y alturas de cabeza para una adaptación articular paciente-específica precisa.</li></ol></div></div></div>"
+          }
+        ]
       }
     ]
   },
@@ -717,19 +759,90 @@
     "id": "medicina-deportiva",
     "title": "Medicina Deportiva",
     "description": "Soluciones de fijación y sutura para cirugía artroscópica y medicina deportiva: anclajes de alta resistencia e hilos de polietileno de última generación.",
-    "image": "/wp-content/uploads/2025/01/p2.jpg",
+    "image": "/wp-content/uploads/2026/07/Mdeicina Deportiva.png",
     "products": [
       {
-        "id": "medicina-deportiva-anclaje-de-titanio-impreso-3d",
-        "slug": "anclaje-de-titanio-impreso-3d",
-        "title": "Anclaje de titanio impreso 3D",
+        "id": "medicina-deportiva-anclaje-de-aleacion-de-titanio-impreso-en-3d",
+        "slug": "anclaje-de-aleacion-de-titanio-impreso-en-3d",
+        "title": "Anclaje de aleación de titanio impreso en 3D",
         "images": [
+          "/assets/products/5c8068aa5e1ea7ec05bcec9b6d02460d.png",
           "/wp-content/uploads/2025/01/p2.jpg"
         ],
         "sections": [
           {
             "label": "Información",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-9610\" class=\"elementor-element elementor-element-773de314 e-con-full e-flex e-con e-child\" data-id=\"773de314\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-9610\" class=\"elementor-element elementor-element-1c844db5 e-flex e-con-boxed e-con e-child\" data-id=\"1c844db5\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-27911ec elementor-widget elementor-widget-text-editor\" data-id=\"27911ec\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>El ancla adopta un diseño de doble rosca alta-baja con la misma estructura que el ancla de metal, que puede proporcionar una mejor fuerza de fijación que el ancla de metal.</li><li>Combine y combine con suturas de la misma serie para proporcionar una variedad de soluciones de combinación según las necesidades del médico.</li><li>El ancla tiene un excelente rendimiento autorroscante y se puede utilizar para perforar anclajes de metal sin la<br>necesidad de perforar agujeros previamente.</li><li>El ancla utiliza un diseño de orificio de alambre independiente para evitar que las suturas se enreden y se anude.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Fabricado mediante manufactura aditiva 3D en aleación de titanio (Ti-6Al-4V) con estructura porosa trabecular osteoconductiva.</li><li>Diseño de doble rosca alta-baja autorroscante que optimiza la fijación bicortical y maximiza la fuerza de retención ósea.</li><li>Orificio de sutura independiente y pulido para evitar la abrasión, nudos accidentales y fricción del hilo de sutura.</li><li>Indicado para reparación del manguito rotador, inestabilidad glenohumeral (Bankart/SLAP) y lesiones ligamentarias complejas.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-con-recubrimiento-de-tantalio",
+        "slug": "anclaje-de-sutura-con-recubrimiento-de-tantalio",
+        "title": "Anclaje de sutura con recubrimiento de tantalio",
+        "images": [
+          "/assets/products/6a4855448b64f125a52f92bdea317e7a.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Estructura de titanio de alta resistencia recubierta con tantalio biomimético de alta porosidad e interconectividad.</li><li>Acelera la respuesta de osteointegración temprana y la adhesión celular firme en la interfase ósea.</li><li>Elevado coeficiente de fricción superficial que proporciona máxima estabilidad primaria inmediata bajo cargas cíclicas.</li><li>Precargado con suturas de polietileno de peso molecular ultraalto (UHMWPE) de resistencia superior.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura",
+        "slug": "anclaje-de-sutura",
+        "title": "Anclaje de sutura",
+        "images": [
+          "/assets/products/3796bda034e9a5f01c218fd12c57a155.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Anclaje roscado de precisión para reinserción sólida de tendones y ligamentos en cirugía artroscópica y abierta.</li><li>Punta cónica autorroscante que reduce el torque de inserción y asegura un agarre firme en hueso cortical y esponjoso.</li><li>Ojal de paso suave con acabado de baja fricción para manipulación fluida de múltiples hebras de sutura.</li><li>Excelente desempeño en reparaciones de hombro, codo, rodilla y tobillo.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-no-absorbible",
+        "slug": "anclaje-de-sutura-no-absorbible",
+        "title": "Anclaje de sutura no absorbible",
+        "images": [
+          "/assets/products/0530a8689a84aa5b4814246a3765c71e.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Estructura permanente de soporte mecánico continuo diseñada para mantener la aposición tisular durante toda la fase de curación.</li><li>Roscas cortantes de paso optimizado para un anclaje rígido sin debilitar la cortical ósea circundante.</li><li>Premontado en mango insertador ergonómico desechable con marcas de profundidad de inserción claras.</li><li>Incluye combinaciones de suturas bicolores para facilitar la identificación y el anudado intraoperatorio.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-no-absorbible-de-doble-rosca",
+        "slug": "anclaje-de-sutura-no-absorbible-de-doble-rosca",
+        "title": "Anclaje de sutura no absorbible de doble rosca",
+        "images": [
+          "/assets/products/02c11c66a2579c3b8a94a69985ee7c24.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Geometría de rosca doble que duplica la velocidad de avance por giro y minimiza el trauma por fricción ósea.</li><li>Fijación reforzada en zonas anatómicas con calidad ósea variable o densidad esponjosa reducida.</li><li>Ojal protegido dentro del cuerpo del implante para resguardar la sutura de roces abrasivos con el borde cortical.</li><li>Ideal para técnicas de reparación en hilera medial y reconstrucción tendinosa de alta exigencia.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-todo-sutura-all-suture",
+        "slug": "anclaje-todo-sutura-all-suture",
+        "title": "Anclaje todo-sutura (All-suture)",
+        "images": [
+          "/assets/products/1088602501d6b9dbec365b3a3d360a08.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Implante 100% textil de mínima invasión que requiere un orificio piloto óseo ultracompacto (1.4 mm a 1.8 mm).</li><li>Al tensar las suturas de despliegue, la camisa de sutura se expande contra la cortical interna generando un anclaje ultrarresistente.</li><li>Preserva el stock óseo nativo y reduce el riesgo de fracturas marginales en el reborde glenoideo y acetabular.</li><li>Totalmente radiotransparente y sin riesgo de fragmentos metálicos o aflojamientos mecánicos en la articulación.</li></ol></div></div></div>"
           }
         ]
       },
@@ -738,40 +851,211 @@
         "slug": "anclaje-de-sutura-peek",
         "title": "Anclaje de Sutura PEEK",
         "images": [
+          "/assets/products/95450c4d78d1064bf2b268a4f3d7f335.png",
           "/wp-content/uploads/2025/01/p1.jpg"
         ],
         "sections": [
           {
             "label": "Información",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-5520\" class=\"elementor-element elementor-element-66ebd9e9 e-con-full e-flex e-con e-child\" data-id=\"66ebd9e9\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-5520\" class=\"elementor-element elementor-element-123e158c e-flex e-con-boxed e-con e-child\" data-id=\"123e158c\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-2b30eabd elementor-widget elementor-widget-text-editor\" data-id=\"2b30eabd\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>El ancla está hecha de material de polieteretercetona (PEEK), y la luz quirúrgica no tiene artefactos metálicos.</li><li>Tamaño completo y especificaciones para satisfacer las necesidades de la cirugía.</li><li>El tipo MB(II) es parcialmente de doble rosca, y el tipo MB(III) proporciona una fuerza de fijación más fuerte para la<br>doble rosca.</li><li>Preestablezca una o dos suturas de alta resistencia.</li><li>La combinación de sutura blanca pura y sutura azul y blanca se utiliza para facilitar el reconocimiento intraoperatorio de<br>suturas y nudos.</li><li>La varilla del tornillo de inserción tiene la línea marcadora de profundidad de inserción, y el proceso de inserción es claro.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Fabricado en polímero biocompatible PEEK (polieteretercetona) de grado médico, radiotransparente y libre de artefactos en RM.</li><li>Módulo de elasticidad similar al hueso cortical, favoreciendo una distribución uniforme de cargas biomecánicas.</li><li>Diseño autorroscante con excelente poder de corte para inserción precisa sin necesidad de pretaladrado extenso.</li><li>Premontado con una o dos suturas UHMWPE de alta resistencia y mango con guía de profundidad visual.</li></ol></div></div></div>"
           }
         ]
       },
       {
-        "id": "medicina-deportiva-hilo-de-polietileno",
-        "slug": "hilo-de-polietileno",
-        "title": "Hilo de Polietileno",
+        "id": "medicina-deportiva-perno-de-anclaje-roscado-de-material-peek",
+        "slug": "perno-de-anclaje-roscado-de-material-peek",
+        "title": "Perno de anclaje roscado de material PEEK",
         "images": [
-          "/wp-content/uploads/2025/01/p16.jpg"
+          "/assets/products/fd6619a3ed49c5ce795a0477ddb8e634.png"
         ],
         "sections": [
           {
             "label": "Información",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1150\" class=\"elementor-element elementor-element-26d6f939 e-con-full e-flex e-con e-child\" data-id=\"26d6f939\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1150\" class=\"elementor-element elementor-element-21c6a85e e-flex e-con-boxed e-con e-child\" data-id=\"21c6a85e\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6e3128ed elementor-widget elementor-widget-text-editor\" data-id=\"6e3128ed\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Las suturas están tejidas con hilo de polietileno de peso molecular ultraalto, que tiene una reacción tisular mínima y buena biocompatibilidad.</li><li>Disponibles en colores azul, blanco y blanco-azul para facilitar la identificación y el manejo de las suturas durante las operaciones quirúrgicas.</li><li>Combinaciones de diferentes suturas y agujas de sutura, especificaciones completas del producto, pueden satisfacer las diversas necesidades de los clientes.</li><li>La superficie de la sutura es lisa, uniforme, sin nudos y no se desvanece, flexible, resistente al desgaste, con excelente rendimiento de anudado y resistencia a la tracción que supera con creces los requisitos estándar.</li><li>La aguja de sutura está hecha de acero inoxidable médico, con excelente material, buena elasticidad y tenacidad, y la conexión del hilo de la aguja es; Suave, y la cola de la aguja debe ser suave después de la conexión y con una alta resistencia de conexión.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Perno roscado de alta estabilidad para fijación rígida de plastias tendinosas y tejidos blandos en túneles óseos.</li><li>Roscas anatómicas continuas diseñadas para una compresión homogénea del injerto sin comprometer su integridad biológica.</li><li>Material termoplástico inerte con alta resistencia al cizallamiento y fatiga dinámica intraarticular.</li><li>Compatible con instrumental canulado para abordajes artroscópicos de mínima invasión.</li></ol></div></div></div>"
           }
         ]
       },
       {
-        "id": "medicina-deportiva-sistema-de-reparacion-del-menisco",
-        "slug": "sistema-de-reparacion-del-menisco",
-        "title": "Sistema de reparación del menisco",
+        "id": "medicina-deportiva-anclaje-de-sutura-sin-nudos-roscado-peek",
+        "slug": "anclaje-de-sutura-sin-nudos-roscado-peek",
+        "title": "Anclaje de sutura sin nudos roscado PEEK",
         "images": [
+          "/assets/products/811e0ce82d66aea7c4af5c857fa6128d.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Tecnología knotless (sin nudos) roscada que permite la graduación y ajuste independiente de la tensión antes del bloqueo definitivo.</li><li>Elimina el bulto de nudos de sutura en el espacio subacromial/intraarticular, suprimiendo la fricción tisular secundaria.</li><li>Cuerpo de PEEK de alta resistencia que garantiza una aposición y huella de contacto anatómica óptima (técnica SutureBridge).</li><li>Procedimiento rápido y reproducible en un solo paso mediante sistema de inserción ergonómico integrado.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-anclaje-de-sutura-tejido-sin-nudos-peek",
+        "slug": "anclaje-de-sutura-tejido-sin-nudos-peek",
+        "title": "Anclaje de sutura tejido sin nudos PEEK",
+        "images": [
+          "/assets/products/5e32bae62c62d8850eea560aa6e75ca2.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Mecanismo de fijación por impacto a presión con bloqueo mecánico directo de cintillas y suturas de alta resistencia.</li><li>Especialmente optimizado para la hilera lateral en reparaciones de manguito rotador en doble hilera.</li><li>Costillas de retención anulares en el cuerpo del implante que maximizan el agarre en hueso esponjoso tuberositario.</li><li>Reduce significativamente el tiempo quirúrgico y asegura una fijación firme y reproducible.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-cuchilla-para-fresador-shaver-desechable",
+        "slug": "cuchilla-para-fresador-shaver-desechable",
+        "title": "Cuchilla para fresador shaver desechable",
+        "images": [
+          "/assets/products/e582306d36f3b5d5323ba7155e3d2a4d.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Cuchilla artroscópica de corte de ultra alta precisión fabricada en acero inoxidable quirúrgico médico templado.</li><li>Optimizada para resección y desbridamiento ágil de tejido sinovial, meniscos y restos fibróticos intraarticulares.</li><li>Acoplamiento hermético universal compatible con consolas motoras de artroscopía estándar.</li><li>Empaque individual estéril de un solo uso que garantiza filo impecable en cada procedimiento.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-fresa-shaver-de-un-solo-uso",
+        "slug": "fresa-shaver-de-un-solo-uso",
+        "title": "Fresa shaver de un solo uso",
+        "images": [
+          "/assets/products/38d438ea3de3435f52af653be6e29453.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Cabezal de corte rotatorio con estrías helicoidales de desbaste óseo de alta velocidad y máxima eficiencia.</li><li>Ideal para acromioplastia, remodelación de osteofitos, notchplastia intercondílea y preparación de huellas óseas.</li><li>Canal de aspiración central continuo que evacúa activamente virutas y residuos óseos manteniendo el campo limpio.</li><li>Diseño balanceado que suprime vibraciones en la pieza de mano y protege la integridad ósea circundante.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-sistema-de-reparacion-de-menisco",
+        "slug": "sistema-de-reparacion-de-menisco",
+        "title": "Sistema de reparación de menisco",
+        "images": [
+          "/assets/products/198f1f4de9365e15de837bd7fb3159f3.png",
           "/wp-content/uploads/2025/01/p15.jpg"
         ],
         "sections": [
           {
             "label": "Información",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-4700\" class=\"elementor-element elementor-element-68316def e-con-full e-flex e-con e-child\" data-id=\"68316def\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-4700\" class=\"elementor-element elementor-element-1b1e77f5 e-flex e-con-boxed e-con e-child\" data-id=\"1b1e77f5\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6afc079e elementor-widget elementor-widget-text-editor\" data-id=\"6afc079e\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Seguridad: el manguito de límite de profundidad ajusta la profundidad para evitar dañar el nervio vascular, lo que lo<br>hace más seguro y confiable.</li><li>Mínimamente invasivo: la barra fija es de tamaño pequeño y se usa junto con una sutura de ultra alta resistencia de 2-0<br># para reducir el daño al menisco.</li><li>Conveniencia: barra fija activada activamente con una sola mano de 360°, que controla el momento de inserción, lo que la hace más conveniente.</li><li>Múltiples opciones: diseñada con curvas hacia adelante y hacia atrás de 12° y ángulos rectos, lo que brinda más opciones.</li><li>Comodidad: basada en el principio ergonómico, la superficie del mango está diseñada para ser antideslizante, lo que la<br>hace más cómoda durante la operación.</li></ol> </div> </div> </div> </div> </div>"
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Sistema todo-adentro (all-inside) para sutura anatómica y preservación de tejido meniscal en roturas complejas.</li><li>Mini-implantes de PEEK de bajo perfil asociados con sutura no absorbible UHMWPE 2-0 de resistencia superior.</li><li>Aguja curvada con limitador de profundidad graduable para proteger el paquete neurovascular poplíteo.</li><li>Activación activa con una sola mano de 360° que simplifica el paso y tensado del nudo deslizante autoblocante.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-tornillo-de-interferencia",
+        "slug": "tornillo-de-interferencia",
+        "title": "Tornillo de interferencia",
+        "images": [
+          "/assets/products/8e571adcfc80a1d8d7afc591f5e28dcb.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Tornillo canulado de interferencia para fijación tibial y femoral de injertos hueso-tendón-hueso (HTH) o tejidos blandos en LCA/LCP.</li><li>Perfil de rosca atraumático y bordes redondeados que previenen la laceración o desgarro de las fibras tendinosas.</li><li>Disponible en aleación de titanio grado médico y PEEK radiotransparente con excelente resistencia a la torsión.</li><li>Punta cónica autorroscante y canulación concéntrica para guiado exacto sobre alambre de Nitinol.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-grapa-quirurgica",
+        "slug": "grapa-quirurgica",
+        "title": "Grapa quirúrgica",
+        "images": [
+          "/assets/products/fb629f320163d7fa4e8a9d76806823be.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Grapa metálica de alta rigidez para fijación y reinserción de ligamentos, tendones y osteotomías óseas.</li><li>Patas con dientes de anclaje antirretorno que aseguran una compresión interfragmentaria rígida y duradera.</li><li>Construcción de perfil bajo que reduce el roce subcutáneo y la molestia en zonas de prominencia ósea.</li><li>Fabricada en aleación biocompatible de titanio o acero inoxidable quirúrgico de alta resistencia mecánica.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-placa-de-titanio-con-bucle",
+        "slug": "placa-de-titanio-con-bucle",
+        "title": "Placa de titanio con bucle",
+        "images": [
+          "/assets/products/5b105af8c3ad9f564b5826c243b7d0f4.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Sistema de fijación suspensoria cortical con botón de titanio para reconstrucción de ligamento cruzado anterior y posterior.</li><li>Lazo de sutura continuo trenzado de polietileno UHMWPE disponible en longitudes fijas de 15 mm a 50 mm.</li><li>Distribución homogénea del estrés mecánico en la cortical femoral evitando el efecto limpiaparabrisas o ensanchamiento del túnel.</li><li>Bordes completamente biselados y pulidos para volteo cortical fluido y asentamiento firme.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-placa-de-titanio-de-banda-ajustable",
+        "slug": "placa-de-titanio-de-banda-ajustable",
+        "title": "Placa de titanio de banda ajustable",
+        "images": [
+          "/assets/products/f171ca5ec07026a58bd420a60f5e5416.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Botón cortical de longitud ajustable que permite rellenar por completo el túnel femoral con el injerto tendinoso.</li><li>Mecanismo de traba autoblocante unidireccional que no se elonga ni pierde tensión ante cargas fisiológicas cíclicas.</li><li>Permite retensar el injerto tras completar la fijación tibial, optimizando la estabilidad articular final.</li><li>Compatible con técnicas de perforación anatómica transtibial o por portal anteromedial.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-sutura-quirurgica-no-absorbible",
+        "slug": "sutura-quirurgica-no-absorbible",
+        "title": "Sutura quirúrgica no absorbible (Hilo de Polietileno)",
+        "images": [
+          "/assets/products/1ca3ee9ffafef944cc2bc5e8cf61cde4.png",
+          "/wp-content/uploads/2025/01/p16.jpg"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Sutura de peso molecular ultraalto (UHMWPE) trenzada con núcleo de alta densidad para máxima resistencia a la tracción.</li><li>Resistencia a la rotura superior a los estándares quirúrgicos, con mínima elongación plástica bajo tensión.</li><li>Superficie lisa y flexible que no corta el tejido blando y permite deslizar nudos con suavidad y seguridad.</li><li>Disponible en patrones blanco, azul y bicolor, con y sin agujas de acero inoxidable quirúrgico de alta tenacidad.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-engrapadora-dermica-desechable",
+        "slug": "engrapadora-dermica-desechable",
+        "title": "Engrapadora dérmica desechable",
+        "images": [
+          "/assets/products/36482b274887b991289f62332fe0b947.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Engrapadora estéril precargada con 35 grapas de acero inoxidable médico de alta resistencia.</li><li>Mecanismo de gatillo ergonómico con retroalimentación táctil para una colocación uniforme y aversión precisa de bordes cutáneos.</li><li>Reduce drásticamente el tiempo de cierre quirúrgico en comparación con suturas dérmicas manuales.</li><li>Diseño liviano con visor contador de grapas restantes en el cuerpo del dispositivo.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-canula-para-portal-artroscopico",
+        "slug": "canula-para-portal-artroscopico",
+        "title": "Cánula para portal artroscópico",
+        "images": [
+          "/assets/products/c4505cc63f7639d6aae52c0fdc7f8b23.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Cánula artroscópica translúcida con cuerpo roscado que garantiza estabilidad y retención en la cápsula articular.</li><li>Válvula de elastómero integrada que evita el escape de fluido de irrigación y previene el atrapamiento de tejidos.</li><li>Llave de paso de entrada/salida de fluidos para un control óptimo de la presión y visibilidad intraarticular.</li><li>Permite el paso atraumático y fluido de suturas, pinzas pasadoras, palpadores e instrumental quirúrgico.</li></ol></div></div></div>"
+          }
+        ]
+      },
+      {
+        "id": "medicina-deportiva-manga-para-portal-artroscopico-esteril-desechable",
+        "slug": "manga-para-portal-artroscopico-esteril-desechable",
+        "title": "Manga para portal artroscópico estéril desechable",
+        "images": [
+          "/assets/products/2ed13157d3cf81d0e42dfa75b7168755.png"
+        ],
+        "sections": [
+          {
+            "label": "Información",
+            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Manga protectora flexible desechable que recubre el canal de abordaje artroscópico protegiendo los tejidos blandos.</li><li>Evita la extravasación de líquido hacia planos musculares periarticulares durante cirugías prolongadas.</li><li>Superficie interna hidrofílica de baja fricción que facilita el intercambio repetido de instrumental artroscópico.</li><li>Esterilizada por óxido de etileno, 100% libre de látex para máxima seguridad del paciente.</li></ol></div></div></div>"
           }
         ]
       }
@@ -781,7 +1065,7 @@
     "id": "cirugia-de-columna",
     "title": "Cirugía de Columna",
     "description": "Soluciones e implantes de alta precisión para procedimientos quirúrgicos, fijación y reconstrucción de la columna vertebral.",
-    "image": "/assets/categories/columna-placeholder.svg",
+    "image": "/wp-content/uploads/2026/07/cirugia de columna.png",
     "products": [
       {
         "id": "cirugia-de-columna-caja-de-fusion-intersomatica-de-tantalio-poroso-cvd",

@@ -213,7 +213,9 @@ esCategoriesData.forEach((cat) => {
     "reemplazo-de-rodilla": "/wp-content/uploads/2025/02/img-21-2.png",
     "protesis-de-cadera": "/wp-content/uploads/2025/02/img-22-2.png",
     "protesis-de-hombro": "/wp-content/uploads/2025/02/img-20-3.png",
-    "instrumental-quirurgico": "/wp-content/uploads/2025/02/img-23-2.png"
+    "instrumental-quirurgico": "/wp-content/uploads/2025/02/img-23-2.png",
+    "medicina-deportiva": "/wp-content/uploads/2026/07/Mdeicina Deportiva.png",
+    "cirugia-de-columna": "/wp-content/uploads/2026/07/cirugia de columna.png"
   };
   cat.image = imagesMap[cat.id] || (cat.products[0]?.images[0] ?? "");
 });
@@ -327,7 +329,9 @@ if (fs.existsSync(enDir)) {
       "reemplazo-de-rodilla": "/wp-content/uploads/2025/02/img-21-2.png",
       "protesis-de-cadera": "/wp-content/uploads/2025/02/img-22-2.png",
       "protesis-de-hombro": "/wp-content/uploads/2025/02/img-20-3.png",
-      "instrumental-quirurgico": "/wp-content/uploads/2025/02/img-23-2.png"
+      "instrumental-quirurgico": "/wp-content/uploads/2025/02/img-23-2.png",
+      "medicina-deportiva": "/wp-content/uploads/2026/07/Mdeicina Deportiva.png",
+      "cirugia-de-columna": "/wp-content/uploads/2026/07/cirugia de columna.png"
     };
     cat.image = imagesMap[cat.id] || (cat.products[0]?.images[0] ?? "");
   });
