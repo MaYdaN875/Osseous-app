@@ -109,7 +109,9 @@
         "slug": "xn-ps",
         "title": "XN-PS",
         "images": [
-          "/wp-content/uploads/2025/01/p14.jpg"
+          "/wp-content/uploads/2025/01/PS.jpg",
+          "/wp-content/uploads/2025/01/PS 1.jpg",
+          "/wp-content/uploads/2025/01/PS 2.jpg"
         ],
         "sections": [
           {
@@ -123,7 +125,8 @@
         "slug": "xn-cr",
         "title": "XN-CR",
         "images": [
-          "/wp-content/uploads/2025/01/p13.jpg"
+          "/wp-content/uploads/2025/01/CR.jpg",
+          "/wp-content/uploads/2025/01/CR 1.jpg"
         ],
         "sections": [
           {

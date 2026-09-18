@@ -107,7 +107,11 @@ export function FichaPage() {
 
   // Extraer secciones adicionales de Elementor si existen (ej. Medidas con acordes)
   const additionalSections = ficha.sections?.filter(
-    (s: any) => s.label !== "Información" && s.label !== "Information"
+    (s: any) => {
+      if (s.label === "Información" || s.label === "Information") return false;
+      if (slug !== "protesis-de-cadera" && (s.label === "Medidas" || s.label === "Measurements")) return false;
+      return true;
+    }
   ) || [];
 
   return (
@@ -131,17 +135,39 @@ export function FichaPage() {
           <div id="product-gallery" className="detail__gallery reveal reveal--left">
             <div className="detail__stage">
               <img id="gallery-main" src={asset(ficha.images[active])} alt={ficha.title} />
+              {ficha.images.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    className="detail__gallery-arrow detail__gallery-arrow--left"
+                    onClick={() => setActive((current) => (current - 1 + ficha.images.length) % ficha.images.length)}
+                    aria-label="Ver imagen anterior"
+                  >
+                    ‹
+                  </button>
+                  <button
+                    type="button"
+                    className="detail__gallery-arrow detail__gallery-arrow--right"
+                    onClick={() => setActive((current) => (current + 1) % ficha.images.length)}
+                    aria-label="Ver siguiente imagen"
+                  >
+                    ›
+                  </button>
+                </>
+              )}
             </div>
             {ficha.images.length > 1 && (
-              <div className="detail__thumbs">
-                {ficha.images.map((img: string, i: number) => (
+              <div className="detail__gallery-dots" role="tablist" aria-label="Imágenes del producto">
+                {ficha.images.map((_: string, i: number) => (
                   <button
                     key={i}
                     type="button"
-                    className={`detail__thumb ${i === active ? "is-active" : ""}`}
+                    className={`detail__gallery-dot ${i === active ? "is-active" : ""}`}
                     onClick={() => setActive(i)}
+                    role="tab"
+                    aria-selected={i === active}
+                    aria-label={`Ver imagen ${i + 1}`}
                   >
-                    <img src={asset(img)} alt={`Thumb ${i}`} />
                   </button>
                 ))}
               </div>
