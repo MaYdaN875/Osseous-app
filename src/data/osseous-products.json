@@ -64,10 +64,10 @@
       },
       {
         "id": "reemplazo-de-rodilla-aumentos-cck",
-        "slug": "aumentos-cck",
-        "title": "Prótesis de rodilla Aumentos",
+        "slug": "espaciador-de-articulacion-de-rodilla",
+        "title": "Espaciador de articulación de rodilla",
         "images": [
-          "/wp-content/uploads/2025/01/Pro.png",
+          "/wp-content/uploads/2025/01/Pro.jpg",
           "/wp-content/uploads/2025/01/p4-2.jpg"
         ],
         "sections": [
@@ -189,20 +189,6 @@
           {
             "label": "Información",
             "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Recubrimiento poroso trabecular biológico que facilita la osteointegración y fijación biológica sin cemento.</li><li>Diseño anatómico que reproduce el movimiento natural de flexión y rotación de la articulación de la rodilla.</li><li>Alta biocompatibilidad y excelente estabilidad a largo plazo para pacientes activos.</li><li>Distribución homogénea de tensiones para minimizar el apantallamiento de tensiones (stress shielding).</li></ol></div></div></div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-espaciador-de-articulacion-de-rodilla",
-        "slug": "espaciador-de-articulacion-de-rodilla",
-        "title": "Espaciador de articulación de rodilla",
-        "images": [
-          "/assets/products/8383949875d5352547eef6b3592df183.png"
-        ],
-        "sections": [
-          {
-            "label": "Información",
-            "html": "<div role=\"region\" class=\"elementor-element e-con-full e-flex e-con e-child\"><div class=\"e-con-inner\"><div class=\"elementor-widget-container\"><ol><li>Espaciador articular temporal con liberación controlada de antibióticos para el tratamiento de infecciones protésicas de rodilla en dos tiempos.</li><li>Mantiene la longitud articular, el rango de movimiento y la tensión de los tejidos blandos durante el periodo de tratamiento.</li><li>Estructura resistente que permite una carga parcial controlada.</li><li>Diseño preformado que reduce el tiempo quirúrgico y facilita el procedimiento de reimplante.</li></ol></div></div></div>"
           }
         ]
       }
