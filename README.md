@@ -1,6 +1,6 @@
 # Osseous Web
 
-Sitio de [Osseous](https://sitio.osseous.com.mx/) hecho en **React + Vite + TypeScript**, con un **catálogo de productos** agregado (basado en el catálogo de Chunli).
+Sitio de [Osseous](https://sitio.osseous.com.mx/) hecho en **React + Vite + TypeScript**, con un **catálogo de productos** agregado (basado en el catálogo de Osseous).
 
 La idea del proyecto: replicar el sitio original tal cual (mismo diseño, animaciones, video, popup, todo) y sumarle el catálogo nuevo con un diseño propio que combina con la página.
 
@@ -10,7 +10,7 @@ La idea del proyecto: replicar el sitio original tal cual (mismo diseño, animac
 |-------|-------|---------------|
 | Sitio Osseous original | `/`, `/empresa`, `/servicios`, `/blog`, `/reemplazo-de-rodilla`, … | Contenido importado del sitio real (idéntico) |
 | Detalle de producto Osseous | `/ficha/:pagina/:num` | Se arma solo a partir del contenido de cada página de productos |
-| Catálogo nuevo | `/catalogo`, `/catalogo/:id`, `/producto/:id` | Catálogo Chunli, diseño propio |
+| Catálogo nuevo | `/catalogo`, `/catalogo/:id`, `/producto/:id` | Catálogo Osseous, diseño propio |
 
 ## Cómo correrlo
 
@@ -40,7 +40,7 @@ src/
 
 scripts/            # Scripts de una sola vez que usé para armar el proyecto:
                     # descargar el sitio original, importar sus páginas, bajar
-                    # el catálogo de Chunli, optimizar imágenes y fuentes
+                    # el catálogo de Osseous, optimizar imágenes y fuentes
 ```
 
 ## Cómo funciona lo del sitio original

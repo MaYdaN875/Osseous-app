@@ -36,7 +36,7 @@ function buildIndex(lang: "es" | "en", t: (key: string) => string): Hit[] {
   };
   walk(MAIN_NAV);
 
-  // Indexar Catálogo Chunli
+  // Indexar Catálogo Osseous
   for (const cat of getCategories()) {
     const catTitle = getCategoryTitle(cat.id, cat.title, lang);
     hits.push({ label: catTitle, to: `/catalogo/${cat.id}`, group: t("search.catalog_group") });

@@ -1,7 +1,7 @@
 // Aquí armo todas las rutas de la página. Básicamente hay dos mundos:
 // 1) Las páginas "espejadas": el contenido real del sitio original de Osseous
 //    (inicio, empresa, servicios, productos, etc.) que renderizo tal cual.
-// 2) El catálogo Chunli, que es lo nuevo que le agregué al sitio.
+// 2) El catálogo Osseous, que es lo nuevo que le agregué al sitio.
 import { useEffect } from "react";
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
@@ -50,7 +50,7 @@ export function AppRouter() {
           {/* La portada es el HTML original del sitio, idéntico, con todo y su video */}
           <Route index element={<MirroredPage slug="home" />} />
 
-          {/* El catálogo Chunli: esto es lo nuevo que agregué, no existe en el sitio original */}
+          {/* El catálogo Osseous: esto es lo nuevo que agregué, no existe en el sitio original */}
           <Route path="catalogo" element={<CatalogPage />} />
           <Route path="catalogo/:categoryId" element={<CategoryRoute />} />
           <Route path="producto/:productId" element={<ProductRoute />} />

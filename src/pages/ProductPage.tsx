@@ -1,4 +1,4 @@
-// La vista de detalle de un producto del catálogo Chunli (/producto/123):
+// La vista de detalle de un producto del catálogo Osseous (/producto/123):
 // galería con miniaturas, SKU, especificaciones técnicas, botones de acción
 // y una sección de productos compatibles al final.
 import { useState } from "react";

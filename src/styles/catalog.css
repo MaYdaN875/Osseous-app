@@ -1,6 +1,6 @@
 /* ==========================================================================
    La hoja de estilos principal: aquí vive la base del sitio (header, footer,
-   buscador) y todo el diseño del catálogo Chunli que agregué.
+   buscador) y todo el diseño del catálogo Osseous que agregué.
    Saqué la paleta directamente del sitio original de Osseous para que lo nuevo
    combine y no se sienta pegado: barra degradada #000→#8A8A8A, fondos #F5F5F5,
    footer #333, texto #54595F / #7A7A7A y azul #004AFF como acento.
@@ -121,7 +121,7 @@ body.menu-open { overflow: hidden; }
 }
 
 /* Breadcrumb */
-.crumbs { display: flex; align-items: center; gap: 10px; font-size: 13px; color: rgba(255,255,255,.8); margin-bottom: 10px; }
+.crumbs { display: flex; align-items: center; justify-content: flex-start; gap: 10px; font-size: 13px; color: rgba(255,255,255,.8); margin-bottom: 10px; }
 .crumbs a:hover { color: #fff; text-decoration: underline; }
 .crumbs .sep { opacity: .6; }
 
@@ -967,7 +967,6 @@ body.menu-open { overflow: hidden; }
   .mobile-social svg { width: 16px; height: 16px; fill: #ffffff; }
 
   .hero__content { padding: 30px 0; width: 100%; }
-  .hero .wrap { justify-content: flex-start; }
 }
 
 @keyframes fadeIn {

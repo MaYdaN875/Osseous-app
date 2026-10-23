@@ -1,4 +1,4 @@
-// Funciones para leer el catálogo Chunli. Los datos viven en un JSON
+// Funciones para leer el catálogo Osseous. Los datos viven en un JSON
 // (src/data/catalog-data.json) que se generó con el script scripts/scrape.js,
 // y aquí tengo las funciones para consultarlo desde cualquier parte de la app.
 import type { CatalogData, Category, Product } from "@/types/catalog";

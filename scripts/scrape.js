@@ -1,4 +1,4 @@
-// Con esto armé el catálogo: recorre el sitio de Chunli (clzd.com), saca las
+// Con esto armé el catálogo: recorre el sitio de Osseous (clzd.com), saca las
 // categorías con sus productos, descarga las fotos a public/assets/products
 // y genera src/data/catalog-data.json, que es lo que lee la app.
 // Uso (una sola vez): node scripts/scrape.js

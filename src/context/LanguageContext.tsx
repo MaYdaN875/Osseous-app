@@ -21,7 +21,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.blog": "Blog",
     "nav.specs": "Fichas técnicas",
     "nav.contact": "Contacto",
-    "nav.catalog_full": "Catálogo completo (Osseous)",
+    "nav.catalog_full": "Catálogo completo",
     
     // Categories/Submenus
     "cat.shoulder": "Prótesis de Hombro",
@@ -72,7 +72,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Catalog UI
     "catalog.title": "Catálogo de Productos",
-    "catalog.subtitle": "Explore la gama completa de productos médicos Chunli y soluciones ortopédicas.",
+    "catalog.subtitle": "Explore la gama completa de productos médicos Osseous y soluciones ortopédicas.",
     "catalog.stats": "{cats} categorías y {prods} productos para cirugía ortopédica y traumatología.",
     "catalog.cat_not_found": "Categoría no encontrada.",
     "catalog.cat_stats": "<b>{count}</b> productos en {category}",
@@ -89,7 +89,7 @@ const translations: Record<Language, Record<string, string>> = {
     "catalog.search_placeholder": "Buscar en el catálogo...",
     "catalog.empty": "No hay productos en esta categoría.",
     "catalog.brand": "Marca",
-    "catalog.brand_val": "Chunli Medical",
+    "catalog.brand_val": "Osseous Medical",
     "catalog.sku": "SKU",
     "catalog.back": "Volver al Catálogo",
     "catalog.back_cat": "Volver a la Categoría",
@@ -124,7 +124,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.blog": "Blog",
     "nav.specs": "Specs",
     "nav.contact": "Contact",
-    "nav.catalog_full": "Complete Catalog (Osseous)",
+    "nav.catalog_full": "Complete Catalog",
     
     // Categories/Submenus
     "cat.shoulder": "Shoulder Prosthesis",
@@ -175,7 +175,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Catalog UI
     "catalog.title": "Product Catalog",
-    "catalog.subtitle": "Explore the full range of Chunli medical products and orthopedic solutions.",
+    "catalog.subtitle": "Explore the full range of Osseous medical products and orthopedic solutions.",
     "catalog.stats": "{cats} categories and {prods} products for orthopedic surgery and traumatology.",
     "catalog.cat_not_found": "Category not found.",
     "catalog.cat_stats": "<b>{count}</b> products in {category}",
@@ -192,7 +192,7 @@ const translations: Record<Language, Record<string, string>> = {
     "catalog.search_placeholder": "Search in catalog...",
     "catalog.empty": "No products in this category.",
     "catalog.brand": "Brand",
-    "catalog.brand_val": "Chunli Medical",
+    "catalog.brand_val": "Osseous Medical",
     "catalog.sku": "SKU",
     "catalog.back": "Back to Catalog",
     "catalog.back_cat": "Back to Category",
