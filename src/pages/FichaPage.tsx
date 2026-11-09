@@ -3,8 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useElementorStyles } from "@/lib/elementor";
-import categoriesDataEs from "@/data/osseous-products.json";
-import categoriesDataEn from "@/data/osseous-products-en.json";
+import { getOsseousCategories } from "@/lib/osseous-products";
 import rawCatalog from "@/data/catalog-data.json";
 import { useLanguage } from "@/context/LanguageContext";
 import {
@@ -46,7 +45,7 @@ export function FichaPage() {
 
   useElementorStyles(null);
 
-  const categoriesData = lang === "en" ? categoriesDataEn : categoriesDataEs;
+  const categoriesData = getOsseousCategories(lang);
 
   const category = useMemo(() => {
     return categoriesData.find((c: any) => c.id === slug);

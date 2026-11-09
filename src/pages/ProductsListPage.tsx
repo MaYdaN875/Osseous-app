@@ -1,8 +1,7 @@
 import { useState, useMemo, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
-import categoriesDataEs from "@/data/osseous-products.json";
-import categoriesDataEn from "@/data/osseous-products-en.json";
+import { getOsseousCategories } from "@/lib/osseous-products";
 import { useLanguage } from "@/context/LanguageContext";
 
 interface ProductCardProps {
@@ -118,7 +117,7 @@ export function ProductsListPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const { lang, t } = useLanguage();
 
-  const categoriesData = lang === "en" ? categoriesDataEn : categoriesDataEs;
+  const categoriesData = getOsseousCategories(lang);
 
   const category = useMemo(() => {
     return categoriesData.find((c: any) => c.id === categorySlug);

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
-import categoriesDataEs from "@/data/osseous-products.json";
-import categoriesDataEn from "@/data/osseous-products-en.json";
+import { getOsseousCategories } from "@/lib/osseous-products";
 import { useLanguage } from "@/context/LanguageContext";
 
 // Mapeo de imágenes representativas premium para cada categoría (del sitio original)
@@ -16,7 +15,7 @@ const CATEGORY_IMAGES: Record<string, string> = {
 
 export function ProductsCategoriesPage() {
   const { lang, t } = useLanguage();
-  const categoriesData = lang === "en" ? categoriesDataEn : categoriesDataEs;
+  const categoriesData = getOsseousCategories(lang);
 
   return (
     <>

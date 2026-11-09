@@ -6,8 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { MAIN_NAV } from "@/config/navigation";
 import type { NavLinkItem } from "@/config/navigation";
 import { asset, getCategories, getCategoryTitle, getProductTitle } from "@/lib/catalog";
-import osseousDataEs from "@/data/osseous-products.json";
-import osseousDataEn from "@/data/osseous-products-en.json";
+import { getOsseousCategories } from "@/lib/osseous-products";
 import { useLanguage } from "@/context/LanguageContext";
 
 // Un resultado de búsqueda: qué texto muestro, a dónde te lleva,
@@ -23,7 +22,7 @@ type Hit = {
 // los submenús) más todas las categorías y productos del catálogo
 function buildIndex(lang: "es" | "en", t: (key: string) => string): Hit[] {
   const hits: Hit[] = [];
-  const osseousData = lang === "en" ? osseousDataEn : osseousDataEs;
+  const osseousData = getOsseousCategories(lang);
 
   const walk = (items: NavLinkItem[]) => {
     for (const item of items) {
