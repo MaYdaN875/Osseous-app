@@ -1,0 +1,20 @@
+# Apache 2.4: HTML and unversioned resources always revalidate.
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-cache"
+  Header set Cache-Control "public, max-age=31536000, immutable" "expr=%{REQUEST_URI} =~ m#^/(static/[a-f0-9]{20}/|build-assets/)# && %{REQUEST_STATUS} == 200"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Existing files and directories are served normally.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Missing versioned assets must return 404, never index.html with immutable caching.
+  RewriteRule ^(?:static|build-assets)/ - [R=404,L]
+
+  # React Router supports directly opening /catalogo, /empresa, etc.
+  RewriteRule ^ index.html [L]
+</IfModule>

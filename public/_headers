@@ -1,0 +1,4 @@
+# Safe Netlify preview policy, including every SPA route.
+# Revalidation still allows cached responses via ETag / 304.
+/*
+  Cache-Control: no-cache

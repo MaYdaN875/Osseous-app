@@ -27,7 +27,7 @@
       {
         "id": "reemplazo-de-rodilla-protesis-de-rodilla-xa",
         "slug": "protesis-de-rodilla-xa",
-        "title": "XA Knee Prosthesis",
+        "title": "Anatomical Knee Prosthesis",
         "images": [
           "/wp-content/uploads/2026/06/image-removebg-preview-1.png",
           "/wp-content/uploads/2026/06/image__3_-removebg-preview.png"
@@ -46,7 +46,7 @@
       {
         "id": "reemplazo-de-rodilla-protesis-de-rodilla-tipo-xq",
         "slug": "protesis-de-rodilla-tipo-xq",
-        "title": "Type XQ Knee Prosthesis",
+        "title": "Surgical System Type Knee Prosthesis",
         "images": [
           "/wp-content/uploads/2026/06/image__4_-removebg-preview.png",
           "/wp-content/uploads/2026/06/image__6_-removebg-preview.png"
@@ -108,7 +108,7 @@
       {
         "id": "reemplazo-de-rodilla-xn-ps",
         "slug": "xn-ps",
-        "title": "XN-PS",
+        "title": "Primary PS Knee Prosthesis",
         "images": [
           "/wp-content/uploads/2025/01/PS.jpg",
           "/wp-content/uploads/2025/01/PS 1.jpg",
@@ -124,7 +124,7 @@
       {
         "id": "reemplazo-de-rodilla-xn-cr",
         "slug": "xn-cr",
-        "title": "XN-CR",
+        "title": "Primary CR Knee Prosthesis",
         "images": [
           "/wp-content/uploads/2025/01/CR.jpg",
           "/wp-content/uploads/2025/01/CR 1.jpg"
@@ -147,146 +147,6 @@
           {
             "label": "Information",
             "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-4700\" class=\"elementor-element elementor-element-68316def e-con-full e-flex e-con e-child\" data-id=\"68316def\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-4700\" class=\"elementor-element elementor-element-1b1e77f5 e-flex e-con-boxed e-con e-child\" data-id=\"1b1e77f5\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-6afc079e elementor-widget elementor-widget-text-editor\" data-id=\"6afc079e\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Safety: the depth limit sleeve adjusts the depth to avoid damaging the neurovascular bundle, making<br>makes it safer and more reliable.</li><li>Minimally invasive: the fixed bar is small and is used in conjunction with a 2-0 ultra-high-strength suture<br># to reduce damage to the meniscus.</li><li>Convenience: 360° actively-activated one-handed fixed bar, controlling the insertion timing, making it more convenient.</li><li>Multiple options: designed with 12° anterior/posterior curves and straight angles, providing more options.</li><li>Comfort: based on ergonomic principles, the handle surface is designed to be non-slip, making it<br>makes it more comfortable during operation.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-bandeja-tibial-1",
-        "slug": "bandeja-tibial-1",
-        "title": "Tibial Tray",
-        "images": [
-          "/wp-content/uploads/2025/01/p5.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1280\" class=\"elementor-element elementor-element-f04b471 e-con-full e-flex e-con e-child\" data-id=\"f04b471\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1280\" class=\"elementor-element elementor-element-ffbe51d e-flex e-con-boxed e-con e-child\" data-id=\"ffbe51d\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-9e12392 elementor-widget elementor-widget-text-editor\" data-id=\"9e12392\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The keel wing design provides initial implantation stability.</li><li>With a 5° retroversion angle, it prevents impingement with the anterior cortex.</li><li>The precise and stable locking design reduces micromotion.</li><li>Wide range of AP/ML options, providing better coverage of the tibial plateau.</li><li>Can be combined with two types of tibial insert: PS &amp; CR.</li><li>Anatomical design of the tibial plateau, better coverage and less subsidence.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-insercion-tibial-1",
-        "slug": "insercion-tibial-1",
-        "title": "Tibial Insert",
-        "images": [
-          "/wp-content/uploads/2025/01/p11.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1020\" class=\"elementor-element elementor-element-e4732e7 e-con-full e-flex e-con e-child\" data-id=\"e4732e7\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1020\" class=\"elementor-element elementor-element-a6e115e e-flex e-con-boxed e-con e-child\" data-id=\"a6e115e\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-60807e4 elementor-widget elementor-widget-text-editor\" data-id=\"60807e4\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The deep notch design at the front of the tibial insert reduces the adverse effect on the patellar ligament during high flexion.</li><li>The spine is 2 mm more posterior than the normal position; the femoral condyle transverse beam contacts the spine earlier in the flexion process, reducing impact force and preventing spine fracture.</li><li>The curved post prevents dislocation during high flexion.</li><li>The double-plane contact area provides more stability and a lower wear rate caused by pressure.</li><li>Two types: CR and PS.</li><li>Multiple materials (UHMWPE/HXLPE/Vitamin E); the new Vitamin E material balances wear and mechanical properties, wear resistance, oxidation resistance, and impact resistance.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-xn-ps-1",
-        "slug": "xn-ps-1",
-        "title": "XN-PS",
-        "images": [
-          "/wp-content/uploads/2025/01/p14.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1350\" class=\"elementor-element elementor-element-4698397 e-con-full e-flex e-con e-child\" data-id=\"4698397\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1350\" class=\"elementor-element elementor-element-72e9703 e-flex e-con-boxed e-con e-child\" data-id=\"72e9703\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-f6552ec elementor-widget elementor-widget-text-editor\" data-id=\"f6552ec\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <p>Implant with common size differs only 1mm, which can better meet the needs of patients. The size of the Implant is dense and nearly personalized. The AP and ML sizes in the implant size are not evenly distributed to meet the needs of patients.</p> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-xn-cr-1",
-        "slug": "xn-cr-1",
-        "title": "XN-CR",
-        "images": [
-          "/wp-content/uploads/2025/01/p13.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-2620\" class=\"elementor-element elementor-element-98613c6 e-con-full e-flex e-con e-child\" data-id=\"98613c6\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-2620\" class=\"elementor-element elementor-element-099a905 e-flex e-con-boxed e-con e-child\" data-id=\"099a905\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-4da908f elementor-widget elementor-widget-text-editor\" data-id=\"4da908f\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <p>Commonly sized implants differ by only 1mm, which can better meet patient needs.</p><p>The implant sizing is dense and nearly customized. The AP and ML sizes in the implant size range are not uniformly distributed to meet patient needs.</p> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-sistema-de-reparacion-del-menisco-1",
-        "slug": "sistema-de-reparacion-del-menisco-1",
-        "title": "Meniscus Repair System",
-        "images": [
-          "/wp-content/uploads/2025/01/p15.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1700\" class=\"elementor-element elementor-element-5f54667 e-con-full e-flex e-con e-child\" data-id=\"5f54667\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1700\" class=\"elementor-element elementor-element-6903603 e-flex e-con-boxed e-con e-child\" data-id=\"6903603\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-32978b9 elementor-widget elementor-widget-text-editor\" data-id=\"32978b9\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Safety: the depth limit sleeve adjusts the depth to avoid damaging the neurovascular bundle, making<br>makes it safer and more reliable.</li><li>Minimally invasive: the fixed bar is small and is used in conjunction with a 2-0 ultra-high-strength suture<br># to reduce damage to the meniscus.</li><li>Convenience: 360° actively-activated one-handed fixed bar, controlling the insertion timing, making it more convenient.</li><li>Multiple options: designed with 12° anterior/posterior curves and straight angles, providing more options.</li><li>Comfort: based on ergonomic principles, the handle surface is designed to be non-slip, making it<br>makes it more comfortable during operation.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-bandeja-tibial-2",
-        "slug": "bandeja-tibial-2",
-        "title": "Tibial Tray",
-        "images": [
-          "/wp-content/uploads/2025/01/p5.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-8420\" class=\"elementor-element elementor-element-59dd7292 e-con-full e-flex e-con e-child\" data-id=\"59dd7292\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-8420\" class=\"elementor-element elementor-element-4d59b070 e-flex e-con-boxed e-con e-child\" data-id=\"4d59b070\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-43d9f270 elementor-widget elementor-widget-text-editor\" data-id=\"43d9f270\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The keel wing design provides initial implantation stability.</li><li>With a 5° retroversion angle, it prevents impingement with the anterior cortex.</li><li>The precise and stable locking design reduces micromotion.</li><li>Wide range of AP/ML options, providing better coverage of the tibial plateau.</li><li>Can be combined with two types of tibial insert: PS &amp; CR.</li><li>Anatomical design of the tibial plateau, better coverage and less subsidence.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-insercion-tibial-2",
-        "slug": "insercion-tibial-2",
-        "title": "Tibial Insert",
-        "images": [
-          "/wp-content/uploads/2025/01/p11.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1570\" class=\"elementor-element elementor-element-4d4185a2 e-con-full e-flex e-con e-child\" data-id=\"4d4185a2\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1570\" class=\"elementor-element elementor-element-540b0485 e-flex e-con-boxed e-con e-child\" data-id=\"540b0485\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-452f1fe1 elementor-widget elementor-widget-text-editor\" data-id=\"452f1fe1\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>The deep notch design at the front of the tibial insert reduces the adverse effect on the patellar ligament during high flexion.</li><li>The spine is 2 mm more posterior than the normal position; the femoral condyle transverse beam contacts the spine earlier in the flexion process, reducing impact force and preventing spine fracture.</li><li>The curved post prevents dislocation during high flexion.</li><li>The double-plane contact area provides more stability and a lower wear rate caused by pressure.</li><li>Two types: CR and PS.</li><li>Multiple materials (UHMWPE/HXLPE/Vitamin E); the new Vitamin E material balances wear and mechanical properties, wear resistance, oxidation resistance, and impact resistance.</li></ol> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-xn-ps-2",
-        "slug": "xn-ps-2",
-        "title": "XN-PS",
-        "images": [
-          "/wp-content/uploads/2025/01/p14.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-3720\" class=\"elementor-element elementor-element-1adc55bb e-con-full e-flex e-con e-child\" data-id=\"1adc55bb\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-3720\" class=\"elementor-element elementor-element-629ae17f e-flex e-con-boxed e-con e-child\" data-id=\"629ae17f\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-1ea40f93 elementor-widget elementor-widget-text-editor\" data-id=\"1ea40f93\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <p>Implant with common size differs only 1mm, which can better meet the needs of patients. The size of the Implant is dense and nearly personalized. The AP and ML sizes in the implant size are not evenly distributed to meet the needs of patients.</p> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-xn-cr-2",
-        "slug": "xn-cr-2",
-        "title": "XN-CR",
-        "images": [
-          "/wp-content/uploads/2025/01/p13.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1550\" class=\"elementor-element elementor-element-2634a402 e-con-full e-flex e-con e-child\" data-id=\"2634a402\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1550\" class=\"elementor-element elementor-element-3950d474 e-flex e-con-boxed e-con e-child\" data-id=\"3950d474\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-4bec4676 elementor-widget elementor-widget-text-editor\" data-id=\"4bec4676\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <p>Commonly sized implants differ by only 1mm, which can better meet patient needs.</p><p>The implant sizing is dense and nearly customized. The AP and ML sizes in the implant size range are not uniformly distributed to meet patient needs.</p> </div> </div> </div> </div> </div>"
-          }
-        ]
-      },
-      {
-        "id": "reemplazo-de-rodilla-sistema-de-reparacion-del-menisco-2",
-        "slug": "sistema-de-reparacion-del-menisco-2",
-        "title": "Meniscus Repair System",
-        "images": [
-          "/wp-content/uploads/2025/01/p15.jpg"
-        ],
-        "sections": [
-          {
-            "label": "Information",
-            "html": "<div role=\"region\" aria-labelledby=\"e-n-accordion-item-1440\" class=\"elementor-element elementor-element-19a9bff2 e-con-full e-flex e-con e-child\" data-id=\"19a9bff2\" data-element_type=\"container\"> <div role=\"region\" aria-labelledby=\"e-n-accordion-item-1440\" class=\"elementor-element elementor-element-65db853e e-flex e-con-boxed e-con e-child\" data-id=\"65db853e\" data-element_type=\"container\"> <div class=\"e-con-inner\"> <div class=\"elementor-element elementor-element-9b9011 elementor-widget elementor-widget-text-editor\" data-id=\"9b9011\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\"> <div class=\"elementor-widget-container\"> <ol><li>Safety: the depth limit sleeve adjusts the depth to avoid damaging the neurovascular bundle, making<br>makes it safer and more reliable.</li><li>Minimally invasive: the fixed bar is small and is used in conjunction with a 2-0 ultra-high-strength suture<br># to reduce damage to the meniscus.</li><li>Convenience: 360° actively-activated one-handed fixed bar, controlling the insertion timing, making it more convenient.</li><li>Multiple options: designed with 12° anterior/posterior curves and straight angles, providing more options.</li><li>Comfort: based on ergonomic principles, the handle surface is designed to be non-slip, making it<br>makes it more comfortable during operation.</li></ol> </div> </div> </div> </div> </div>"
           }
         ]
       },
@@ -1003,7 +863,6 @@
           }
         ]
       },
-
       {
         "id": "protesis-de-cadera-copa-estructura-trabecular-g20-2",
         "slug": "copa-estructura-trabecular-g20-2",
