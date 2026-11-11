@@ -8,7 +8,8 @@ import rawCatalog from "@/data/catalog-data.json";
 import { useLanguage } from "@/context/LanguageContext";
 import {
   getCategoryDesc,
-  getCategorySpecs,
+  getProductDesc,
+  getProductSpecs,
   getCategoryTitle,
   makeSku,
   asset,
@@ -93,16 +94,24 @@ export function FichaPage() {
   });
 
   const productIndex = category.products.findIndex((p: any) => p.slug === productSlug);
-  const sku = matchedCatalogProduct 
-    ? makeSku(catId, matchedCatalogProduct.id) 
-    : makeSku(catId, productIndex + 1);
+  const catalogId = (ficha as any).catalogId ?? matchedCatalogProduct?.id;
+  const sku = (ficha as any).sku 
+    ? (ficha as any).sku 
+    : catalogId 
+      ? makeSku(catId, catalogId) 
+      : makeSku(catId, productIndex + 1);
 
-  const translatedDesc = lang === "en"
+  const fallbackDesc = lang === "en"
     ? `${categoryDesc}. Product from Osseous's ${categoryCatalogTitle} line.`
     : `${categoryDesc}. Producto de la línea ${categoryCatalogTitle} de Osseous.`;
 
-  // Especificaciones técnicas estructuradas del catálogo
-  const catalogSpecs = getCategorySpecs(catId, lang);
+  const displayDesc = (ficha as any).description 
+    || getProductDesc(catalogId, lang) 
+    || fallbackDesc;
+
+  // Especificaciones técnicas estructuradas del producto (o fallback a categoría)
+  const displaySpecs: [string, string][] = (ficha as any).specs 
+    || getProductSpecs(catalogId, catId, lang);
 
   // Extraer secciones adicionales de Elementor si existen (ej. Medidas con acordes)
   const additionalSections = ficha.sections?.filter(
@@ -178,7 +187,13 @@ export function FichaPage() {
             <div>
               <span className="detail__sku">SKU: {sku}</span>
               <h1 className="detail__title">{ficha.title}</h1>
-              <p className="detail__desc">{translatedDesc}</p>
+              <div className="detail__desc">
+                {typeof displayDesc === "string"
+                  ? displayDesc.split("\n\n").map((paragraph: string, idx: number) => (
+                      <p key={idx}>{paragraph.trim()}</p>
+                    ))
+                  : displayDesc}
+              </div>
             </div>
 
             <div className="detail__chips">
@@ -190,11 +205,11 @@ export function FichaPage() {
             <hr />
 
             {/* Especificaciones Técnicas */}
-            {catalogSpecs && catalogSpecs.length > 0 && (
+            {displaySpecs && displaySpecs.length > 0 && (
               <div>
                 <h3 className="detail__spec-title">{t("catalog.specs")}</h3>
                 <div className="spec-table">
-                  {catalogSpecs.map(([k, v], idx) => (
+                  {displaySpecs.map(([k, v], idx) => (
                     <div className="spec-table__row" key={idx}>
                       <div>{k}</div>
                       <div>{v}</div>

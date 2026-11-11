@@ -5,7 +5,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   getCategoryDesc,
-  getCategorySpecs,
+  getProductDesc,
+  getProductSpecs,
   getCategoryTitle,
   getProductTitle,
   asset,
@@ -61,13 +62,14 @@ export function ProductPage({ productId }: { productId: number }) {
   const views = [0, 1].map((k) => others[(idx + k) % others.length]).filter(Boolean);
   const related = [0, 1, 2].map((k) => others[(idx + 2 + k) % others.length]).filter(Boolean);
   const image = mainSrc || asset(product.image);
-  // Las especificaciones son por categoría (vienen de config/catalog-meta.ts)
-  const specs = getCategorySpecs(category.id, lang);
+  // Las especificaciones y descripciones específicas del producto (o fallback por categoría)
+  const specs = getProductSpecs(product.id, category.id, lang);
+  const customDesc = getProductDesc(product.id, lang);
   const categoryDesc = getCategoryDesc(category.id, lang);
 
-  const translatedDesc = lang === "en"
+  const translatedDesc = customDesc || (lang === "en"
     ? `${categoryDesc}. Product from Osseous's ${categoryTitle} line.`
-    : `${categoryDesc}. Producto de la línea ${categoryTitle} de Osseous.`;
+    : `${categoryDesc}. Producto de la línea ${categoryTitle} de Osseous.`);
 
   const thumbs = [
     { src: asset(product.image), alt: productTitle, active: true },
@@ -125,9 +127,13 @@ export function ProductPage({ productId }: { productId: number }) {
             <div>
               <span className="detail__sku">SKU: {sku}</span>
               <h1 className="detail__title">{productTitle}</h1>
-              <p className="detail__desc">
-                {translatedDesc}
-              </p>
+              <div className="detail__desc">
+                {typeof translatedDesc === "string"
+                  ? translatedDesc.split("\n\n").map((paragraph: string, idx: number) => (
+                      <p key={idx}>{paragraph.trim()}</p>
+                    ))
+                  : translatedDesc}
+              </div>
             </div>
             <div className="detail__chips">
               <span className="chip">ISO 13485</span>

@@ -11,6 +11,10 @@ import {
   CATEGORY_SPECS_ES,
   CATEGORY_DESC_EN,
   CATEGORY_SPECS_EN,
+  PRODUCT_DESC_ES,
+  PRODUCT_DESC_EN,
+  PRODUCT_SPECS_ES,
+  PRODUCT_SPECS_EN,
 } from "@/config/catalog-meta";
 
 export function getCategoryTitle(id: number, originalTitle: string, lang: "es" | "en"): string {
@@ -31,6 +35,22 @@ export function getCategoryDesc(id: number, lang: "es" | "en"): string {
 export function getCategorySpecs(id: number, lang: "es" | "en"): [string, string][] {
   const dict = lang === "en" ? CATEGORY_SPECS_EN : CATEGORY_SPECS_ES;
   return dict[id] ?? [];
+}
+
+export function getProductDesc(id: number | undefined, lang: "es" | "en"): string | undefined {
+  if (!id) return undefined;
+  const dict = lang === "en" ? PRODUCT_DESC_EN : PRODUCT_DESC_ES;
+  return dict[id];
+}
+
+export function getProductSpecs(productId: number | undefined, categoryId: number, lang: "es" | "en"): [string, string][] {
+  if (productId) {
+    const dict = lang === "en" ? PRODUCT_SPECS_EN : PRODUCT_SPECS_ES;
+    if (dict[productId] && dict[productId].length > 0) {
+      return dict[productId];
+    }
+  }
+  return getCategorySpecs(categoryId, lang);
 }
 
 const data = raw as CatalogData;
