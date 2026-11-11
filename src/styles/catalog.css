@@ -245,7 +245,13 @@ body.menu-open { overflow: hidden; }
 
 /* ------------------------ Detalle de producto ---------------------------- */
 .detail { display: grid; grid-template-columns: 7fr 5fr; gap: 34px; align-items: start; }
-.detail__gallery { display: flex; flex-direction: column; gap: 16px; }
+.detail__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 90px;
+}
 .detail__stage {
   position: relative;
   background: #ffffff;
@@ -362,7 +368,22 @@ body.menu-open { overflow: hidden; }
   padding: 4px 10px;
 }
 .detail__title { margin: 0; font-size: clamp(26px, 3vw, 34px); font-weight: 700; color: var(--c-ink); line-height: 1.2; letter-spacing: -0.01em; }
-.detail__desc { margin: 10px 0 0; font-size: 16px; color: var(--c-text); }
+.detail__desc {
+  margin: 14px 0 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  white-space: pre-line;
+}
+.detail__desc p {
+  margin: 0 0 12px 0;
+}
+.detail__desc p:last-child {
+  margin-bottom: 0;
+}
 .detail__chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
   display: inline-flex; align-items: center; gap: 6px;
@@ -472,6 +493,8 @@ body.menu-open { overflow: hidden; }
 
 @media (max-width: 900px) {
   .detail { grid-template-columns: 1fr; }
+  .detail__gallery { position: static; }
+  .detail__desc { text-align: left; }
   .related__grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 540px) {
