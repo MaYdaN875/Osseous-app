@@ -152,6 +152,30 @@ export const PRODUCT_DESC_ES: Record<number, string> = {
   226: "La prótesis de articulación de rodilla de nuevo tipo axial es un sistema de reconstrucción y rescate articular complejo. Los cóndilos femorales están fabricados en aleación de cobalto-cromo-molibdeno o aleación Ti6Al4V; la bandeja tibial, vástagos intramedulares femorales y tibiales, segmentos diafisarios de osteotomía, manguitos de refuerzo, eje central y conectores de tres vías son de aleación de titanio forjado Ti6Al4V con tratamiento de anodizado superficial; el inserto tibial, almohadillas de ajuste, manguitos y bujes son de UHMWPE.\n\nSuministrado en empaque estéril por irradiación con 5 años de vida útil. Indicada para artroplastia de rescate en presencia de grandes defectos óseos causados por tumores óseos (osteosarcomas), fracturas conminutas severas o revisiones múltiples.",
   227: "El molde de fraguado de cemento óseo para rodilla consta de un componente de molde femoral, un componente de molde tibial y un conjunto de bloques de medición de brecha articular. El molde femoral se compone de cubierta superior, cubierta inferior, plataforma de desmoldeo, tornillos de desmoldeo y hebillas de fijación; el molde tibial se compone de cubierta superior, cubierta inferior, manguito tibial, tornillos de desmoldeo y hebillas; el conjunto de medición incluye bloques de 5 mm, 10 mm y 12 mm.\n\nTodos los componentes están fabricados en polipropileno de grado médico (PP-R) antiadherente. Suministrado estéril (óxido de etileno, EO) para un solo uso. Indicado para la preparación intraoperatoria de espaciadores temporales femorales y tibiales de cemento óseo con antibiótico durante la artroplastia de revisión en dos tiempos por infección periprotésica.",
   228: "El molde para conformación de espaciadores de cemento óseo de cadera consta de módulos para el vástago femoral y cabezas femorales de diferentes diámetros. Fabricado en polipropileno de grado médico antiadherente de alta resistencia (PP-R), se suministra en empaque estéril desechable para un solo uso.\n\nDiseñado con mecanismo de apertura rápida y roscas de desmoldeo, permite la preparación intraoperatoria de espaciadores temporales de cadera cargados con antibióticos específicos durante cirugías de revisión en dos tiempos por infección articular periprotésica.",
+  24: "El sistema de navegación quirúrgica Huanghe INS-2 es el primer robot inteligente portátil para artroplastia unicompartimental de rodilla (UKA), que integra dispositivos manuales inteligentes de fresado y desbastado óseo submilimétrico. Incorpora un avanzado sistema de control de límites de seguridad (boundary control) con tiempo de respuesta en milisegundos, que detiene automáticamente el fresado rotatorio si la fresa sobrepasa la frontera ósea planificada, protegiendo con total certeza los ligamentos y estructuras neurovasculares críticas.\n\nUtilizado junto con prótesis unicompartimentales de rodilla certificadas, el sistema asiste al cirujano en la planificación intraoperatoria 3D, verificación de la alineación, visualización tridimensional en tiempo real, desbastado óseo guiado por navegación, control milimétrico de profundidad y evaluación biomecánica final en artroplastia unicompartimental medial o lateral, preservando el volumen óseo sano y logrando una recuperación postoperatoria inmediata.",
+  59: "El sistema robótico portátil Changjiang INS-1 para artroplastia total de rodilla es un dispositivo pionero de navegación quirúrgica computarizada con instrumental motorizado de mano. Su tecnología de seguimiento óptico continuo permite la monitorización milimétrica de las referencias anatómicas femorales y tibiales, compensando activamente cualquier desplazamiento o movimiento del paciente durante la cirugía y eliminando los errores instrumentales convencionales.\n\nDiseñado para su uso en combinación con prótesis de rodilla validadas, el sistema asiste al cirujano en la planificación intraoperatoria, guía y navegación en el posicionamiento de las guías de corte y corte óseo, verificación inmediata del eje mecánico y balance ligamentario en flexoextensión, y evaluación postoperatoria cuantitativa en artroplastia total de rodilla (ATR) en pacientes adultos, asegurando una restauración biomecánica natural de la extremidad inferior.",
+  139: "El sistema de navegación quirúrgica para artroplastia de cadera Changjiang INS-1 es el primer robot quirúrgico portátil inteligente del mundo que integra navegación óptica tridimensional de alta precisión con un sistema motorizado manual de fresado y colocación. Su diseño modular compacto elimina la necesidad de voluminosos carros robóticos tradicionales en el quirófano, integrando sensores ópticos avanzados y algoritmos de control adaptativo con percepción autónoma y compensación activa del temblor quirúrgico en tiempo real.\n\nDesarrollado para su uso conjunto con prótesis de cadera certificadas, el sistema ejecuta la planificación preoperatoria tridimensional, registro y alineación intraoperatoria de referencias anatómicas, preparación y fresado asistido del lecho acetabular, verificación de la preparación femoral, posicionamiento y orientación milimétrica de los implantes con navegación continua, y evaluación técnica postoperatoria en artroplastia total de cadera en pacientes adultos, garantizando una orientación óptima de la copa y reducción del riesgo de luxación.",
+  161: "La prótesis para articulación de dedo del pie está diseñada específicamente para la artroplastia y reconstrucción de la primera articulación metatarsofalángica (MTF). Fabricada a partir de aleación biocompatible de cobalto-cromo-molibdeno (Co-Cr-Mo) de alta pureza con acabado pulido quirúrgico y superficie de rodamiento en polietileno de ultra alto peso molecular (UHMWPE) de alta resistencia al desgaste.\n\nSu arquitectura modular permite una intercambiabilidad total de cabezas metatarsianas de alturas variables combinadas con vástagos metatarsianos y bases falángicas de diversos diámetros y longitudes, acomodándose a cualquier morfología del canal medular. Indicada para la fijación con cemento óseo en casos de hallux rigidus severo, artritis reumatoide y artrosis destructiva incapacitante, restaurando la cinemática articular y la propulsión natural de la marcha.",
+  162: "La prótesis no cementada para articulaciones de los dedos de la mano está indicada para el reemplazo anatómico de las articulaciones metacarpofalángicas (MCF) y de las articulaciones interfalángicas proximales (IFP) del segundo al quinto dedo. Fabricada con un diseño de vástagos dobles aplanados en aleación de titanio biocompatible de alta elasticidad combinados con un núcleo articular flexible de larga vida a la fatiga.\n\nSu arquitectura de fijación elástica de vástago plano permite el ajuste libre y equilibrado de la tensión de los ligamentos colaterales, aumentando notablemente la estabilidad de la implantación sin requerir cemento óseo. Indicada para pacientes con artritis reumatoide deformante y osteoartritis severa no respondedoras al tratamiento conservador, restaurando el arco de prensión, alineación axial y destreza manual funcional.",
+  163: "El vástago de reconstrucción de cabeza femoral es un dispositivo biomecánico de soporte estructural avanzado fabricado en aleación de titanio biomimética con estructura trabecular porosa altamente interconectada. Diseñado para insertarse mediante abordaje percutáneo guiado en el canal de descompresión central de la cabeza femoral, sustituyendo la necesidad de injertos corticales avasculares tradicionales.\n\nProporciona un soporte mecánico rígido inmediatamente debajo del hueso subcondral de la cabeza del fémur, deteniendo el progreso de la necrosis y retrasando o previniendo el colapso de la superficie esférica articular. Indicado para pacientes adultos con osteonecrosis de cabeza femoral (ONFH) en estadios tempranos Steinberg/ARCO I y II sin colapso, preservando la articulación nativa de la cadera y posponiendo indefinidamente la necesidad de una artroplastia protésica total.",
+  173: "El tallo femoral cementado de revisión Modelo BC2 es un implante de longitud extendida fabricado en aleación forjada de cobalto-cromo-molibdeno (Co-Cr-Mo) de alta resistencia a la fatiga con acabado quirúrgico pulido a espejo sin collarín. Opera bajo el principio de cuña cónica doble autocentrante (taper-slip), que transforma las cargas axiales en fuerzas de compresión hidrostáticas radiales sobre el manto de cemento.\n\nDiseñado con bordes redondeados y canal proximal reforzado, se acompaña de un centralizador distal de polietileno que garantiza una distribución concéntrica y uniforme del cemento óseo en fémures con conductos ensanchados o defectos óseos proximales. Indicado para cirugías de revisión de cadera y pérdida ósea trocantérica en pacientes osteoporóticos o de edad avanzada, asegurando una fijación estable a largo plazo.",
+  183: "La prótesis diafisaria de segmento largo es un sistema modular de reconstrucción masiva fabricado en aleación forjada de titanio Ti-6Al-4V de grado médico de alta resistencia biomecánica. Diseñada para su uso independiente en el tratamiento de defectos óseos diafisarios segmentarios masivos de fémur y tibia causados por tumores óseos, traumatismos de alta energía o fracasos de injertos óseos autólogos y aloinjertos.\n\nIncorpora segmentos diafisarios intermedios cilíndricos y cónicos con extremos de bloqueo axial y vástagos de anclaje intramedular ranurados que permiten una fijación rígida con tornillos transversales bicorticales. Restaura de forma inmediata la continuidad ósea de la extremidad, soportando la carga funcional completa y promoviendo la rehabilitación precoz del paciente sin depender de la consolidación biológica del injerto.",
+  185: "La prótesis de articulación patelofemoral es un sistema de reemplazo parcial de rodilla diseñado específicamente para el tratamiento de la artrosis trócleo-rotuliana aislada. Fabricada en aleación fundida de cobalto-cromo-molibdeno (Co-Cr-Mo) pulida a espejo con componente rotuliano de polietileno de ultra alto peso molecular (UHMWPE) de alta resistencia.\n\nPresenta una tróclea anatómica extendida proximalmente con diseño de baja restricción que garantiza una trayectoria rotuliana suave y continua durante toda la flexión, eliminando el dolor anterior de rodilla y las crepitaciones. Su geometría de resección ósea conservadora preserva intactos los cóndilos femorales, la meseta tibial y todos los ligamentos cruzados y colaterales, manteniendo la cinemática nativa de la rodilla.",
+  202: "La prótesis de superficie de hombro (resurfacing humeral) es un implante anatómico no cementado diseñado para la reconstrucción conservadora de la superficie articular de la cabeza humeral. Compuesta por una cúpula esférica de aleación de cobalto-cromo-molibdeno (Co-Cr-Mo) pulida a espejo cuya cara interna cuenta con un recubrimiento biológico bicapa de titanio poroso e hidroxiapatita (Ti + HA) por plasma spray.\n\nSu vástago central corto de fijación cruciforme o cónica proporciona una estabilidad primaria inmediata sin invadir la diáfisis del húmero, preservando la totalidad del cuello anatómico y el stock óseo humeral. Indicada para artrosis glenohumeral, necrosis avascular temprana y artritis postraumática en pacientes jóvenes y activos, facilitando una rápida rehabilitación articular.",
+  210: "La prótesis total de articulación de codo es un sistema semiconstreñido de artroplastia articular compuesto por un componente humeral, un componente cubital, un eje o pasador de bisagra con mecanismo de bloqueo y bujes de polietileno UHMWPE de alta durabilidad. Los vástagos están fabricados en aleación forjada de cobalto-cromo-molibdeno (Co-Cr-Mo) o aleación de titanio de grado médico de máxima resistencia a la fatiga.\n\nDiseñada para su implantación con cemento óseo, su bisagra con laxitud rotacional controlada de ±5° a 7° distribuye eficazmente las fuerzas de torsión reduciendo el estrés sobre la interfaz cemento-hueso. Indicada para artroplastia primaria y cirugías de revisión en artritis reumatoide avanzada, fracturas conminutas distales de húmero no reconstruibles y anquilosis o rigidez postraumática severa del codo.",
+  211: "La prótesis modular de cabeza radial está indicada para el reemplazo anatómico de la cúpula radial del codo en fracturas complejas no sintetizables (Mason Tipos III y IV) y secuelas degenerativas o postraumáticas severas. Fabricada en aleación forjada de cobalto-cromo-molibdeno (Co-Cr-Mo) con acabado pulido quirúrgico que garantiza una articulación congruente y suave contra el cóndilo humeral (capitellum) y la escotadura radial del cúbito.\n\nSu diseño modular de conexión cónica rígida permite combinar cabezas de múltiples alturas y diámetros con vástagos lisos o roscados de longitud variable, restableciendo de forma milimétrica la longitud del radio y la tensión de los ligamentos colaterales laterales. Previene eficazmente la migración proximal del radio, el dolor crónico de muñeca y la inestabilidad en valgo del codo.",
+  212: "La prótesis anatómica de cabeza radial es un implante de última generación diseñado para replicar fielmente la morfología asimétrica nativa de la cúpula radial y su relación biomecánica con la escotadura menor del cúbito. Fabricada en aleación de cobalto-cromo-molibdeno biocompatible con cabeza excéntrica biselada y vástago intramedular recubierto de titanio poroso en su porción metafisaria.\n\nA diferencia de las cabezas esféricas simétricas convencionales, su perfil elíptico anatómico elimina el pinzamiento cubital durante los movimientos de pronosupinación y reduce las fuerzas de contacto sobre el cartílago del capitellum. Indicada para hemiartroplastia de codo por fracturas conminutas y revisiones articulares, logrando una cinemática fisiológica sin restricciones de movilidad.",
+  217: "El modelo anatómico óseo personalizado impreso en 3D es una réplica biomédica a escala 1:1 fabricada a partir de los datos de tomografía computarizada (TC) de alta resolución del paciente mediante tecnología aditiva de estereolitografía láser (SLA) con resinas fotosensibles de grado médico de alta fidelidad dimensional. Comprende 16 tipos de modelos diseñados para reproducir con máxima exactitud los defectos óseos y lesiones tumorales en pelvis, extremidades, columna, cráneo y tórax.\n\nProporciona una visualización tridimensional táctil invaluable que permite al equipo quirúrgico formular y ensayar protocolos quirúrgicos complejos, preformar placas de osteosíntesis, seleccionar implantes adecuados y anticipar dificultades anatómicas antes de ingresar a quirófano. Suministrado en empaque no estéril para uso preoperatorio único, optimiza el éxito de las cirugías ortopédicas reconstructivas complejas.",
+  219: "La guía de osteotomía de rodilla impresa en 3D es un instrumental quirúrgico específico de paciente (PSI) fabricado mediante sinterizado selectivo por láser (SLS) en poliamida médica de alta resistencia (PA12). Diseñada a partir de la reconstrucción tridimensional de la tomografía del paciente, calca con exactitud la topografía ósea de la cortical del fémur distal o la tibia proximal.\n\nIncorpora ranuras de corte calibradas y orificios de fijación temporal con agujas de Kirschner que guían la sierra quirúrgica con una inclinación, rotación y profundidad milimétricamente planificadas. Indicada para osteotomías correctoras de varo/valgo, osteotomías de desrotación y alineación en artroplastia de rodilla, reduciendo el traumatismo del periostio y prescindiendo del fresado endomedular.",
+  220: "La guía quirúrgica de osteotomía de cadera impresa en 3D es un dispositivo médico personalizado fabricado mediante manufactura aditiva en poliamida biocompatible (PA12) adaptado a la morfología tridimensional de la pelvis y fémur proximal de cada paciente. Dispone de trece modelos específicos que proporcionan posicionamiento, orientación y protección continua durante el acto quirúrgico.\n\nPermite ejecutar con máxima seguridad osteotomías periacetabulares de Ganz, osteotomías femorales desrotadoras/varizantes y cortes femorales de resección de cuello en artroplastia total de cadera compleja. Protege activamente el nervio ciático, la arteria femoral y la cápsula articular, garantizando la angulación y el centro de rotación exactos planeados preoperatoriamente.",
+  221: "La guía quirúrgica personalizada para pequeñas articulaciones de las extremidades está fabricada en polvo de poliamida médica (PA12) mediante tecnología de manufactura aditiva por sinterizado selectivo láser (SLS). Diseñada de forma monobloque e individualizada para adaptarse a las complejas curvaturas anatómicas de los huesos de la mano, muñeca, tobillo y antepié.\n\nEspecialmente indicada para cirugías de corrección de hallux valgus (osteotomías de Scarf, Chevron o Akin), osteotomías de acortamiento radial/cubital en la muñeca y corrección de secuelas de fracturas en huesos pequeños. Proporciona guías de corte y perforación de clavos de fijación milimétricas que aseguran una alineación perfecta sin riesgo de fracturas iatrogénicas de fragmentos óseos delicados.",
+  222: "La copa acetabular integral Tipo 60 con superficie micro-ranurada es un implante de reconstrucción pélvica fabricado en aleación forjada de titanio biocompatible de grado médico con tecnología de texturizado superficial de micro-ranuras circunferenciales de alta fricción mecánica. Su geometría de cobertura optimizada proporciona una fijación biológica no cementada inmediata sobre lechos acetabulares severamente comprometidos.\n\nIncorpora múltiples orificios avellanados perimetrales estratégicamente orientados para tornillos de anclaje óseo en el ilion, isquion y pubis, combinados con micro-ranuras que multiplican la resistencia al torque y cizallamiento. Indicada para reconstrucción acetabular tras resección tumoral, fracturas complejas conminutas de pelvis no sintetizables y revisiones de cadera con pérdida ósea severa (Paprosky Tipo III), restaurando la estabilidad de la marcha.",
+  223: "El sistema de posicionamiento y tracción DAMIS es un dispositivo quirúrgico ortopédico integral desarrollado para facilitar la artroplastia total de cadera mediante abordaje anterior directo mínimamente invasivo (DAA). Fabricado en acero quirúrgico inoxidable de alta resistencia y componentes de aleación ligera anodizada, se acopla de manera universal a las mesas de operaciones estándar del quirófano.\n\nPermite controlar y visualizar de forma paramétrica y micrométrica la fuerza de tracción longitudinal, los ángulos de rotación de la pierna y las alturas de hiperextensión del fémur, logrando una exposición perfecta y atraumática del canal femoral sin seccionar los músculos pelvitrocantéricos. Reduce la hemorragia, preserva la musculatura nativa y permite al paciente caminar el mismo día de la cirugía.",
+  225: "El implante reconstructivo personalizado 3D es una prótesis registrada a medida fabricada íntegramente mediante manufactura aditiva por haz de electrones (EBM) o fusión selectiva por láser (SLM) en aleación de titanio biocompatible de grado médico (Ti6Al4V ELI). Cada pieza se diseña de manera individualizada a partir de la anatomía patológica exacta del paciente obtenida mediante segmentación tomográfica 3D.\n\nIntegra de forma continua regiones sólidas corticales de carga axial con estructuras trabeculares porosas de gradiente biológico que replican la elasticidad ósea nativa, eliminando el blindaje de tensiones y promoviendo una osteointegración masiva. Indicado para rescates articulares complejos, reconstrucción tras resección de tumores óseos esqueléticos y graves secuelas de traumatismos donde las prótesis convencionales no son viables.",
+  229: "El conjunto de cánula y mezclado para cemento óseo es un sistema instrumental desechable de un solo uso diseñado para la preparación homogénea, desgasificación al vacío e inyección presurizada de cemento óseo acrílico (PMMA) en artroplastias articulares. Consta de un mezclador cerrado con puerto de aspiración al vacío, pistón presurizador, pistola de extrusión ergonómica y cánulas femorales y acetabulares graduadas.\n\nSu mecanismo de mezcla al vacío elimina eficazmente la porosidad y las microburbujas de aire en el cemento, aumentando significativamente la resistencia mecánica y a la fatiga del manto de fijación ósea. Permite una inyección retrógrada controlada que previene la embolia de médula ósea y asegura una penetración óptima del cemento en el hueso trabecular, reduciendo el riesgo de aflojamiento aséptico de las prótesis.",
+  230: "El lavador pulsátil eléctrico es un sistema médico desechable de irrigación pulsátil y aspiración simultánea de alta eficacia diseñado para la limpieza y desbridamiento tisular en cirugías ortopédicas y artroplastias. Compuesto por una pieza de mano ergonómica ligera con micro-motor eléctrico integrado, tubo coaxial de doble vía para entrada de solución salina y evacuación de detritos, y boquillas intercambiables femoral y de superficie.\n\nEmite un chorro pulsátil calibrado que remueve con rapidez grasa medular, microcoágulos, restos necróticos y detritos óseos de la superficie esponjosa sin dañar los tejidos osteoblastos viables. Limpia a fondo el lecho óseo antes del cementado, multiplicando la penetración y adherencia del cemento óseo acrílico en el hueso trabecular, reduciendo drásticamente las infecciones periprotésicas y el aflojamiento temprano de los implantes.",
+  231: "La cabeza femoral de cerámica BIOLOX® delta está fabricada a partir de un material compuesto cerámico de matriz de alúmina reforzada con circonia (ZTA) de cuarta generación. Esta microestructura avanzada confiere propiedades mecánicas excepcionales combinando la altísima dureza de la alúmina con la resistencia al impacto y tenacidad a la fractura de la circonia tetragonal estabilizada con itrio.\n\nOfrece una superficie articular hidrófila con un coeficiente de fricción ultra bajo y una resistencia sobresaliente al rayado por partículas extrañas, minimizando la generación de detritos de desgaste en contacto con insertos de polietileno altamente entrecruzado (HXLPE) o copas cerámicas. Indicada para artroplastia total de cadera en pacientes jóvenes o con alta demanda de actividad física, eliminando el riesgo de alergias a metales.",
+  232: "La cabeza femoral con sistema de manguito adaptador TF está diseñada para resolver discrepancias de longitud de extremidad y permitir el rescate inmediato de conos femorales desgastados o con daño superficial leve durante cirugías primarias y de revisión. Compuesta por una cabeza esférica metálica o cerámica acoplada a un manguito de titanio mecanizado de alta precisión que actúa como interfaz protectora del cono del vástago.\n\nPermite al cirujano corregir de forma milimétrica el offset femoral y la longitud de cuello intraoperatoria sin necesidad de extraer un vástago femoral firmemente osteointegrado, preservando el lecho óseo del paciente. Indicada para artroplastia total de cadera de revisión y ajustes de estabilidad articular, garantizando un bloqueo por fricción cónica rígido y eliminando el riesgo de corrosión por frotamiento (fretting corrosion).",
 };
 
 export const PRODUCT_DESC_EN: Record<number, string> = {
@@ -225,6 +249,30 @@ export const PRODUCT_DESC_EN: Record<number, string> = {
   226: "The new axial knee joint prosthesis is an advanced limb-salvage reconstruction system featuring Co-Cr-Mo or Ti6Al4V femoral condyles, anodized forged Ti6Al4V diaphyseal osteotomy segments, tibial tray, intramedullary stems, triaxial connector, and heavy-duty UHMWPE rotational bushings.\n\nIt restores natural flexion and rotation while dampening torsional stress concentrations. Indicated for arthroplasty in severe bone defects caused by bone tumors (osteosarcoma), comminuted fractures, or multiple revision failures.",
   227: "The knee joint bone cement spacer mold consists of femoral mold components, tibial mold components, and a joint gap measurement assembly (5 mm, 10 mm, 12 mm). The femoral mold includes top cover, lower support, demolding platform, screws and latches; the tibial mold includes top cover, lower support, sleeve, screws and latches.\n\nManufactured from medical-grade non-stick polypropylene (PP-R) conforming to YY/T 0242. Supplied sterile (ethylene oxide) for single use. Indicated for intraoperative fabrication of temporary antibiotic-impregnated cement spacers during two-stage knee revision arthroplasty.",
   228: "The hip joint bone cement spacer mold consists of modular components for the femoral stem and femoral heads of multiple diameters. Manufactured from medical-grade non-stick polypropylene (PP-R), it is supplied sterile for single-use intraoperative fabrication.\n\nDesigned with quick-release latches and demolding threads, it facilitates intraoperative preparation of temporary antibiotic-loaded cement hip spacers during two-stage revision arthroplasty for periprosthetic joint infection.",
+  24: "The Huanghe INS-2 Surgical Navigation System is the pioneering handheld intelligent robotic system for unicompartmental knee arthroplasty (UKA), integrating handheld intelligent bone-milling devices. It features an advanced safety boundary control mechanism with millisecond-level responsiveness, automatically pausing high-speed grinding if the burr reaches the planned virtual boundary, strictly safeguarding crucial ligaments and neurovascular structures.\n\nEngineered for use in conjunction with validated unicompartmental knee prostheses, the system assists surgeons in 3D intraoperative planning, planning verification, real-time visualization, navigated bone grinding, precise depth and boundary control, and postoperative technical evaluation in medial or lateral unicompartmental knee arthroplasty, preserving healthy bone stock and enabling accelerated patient rehabilitation.",
+  59: "The Changjiang INS-1 Knee Arthroplasty Surgical Navigation System is a pioneering handheld surgical navigation device with integrated handheld power instrumentation. Its continuous optical tracking technology delivers real-time millimeter monitoring of femoral and tibial anatomical landmarks, actively compensating for any patient limb movement during surgery and eliminating conventional instrument-related errors.\n\nEngineered for use in conjunction with validated knee prostheses, the system assists surgeons in intraoperative planning, navigated positioning of osteotomy cutting blocks, precise bone resection, immediate verification of the mechanical axis and flexion-extension ligament balancing, and quantitative postoperative evaluation in adult total knee arthroplasty (TKA), ensuring natural biomechanical restoration of the lower extremity.",
+  139: "The Changjiang INS-1 Type Hip Arthroplasty Surgical Navigation System is the world's first intelligent handheld orthopedic surgical robot, seamlessly integrating high-precision 3D optical navigation with a handheld power system. Its compact modular architecture eliminates the need for bulky robotic carts in the operating theater, incorporating advanced optical sensors and adaptive control algorithms with autonomous perception that actively minimize intraoperative hand tremor in real time.\n\nEngineered for use in conjunction with validated hip prostheses, the system executes 3D preoperative planning, intraoperative anatomical registration and alignment, guided acetabular preparation, femoral canal verification, real-time navigated prosthesis positioning, and postoperative technical assessment in total hip arthroplasty (THA) in adult patients, ensuring anatomical cup orientation and minimizing dislocation risks.",
+  161: "The cemented toe joint prosthesis is engineered specifically for the reconstructive arthroplasty of the first metatarsophalangeal (MTP) joint. Manufactured from high-purity biocompatible cobalt-chromium-molybdenum (Co-Cr-Mo) alloy with mirror-polished finish and an ultra-high molecular weight polyethylene (UHMWPE) articulating bearing surface offering exceptional wear resistance.\n\nIts modular architecture achieves optimal joint reconstruction by interchanging metatarsal heads of varying heights combined with metatarsal stems and phalanx bases of diverse lengths and diameters, accommodating varying canal geometries. Indicated for cemented fixation in severe hallux rigidus, rheumatoid arthritis, and disabling osteoarthritis, restoring joint kinematics and natural push-off gait dynamics.",
+  162: "This cementless finger joint prosthesis is indicated for the anatomical replacement of the 2nd to 5th metacarpophalangeal (MCP) and proximal interphalangeal (PIP) joints. Fabricated with a flattened double-stem design in high-elasticity biocompatible titanium alloy combined with a durable flexible articulation engineered for extended fatigue life.\n\nIts flattened double-stem elastic fixation enables free intraoperative adjustment of collateral ligament tension while enhancing primary press-fit stability without bone cement. Indicated for rheumatoid arthritis and degenerative osteoarthritis unresponsive to conservative interventions, restoring hand grip, axial digital alignment, and fine manual dexterity.",
+  163: "The femoral head reconstruction rod is an advanced structural support device manufactured from biomimetic titanium alloy featuring a 3D interconnected porous trabecular architecture. Designed for minimally invasive percutaneous insertion into the core decompression tract of the femoral head, replacing the need for traditional avascular structural bone grafting.\n\nIt provides rigid mechanical support directly beneath the subchondral bone plate, halting necrosis progression and delaying or preventing structural femoral head collapse. Indicated for adult patients with Steinberg/ARCO Stage I to II osteonecrosis of the femoral head (ONFH) prior to articular collapse, successfully preserving the native hip joint and deferring total hip arthroplasty.",
+  173: "The revision cemented femoral stem Model BC2 is an extended-length hip implant forged from high fatigue-strength cobalt-chromium-molybdenum (Co-Cr-Mo) alloy with a collarless mirror-polished finish. Operating on the taper-slip double-taper principle, it converts axial physiological loads into radial compressive hydrostatic forces within the bone cement mantle.\n\nEngineered with rounded cross-sectional borders and accompanied by a dedicated distal centralizer, it guarantees an even, concentric cement mantle in wide canals or femurs with proximal bone loss. Indicated for revision hip arthroplasty and severe proximal bone deficiency in osteoporotic or elderly patients, securing durable long-term stability.",
+  183: "The long-segment bone defect reconstruction prosthesis is a standalone modular limb salvage system forged from high-strength medical-grade Ti-6Al-4V titanium alloy. Indicated for segmental diaphyseal bone defects of the femur or tibia caused by bone tumors, high-energy trauma, or failed bone grafting when conventional biological methods are ineffective.\n\nIt features modular cylindrical and tapered intercalary spacers linked via reinforced morse tapers with anti-rotation cross-bolts and fluted intramedullary fixation stems with bicortical interlocking screws. It immediately restores skeletal limb continuity and load-bearing capacity, enabling early weight-bearing and functional rehabilitation without relying on biological union.",
+  185: "The patellofemoral joint prosthesis is a dedicated partial knee arthroplasty system engineered for isolated patellofemoral osteoarthritis. It comprises a femoral trochlear component cast from mirror-polished Co-Cr-Mo alloy articulating against an all-polyethylene UHMWPE patellar button.\n\nIt features a proximal trochlear extension and a broad, low-constraint sulcus design that ensures seamless patellar tracking, eliminating anterior knee pain and crepitus throughout flexion. Its conservative bone-sparing resection fully preserves the femoral condyles, tibial plateau, and all cruciate and collateral ligaments, retaining native knee kinematics.",
+  202: "The surface shoulder prosthesis (humeral resurfacing head) is a bone-preserving, cementless anatomical implant indicated for shoulder resurfacing arthroplasty. Fabricated with a Co-Cr-Mo alloy spherical shell whose bone-apposition inner surface is coated with a bioactive dual-layer porous titanium plus hydroxyapatite (Ti + HA) thermal plasma spray.\n\nIts short cruciform or tapered central stem delivers rigid initial fixation without violating the humeral diaphysis, preserving the native humeral neck and epiphyseal bone stock. Indicated for glenohumeral osteoarthritis, early avascular necrosis, and post-traumatic arthrosis in active patients, enabling accelerated shoulder rehabilitation.",
+  210: "The total elbow joint prosthesis is a semi-constrained arthroplasty system comprising a humeral stem, an ulnar stem, medial and lateral hinge pins with secure locking mechanisms, and high-durability UHMWPE bushings. Fabricated from forged Co-Cr-Mo alloy or high-strength titanium alloy engineered for superior cyclic fatigue resistance.\n\nIndicated for use with bone cement, its semi-constrained linkage permits controlled rotational laxity (±5° to 7°), dampening torsional forces and minimizing stresses at the bone-cement interface. Indicated for primary and revision elbow arthroplasty in advanced rheumatoid arthritis, unreconstructible distal humerus comminuted fractures, and severe post-traumatic ankylosis.",
+  211: "The modular radial head prosthesis is indicated for replacement in comminuted, unfixable radial head fractures (Mason Types III and IV) and disabling post-traumatic sequelae. Fabricated from forged Co-Cr-Mo alloy with a surgical mirror polish ensuring smooth, congruent articulation against the capitellum and the proximal radial notch.\n\nIts modular morse-taper connection allows intraoperative pairing of heads of various diameters and dish depths with stems of variable lengths, finely restoring radial length and lateral collateral ligament tension. It prevents proximal radial migration, wrist pain, and gross valgus elbow instability.",
+  212: "The anatomic radial head prosthesis is designed to faithfully replicate the native asymmetric elliptical morphology of the radial dish and its articulation with the lesser sigmoid notch. Cast from biocompatible Co-Cr-Mo alloy with an eccentric beveled articular rim and a proximal porous titanium-coated metaphyseal stem.\n\nUnlike traditional axisymmetric spherical designs, its anatomical elliptical profile eliminates radioulnar impingement during forearm pronosupination and attenuates peak contact stresses on capitellar cartilage. Indicated as a cementless hemiarthroplasty for comminuted radial head fractures and revision cases, providing unrestricted physiological kinematics.",
+  217: "The customized 3D-printed bone model is a 1:1 scale biomedical anatomical replica fabricated from patient high-resolution CT data via stereolithography (SLA) additive manufacturing using medical-grade photosensitive resin. Encompassing 16 distinct anatomical model types, it accurately replicates bone defects and lesions across the pelvis, extremities, skull, spine, and thorax.\n\nIt delivers critical tactile 3D visualization, enabling surgical teams to plan complex resection margins, pre-contour osteosynthesis reconstruction plates, and select implants prior to entering the OR. Supplied in non-sterile single-use packaging with a 3-month shelf life, it significantly enhances surgical precision in demanding orthopedic reconstructions.",
+  219: "The 3D-printed knee osteotomy guide is a patient-specific surgical instrument (PSI) manufactured from medical-grade nylon (PA12) via selective laser sintering (SLS). Custom-designed from patient 3D CT reconstruction, it perfectly mirrors the unique cortical surface topography of the distal femur or proximal tibia.\n\nIt integrates calibrated osteotomy saw slots and Kirschner wire fixation holes that guide the surgical saw with pre-planned millimetric depth, slope, and rotation. Indicated for corrective varus/valgus osteotomies and navigated alignment in knee arthroplasty, eliminating intramedullary canal invasion and preserving periosteal vascularity.",
+  220: "The 3D-printed hip osteotomy guide is a personalized surgical device manufactured from biocompatible polyamide (PA12) additive manufacturing, tailored to individual pelvic and proximal femoral morphology. Available across 13 specialized models, it provides intraoperative positioning, osteotomy guidance, and critical tissue protection.\n\nIt enables safe execution of Ganz periacetabular osteotomies (PAO), proximal femoral derotation osteotomies, and femoral neck resection in complex total hip replacement. It actively shields adjacent sciatic and femoral neurovascular structures, ensuring exact reproduction of planned acetabular coverage and femoral version angles.",
+  221: "The personalized 3D-printed osteotomy guide for small limb joints is crafted from medical nylon powder (PA12) via selective laser sintering (SLS). Manufactured as an integrally formed custom unit tailored to the complex osseous contours of the hand, wrist, ankle, and forefoot.\n\nIndicated for hallux valgus corrections (Scarf, Chevron, Akin osteotomies), ulnar/radial shortening osteotomies, and post-traumatic malunion corrections in small bones. It provides precise saw guide slots and pre-drilled pin channels, guaranteeing exact bone wedge resection without risking iatrogenic fragmentation of delicate cortical margins.",
+  222: "The Type 60 micro-grooved surface full acetabulum is an advanced pelvic reconstruction cup manufactured from medical-grade forged titanium alloy featuring circumferential micro-grooved high-friction surface texturing. Its optimized coverage geometry provides immediate cementless mechanical fixation in severely compromised acetabular bone beds.\n\nIt incorporates multi-hole screw configurations with divergent angled trajectories directed into the ilium, ischium, and pubis, combined with micro-grooves that dramatically resist shear and torsional displacement. Indicated for acetabular reconstruction after oncological resection, non-reconstructible pelvic comminuted fractures, and severe Paprosky Type III revision hip arthroplasty.",
+  223: "The DAMIS Minimally Invasive Hip Surgery System is a specialized patient positioning and limb traction system engineered for direct anterior approach (DAA) total hip arthroplasty. Built from high-strength surgical stainless steel and anodized lightweight alloy components, it mounts universally onto standard hospital operating tables.\n\nIt provides controlled, parametric adjustment and visual tracking of axial traction force, leg rotation angles, and femoral hyperextension, achieving effortless proximal femoral exposure without detaching abductor or external rotator muscles. It reduces intraoperative blood loss, preserves soft-tissue integrity, and supports same-day patient ambulation.",
+  225: "The custom registered 3D-printed orthopedic prosthesis is a patient-matched limb salvage implant manufactured via electron beam melting (EBM) or selective laser melting (SLM) using medical-grade Ti6Al4V ELI titanium alloy powder. Each implant is custom-modeled from high-resolution CT segmentation data to match patient-specific post-resection osseous anatomy.\n\nIt combines solid load-bearing cortical cores with biomimetic gradient trabecular lattice structures that mimic native bone elasticity, eliminating stress shielding and maximizing biological ingrowth. Indicated for complex revision arthroplasty, massive oncological bone tumor reconstructions, and structural trauma where off-the-shelf prostheses cannot achieve stability.",
+  229: "The bone cement cannula assembly is a sterile, single-use closed vacuum mixing and pressurized delivery system for orthopedic acrylic bone cement (PMMA). Comprising an enclosed vacuum mixing bowl with vacuum port, pressurizing piston, ergonomic delivery caulking gun, and transparent graduated femoral and acetabular delivery nozzles.\n\nIts closed vacuum mixing mechanism effectively removes micro-air bubbles and porosity, substantially augmenting the tensile and fatigue strength of the cured cement mantle. It enables controlled retrograde canal filling, preventing fat embolism and ensuring deep trabecular interdigitation to guard against aseptic prosthetic loosening.",
+  230: "The electric pulse washer is a sterile single-use orthopedic pulsed lavage and concurrent suction system designed for bone bed preparation and soft-tissue debridement. Comprising a lightweight ergonomic handpiece with an integrated electric motor, a dual-lumen coaxial irrigation and evacuation tubing harness, and interchangeable femoral and fan-spray nozzles.\n\nIt generates high-frequency pulsed saline streams that swiftly clear intramedullary fat, hematomas, necrotic bone debris, and bacteria without injuring viable osteoblasts. Thoroughly debriding cancellous bone prior to cementing, it multiplies bone cement interdigitation depth, drastically cutting down periprosthetic joint infection (PJI) rates and early loosening.",
+  231: "The BIOLOX® delta ceramic femoral head is manufactured from fourth-generation zirconia-toughened alumina (ZTA) ceramic nanocomposite. This advanced microstructure delivers exceptional mechanical properties by combining the extreme hardness and wear resistance of alumina with the superior fracture toughness and impact resistance of yttria-stabilized tetragonal zirconia.\n\nIt features an exceptionally wettable hydrophilic articulating surface with an ultra-low friction coefficient and unmatched scratch resistance against third-body wear debris, minimizing volumetric wear rates against HXLPE or ceramic liners. Indicated for primary and revision total hip arthroplasty in young or highly active patients, completely eliminating metal hypersensitivity risks.",
+  232: "The TF femoral ball head system with adapter sleeve is designed for immediate taper revision and intraoperative neck length restoration during primary and complex revision hip arthroplasty. It pairs a spherical modular head with an internal precision-machined titanium taper sleeve that shields the underlying trunnion.\n\nThis system allows surgeons to finely calibrate femoral offset and leg length discrepancy without removing well-fixed, well-integrated femoral stems, preserving vital bone stock. Indicated for revision total hip arthroplasty, minor trunnion damage, and recurrent instability, ensuring a robust frictional taper lock while mitigating fretting and crevice corrosion.",
 };
 
 // ==========================================
@@ -2052,6 +2100,630 @@ export const PRODUCT_SPECS_ES: Record<number, [string, string][]> = {
       "Óxido de Etileno (EO), un solo uso (vida útil estéril de 2 años)"
     ]
   ],
+  24: [
+    [
+      "Modelo del sistema",
+      "Huanghe INS-2 (Robot de fresado unicompartimental)"
+    ],
+    [
+      "Tecnología de fresado",
+      "Desbastado óseo guiado por límites virtuales con respuesta milimétrica"
+    ],
+    [
+      "Tiempo de respuesta de seguridad",
+      "Control de contorno con parada de emergencia en milisegundos"
+    ],
+    [
+      "Procedimientos quirúrgicos",
+      "Fresado tibial y femoral unicompartimental (UKA) medial y lateral"
+    ],
+    [
+      "Indicación clínica",
+      "Artroplastia unicompartimental de rodilla en osteoartritis monocompartimental"
+    ],
+    [
+      "Características del sistema",
+      "Fresadora manual inteligente de alta velocidad, sistema óptico 3D y carro compacto"
+    ]
+  ],
+  59: [
+    [
+      "Modelo del sistema",
+      "Changjiang INS-1 Rodilla (Robot portátil de osteotomía)"
+    ],
+    [
+      "Tecnología de navegación",
+      "Navegación óptica infrarroja con compensación de movimiento"
+    ],
+    [
+      "Precisión de alineación",
+      "Precisión angular < 1° y precisión de resección ósea < 1 mm"
+    ],
+    [
+      "Procedimientos quirúrgicos",
+      "Navegación de cortes femorales/tibiales y balance ligamentario"
+    ],
+    [
+      "Indicación clínica",
+      "Artroplastia total primaria y de revisión de rodilla (ATR)"
+    ],
+    [
+      "Características del sistema",
+      "Sensor óptico de alta tasa de muestreo y consola de control táctil"
+    ]
+  ],
+  139: [
+    [
+      "Modelo del sistema",
+      "Changjiang INS-1 (Robot portátil inteligente)"
+    ],
+    [
+      "Tecnología de navegación",
+      "Navegación óptica tridimensional y seguimiento dinámico activo"
+    ],
+    [
+      "Precisión de posicionamiento",
+      "Precisión submilimétrica (< 1 mm) y angular (< 1°)"
+    ],
+    [
+      "Procedimientos quirúrgicos",
+      "Fresado acetabular, preparación femoral y orientación de copa"
+    ],
+    [
+      "Indicación clínica",
+      "Artroplastia total primaria y compleja de cadera en adultos"
+    ],
+    [
+      "Características del sistema",
+      "Unidad motora manual ergonómica autoclavable e interfaz intuitiva"
+    ]
+  ],
+  161: [
+    [
+      "Material",
+      "Aleación de Cobalto-Cromo-Molibdeno (Co-Cr-Mo) y UHMWPE"
+    ],
+    [
+      "Fijación",
+      "Cementada (uso conjunto con cemento óseo)"
+    ],
+    [
+      "Diseño",
+      "Sistema modular tri-componente con vástago metatarsiano y base falángica"
+    ],
+    [
+      "Modularidad",
+      "Cabezas metatarsianas de altura variable y múltiples diámetros de vástago"
+    ],
+    [
+      "Indicación clínica",
+      "Artroplastia de la primera articulación metatarsofalángica (Hallux Rigidus / Artrosis)"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma - Vida útil estéril de 5 años"
+    ]
+  ],
+  162: [
+    [
+      "Material",
+      "Aleación de Titanio biocompatible de grado médico y elastómero articular"
+    ],
+    [
+      "Fijación",
+      "No cementada (fijación elástica press-fit intraósea)"
+    ],
+    [
+      "Articulaciones indicadas",
+      "Metacarpofalángicas (MCF) e interfalángicas proximales (IFP) (dedos 2 a 5)"
+    ],
+    [
+      "Diseño",
+      "Doble vástago aplanado antirrotacional con preservación de ligamentos colaterales"
+    ],
+    [
+      "Indicación clínica",
+      "Artritis reumatoide, artrosis degenerativa y deformidades articulares de mano"
+    ],
+    [
+      "Esterilización",
+      "Óxido de etileno (EO) - Vida útil estéril de 5 años"
+    ]
+  ],
+  163: [
+    [
+      "Material",
+      "Aleación de Titanio biocompatible (Ti6Al4V ELI) con estructura trabecular porosa"
+    ],
+    [
+      "Procedimiento asociado",
+      "Descompresión del núcleo de la cabeza femoral (Core Decompression)"
+    ],
+    [
+      "Diseño",
+      "Vástago canulado de soporte subcondral con extremo roscado de anclaje diafisario"
+    ],
+    [
+      "Porosidad trabecular",
+      "70% - 80% con interconexión tridimensional osteoinductora"
+    ],
+    [
+      "Indicación clínica",
+      "Osteonecrosis de cabeza femoral (ONFH) estadios Steinberg / ARCO I y II"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma - Vida útil estéril de 5 años"
+    ]
+  ],
+  173: [
+    [
+      "Material",
+      "Aleación forjada de Cobalto-Cromo-Molibdeno (Co-Cr-Mo)"
+    ],
+    [
+      "Acabado",
+      "Pulido espejo quirúrgico de alta precisión (Ra < 0.05 µm)"
+    ],
+    [
+      "Principio biomecánico",
+      "Taper-slip autocentrante de doble conicidad pulida"
+    ],
+    [
+      "Accesorios",
+      "Centralizador distal de polietileno y tapón intramedular"
+    ],
+    [
+      "Indicación clínica",
+      "Artroplastia de revisión de cadera con defectos óseos proximales y fémur amplio"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma - Vida útil estéril de 5 años"
+    ]
+  ],
+  183: [
+    [
+      "Material",
+      "Aleación de Titanio biocompatible Ti-6Al-4V de grado médico"
+    ],
+    [
+      "Segmentos disponibles",
+      "Cuerpos diafisarios modulares cilíndricos y cónicos de longitud variable (40 a 200 mm)"
+    ],
+    [
+      "Vástagos de fijación",
+      "Vástagos intramedulares ranurados con orificios de bloqueo transversal"
+    ],
+    [
+      "Mecanismo de unión",
+      "Conos morse reforzados con pernos de bloqueo axial antirrotación"
+    ],
+    [
+      "Indicación clínica",
+      "Resección oncológica diafisaria, fracturas conminutas con defecto masivo y pseudoartrosis"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma - Vida útil estéril de 5 años"
+    ]
+  ],
+  185: [
+    [
+      "Material",
+      "Aleación de Cobalto-Cromo-Molibdeno (Co-Cr-Mo) y componente rotuliano en UHMWPE"
+    ],
+    [
+      "Fijación",
+      "Cementada (ajuste optimizado con cemento óseo)"
+    ],
+    [
+      "Diseño trocleal",
+      "Surco anatómico extendido proximalmente de baja constricción"
+    ],
+    [
+      "Preservación ósea",
+      "Conservación completa de compartimentos tibiofemorales medial y lateral"
+    ],
+    [
+      "Indicación clínica",
+      "Artrosis patelofemoral severa aislada, displasia trocleal y condromalacia grado IV"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma / Óxido de etileno - Vida útil de 5 años"
+    ]
+  ],
+  202: [
+    [
+      "Material",
+      "Aleación de Cobalto-Cromo-Molibdeno con recubrimiento bioactivo Ti + HA"
+    ],
+    [
+      "Fijación",
+      "No cementada biológica press-fit"
+    ],
+    [
+      "Geometría",
+      "Cúpula esférica anatómica de perfil bajo con vástago central de anclaje corto"
+    ],
+    [
+      "Preservación ósea",
+      "Resección mínima del cartílago sin osteotomía del cuello humeral"
+    ],
+    [
+      "Indicación clínica",
+      "Artrosis de hombro en pacientes jóvenes, necrosis avascular de cabeza humeral"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma - Vida útil estéril de 5 años"
+    ]
+  ],
+  210: [
+    [
+      "Material",
+      "Aleación forjada Co-Cr-Mo / Ti6Al4V y bujes de UHMWPE grado médico"
+    ],
+    [
+      "Tipo de constricción",
+      "Semiconstreñida con bisagra modular y laxitud rotacional controlada"
+    ],
+    [
+      "Fijación",
+      "Cementada (con centralizadores intramedulares)"
+    ],
+    [
+      "Ángulo de flexoextensión",
+      "Rango de movimiento funcional de 0° a 130°"
+    ],
+    [
+      "Indicación clínica",
+      "Artritis reumatoide destructiva de codo, fracturas distales conminutas y revisiones"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma - Vida útil estéril de 5 años"
+    ]
+  ],
+  211: [
+    [
+      "Material",
+      "Aleación forjada de Cobalto-Cromo-Molibdeno (Co-Cr-Mo) pulida a espejo"
+    ],
+    [
+      "Diseño",
+      "Sistema modular de cabeza y vástago intramedular con conexión cónica morse"
+    ],
+    [
+      "Fijación",
+      "No cementada (vástago intramedular de deslizamiento suave)"
+    ],
+    [
+      "Variedad dimensional",
+      "Múltiples diámetros de cúpula (18 a 24 mm) y diferentes longitudes de vástago"
+    ],
+    [
+      "Indicación clínica",
+      "Fracturas de cabeza radial Mason III y IV, luxación-fractura de Essex-Lopresti y secuelas"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma - Vida útil estéril de 5 años"
+    ]
+  ],
+  212: [
+    [
+      "Material",
+      "Aleación de Co-Cr-Mo con porción metafisaria en Titanio poroso biológico"
+    ],
+    [
+      "Geometría de cúpula",
+      "Perfil elíptico anatómico asimétrico con bisel de pronosupinación"
+    ],
+    [
+      "Fijación",
+      "No cementada biológica press-fit"
+    ],
+    [
+      "Compatibilidad cinemática",
+      "Articulación radiocubital proximal y radiocapitelar"
+    ],
+    [
+      "Indicación clínica",
+      "Reemplazo anatómico de cabeza radial, inestabilidad posterolateral rotatoria de codo"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma - Vida útil estéril de 5 años"
+    ]
+  ],
+  217: [
+    [
+      "Tecnología de manufactura",
+      "Manufactura Aditiva por Estereolitografía (SLA 3D)"
+    ],
+    [
+      "Material",
+      "Resina fotosensible biocompatible de alta tenacidad y resolución micrométrica"
+    ],
+    [
+      "Precisión dimensional",
+      "Escala anatómica 1:1 con tolerancia dimensional < 0.2 mm"
+    ],
+    [
+      "Áreas anatómicas",
+      "Pelvis, cadera, rodilla, fémur, tibia, columna vertebral, cráneo y tórax"
+    ],
+    [
+      "Indicación clínica",
+      "Planificación prequirúrgica, simulación de osteotomías y moldeo de placas"
+    ],
+    [
+      "Presentación",
+      "No estéril, uso preoperatorio individual con vida útil de 3 meses"
+    ]
+  ],
+  219: [
+    [
+      "Material",
+      "Poliamida médica de alta resistencia (Nylon PA12) mediante sinterizado láser (SLS)"
+    ],
+    [
+      "Diseño",
+      "Guía específica de paciente (PSI) con acople unívoco a la superficie ósea"
+    ],
+    [
+      "Ranuras de osteotomía",
+      "Compatible con hojas de sierra oscilante quirúrgica estándar"
+    ],
+    [
+      "Orificios de fijación",
+      "Compatibles con agujas de Kirschner de 2.0 mm y 2.5 mm"
+    ],
+    [
+      "Indicación clínica",
+      "Osteotomía tibial alta (HTO), osteotomía femoral distal (DFO) y artroplastia"
+    ],
+    [
+      "Esterilización",
+      "Suministrada estéril (óxido de etileno, EO) para uso exclusivo de un solo paciente"
+    ]
+  ],
+  220: [
+    [
+      "Material",
+      "Poliamida médica PA12 certificada biocompatible (Impresión 3D SLS)"
+    ],
+    [
+      "Modelos disponibles",
+      "Trece configuraciones para abordajes acetabulares y femorales"
+    ],
+    [
+      "Fijación temporal",
+      "Orificios para clavos de fijación bicorticales de rápida inserción"
+    ],
+    [
+      "Tolerancia de corte",
+      "Error angular < 1° y desviación lineal < 0.5 mm"
+    ],
+    [
+      "Indicación clínica",
+      "Displasia del desarrollo de la cadera (DDC), osteotomía periacetabular y deformidades"
+    ],
+    [
+      "Esterilización",
+      "Óxido de etileno (EO) - Uso exclusivo por paciente"
+    ]
+  ],
+  221: [
+    [
+      "Material",
+      "Poliamida grado médico (PA12) de alta tenacidad (Manufactura Aditiva 3D)"
+    ],
+    [
+      "Segmentos anatómicos",
+      "Muñeca, carpo, metacarpo, tobillo, tarso y metatarso"
+    ],
+    [
+      "Tipos clínicos",
+      "Diseños Tipo I y Tipo II para cortes diafisarios y angulares"
+    ],
+    [
+      "Fijación ósea",
+      "Micro-agujas de Kirschner de 1.0 mm a 1.6 mm"
+    ],
+    [
+      "Indicación clínica",
+      "Hallux valgus severo, deformidades de radio distal y secuelas de fracturas en dedos"
+    ],
+    [
+      "Esterilización",
+      "Óxido de etileno (EO) - Empaque estéril individual"
+    ]
+  ],
+  222: [
+    [
+      "Material",
+      "Aleación forjada de Titanio (Ti-6Al-4V) de grado médico"
+    ],
+    [
+      "Textura superficial",
+      "Micro-ranuras circunferenciales y acabado rugoso de alta adherencia"
+    ],
+    [
+      "Orificios de fijación",
+      "Sistema multi-orificio periférico para tornillos de esponjosa divergentes"
+    ],
+    [
+      "Compatibilidad",
+      "Acepta insertos de polietileno altamente entrecruzado (HXLPE) y doble movilidad"
+    ],
+    [
+      "Indicación clínica",
+      "Reconstrucción postoncológica de pelvis, defectos Paprosky III y trauma severo"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma - Vida útil estéril de 5 años"
+    ]
+  ],
+  223: [
+    [
+      "Material",
+      "Acero quirúrgico inoxidable de grado médico y aleaciones ligeras anodizadas"
+    ],
+    [
+      "Abordaje compatible",
+      "Abordaje anterior directo mínimamente invasivo (DAA / DAMIS)"
+    ],
+    [
+      "Parámetros controlables",
+      "Tracción axial, rotación interna/externa e hiperextensión graduada"
+    ],
+    [
+      "Visualización",
+      "Escalas graduadas milimétricas y dinamométricas continuas"
+    ],
+    [
+      "Indicación clínica",
+      "Artroplastia primaria de cadera mínimamente invasiva con preservación muscular"
+    ],
+    [
+      "Esterilización",
+      "Componentes de contacto autoclavables y estructura desinfectable en quirófano"
+    ]
+  ],
+  225: [
+    [
+      "Tecnología",
+      "Manufactura Aditiva 3D por Haz de Electrones (EBM / SLM)"
+    ],
+    [
+      "Material",
+      "Polvo de aleación de Titanio biomimético (Ti6Al4V ELI) según norma ASTM F3001"
+    ],
+    [
+      "Arquitectura interna",
+      "Gradiente poroso funcional trabecular (65% - 80% porosidad interconectada)"
+    ],
+    [
+      "Fijación",
+      "Multi-orificios anatómicos angulados para tornillos óseos bloqueados"
+    ],
+    [
+      "Indicación clínica",
+      "Reconstrucción oncológica ósea, defectos masivos de pelvis y articulaciones complejas"
+    ],
+    [
+      "Certificación",
+      "Dispositivo médico implantable personalizado bajo registro sanitario oficial"
+    ]
+  ],
+  229: [
+    [
+      "Componentes",
+      "Mezclador al vacío, pistola dosificadora ergonómica, cánula femoral larga y cánula acetabular"
+    ],
+    [
+      "Material",
+      "Polímeros médicos antiadherentes de alta resistencia (PC / ABS / POM) libres de pirógenos"
+    ],
+    [
+      "Sistema de mezclado",
+      "Mezcla en circuito cerrado con puerto para conexión de bomba de vacío (-0.08 MPa)"
+    ],
+    [
+      "Capacidad",
+      "Compatible con preparaciones de 40 g a 80 g de cemento óseo (1 a 2 dosis)"
+    ],
+    [
+      "Indicación clínica",
+      "Presurización e inyección retrógrada de cemento en reemplazos de cadera, rodilla y hombro"
+    ],
+    [
+      "Esterilización",
+      "Óxido de etileno (EO) en doble barrera estéril desechable"
+    ]
+  ],
+  230: [
+    [
+      "Componentes",
+      "Pieza de mano con motor eléctrico incorporado, pack de baterías y boquillas de doble luz"
+    ],
+    [
+      "Modos de presión",
+      "Modo de alta presión (limpieza de lecho óseo) y baja presión (lavado de partes blandas)"
+    ],
+    [
+      "Caudal de irrigación",
+      "700 a 1500 ml/min con pulsaciones continuas de alta frecuencia"
+    ],
+    [
+      "Función de aspiración",
+      "Aspiración coaxial simultánea que evacúa fluidos y detritos al bote de succión"
+    ],
+    [
+      "Indicación clínica",
+      "Preparación del canal femoral y acetabular en artroplastia, trauma e infecciones óseas"
+    ],
+    [
+      "Esterilización",
+      "Óxido de etileno (EO) - Empaque estéril desechable para un solo uso"
+    ]
+  ],
+  231: [
+    [
+      "Material",
+      "Cerámica compuesta avanzada BIOLOX® delta (Alúmina reforzada con Circonia - ZTA)"
+    ],
+    [
+      "Cono de acople",
+      "Cono estándar 12/14 de alta precisión micrométrica"
+    ],
+    [
+      "Diámetros disponibles",
+      "28 mm, 32 mm, 36 mm y 40 mm"
+    ],
+    [
+      "Longitudes de cuello",
+      "Corto (S), Medio (M), Largo (L) y Extra Largo (XL)"
+    ],
+    [
+      "Indicación clínica",
+      "Artroplastia total primaria y de revisión en pacientes jóvenes y activos"
+    ],
+    [
+      "Biocompatibilidad",
+      "Totalmente inerte, libre de metales (sin liberación de iones Co-Cr-Ni)"
+    ]
+  ],
+  232: [
+    [
+      "Material",
+      "Aleación forjada Co-Cr-Mo con manguito adaptador de aleación de Titanio Ti6Al4V"
+    ],
+    [
+      "Conexión",
+      "Adaptador modular TF para cono 12/14"
+    ],
+    [
+      "Opciones de offset",
+      "Múltiples longitudes de compensación (-3.5 mm a +7.0 mm)"
+    ],
+    [
+      "Función principal",
+      "Reparación/rescate de cono femoral sin recambio del vástago"
+    ],
+    [
+      "Indicación clínica",
+      "Revisión acetabular aislada, inestabilidad de cadera y corrección de dismetría"
+    ],
+    [
+      "Esterilización",
+      "Radiación gamma - Vida útil estéril de 5 años"
+    ]
+  ],
 };
 
 export const PRODUCT_SPECS_EN: Record<number, [string, string][]> = {
@@ -3874,5 +4546,1393 @@ export const PRODUCT_SPECS_EN: Record<number, [string, string][]> = {
       "Sterilization",
       "Ethylene Oxide (EO), single-use (2-year sterile shelf life)"
     ]
+  ],
+  24: [
+    [
+      "System model",
+      "Huanghe INS-2 (Unicompartmental Bone-Milling Robot)"
+    ],
+    [
+      "Milling technology",
+      "Virtual boundary-guided bone grinding with sub-millimeter precision"
+    ],
+    [
+      "Safety response time",
+      "Millisecond-level safety boundary control and emergency shutdown"
+    ],
+    [
+      "Surgical procedures",
+      "Medial and lateral unicompartmental tibial and femoral bone preparation"
+    ],
+    [
+      "Clinical indication",
+      "Unicompartmental knee arthroplasty (UKA) for localized osteoarthritis"
+    ],
+    [
+      "System features",
+      "Handheld intelligent high-speed burr, 3D optical tracking and mobile console"
+    ]
+  ],
+  59: [
+    [
+      "System model",
+      "Changjiang INS-1 Knee (Handheld Osteotomy Robot)"
+    ],
+    [
+      "Navigation technology",
+      "Infrared optical navigation with dynamic patient motion compensation"
+    ],
+    [
+      "Alignment accuracy",
+      "Angular accuracy < 1° and bone resection depth accuracy < 1 mm"
+    ],
+    [
+      "Surgical procedures",
+      "Femoral/tibial osteotomy navigation and soft-tissue ligament balancing"
+    ],
+    [
+      "Clinical indication",
+      "Primary and revision total knee arthroplasty (TKA) in adults"
+    ],
+    [
+      "System features",
+      "High-frequency optical tracker and ergonomic touch-screen console"
+    ]
+  ],
+  139: [
+    [
+      "System model",
+      "Changjiang INS-1 (Intelligent Handheld Robot)"
+    ],
+    [
+      "Navigation technology",
+      "3D Optical Navigation and Active Dynamic Tracking"
+    ],
+    [
+      "Positioning accuracy",
+      "Sub-millimeter accuracy (< 1 mm) and angular accuracy (< 1°)"
+    ],
+    [
+      "Surgical procedures",
+      "Acetabular reaming, femoral preparation and cup orientation"
+    ],
+    [
+      "Clinical indication",
+      "Adult primary and complex total hip arthroplasty (THA)"
+    ],
+    [
+      "System features",
+      "Autoclavable ergonomic handheld power unit and intuitive UI"
+    ]
+  ],
+  161: [
+    [
+      "Material",
+      "Cobalt-Chromium-Molybdenum (Co-Cr-Mo) Alloy and UHMWPE"
+    ],
+    [
+      "Fixation",
+      "Cemented (indicated for use with bone cement)"
+    ],
+    [
+      "Design",
+      "Modular three-component system with metatarsal stem and phalanx base"
+    ],
+    [
+      "Modularity",
+      "Variable metatarsal head heights and multiple stem diameters"
+    ],
+    [
+      "Clinical indication",
+      "First metatarsophalangeal (MTP) joint reconstruction (Hallux Rigidus / Arthritis)"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation - 5-year sterile shelf life"
+    ]
+  ],
+  162: [
+    [
+      "Material",
+      "Biocompatible medical-grade Titanium Alloy and joint elastomer"
+    ],
+    [
+      "Fixation",
+      "Cementless (elastic intramedullary press-fit fixation)"
+    ],
+    [
+      "Applicable joints",
+      "2nd to 5th metacarpophalangeal (MCP) and proximal interphalangeal (PIP) joints"
+    ],
+    [
+      "Design",
+      "Flattened double-stem anti-rotational geometry preserving collateral ligaments"
+    ],
+    [
+      "Clinical indication",
+      "Rheumatoid arthritis, osteoarthritis, and digital deformity correction"
+    ],
+    [
+      "Sterilization",
+      "Ethylene oxide (EO) - 5-year sterile shelf life"
+    ]
+  ],
+  163: [
+    [
+      "Material",
+      "Biocompatible Titanium Alloy (Ti6Al4V ELI) with porous trabecular structure"
+    ],
+    [
+      "Associated procedure",
+      "Core decompression of the femoral head (ONFH)"
+    ],
+    [
+      "Design",
+      "Cannulated subchondral support rod with threaded lateral cortical anchoring"
+    ],
+    [
+      "Trabecular porosity",
+      "70% - 80% interconnected 3D biomimetic porosity"
+    ],
+    [
+      "Clinical indication",
+      "Steinberg / ARCO Stage I and II femoral head osteonecrosis without collapse"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation - 5-year sterile shelf life"
+    ]
+  ],
+  173: [
+    [
+      "Material",
+      "Forged Cobalt-Chromium-Molybdenum (Co-Cr-Mo) Alloy"
+    ],
+    [
+      "Surface finish",
+      "High-precision mirror-polished surgical finish (Ra < 0.05 µm)"
+    ],
+    [
+      "Biomechanical principle",
+      "Self-centering double-taper taper-slip mechanism"
+    ],
+    [
+      "Accessories",
+      "Polyethylene distal centralizer and medullary plug"
+    ],
+    [
+      "Clinical indication",
+      "Revision hip replacement and wide femoral canal reconstruction"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation - 5-year sterile shelf life"
+    ]
+  ],
+  183: [
+    [
+      "Material",
+      "Biocompatible medical-grade Titanium Alloy (Ti-6Al-4V)"
+    ],
+    [
+      "Available segments",
+      "Modular cylindrical and tapered diaphyseal bodies (40 mm to 200 mm)"
+    ],
+    [
+      "Fixation stems",
+      "Fluted intramedullary stems with transverse interlocking screw holes"
+    ],
+    [
+      "Coupling mechanism",
+      "Reinforced morse tapers with anti-rotational axial locking bolts"
+    ],
+    [
+      "Clinical indication",
+      "Oncological diaphyseal resections, extensive segmental loss, and nonunions"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation - 5-year sterile shelf life"
+    ]
+  ],
+  185: [
+    [
+      "Material",
+      "Cobalt-Chromium-Molybdenum (Co-Cr-Mo) Alloy and UHMWPE patellar component"
+    ],
+    [
+      "Fixation",
+      "Cemented (optimized for bone cement interdigitation)"
+    ],
+    [
+      "Trochlear design",
+      "Broad, low-constraint sulcus with proximal extension preventing subluxation"
+    ],
+    [
+      "Bone preservation",
+      "Complete preservation of medial and lateral tibiofemoral compartments"
+    ],
+    [
+      "Clinical indication",
+      "Isolated severe patellofemoral osteoarthritis, trochlear dysplasia, grade IV chondromalacia"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation / Ethylene oxide - 5-year sterile shelf life"
+    ]
+  ],
+  202: [
+    [
+      "Material",
+      "Cobalt-Chromium-Molybdenum Alloy with Ti + HA dual-layer plasma coating"
+    ],
+    [
+      "Fixation",
+      "Cementless biological press-fit"
+    ],
+    [
+      "Geometry",
+      "Low-profile anatomical spherical shell with short central anchoring stem"
+    ],
+    [
+      "Bone preservation",
+      "Minimal cartilage reaming with zero humeral neck resection"
+    ],
+    [
+      "Clinical indication",
+      "Young patient glenohumeral arthritis, early avascular necrosis of the humeral head"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation - 5-year sterile shelf life"
+    ]
+  ],
+  210: [
+    [
+      "Material",
+      "Forged Co-Cr-Mo / Ti6Al4V Alloy and medical-grade UHMWPE bushings"
+    ],
+    [
+      "Constraint type",
+      "Semi-constrained modular hinge with controlled rotational toggle"
+    ],
+    [
+      "Fixation",
+      "Cemented (with intramedullary centralizers)"
+    ],
+    [
+      "Flexion-extension range",
+      "Functional range of motion from 0° to 130°"
+    ],
+    [
+      "Clinical indication",
+      "Advanced rheumatoid arthritis, distal humeral fractures, and failed revisions"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation - 5-year sterile shelf life"
+    ]
+  ],
+  211: [
+    [
+      "Material",
+      "Forged Cobalt-Chromium-Molybdenum (Co-Cr-Mo) Alloy mirror finish"
+    ],
+    [
+      "Design",
+      "Modular head and stem system with high-precision morse taper locking"
+    ],
+    [
+      "Fixation",
+      "Cementless (smooth-glide intramedullary stem)"
+    ],
+    [
+      "Dimensional range",
+      "Multiple head diameters (18 mm to 24 mm) and stem lengths"
+    ],
+    [
+      "Clinical indication",
+      "Mason Type III/IV fractures, Essex-Lopresti lesions, and post-traumatic arthrosis"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation - 5-year sterile shelf life"
+    ]
+  ],
+  212: [
+    [
+      "Material",
+      "Co-Cr-Mo Alloy with proximal bioactive porous Titanium metaphyseal coating"
+    ],
+    [
+      "Dish geometry",
+      "Asymmetric anatomical elliptical dish with pronosupination relief bevel"
+    ],
+    [
+      "Fixation",
+      "Cementless biological press-fit"
+    ],
+    [
+      "Kinematic clearance",
+      "Optimized for proximal radioulnar and radiocapitellar joints"
+    ],
+    [
+      "Clinical indication",
+      "Anatomical radial head replacement and posterolateral rotatory instability"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation - 5-year sterile shelf life"
+    ]
+  ],
+  217: [
+    [
+      "Manufacturing technology",
+      "Stereolithography (SLA) 3D Additive Manufacturing"
+    ],
+    [
+      "Material",
+      "High-accuracy medical-grade photosensitive polymer resin"
+    ],
+    [
+      "Dimensional accuracy",
+      "1:1 true anatomical scale with dimensional deviation < 0.2 mm"
+    ],
+    [
+      "Anatomical regions",
+      "Pelvis, hip, knee, femur, tibia, spine, skull, and thoracic cage"
+    ],
+    [
+      "Clinical indication",
+      "Preoperative surgical simulation, osteotomy trial, and plate pre-contouring"
+    ],
+    [
+      "Packaging",
+      "Non-sterile single-use with a 3-month shelf life"
+    ]
+  ],
+  219: [
+    [
+      "Material",
+      "Medical-grade Polyamide (Nylon PA12) via Selective Laser Sintering (SLS)"
+    ],
+    [
+      "Design",
+      "Patient-Specific Instrument (PSI) with unique cortical contour locking"
+    ],
+    [
+      "Saw guide slots",
+      "Compatible with standard surgical oscillating saw blades"
+    ],
+    [
+      "Fixation holes",
+      "Pre-drilled guides for 2.0 mm and 2.5 mm Kirschner stabilization wires"
+    ],
+    [
+      "Clinical indication",
+      "High tibial osteotomy (HTO), distal femoral osteotomy (DFO), and knee arthroplasty"
+    ],
+    [
+      "Sterilization",
+      "Ethylene oxide (EO) sterile single-patient packaging"
+    ]
+  ],
+  220: [
+    [
+      "Material",
+      "Certified biocompatible medical Polyamide PA12 (SLS 3D Printing)"
+    ],
+    [
+      "Available models",
+      "13 dedicated configurations for acetabular and femoral osteotomies"
+    ],
+    [
+      "Temporary fixation",
+      "Guidance holes for rapid bicortical pin stabilization"
+    ],
+    [
+      "Resection tolerance",
+      "Angular deviation < 1° and linear deviation < 0.5 mm"
+    ],
+    [
+      "Clinical indication",
+      "Developmental dysplasia of the hip (DDH), periacetabular osteotomy (PAO)"
+    ],
+    [
+      "Sterilization",
+      "Ethylene oxide (EO) single-patient sterile supply"
+    ]
+  ],
+  221: [
+    [
+      "Material",
+      "High-toughness medical-grade Polyamide PA12 (3D Additive Manufacturing)"
+    ],
+    [
+      "Anatomical zones",
+      "Wrist, carpus, metacarpus, ankle, tarsus, and metatarsals"
+    ],
+    [
+      "Clinical configurations",
+      "Type I and Type II designs for planar and angular osteotomies"
+    ],
+    [
+      "Bone fixation",
+      "Micro-Kirschner stabilization wires (1.0 mm to 1.6 mm)"
+    ],
+    [
+      "Clinical indication",
+      "Severe hallux valgus, ulnar shortening, and small-bone malunions"
+    ],
+    [
+      "Sterilization",
+      "Ethylene oxide (EO) - Individual sterile packaging"
+    ]
+  ],
+  222: [
+    [
+      "Material",
+      "Forged medical-grade Titanium Alloy (Ti-6Al-4V)"
+    ],
+    [
+      "Surface texture",
+      "Circumferential micro-grooves with high-friction macro-roughness"
+    ],
+    [
+      "Fixation holes",
+      "Peripheral multi-hole array for divergent cancellous bone screws"
+    ],
+    [
+      "Bearing compatibility",
+      "Accommodates highly cross-linked polyethylene (HXLPE) and dual mobility liners"
+    ],
+    [
+      "Clinical indication",
+      "Post-tumor pelvic resection, Paprosky Type III bone loss, and complex trauma"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation - 5-year sterile shelf life"
+    ]
+  ],
+  223: [
+    [
+      "Material",
+      "Medical-grade surgical stainless steel and anodized lightweight alloy"
+    ],
+    [
+      "Supported approach",
+      "Direct Anterior Approach (DAA) minimally invasive total hip surgery"
+    ],
+    [
+      "Control parameters",
+      "Axial traction force, internal/external rotation, and hyperextension"
+    ],
+    [
+      "Readout display",
+      "Calibrated metric distance and dynamometric tension scales"
+    ],
+    [
+      "Clinical indication",
+      "Muscle-sparing minimally invasive primary and revision hip replacement"
+    ],
+    [
+      "Sterilization",
+      "Autoclavable patient contact attachments and cleanable main traction frame"
+    ]
+  ],
+  225: [
+    [
+      "Technology",
+      "Electron Beam Melting (EBM) / Selective Laser Melting (SLM) 3D Additive Manufacturing"
+    ],
+    [
+      "Material",
+      "Biomimetic Titanium Alloy powder (Ti6Al4V ELI) conforming to ASTM F3001"
+    ],
+    [
+      "Internal architecture",
+      "Functional porous trabecular gradient (65% - 80% interconnected porosity)"
+    ],
+    [
+      "Fixation",
+      "Anatomically angled locking screw holes matching patient bone density"
+    ],
+    [
+      "Clinical indication",
+      "Oncological bone defect reconstruction, massive pelvic loss, complex revision"
+    ],
+    [
+      "Regulatory compliance",
+      "Official regulatory-approved patient-matched custom implant"
+    ]
+  ],
+  229: [
+    [
+      "Components",
+      "Vacuum mixer, ergonomic delivery gun, long femoral cannula, and acetabular nozzle"
+    ],
+    [
+      "Materials",
+      "High-strength medical-grade non-stick polymers (PC / ABS / POM) pyrogen-free"
+    ],
+    [
+      "Mixing mechanism",
+      "Enclosed circuit mixing bowl with vacuum pump interface (-0.08 MPa)"
+    ],
+    [
+      "Capacity",
+      "Accommodates 40 g to 80 g bone cement batches (1 to 2 standard doses)"
+    ],
+    [
+      "Clinical indication",
+      "Retrograde pressurization and delivery in cemented hip, knee, and shoulder arthroplasty"
+    ],
+    [
+      "Sterilization",
+      "Ethylene oxide (EO) sterile double-barrier disposable packaging"
+    ]
+  ],
+  230: [
+    [
+      "Components",
+      "Electric motor handpiece, battery pack, and dual-lumen suction nozzles"
+    ],
+    [
+      "Pressure modes",
+      "High-pressure mode (bone bed preparation) and low-pressure mode (soft-tissue irrigation)"
+    ],
+    [
+      "Flow rate",
+      "700 to 1500 ml/min continuous high-frequency pulsed irrigation"
+    ],
+    [
+      "Suction function",
+      "Simultaneous coaxial aspiration removing fluids and bone debris to suction canisters"
+    ],
+    [
+      "Clinical indication",
+      "Femoral canal and acetabular preparation in arthroplasty, trauma, and osteomyelitis"
+    ],
+    [
+      "Sterilization",
+      "Ethylene oxide (EO) sterile single-use disposable packaging"
+    ]
+  ],
+  231: [
+    [
+      "Material",
+      "Advanced BIOLOX® delta Ceramic Composite (Zirconia-Toughened Alumina - ZTA)"
+    ],
+    [
+      "Taper connection",
+      "Standard 12/14 high-precision micrometric taper"
+    ],
+    [
+      "Available diameters",
+      "28 mm, 32 mm, 36 mm, and 40 mm"
+    ],
+    [
+      "Neck lengths",
+      "Short (S), Medium (M), Long (L), and Extra Long (XL)"
+    ],
+    [
+      "Clinical indication",
+      "Primary and revision total hip arthroplasty in young, high-demand patients"
+    ],
+    [
+      "Biocompatibility",
+      "Completely bio-inert and metal-free (zero metallic ion release)"
+    ]
+  ],
+  232: [
+    [
+      "Material",
+      "Forged Co-Cr-Mo Alloy with Ti6Al4V Titanium Alloy adapter sleeve"
+    ],
+    [
+      "Connection",
+      "Modular TF adapter sleeve for standard 12/14 trunnions"
+    ],
+    [
+      "Offset options",
+      "Multiple neck length adjustments (-3.5 mm to +7.0 mm)"
+    ],
+    [
+      "Primary function",
+      "Trunnion restoration and offset revision without stem extraction"
+    ],
+    [
+      "Clinical indication",
+      "Isolated acetabular revision, joint laxity, and limb length correction"
+    ],
+    [
+      "Sterilization",
+      "Gamma irradiation - 5-year sterile shelf life"
+    ]
+  ],
+};
+
+// ==========================================
+// Características y Ventajas por Producto
+// ==========================================
+
+export const PRODUCT_FEATURES_ES: Record<number, string[]> = {
+  24: [
+    "Control de límites de seguridad en milisegundos: Detiene instantáneamente el fresado si se alcanza el margen planificado, blindando ligamentos y vasos sanguíneos.",
+    "Preservación máxima de tejido óseo sano: Elimina únicamente el cartílago y hueso dañado según la anatomía individual, conservando los ligamentos cruzados intactos.",
+    "Reducción del temblor quirúrgico: El módulo motorizado de mano amortigua los movimientos oscilatorios, permitiendo un acabado de superficie ósea perfecto.",
+    "Mínima invasión y rápida recuperación: Facilita abordajes quirúrgicos pequeños con menor sangrado intraoperatorio y rehabilitación funcional acelerada.",
+    "Sin esterilización compleja ni voluminosos brazos robóticos: Diseño liviano y ergonómico que prescinde de fundas estériles complejas y no estorba en quirófano.",
+    "Planificación y verificación tridimensional en vivo: Retroalimentación visual continua en pantalla del avance del desbastado y la orientación del implante unicompartimental."
+  ],
+  59: [
+    "Compensación activa de movimiento: Evita eficazmente los errores provocados por micromovimientos involuntarios del paciente o vibraciones instrumentales.",
+    "Reducción activa del temblor quirúrgico: Proporciona una colocación de bloques de corte firme y controlada para una osteotomía perfecta.",
+    "Balance ligamentario dinámico en tiempo real: Cuantifica la brecha articular en flexión y extensión, garantizando una estabilidad articular balanceada en todo el rango de movimiento.",
+    "Puesta en marcha rápida sin esterilización engorrosa: No requiere complejas fundas estériles para brazos robóticos mecánicos pesados, reduciendo significativamente los tiempos de quirófano.",
+    "Huella espacial compacta: Se adapta con facilidad a quirófanos estándar sin saturar el área de trabajo del cirujano y el personal de enfermería.",
+    "Software clínico intuitivo y curva rápida: Interfaz visual lógica que reduce la curva de aprendizaje a pocos casos y brinda una experiencia quirúrgica inteligente."
+  ],
+  139: [
+    "Control activo antitemblor: Reduce drásticamente el temblor de la mano del cirujano, proporcionando un fresado estable y un flujo de trabajo quirúrgico inteligente y confiable.",
+    "Navegación y posicionamiento tridimensional preciso: Permite el control milimétrico de la inclinación y anteversión del cotilo, evitando malposiciones protésicas y pinzamientos.",
+    "Diseño portátil de bajo impacto espacial: Mínima ocupación del quirófano, facilitando una disposición flexible que se adapta a cualquier entorno quirúrgico sin interferir con el equipo médico.",
+    "Sin preparación compleja de esterilización: No requiere fundas robóticas complejas ni ensambles engorrosos de brazos pesados, ahorrando tiempo operatorio sustancial.",
+    "Percepción autónoma y control inteligente: Fusión sensorial hombre-máquina que guía al especialista paso a paso con una curva de aprendizaje sumamente corta.",
+    "Arquitectura modular multiindicación: Compatible con múltiples sistemas de prótesis certificadas, maximizando la versatilidad clínica y la rentabilidad hospitalaria."
+  ],
+  161: [
+    "Modularidad dimensional completa: Cabezas de altura ajustable que optimizan la longitud metatarsofalángica del pie.",
+    "Vástagos cónicos acanalados: Proporcionan una fijación rotacional y estabilidad óptima en el manto de cemento.",
+    "Articulación anatómica congruente: Mantiene la flexión plantar y dorsal fisiológica previniendo la sobrecarga lateral.",
+    "Polietileno de alto rendimiento: Mínima tasa de desgaste volumétrico en el contacto metatarsofalángico.",
+    "Reconstrucción articular precisa: Alivia el dolor crónico de propulsión y corrige deformidades articulares severas."
+  ],
+  162: [
+    "Vástago doble aplanado: Proporciona fijación firme en canales diafisarios de falanges y metacarpianos.",
+    "Ajuste de tensión colateral: Facilita el retensado y balanceo ligamentario para una estabilidad multidireccional.",
+    "Preservación cinemática de la pinza: Permite rangos fisiológicos completos de flexoextensión y oposición del dedo.",
+    "Compatibilidad anatómica estandarizada: Disponible en múltiples calibres para dedos del 2.° al 5.°.",
+    "Rápida osteointegración de superficie: Acabado superficial que promueve una sólida aposición ósea biológica."
+  ],
+  163: [
+    "Soporte subcondral rígido: Previene activamente el colapso articular de la cúpula esférica femoral.",
+    "Estructura trabecular osteogénica: Facilita la colonización ósea vascularizada a lo largo del canal desbridado.",
+    "Diseño de anclaje bicortical: Rosca proximal firme que garantiza una fijación estable sin aflojamiento.",
+    "Abordaje mínimamente invasivo: Técnica percutánea simple que reduce el traumatismo y la morbilidad quirúrgica.",
+    "Preservación articular de cadera: Retrasa o evita la necesidad de una prótesis total de cadera en pacientes jóvenes."
+  ],
+  173: [
+    "Longitud extendida de revisión: Puentea defectos metafisarios logrando anclaje diafisario seguro.",
+    "Diseño pulido sin collarín: Reduce el estrés de cizallamiento en la interfaz hueso-cemento.",
+    "Centralizador distal incluido: Asegura un manto de cemento concéntrico de espesor homogéneo (> 2 mm).",
+    "Alta resistencia a la fatiga: Capaz de soportar sobrecargas cíclicas continuas en pacientes con hueso debilitado.",
+    "Cono estándar 12/14: Compatible con cabezas femorales metálicas y cerámicas de múltiples diámetros."
+  ],
+  183: [
+    "Restauración inmediata de longitud ósea: Sustituye grandes defectos segmentarios femorales o tibiales.",
+    "Bloqueo antirrotación rígido: Pernos y acoples de cono morse que impiden torsiones bajo carga axial.",
+    "Soporte de carga precoz: Permite la deambulación del paciente sin esperar consolidación ósea prolongada.",
+    "Diseño modular versátil: Longitudes combinables adaptables a cualquier longitud de osteotomía diafisaria.",
+    "Tratamiento superficial anodizado: Minimiza la adherencia bacteriana y proporciona biocompatibilidad prolongada."
+  ],
+  185: [
+    "Guía anatómica suave: Surco trocleal que asegura un centrado rotuliano perfecto sin subluxación.",
+    "Extensión proximal protectora: Evita el enganche o choque del reborde rotuliano al iniciar la flexión.",
+    "Máxima conservación articular: No interviene los ligamentos cruzados ni los cartílagos tibiofemorales.",
+    "Alivio del dolor anterior: Elimina el roce femororrotuliano incapacitante al subir escaleras o agacharse.",
+    "Transición quirúrgica sencilla: En caso de evolución artrósica futura, permite conversión fácil a prótesis total."
+  ],
+  202: [
+    "Preservación del cuello humeral: Elimina la resección ósea agresiva de los vástagos diafisarios tradicionales.",
+    "Recubrimiento bioactivo Ti + HA: Estimula una rápida osteointegración y fijación biológica permanente.",
+    "Réplica del centro de rotación: Restaura la anatomía nativa del hombro sin alterar la retroversión.",
+    "Respeto del canal diafisario: Deja el canal medular intacto para cualquier eventual procedimiento futuro.",
+    "Rápida recuperación funcional: Menor sangrado quirúrgico y reincorporación temprana a la movilidad activa."
+  ],
+  210: [
+    "Mecanismo de bisagra semiconstreñida: Transfiere armónicamente las cargas torsionales aliviando la interfaz.",
+    "Bujes de UHMWPE intercambiables: Evitan el roce metal-metal y minimizan el desgaste mecánico.",
+    "Vástagos anatómicos contorneados: Se adaptan con precisión a la anatomía humeral y cubital.",
+    "Fijación estable del pasador: Bloqueo de seguridad que previene la luxación intraoperatoria y tardía.",
+    "Alivio radical del dolor: Devuelve la funcionalidad y el arco de movimiento para actividades cotidianas."
+  ],
+  211: [
+    "Modularidad cabeza-vástago: Permite el ajuste exacto de la altura articular sin sobretensionar el capitellum.",
+    "Restauración del soporte en valgo: Evita la inestabilidad del codo y la translocación proximal del radio.",
+    "Cúpula cóncava congruente: Proporciona una articulación suave y anatómica con el cóndilo humeral.",
+    "Vástago intramedular atraumático: Minimiza el daño al canal medular y facilita una extracción limpia si se requiere.",
+    "Prevención del síndrome de Essex-Lopresti: Mantiene la tensión de la membrana interósea y la muñeca."
+  ],
+  212: [
+    "Morfología elíptica anatómica: Calca la forma natural de la cúpula radial reduciendo picos de presión.",
+    "Cinemática de pronosupinación suave: Evita el rozamiento forzado y la rigidez articular en rotación de antebrazo.",
+    "Fijación metafisaria porosa: Proporciona osteointegración proximal sin rigidez excesiva diafisaria.",
+    "Protección del cartílago humeral: Menor desgaste del cóndilo humeral a medio y largo plazo.",
+    "Estabilidad rotatoria del codo: Contribuye a reparar la estabilidad en valgo y posterolateral."
+  ],
+  217: [
+    "Fidelidad dimensional 1:1: Réplica exacta del defecto óseo real extraída de la tomografía del paciente.",
+    "Ensayo prequirúrgico realista: Permite preformar placas y probar implantes antes de abrir al paciente.",
+    "Reducción drástica del tiempo de quirófano: Disminuye los minutos anestésicos y la pérdida de sangre.",
+    "Comunicación médico-paciente clara: Facilita la explicación didáctica del procedimiento al paciente.",
+    "Versatilidad reconstructiva multirregión: Disponible para 16 regiones esqueléticas diferentes."
+  ],
+  219: [
+    "Acople anatómico unívoco (key-and-lock): Solo encaja en la posición planificada, eliminando errores de colocación.",
+    "Corrección angular exacta: Restaura con precisión el eje mecánico fémoro-tibial planificado.",
+    "Sin invasión del canal medular: No requiere varillas intramedulares, previniendo embolias grasas.",
+    "Ranuras de corte protegidas: Evita desviaciones de la hoja de sierra durante la resección ósea.",
+    "Reducción de exposición radiológica: Minimiza la necesidad de comprobaciones continuas con fluoroscopía."
+  ],
+  220: [
+    "Protección de estructuras nobles: Bloquea el avance de la sierra hacia vasos y nervios críticos.",
+    "Corrección tridimensional de la displasia: Guía el corte pélvico para una cobertura acetabular ideal.",
+    "Menor invasividad y sangrado: Abordajes quirúrgicos más conservadores y menor tiempo operatorio.",
+    "Reducción del uso de rayos X: Disminuye la exposición a radiación intraoperatoria del equipo quirúrgico.",
+    "Repetibilidad y seguridad quirúrgica: Hace predecibles intervenciones ortopédicas de alta dificultad."
+  ],
+  221: [
+    "Adaptación perfecta a huesos pequeños: Encaja sobre relieves óseos diminutos sin deslizamiento.",
+    "Corrección milimétrica de hallux valgus: Asegura los ángulos IMA y HVA planificados con exactitud.",
+    "Protección de cartílagos vecinos: Evita daños accidentales a superficies articulares sanas contiguas.",
+    "Micro-fijación segura: No debilita la cortical de fragmentos óseos finos durante la intervención.",
+    "Consolidación ósea acelerada: Cortes netos y superficies congruentes que optimizan la osteosíntesis."
+  ],
+  222: [
+    "Micro-ranuras circunferenciales: Multiplican el coeficiente de fricción previniendo micromovimientos de rotación.",
+    "Fijación multiangular periférica: Permite anclar tornillos dirigidos hacia las columnas pélvicas sólidas.",
+    "Adaptabilidad a pérdidas óseas masivas: Resuelve defectos cavitarios graves sin migración de la copa.",
+    "Amplio rango de movilidad articular: Borde hemisférico optimizado que minimiza el pinzamiento femoral.",
+    "Osteointegración permanente: Fomenta la vascularización e incorporación ósea en la interfaz con el lecho pélvico."
+  ],
+  223: [
+    "Exposición femoral sin esfuerzo: Facilita la luxación y elevación del fémur con mínima incisión cutánea.",
+    "Preservación muscular completa: No corta tendones ni músculos glúteos, reduciendo drásticamente el dolor.",
+    "Control de tracción milimétrico: Ajusta con exactitud la tensión ligamentaria y la longitud del miembro.",
+    "Compatibilidad universal: Se instala rápidamente sobre cualquier mesa quirúrgica estándar sin aditamentos costosos.",
+    "Recuperación ultrarrápida: Permite la carga inmediata y el alta hospitalaria precoz (Fast-Track)."
+  ],
+  225: [
+    "Ajuste anatómico milimétrico exacto: Calca el defecto tras la resección sin necesidad de adaptaciones forzadas.",
+    "Gradiente de porosidad biomimético: Estimula una penetración ósea y vascular profunda permanente.",
+    "Módulo elástico bajo adaptativo: Reduce la diferencia de rigidez hueso-implante y previene la reabsorción.",
+    "Orificios de fijación guiados: Ubicados exactamente sobre las zonas de hueso cortical sano del paciente.",
+    "Solución definitiva para casos inoperables: Resuelve pérdidas óseas que carecen de prótesis comercial estándar."
+  ],
+  229: [
+    "Desgasificación al vacío activa: Reduce la microporosidad del cemento hasta en un 90% para mayor resistencia.",
+    "Inyección retrógrada presurizada: Evita la formación de bolsas de aire e interposiciones de sangre en el canal.",
+    "Cánulas flexibles transparentes con marcas: Permiten visualizar el avance del flujo y la profundidad alcanzada.",
+    "Mezcla limpia y sin vapores: Minimiza la exposición del personal de quirófano a los vapores de monómero tóxicos.",
+    "Empaque estéril completo: Listo para su uso inmediato en la mesa de instrumentación quirúrgica."
+  ],
+  230: [
+    "Doble función de irrigación y aspiración: Limpia y retira los fluidos residuales sin salpicaduras en quirófano.",
+    "Preparación óptima del lecho de cementado: Aumenta la profundidad de interdigitación del cemento óseo.",
+    "Reducción de la tasa de infección periprotésica: Elimina bacterias, biopelículas incipientes y hematomas.",
+    "Doble velocidad seleccionable: Presión ajustable mediante gatillo táctil para adaptarse a hueso o músculo.",
+    "Batería integrada sin cables estorbosos: Funcionamiento completamente autónomo durante toda la intervención."
+  ],
+  231: [
+    "Coeficiente de fricción mínimo: Disminuye drásticamente el desgaste volumétrico del inserto cotiloideo.",
+    "Máxima tenacidad a la fractura: Estabilización con circonia que frena la propagación de microfisuras.",
+    "Superficie hidrófila humectable: Mantiene una película fluida de lubricación sinovial continua.",
+    "Libre de potencial alergénico: Alternativa ideal para pacientes con hipersensibilidad a aleaciones metálicas.",
+    "Resistencia absoluta al rayado: Inmune a la abrasión por partículas de cemento óseo o restos tisulares."
+  ],
+  232: [
+    "Rescate de conos dañados: Evita la peligrosa extracción de vástagos femorales bien integrados.",
+    "Corrección precisa de longitud: Optimiza la tensión de abductores y balancea la longitud de extremidades.",
+    "Interfaz de titanio amortiguadora: Protege el cono nativo contra micromovimientos y corrosión galvánica.",
+    "Bloqueo por fricción seguro: Garantiza una unión mecánica inamovible bajo cargas de marcha fisiológicas.",
+    "Alta versatilidad intraoperatoria: Amplio rango de tamaños y alturas para solucionar inestabilidades."
+  ],
+  165: [
+    "Aletas proximales antirrotación: Aumentan la estabilidad rotacional primaria en el lecho trocantérico.",
+    "Doble recubrimiento bioactivo Ti + HA: Estimula la proliferación osteoblástica temprana y el anclaje a largo plazo.",
+    "Ranura distal de descompresión: Reduce la rigidez del extremo del vástago previniendo el dolor de muslo.",
+    "Diseño cónico rectangular: Permite una cuña anatómica segura sin riesgo de hundimiento axial.",
+    "Opciones de offset lateralizado: Restaura la tensión de los abductores y la biomecánica nativa del paciente."
+  ],
+  167: [
+    "Pulido espejo sin collarín: Elimina puntos de cizallamiento y favorece la presurización del cemento.",
+    "Doble conicidad equilibrada: Transfiere fuerzas de compresión axial sin concentrar tensiones.",
+    "Material Co-Cr-Mo de alta resistencia: Máxima durabilidad frente a la fatiga mecánica por carga cíclica.",
+    "Fácil extracción en revisiones: Diseño liso sin retenciones que simplifica el recambio si es necesario.",
+    "Resultados clínicos ampliamente documentados: Alta tasa de supervivencia a largo plazo en pacientes de edad avanzada."
+  ],
+  168: [
+    "Metal trabecular EBM proximal: Estimula la osteointegración profunda y la fijación biológica permanente.",
+    "Carga fisiológica proximal: Previene la resorción ósea y el apantallamiento de tensiones en el calcar.",
+    "Doble conicidad autobloqueante: Excelente estabilidad primaria axial y rotacional desde la inserción.",
+    "Ranuras distales de alivio: Reducen la rigidez diafisaria y guían la inserción anatómica en el canal.",
+    "Cono morse 12/14 estándar: Compatible con cabezas femorales metálicas y cerámicas Delta."
+  ],
+  170: [
+    "Triple conicidad estabilizadora: Fijación primaria rígida que resiste cargas axiales y de torsión.",
+    "Doble recubrimiento bioactivo Ti + HA: Acelera la aposición ósea biológica y la osteointegración.",
+    "Estrías longitudinales distales: Alivian la rigidez en la punta previniendo el dolor de muslo.",
+    "Cuello ovalado pulido: Aumenta el rango de movimiento articular libre de conflicto.",
+    "Cono morse 12/14 de alta precisión: Acoplamiento exacto con cabezas cerámicas y metálicas."
+  ],
+  172: [
+    "Longitud extendida de 160 mm: Puentea defectos óseos metafisarios logrando una fijación diafisaria distal estable.",
+    "Ranuras longitudinales antirrotación: Garantizan una excelente estabilidad rotacional frente a fuerzas de torsión.",
+    "Punta de descompresión con ranura coronal: Reduce el módulo de flexión diafisario y previene el dolor en el muslo.",
+    "Recubrimiento proximal rugoso: Facilita la formación de hueso biológico en la zona metafisaria residual.",
+    "Cono morse 12/14 estándar: Compatible con cabezas metálicas y cerámicas de diferentes alturas de cuello."
+  ],
+  174: [
+    "Polietileno HXLPE reticulado: Resistencia superior al desgaste por abrasión que previene la osteólisis.",
+    "Lengüetas perimetrales antirrotación: Inmovilizan el inserto dentro de la copa evitando desprendimientos.",
+    "Bisel de borde optimizado: Previene el pinzamiento del cuello femoral en flexión y rotación interna.",
+    "Esterilización libre de oxígeno: Previene la degradación oxidativa por radicales libres.",
+    "Tolerancia micrométrica de acople: Asegura contacto uniforme con la cabeza femoral."
+  ],
+  175: [
+    "Superficie de pulido óptico espejo: Reduce al mínimo el desgaste por fricción con el inserto móvil de polietileno.",
+    "Conexión cónica autobloqueante: Se fija rígidamente dentro de la copa evitando micromovimientos.",
+    "Máxima resistencia mecánica: Aleación Co-Cr-Mo que soporta cargas articulares cíclicas sin deformación.",
+    "Modularidad intraoperatoria: Permite elegir doble movilidad según las necesidades del paciente.",
+    "Esterilización gamma en envase individual: Garantiza asepsia e integridad de la superficie articular."
+  ],
+  177: [
+    "Malla trabecular biomimética EBM: Estimula la proliferación celular y la osteointegración en todo el domo.",
+    "Configuración de 3 orificios G20: Orientada a la columna ilíaca resistente para fijación adicional con tornillos.",
+    "Alto coeficiente de fricción: Garantiza un ajuste press-fit inmediato sólido y sin balanceo.",
+    "Bajo módulo de elasticidad: Previene el apantallamiento de tensiones y la resorción ósea periprotésica.",
+    "Compatibilidad con cabezas cerámicas y metálicas: Acoplable con liners de polietileno de alta reticulación."
+  ],
+  178: [
+    "Múltiples orificios G40: Libertad total para atornillar en cualquier sector con buena reserva ósea.",
+    "Estructura trabecular porosa EBM 3D: Estimula la osteointegración biológica rápida y duradera.",
+    "Alto agarre de fricción: Inmoviliza la copa evitando micromovimientos desde el momento de la implantación.",
+    "Bajo módulo elástico: Similar al hueso esponjoso para evitar la atrofia por desuso.",
+    "Compatibilidad con liners HXLPE y cabezas modulares: Permite ensamblar liners neutros o con ceja de inclinación."
+  ],
+  179: [
+    "Estructura trabecular biomimética 3D: Estimula el crecimiento óseo natural en su interior logrando integración biológica sólida.",
+    "Bajo módulo elástico fisiológico: Reduce el apantallamiento de tensiones y previene la reabsorción ósea circundante.",
+    "Restauración del centro de rotación: Permite reconstruir pérdidas de techo acetabular restableciendo la anatomía de la cadera.",
+    "Orificios avellanados integrados: Facilita la fijación rígida con tornillos de titanio sin sobresalir de la superficie.",
+    "Resistencia superior a la compresión: Soporta de manera estable las cargas transmitidas por la copa protésica."
+  ],
+  180: [
+    "Máximo coeficiente de fricción: El tantalio poroso ofrece una fijación inicial inmediata superior frente al hueso esponjoso.",
+    "Arquitectura celular altamente porosa: Facilita la rápida adhesión celular, neovascularización y osteogénesis profunda.",
+    "Módulo de elasticidad biomimético: Evita el apantallamiento de tensiones (stress shielding) y la pérdida de masa ósea.",
+    "Excelente biocompatibilidad e inercia: No genera reacciones inflamatorias ni degradación por corrosión biológica.",
+    "Soporte estructural rígido: Restaura la continuidad acetabular soportando la copa protésica sin deformación."
+  ],
+  181: [
+    "Alta resistencia mecánica y tenacidad: Soporta cargas compresivas fisiológicas elevadas sin riesgo de fractura.",
+    "Pulido espejo de alta precisión: Minimiza el coeficiente de fricción contra el polietileno.",
+    "Cono morse 12/14 de acople rígido: Previene la corrosión por fricción (*fretting*) y el aflojamiento en el cono.",
+    "Cuatro opciones de cuello: Permite corregir discrepancias de longitud y tensión de partes blandas.",
+    "Uso clínico universal: Compatible con vástagos primarios y de revisión con cono estándar."
+  ],
+  184: [
+    "Modularidad segmental completa: Permite reconstruir cualquier longitud de resección ósea diafisaria o total.",
+    "Conexiones cónicas de cono Morse: Proporcionan rigidez absoluta a las fuerzas de torsión y flexión.",
+    "Orificios para reinserción muscular: Facilita la fijación de tendones abductores y psoas ilíaco.",
+    "Tratamiento de anodizado superficial: Crea una película protectora de óxido contra la corrosión y el desgaste.",
+    "Vástagos intramedulares ranurados: Garantizan un anclaje diafisario distal rígido sin dolor en la punta."
+  ],
+  187: [
+    "Superficie articular esférica de radio único: Garantiza un estrés de contacto homogéneo y mínimo durante movimientos multidireccionales, sin cargas de borde perjudiciales.",
+    "Diseño femoral de doble poste: Optimiza la estabilidad rotacional del implante y reduce sensiblemente el riesgo de aflojamiento aséptico.",
+    "Alta tolerancia angular: Permite un margen de seguridad de hasta 10° de alineación en varo-valgo sin pérdida de congruencia.",
+    "Bandeja tibial altamente pulida: Minimiza el desgaste del inserto de polietileno y evita el daño o roce con los tejidos blandos circundantes.",
+    "Reverso con cavidades porosas para cemento: Asegura una distribución homogénea del manto de cemento óseo y una fijación inicial rígida.",
+    "Máxima preservación de tejido: Respeta los ligamentos cruzados y el compartimento articular sano para una recuperación rápida y sensación natural."
+  ],
+  190: [
+    "Preservación integral del ligamento cruzado posterior (CR): Escotadura anatómica diseñada para respetar la anatomía ligamentaria nativa y conservar la propiocepción.",
+    "Cóndilo anterior adelgazado: Disminuye la presión anterior sobre el aparato extensor y evita el dolor periprotésico en flexión.",
+    "Tróclea anatómica extendida y profundizada: Proporciona una guía rotuliana estable y suave previniendo la subluxación.",
+    "Bandeja tibial pulida a espejo: Superficie articular y bordes con acabado de alta precisión para reducir el desgaste del polietileno.",
+    "Distribución de carga uniforme: Radios de curvatura femorales que mantienen un área de contacto amplia en todo el rango articular."
+  ],
+  191: [
+    "Cóndilo anterior adelgazado y tróclea optimizada: Mejora la articulación suave entre el reborde femoral anterior y la superficie articular rotuliana, reduciendo crepitaciones y dolor anterior de rodilla.",
+    "Cajón intercondíleo abierto optimizado: Preserva el volumen óseo intercondilar y reduce la resección ósea innecesaria.",
+    "Variantes protésicas CR y PS: Opciones para conservación del ligamento cruzado (CR) y estabilización posterior (PS) adaptadas a cada paciente.",
+    "Bandeja tibial anatómica altamente pulida: Distribución uniforme de cargas sobre la meseta tibial y mínima fricción en el contacto con el inserto.",
+    "Diseño de bloqueo central con isla antirrotación: Garantiza una fijación firme del inserto tibial previniendo micromovimientos y desgaste por deslizamiento.",
+    "Inserto tibial con leva PS mejorada: Posicionamiento posterior del poste para un contacto temprano que previene la inestabilidad en media flexión."
+  ],
+  192: [
+    "Recubrimiento bioactivo bicapa Ti + HA: Capa de titanio puro poroso combinada con hidroxiapatita por proyección de plasma spray, estimulando la osteogénesis rápida y la osteointegración biológica a largo plazo sin cemento.",
+    "Polietileno VE-HXLPE enriquecido con Vitamina E: Resistencia extrema a la oxidación y tasas de desgaste por fricción ultrabajas que garantizan una prolongada vida útil.",
+    "Geometría femoral de radio gradual: Optimiza el seguimiento patelofemoral en el surco troclear proporcionando un deslizamiento suave en todo el arco de movimiento.",
+    "Fijación no cementada press-fit: Ajuste mecánico inicial por fricción y microanclaje que elimina el tiempo y complicaciones asociadas al cemento óseo.",
+    "Preservación del capital óseo: Favorece la conservación de la densidad mineral ósea alrededor del implante reduciendo el aflojamiento a largo plazo."
+  ],
+  194: [
+    "Polietileno VE-HXLPE con Vitamina E: La infusión homogénea de alfa-tocoferol actúa como antioxidante permanente, evitando la oxidación in vivo y manteniendo excelentes propiedades mecánicas.",
+    "Poste posicionado anatómicamente hacia posterior: Permite un contacto temprano con la leva femoral evitando la inestabilidad en media flexión.",
+    "Doble superficie articular poste-travesaño: Reduce el pico de presión de contacto sobre el poste de polietileno, minimizando la abrasión y el desgaste de material.",
+    "Muesca anterior profunda: Evita el pinzamiento tisular con el tendón del cuádriceps y el ligamento rotuliano durante la flexión profunda.",
+    "Mecanismo de fijación de alta precisión: Anclaje perimetral a la bandeja tibial que previene micromovimientos y desgaste en la interfaz posterior."
+  ],
+  197: [
+    "Cóndilo anterior adelgazado con perfil curvo: Reduce la fricción de los músculos y ligamentos patelares anteriores, previniendo eficazmente el dolor de rodilla.",
+    "Fosa intercondílea semiabierta: Evita la resección ósea excesiva en la zona intercondilar y disminuye notablemente el riesgo de fracturas intercondíleas.",
+    "Bandeja tibial de alta pulidez: Reduce el desgaste por fricción en la cara inferior del inserto de polietileno.",
+    "Modularidad integral de vástagos y cuñas: Vástagos rectos y excéntricos con bloques de aumento femorales y tibiales para resolver defectos óseos complejos.",
+    "Estabilidad varo-valgo reforzada: Poste de revisión congruente que proporciona excelente estabilidad ligamentaria y cinemática fisiológica guiada."
+  ],
+  199: [
+    "Mecanismo de bisagra modular: La carga es soportada por la bandeja tibial, reduciendo el desgaste del polietileno de la bisagra.",
+    "Diseño de plataforma giratoria: Compensa la carga torsional ejercida sobre los tejidos blandos por la superficie del cemento óseo durante el movimiento de la prótesis mediante rotación.",
+    "Altura de salto de hasta 40 mm: Previene la subluxación provocada por la inestabilidad en media flexión tras la intervención de rodilla.",
+    "Transferencia de cargas optimizada: Garantiza una distribución uniforme de fuerzas y un rendimiento estable y duradero.",
+    "Punta de descompresión con ranura transversal: Reduce la rigidez del vástago de extensión intramedular y disminuye el dolor en la punta.",
+    "Poste tibial optimizado: Conectable con vástago excéntrico para lograr una adaptación perfecta a la morfología del canal medular."
+  ],
+  201: [
+    "Estructura de red tridimensional porosa: Alta rugosidad superficial y microporos interconectados que estimulan fuertemente la osteogénesis y el crecimiento óseo biológico.",
+    "Combinación proporcional sólida-trabecular: Proporciona una resistencia superior a la compresión previniendo deformaciones o fracturas bajo carga continua.",
+    "Bajo módulo elástico biomimético: Similar al hueso esponjoso para reducir de forma drástica el apantallamiento de tensiones (stress shielding) y la resorción periprotésica.",
+    "Configuraciones anatómicas completas: Aumentos femorales distales, posteriores y bloques tibiales de múltiples alturas para una reconstrucción articular personalizada.",
+    "Fijación rígida primaria: Fijación sólida mediante tornillos TC4 que inmovilizan los bloques y permiten una carga funcional segura."
+  ],
+  203: [
+    "Composición del sistema: Consta de vástago humeral no cementado, cabeza humeral anatómica excéntrica y componente glenoideo de polietileno.",
+    "Vástago con diseño antirrotación rectangular: Proporciona una fijación inicial rígida y recubrimiento proximal de titanio puro para acelerar la osteointegración.",
+    "Cabeza humeral anatómica excéntrica: Diámetros de curvatura de 36 a 48 mm (incrementos de 2 mm) que logran una cobertura óptima del cuello anatómico humeral.",
+    "Cinemática fisiológica biónica: Diseñada para trabajar en armonía con el manguito rotador nativo íntegro, logrando arcos de movilidad naturales.",
+    "Excelente supervivencia a largo plazo: Alivio completo de la sintomatología dolorosa con una tasa de luxación mínima y prolongada durabilidad del implante."
+  ],
+  205: [
+    "Fijador glenoideo trabecular 3D: Fabricado mediante manufactura aditiva de metal trabecular con estructura excéntrica que previene el efecto muesca glenoidea inferior (scapular notching).",
+    "Vástago humeral con recubrimiento poroso: Superficie oval proximal recubierta con polvo de titanio y orificios dedicados para la refijación de partes blandas.",
+    "Tornillos universales de ángulo variable: Rango de inserción angular de 0° a 30° con recubrimiento de titanio para un anclaje óptimo en la columna ósea glenoidea.",
+    "Convertidor anatómico-reverso: Permite transformar una prótesis anatómica en reversa o viceversa de manera modular sin retirar el vástago intramedular.",
+    "Restaura la biomecánica articular: Desplaza el centro de rotación medial e inferiormente, optimizando la palanca del deltoides y restaurando un rango de movilidad funcional sin dolor."
+  ],
+  207: [
+    "Arquitectura modular completa: Compuesta por húmero proximal, segmentos de osteotomía, vástago intramedular y componentes universales anatómicos y reversos.",
+    "Reproducción anatómica del húmero proximal: Perfil optimizado con orificios de sutura para la reinserción estable de partes blandas y reconstrucción del muñón tendinoso.",
+    "Vástago intramedular en 24 especificaciones: Amplia gama de calibres y longitudes que se combinan con los segmentos para cubrir con exactitud cualquier longitud de resección tumoral.",
+    "Conversión articular universal: Compatible tanto con articulación anatómica glenohumeral como con configuración de hombro reverso.",
+    "Salvamento y estabilidad funcional: Permite la preservación de la extremidad con excelente estabilidad mecánica, reduciendo complicaciones y permitiendo la terapia antitumoral continua."
+  ],
+  213: [
+    "Impresión 3D por haz de electrones (EBM): Bandeja tibial y manguitos con microporosidad biomimética en Ti6Al4V ELI que optimizan la osteointegración y absorción de energía.",
+    "Modularidad diafisaria de alta resistencia: Conexiones de cono Morse seguras para ensamblar segmentos diafisarios de diferentes longitudes.",
+    "Vástagos intramedulares femorales y tibiales: Variedad de diámetros y longitudes con ranuras longitudinales para un anclaje rígido sin picos de estrés.",
+    "Constricción articular personalizada: Insertos y bujes de UHMWPE de alta densidad para estabilizar la articulación según el daño ligamentario.",
+    "Tratamiento de anodizado duro: Incrementa la resistencia biológica y previene la corrosión galvánica entre componentes modulares."
+  ],
+  224: [
+    "Superficie rugosa uniforme Tipo 60: Multiplica la fricción primaria impidiendo micromovimientos rotacionales.",
+    "Micro-ranuras circunferenciales: Favorecen el anclaje mecánico biológico y la aposición ósea profunda.",
+    "Orificios perimetrales para tornillos: Aseguran una fijación rígida en sectores de hueso ilíaco remanente sano.",
+    "Polo apical aplanado: Evita el tope en el fondo acetabular y asegura compresión periférica.",
+    "Excelente biocompatibilidad del titanio puro: Elimina el riesgo de reacciones por sensibilidad metálica."
+  ],
+  226: [
+    "Conector triaxial con rotación amortiguada: Permite flexión y rotación fisiológica aliviando las fuerzas de torsión sobre el manto de cemento y el vástago intramedular.",
+    "Segmentos de osteotomía diafisaria modulares: Permite la sustitución precisa de grandes pérdidas óseas femorales o tibiales con longitudes ajustables a cada resección.",
+    "Vástagos intramedulares de alta solidez: Diseñados para una fijación diafisaria estable con rigidez calibrada para evitar picos de dolor en la punta del vástago.",
+    "Anodizado superficial del titanio: Genera una película protectora de óxido que aumenta la resistencia al desgaste, corrosión y fatiga.",
+    "Bujes rotatorios de UHMWPE reemplazables: Absorben el impacto articular y pueden sustituirse sin necesidad de retirar los componentes osteointegrados o cementados."
+  ],
+  227: [
+    "Envase estéril de un solo uso: Listo para utilizar directamente en el quirófano en condiciones de máxima esterilidad.",
+    "Mecanismo de desmoldeo rotatorio por rosca: Permite retirar el espaciador de cemento fraguado de manera suave, rápida y sin riesgo de fractura.",
+    "Polipropileno médico antiadherente (PP-R): Evita que el cemento acrílico se pegue al molde, garantizando superficies articulares perfectamente lisas.",
+    "Bloques de medición de espacio articular incluidos: Tres alturas (5 mm, 10 mm y 12 mm) para calibrar con precisión la tensión de los tejidos blandos.",
+    "Diversidad de tamaños femorales y tibiales: Permite configurar el espaciador temporal más adecuado para la anatomía de cada paciente."
+  ],
+  228: [
+    "Envasado estéril de un solo uso: Listo para usar inmediatamente en quirófano garantizando máxima asepsia.",
+    "Polipropileno antiadherente PP-R: Evita que el cemento acrílico se adhiera al molde, logrando superficies lisas.",
+    "Mecanismo de desmoldeo rápido: Permite extraer el espaciador fraguado limpiamente sin riesgo de rotura.",
+    "Múltiples diámetros de cabeza incluidos: Permite adaptar el tamaño cefálico al lecho acetabular del paciente.",
+    "Mantiene la longitud del miembro y tensión muscular: Evita la retracción de partes blandas durante el intervalo entre cirugías."
+  ],
+};
+
+export const PRODUCT_FEATURES_EN: Record<number, string[]> = {
+  24: [
+    "Millisecond safety boundary control: Instantly halts milling if the tool reaches the planned boundary, providing fail-safe protection for ligaments and vessels.",
+    "Maximum preservation of healthy bone stock: Resects solely damaged cartilage and bone according to individual anatomy, preserving intact cruciate ligaments.",
+    "Tremor reduction system: Handheld motorized module dampens oscillatory hand movements for a mirror-smooth bone bed finish.",
+    "Minimally invasive with rapid rehabilitation: Facilitates small incisions with reduced intraoperative blood loss and rapid patient ambulation.",
+    "No complex draping or bulky robotic arms: Lightweight, ergonomic handheld unit eliminating cumbersome sterile draping and clutter in the OR.",
+    "Live 3D intraoperative feedback: Continuous real-time on-screen tracking of grinding progress, depth, and unicompartmental implant alignment."
+  ],
+  59: [
+    "Active dynamic motion compensation: Effectively prevents deviations caused by involuntary patient movement or instrument vibration.",
+    "Intraoperative tremor suppression: Provides steady, controlled positioning of osteotomy guides for flawless bone resection.",
+    "Real-time dynamic ligament balancing: Quantifies flexion-extension joint gaps, ensuring balanced soft-tissue tension across the entire range of motion.",
+    "Rapid turnover with no bulky draping: Eliminates complex sterile draping for heavy mechanical arms, significantly shortening operating room turnover.",
+    "Compact surgical footprint: Integrates seamlessly into standard operating rooms without crowding surgeons or nursing personnel.",
+    "Intuitive clinical software: Logical workflow and visual interface reducing the learning curve to a minimum while delivering an intelligent surgical experience."
+  ],
+  139: [
+    "Active tremor reduction: Reduces intraoperative instrument tremor, enabling an intelligent and highly reliable surgical workflow.",
+    "Precise 3D navigation & positioning: Delivers sub-millimeter control over acetabular cup inclination and anteversion, preventing prosthetic malposition and impingement.",
+    "Ultra-compact handheld footprint: Minimizes operating room space occupation with a flexible layout adaptable to diverse surgical environments.",
+    "Streamlined sterilization & setup: Eliminates cumbersome machine draping and complex heavy robotic arm assembly, substantially saving operative time.",
+    "Autonomous perception & intelligent control: Human-machine cognitive collaboration guiding the surgeon step-by-step with an exceptionally short learning curve.",
+    "Modular multi-indication architecture: Compatible with validated prosthetic systems, optimizing clinical versatility and hospital efficiency."
+  ],
+  161: [
+    "Comprehensive modularity: Interchangeable heads and stems accommodating diverse anatomical canal dimensions.",
+    "Fluted tapered stems: Delivers superior rotational stability within the bone cement mantle.",
+    "Congruent anatomical articulation: Preserves physiological dorsiflexion and plantarflexion without edge-loading.",
+    "Medical-grade UHMWPE: Extremely low volumetric wear rates under repetitive forefoot loading.",
+    "Targeted joint reconstruction: Reliably eliminates push-off pain and corrects severe joint destruction."
+  ],
+  162: [
+    "Flattened double-stem architecture: Maximizes rotational stability within the narrow phalangeal medullary canals.",
+    "Ligament tension adjustability: Enables precise balancing of collateral ligaments for multi-planar joint stability.",
+    "Kinematic restoration: Supports natural digital flexo-extension and fine motor pinch grip.",
+    "Extensive size matrix: Standardized sizes covering index, middle, ring, and little fingers.",
+    "Biological osseointegration: Titanium surface profile promoting secure long-term bone anchorage."
+  ],
+  163: [
+    "Rigid subchondral load-bearing: Directly reinforces necrotic bone plate to prevent articular collapse.",
+    "Osteogenic trabecular structure: Accelerates cellular ingrowth and revascularization across the necrotic zone.",
+    "Threaded lateral anchoring: Prevents rod migration and maintains stable axial positioning.",
+    "Minimally invasive percutaneous approach: Significantly reduces operative trauma and recovery time.",
+    "Hip joint preservation: Effectively defers or eliminates the immediate need for total hip replacement."
+  ],
+  173: [
+    "Extended revision length: Bypasses proximal metadiaphyseal defects for stable distal cortical anchoring.",
+    "Collarless polished taper-slip: Eliminates interface shear stresses and self-tightens within the cement.",
+    "Dedicated distal centralizer: Guarantees a continuous, uniform cement mantle exceeding 2 mm in thickness.",
+    "Superior fatigue resistance: Engineered for heavy cyclic loading in compromised or osteoporotic bone.",
+    "Standard 12/14 taper: Fully compatible with metal and ceramic femoral heads of various neck lengths."
+  ],
+  183: [
+    "Immediate skeletal restoration: Bypasses extensive femoral and tibial diaphyseal voids.",
+    "Rigid anti-rotation coupling: Morse tapers with transverse bolts resisting high torsional and axial forces.",
+    "Early functional load-bearing: Accelerates patient ambulation independent of biological bone union.",
+    "Versatile modular stacking: Multiple spacer lengths adaptable to any segmental resection margin.",
+    "Biocompatible anodized surface: Minimizes bacterial colonization and soft tissue irritation."
+  ],
+  185: [
+    "Smooth anatomical tracking: Broad, low-constraint trochlear groove prevents patellar maltracking.",
+    "Proximal trochlear lead-in: Seamlessly captures the patella in early flexion, eliminating crepitus.",
+    "Maximum joint preservation: Spares cruciate ligaments, menisci, and tibiofemoral joint compartments.",
+    "Targeted pain relief: Effectively eliminates anterior knee pain during stair climbing and squatting.",
+    "Straightforward revision pathway: Readily converts to total knee arthroplasty if generalized disease develops."
+  ],
+  202: [
+    "Humeral neck preservation: Avoids humeral neck resection and preserves anatomical retroversion.",
+    "Bioactive Ti + HA coating: Promotes rapid osteoconduction and long-term biological anchorage.",
+    "Native center of rotation restoration: Replicates individualized humeral anatomy without altering offset.",
+    "Intact medullary canal: Leaves the humeral shaft completely untouched for any future interventions.",
+    "Accelerated recovery: Minimizes operative blood loss and supports early active range of motion."
+  ],
+  210: [
+    "Semi-constrained hinge mechanism: Dampens torsional peak stresses to protect the cement mantle.",
+    "Replaceable UHMWPE bushings: Prevents metal-on-metal wear and reduces particulate debris generation.",
+    "Anatomically contoured stems: Matches humeral and ulnar canals for uniform cement pressurization.",
+    "Secure hinge pin locking: Eliminates risk of intraoperative disassembly and joint dislocation.",
+    "Dramatic pain relief: Restores pain-free, stable flexion-extension for daily activities."
+  ],
+  211: [
+    "Head-stem modularity: Permits precise restoration of the lateral column without overstuffing the joint.",
+    "Valgus stability restoration: Replaces primary bony stabilizer against valgus displacement.",
+    "Congruent articulating dish: Perfectly matches capitellar curvature during flexion and pronosupination.",
+    "Atraumatic smooth stem: Preserves the proximal radial neck and simplifies extraction if needed.",
+    "Essex-Lopresti protection: Prevents proximal radial migration and secondary distal radioulnar joint disruption."
+  ],
+  212: [
+    "Anatomical elliptical design: Replicates natural radial asymmetry to eliminate excessive radioulnar contact.",
+    "Fluid pronosupination: Beveled circumference prevents forearm rotational binding and post-op stiffness.",
+    "Metaphyseal porous fixation: Delivers robust biological osseointegration without excessive diaphyseal stress.",
+    "Capitellar cartilage protection: Decreases point contact stresses, preventing capitellar erosion.",
+    "Multi-planar stability: Restores primary valgus and posterolateral rotatory elbow stability."
+  ],
+  217: [
+    "True 1:1 anatomical fidelity: Exact tactile physical representation of complex osseous defects.",
+    "Realistic preoperative rehearsal: Facilitates intraoperative plate pre-bending and implant positioning.",
+    "Operative time reduction: Significantly cuts down surgical duration, blood loss, and anesthesia exposure.",
+    "Enhanced clinical communication: Excellent tool for multi-disciplinary planning and patient education.",
+    "Multi-regional coverage: Standardized protocols available for 16 distinct skeletal anatomical zones."
+  ],
+  219: [
+    "Unique key-and-lock anatomical fit: Seats securely solely in the designated pre-planned position.",
+    "Precise angular correction: Faithfully reproduces pre-planned weight-bearing mechanical axis alignment.",
+    "Zero medullary canal violation: Completely avoids intramedullary reaming, minimizing fat embolism risks.",
+    "Protected cutting slots: Ensures rigid blade guidance without saw deflection during bone resection.",
+    "Reduced radiation exposure: Substantially lowers intraoperative fluoroscopy verification needs."
+  ],
+  220: [
+    "Critical neurovascular shielding: Physical safety stops preventing inadvertent saw excursion.",
+    "3D dysplasia correction: Delivers reproducible multi-planar acetabular fragment mobilization.",
+    "Conservative surgical access: Facilitates smaller incisions with reduced soft-tissue stripping and blood loss.",
+    "Minimized intraoperative radiation: Lessens reliance on repeated fluoroscopic C-arm confirmations.",
+    "Standardized surgical safety: Transforms complex pelvic reconstructions into predictable procedures."
+  ],
+  221: [
+    "Stable micro-anatomical seating: Conforms rigidly to tiny osseous ridges without rotational slippage.",
+    "Millimetric hallux valgus correction: Faithfully reproduces target intermetatarsal and hallux valgus angles.",
+    "Adjacent cartilage preservation: Prevents accidental blade penetration into neighboring healthy joints.",
+    "Low-trauma micro-pinning: Fixes reliably without cracking delicate cortices of small bone fragments.",
+    "Optimized bone union: Yields parallel, flush osteotomy surfaces maximizing compression screw fixation."
+  ],
+  222: [
+    "Circumferential micro-grooves: Significantly elevates interfacial shear resistance and rotational stability.",
+    "Multi-directional screw fixation: Targets healthy host bone in anterior/posterior pelvic columns.",
+    "Massive bone defect reconstruction: Stabilizes pelvic discontinuities and severe acetabular deficiency.",
+    "High impingement-free range of motion: Optimized equatorial profile prevents neck-cup impingement.",
+    "Long-term biological osteointegration: Facilitates dense vascular and trabecular bone ingrowth."
+  ],
+  223: [
+    "Effortless femoral exposure: Elevates and externalizes the proximal femur through tiny muscle-sparing incisions.",
+    "True muscle-sparing workflow: Leaves gluteal tendons and external rotators entirely intact.",
+    "Parametric traction control: Fine-tunes soft tissue tension, limb length, and joint stability in real time.",
+    "Universal table compatibility: Rapidly clamps onto standard surgical tables without requiring expensive specialized beds.",
+    "Rapid patient mobilization: Supports outpatient same-day discharge and accelerated functional recovery."
+  ],
+  225: [
+    "Perfect anatomical congruence: Pre-emptively fits the post-resection defect, eliminating intraoperative force-fitting.",
+    "Biomimetic porosity gradient: Facilitates extensive vascularization and deep three-dimensional osteointegration.",
+    "Reduced modulus mismatch: Significantly dampens stress shielding and periprosthetic bone resorption.",
+    "Targeted locking screw trajectories: Strategically directed through viable, dense host cortical pillars.",
+    "Definitive salvage solution: Successfully reconstructs critical defects impossible to treat with standard implants."
+  ],
+  229: [
+    "Active vacuum degassing: Reduces cured cement porosity by up to 90%, boosting fatigue resistance.",
+    "Retrograde pressurized delivery: Eliminates air pockets and blood laminations in the canal.",
+    "Transparent graduated nozzles: Provides clear real-time visibility of cement flow and delivery depth.",
+    "Fume-free closed system: Shields surgical personnel from noxious methyl methacrylate monomer vapors.",
+    "Comprehensive sterile kit: Fully pre-packaged and ready for immediate scrub table deployment."
+  ],
+  230: [
+    "Concurrent irrigation and suction: Continuously clears debris without aerosolization or operating room splatter.",
+    "Optimized cement mantle bonding: Deepens cement micro-interdigitation into cancellous trabeculae.",
+    "PJI risk mitigation: Rapidly clears bacterial bioburden, microthrombi, and loose necrotic tissue.",
+    "Selectable dual-speed trigger: Immediate tactile switching between gentle soft-tissue washing and deep bone reaming.",
+    "Cable-free battery pack: Fully self-contained power for untethered mobility throughout the surgical case."
+  ],
+  231: [
+    "Ultra-low friction coefficient: Substantially decreases volumetric bearing wear and periprosthetic osteolysis.",
+    "Maximum fracture toughness: Zirconia phase transformation toughening actively impedes microcrack propagation.",
+    "Hydrophilic surface wettability: Maintains a continuous fluid synovial lubrication film during gait.",
+    "Zero metal ion release: Ideal bearing solution for patients with metal sensitivity or allergy.",
+    "Third-body scratch resistance: Impervious to scratching by stray bone chips or cement particles."
+  ],
+  232: [
+    "Stem salvage capability: Eliminates the morbidity and bone loss associated with removing well-fixed stems.",
+    "Accurate leg length equalization: Optimizes abductor muscle tension and restores joint biomechanics.",
+    "Titanium protective interface: Dampens micromotion and shields the trunnion from fretting corrosion.",
+    "High taper lock strength: Withstands physiological cyclic peak forces without dissociation.",
+    "Intraoperative adaptability: Comprehensive range of neck lengths to solve joint laxity or impingement."
+  ],
+  165: [
+    "Proximal anti-rotation ribs: Significantly increases primary rotational stability in the trochanteric bed.",
+    "Bioactive Ti + HA dual coating: Stimulates early osteoblast proliferation and durable long-term anchoring.",
+    "Distal coronal slot: Moderates distal bending stiffness, effectively eliminating thigh pain.",
+    "Tapered rectangular geometry: Establishes secure wedge stability without risk of axial subsidence.",
+    "Lateralized offset options: Restores abductor muscle tension and native patient hip mechanics."
+  ],
+  167: [
+    "Collarless mirror finish: Eliminates shear stress risers and promotes hydrostatic cement pressurization.",
+    "Balanced double taper: Transfers axial compressive forces without localized stress concentrations.",
+    "High-strength Co-Cr-Mo material: Outstanding fatigue endurance under continuous cyclical walking loads.",
+    "Straightforward revision extraction: Smooth surface devoid of undercuts simplifies future revision if required.",
+    "Extensively documented clinical history: High long-term implant survival rates in mature patient populations."
+  ],
+  168: [
+    "Proximal EBM trabecular metal: Stimulates deep biological osseointegration and durable bone purchase.",
+    "Physiological proximal load transfer: Prevents calcar bone resorption and femoral stress shielding.",
+    "Self-locking double taper geometry: Delivers immediate axial and rotational stability upon seated impaction.",
+    "Distal longitudinal flutes: Moderates diaphyseal stiffness and ensures self-centering canal alignment.",
+    "Standard 12/14 Morse taper: Seamlessly pairs with metal and Biolox Delta ceramic femoral heads."
+  ],
+  170: [
+    "Stabilizing triple-taper geometry: Provides rigid primary stability against axial and rotational forces.",
+    "Bioactive Ti + HA dual coating: Accelerates biological bone apposition and secure osseointegration.",
+    "Distal longitudinal flutes: Moderates stem-tip bending stiffness to prevent thigh pain.",
+    "Slim polished neck profile: Increases impingement-free angular range of motion.",
+    "High-precision 12/14 Morse taper: Exact coupling with ceramic and metal femoral heads."
+  ],
+  172: [
+    "Extended 160 mm stem length: Bypasses proximal metaphyseal bone defects to establish stable distal diaphyseal fix.",
+    "Longitudinal anti-rotation flutes: Provides outstanding rotational stability against physiological torsional forces.",
+    "Coronal slot decompression tip: Lowers structural bending stiffness to eliminate distal stem-tip thigh pain.",
+    "Proximal osteoconductive coating: Facilitates biological bone bridging in the surviving metaphyseal zone.",
+    "Standard 12/14 Morse taper: Fully compatible with ceramic and metal heads in multiple neck lengths."
+  ],
+  174: [
+    "Cross-linked HXLPE polyethylene: High resistance to abrasive wear prevents periprosthetic osteolysis.",
+    "Anti-rotation locking tabs: Locks insert rigidly into the shell, preventing dislodgement.",
+    "Optimized chamfered rim: Prevents femoral neck impingement during flexion and internal rotation.",
+    "Oxygen-free sterilization: Precludes free-radical induced oxidative material breakdown.",
+    "Micrometric congruency tolerances: Ensures even joint load distribution with the femoral head."
+  ],
+  175: [
+    "Optical mirror surface finish: Minimizes frictional wear against the mobile polyethylene liner.",
+    "Self-locking taper connection: Locks rigidly into the outer cup, preventing toggle and fretting.",
+    "Maximum mechanical endurance: Co-Cr-Mo alloy withstands severe cyclical loads without deformation.",
+    "Intraoperative versatility: Enables dual-mobility conversion based on patient-specific laxity.",
+    "Individually gamma-sterilized: Preserves pristine surface integrity up to the moment of implantation."
+  ],
+  177: [
+    "Biomimetic EBM trabecular mesh: Stimulates cell proliferation and continuous bone ingrowth across the dome.",
+    "G20 3-hole cluster layout: Targeted at the strong posterosuperior iliac column for additional purchase.",
+    "High coefficient of friction: Establishes solid initial press-fit stability without toggle.",
+    "Low modulus of elasticity: Prevents stress shielding and secondary periprosthetic bone loss.",
+    "Articular bearing compatibility: Pairs with highly cross-linked polyethylene and ceramic heads."
+  ],
+  178: [
+    "G40 multi-hole layout: Complete freedom to place cancellous screws into any competent bone corridor.",
+    "3D EBM trabecular porous network: Dramatically accelerates durable biological osseointegration.",
+    "High frictional scratch-fit: Immobilizes the cup, eliminating micro-motion upon initial impaction.",
+    "Low elastic modulus: Mirrors cancellous bone stiffness to prevent stress shielding.",
+    "HXLPE liner compatibility: Accommodates neutral and elevated-rim high cross-linked liners."
+  ],
+  179: [
+    "3D biomimetic trabecular structure: Stimulates deep internal bone ingrowth establishing permanent biological fusion.",
+    "Physiological low elastic modulus: Reduces stress shielding and prevents secondary periprosthetic bone loss.",
+    "Restores hip rotation center: Reconstructs uncontained superior rim defects to restore normal joint biomechanics.",
+    "Integrated countersunk screw holes: Enables rigid screw anchoring without hardware proud of the augment surface.",
+    "High compressive load endurance: Securely bears the mechanical loads transmitted from the overlying acetabular cup."
+  ],
+  180: [
+    "Highest coefficient of friction: Porous tantalum delivers outstanding scratch-fit initial stability against bone.",
+    "Highly porous cellular architecture: Accelerates cell adhesion, neovascularization, and deep physiological osteogenesis.",
+    "Biomimetic elastic modulus: Prevents stress shielding and subsequent periprosthetic bone resorption.",
+    "Immense biocompatibility and inertia: Elicits zero inflammatory response and resists all in vivo biological corrosion.",
+    "Rigid structural support: Restores acetabular architecture and securely supports the overlying cup."
+  ],
+  181: [
+    "High mechanical strength and toughness: Withstands severe physiological compression loads without fracture risk.",
+    "High-precision mirror finish: Minimizes joint friction and abrasive wear against polyethylene.",
+    "Rigid 12/14 Morse taper coupling: Prevents fretting corrosion and taper interface toggle.",
+    "Four neck offset options: Restores leg length discrepancies and soft tissue tension precisely.",
+    "Universal clinical compatibility: Pairs with primary and revision stems featuring standard 12/14 tapers."
+  ],
+  184: [
+    "Comprehensive segmental modularity: Permits tailored reconstruction for any diaphyseal or total femoral resection length.",
+    "Heavy-duty Morse taper junctions: Provides absolute rigidity against cyclical bending and torsional stresses.",
+    "Tendon reattachment suture holes: Allows secure anatomical refixation of abductor musculature and psoas.",
+    "Surface anodizing treatment: Generates a robust protective oxide barrier against fretting and corrosion.",
+    "Fluted intramedullary stems: Ensures rigid distal diaphyseal anchoring without stem-tip pain."
+  ],
+  187: [
+    "Single-radius spherical articular surface: Ensures minimal contact stress during omnidirectional movements, eliminating edge loading.",
+    "Dual-post femoral fixation: Enhances rotational stability and reduces aseptic loosening risk.",
+    "High angular tolerance: Provides a safe alignment margin of up to 10° varus/valgus.",
+    "Mirror-polished tibial tray: Minimizes polyethylene backside wear and soft tissue irritation.",
+    "Recessed cement pockets: Promotes uniform cement distribution and superior mechanical interlocking.",
+    "Maximum tissue preservation: Leaves cruciate ligaments and unaffected compartment untouched for faster recovery and natural feel."
+  ],
+  190: [
+    "Complete posterior cruciate preservation (CR): Anatomical intercondylar notch designed to protect native PCL fibers and preserve proprioception.",
+    "Thinned anterior femoral flange: Reduces anterior pressure on the extensor mechanism, eliminating anterior knee pain.",
+    "Extended and deepened trochlear groove: Provides smooth, centered patellar tracking and prevents patellar subluxation.",
+    "Mirror-polished tibial tray: Superior surface finish dramatically reduces backside polyethylene wear.",
+    "Uniform contact stress distribution: Dual-radius femoral geometry maintains high contact area across functional arc of motion."
+  ],
+  191: [
+    "Thinned anterior condyle and optimized trochlea: Enhances smooth articulation with the patella, reducing crepitus and anterior knee pain while facilitating deep flexion.",
+    "Optimized open intercondylar box: Preserves intercondylar bone volume.",
+    "CR and PS prosthesis types available: Provides both Cruciate-Retaining and Posterior-Stabilized options to meet diverse clinical requirements.",
+    "Highly polished anatomical tibial tray: Promotes uniform stress distribution across the tibial plateau and minimizes backside wear.",
+    "Central locking mechanism with anti-rotation island: Ensures rigid insert fixation and prevents micro-motion.",
+    "Improved PS cam design: Posteriorly positioned post enables early contact to prevent mid-flexion instability, with dual articular surfaces to reduce contact stress."
+  ],
+  192: [
+    "Bioactive dual Ti + HA coating: Plasma-sprayed porous pure titanium and hydroxyapatite layer accelerates osteoblast integration and durable cementless biological fixation.",
+    "Vitamin E highly cross-linked polyethylene (VE-HXLPE): High oxidative stability and minimal wear rate ensure longevity of articular contact surfaces.",
+    "Gradual radius femoral condyle design: Smooth patellofemoral tracking along the trochlear groove prevents patellar binding and wear.",
+    "Cementless press-fit fixation: Reliable primary mechanical press-fit eliminating bone cement preparation and curing times.",
+    "Bone preservation: Maintains periprosthetic bone density and physiological stress transfer."
+  ],
+  194: [
+    "Vitamin E highly cross-linked polyethylene (VE-HXLPE): Homogeneous antioxidant infusion prevents in vivo oxidative degradation while maintaining exceptional mechanical strength and wear resistance.",
+    "Posteriorly positioned post: Enables early contact between post and femoral cam, preventing instability during mid-flexion.",
+    "Dual articular surface post design: Reduces contact stress concentrations on the post, dramatically decreasing polyethylene wear.",
+    "Deep anterior patellar notch: Eliminates patellar tendon impingement during high flexion movements.",
+    "High-precision locking mechanism: Secure seating into the tibial tray prevents backside micro-motion and liner dislodgement."
+  ],
+  197: [
+    "Thinned anterior condyle and curved bilateral contour: Reduces friction on anterior patellar musculature and ligaments, effectively preventing anterior knee pain.",
+    "Semi-open intercondylar fossa design: Eliminates excessive intercondylar bone resection and lowers the risk of intercondylar fossa fractures.",
+    "Highly polished tibial tray: Minimizes backside wear of the polyethylene insert.",
+    "Comprehensive modular stems and blocks: Straight and eccentric stems paired with distal/posterior femoral and tibial augments to manage severe bone loss.",
+    "Enhanced varo-valgus constraint: Robust revision spine provides high joint stability and reliable rotational guidance."
+  ],
+  199: [
+    "Modular hinge mechanism: Load is borne by the tibial tray, reducing wear on the hinge polyethylene.",
+    "Rotating platform design: Offsets torsional load exerted on soft tissues by the bone cement surface during prosthesis movement via rotation.",
+    "Maximum 40 mm jump height: Prevents subluxation caused by mid-flexion instability after knee surgery.",
+    "Optimized stress transfer design: Ensures uniform force distribution and long-term stable prosthesis performance.",
+    "Cross-slot decompression tip: Reduces intramedullary extension stem stiffness and lowers the incidence of stem tip pain.",
+    "Optimized tibial post: Connectable with eccentric extension stem for optimal adaptation to medullary cavity morphology."
+  ],
+  201: [
+    "Three-dimensional porous network structure: High roughness and interconnected internal pores effectively stimulate osteogenesis and rapid bone ingrowth.",
+    "Proportional solid-trabecular architecture: Maximizes compressive strength while preventing fatigue under continuous physiological loads.",
+    "Biomimetic low elastic modulus: Resembles cancellous bone to minimize stress shielding and prevent secondary periprosthetic bone loss.",
+    "Comprehensive anatomical shapes: Distal and posterior femoral blocks alongside multiple tibial wedge sizes for precise joint line restoration.",
+    "Rigid primary fixation: Secured via forged TC4 screws to ensure absolute primary stability and promote rapid biological integration."
+  ],
+  203: [
+    "Comprehensive System: Consists of a cementless humeral stem, anatomic eccentric humeral head, and UHMWPE glenoid component.",
+    "Anti-Rotation Rectangular Stem: Delivers high primary torsional stability and features proximal pure titanium coating for biological bone ingrowth.",
+    "Anatomic Eccentric Humeral Head: Curvature diameters from 36 to 48 mm (2 mm increments) providing coverage tailored to the anatomical neck.",
+    "Bionic Physiological Kinematics: Restores natural glenohumeral kinematics relying on the patient's intact rotator cuff musculature.",
+    "Proven Long-Term Survival: Complete relief of arthritic pain, low dislocation incidence, and reliable prosthesis survivorship."
+  ],
+  205: [
+    "3D Trabecular Glenoid Fixator: Additive metal trabecular matrix with eccentric geometry prevents inferior glenoid notch formation and impingement.",
+    "Humeral Stem with Porous Coating: Proximal oval profile with titanium powder coating and suture eyelets for soft tissue refixation.",
+    "Variable-Angle Universal Screws: Adjustable trajectories from 0° to 30° with titanium coating provide superior purchase in the glenoid vault.",
+    "Anatomic-to-Reverse Converter: Enables straightforward revision or conversion between anatomic and reverse shoulder configurations.",
+    "Restores Joint Kinematics: Medializes and depresses the center of rotation to recruit deltoid fibers, delivering pain relief and restoring active mobility."
+  ],
+  207: [
+    "Comprehensive Modular Architecture: Proximal humerus, modular osteotomy spacers, intramedullary stem, and universal anatomic / reverse heads.",
+    "Anatomic Proximal Contour: Matches native proximal humerus anatomy with strategic suture holes for secure muscle and tendon reattachment.",
+    "24 Intramedullary Specifications: Extensive selection of diameters and lengths, providing custom-like reconstruction for varied resection margins.",
+    "Universal Articular Interchangeability: Seamlessly configurable into anatomic hemi/total arthroplasty or reverse shoulder reconstructive modes.",
+    "Limb Salvage & Biomechanical Stability: Restores limb length and load-bearing function, minimizing postoperative complications during adjuvant oncology therapies."
+  ],
+  213: [
+    "Electron beam melting (EBM) 3D printing: Tibial tray and sleeves engineered with biomimetic Ti6Al4V ELI porous network for maximum bone ingrowth and stress damping.",
+    "Heavy-duty modular diaphyseal segments: Morse taper connections allow length adaptation to reconstruct any degree of bone loss.",
+    "Intramedullary anchoring stems: Wide range of diameters and lengths with longitudinal venting slots for balanced canal fill without end-stem pain.",
+    "Tailored constraint levels: Heavy-duty UHMWPE constraint inserts stabilize severe collateral ligament insufficiency.",
+    "Hard surface anodizing: Creates a protective passive barrier against fretting wear and galvanic corrosion across interfaces."
+  ],
+  224: [
+    "Type 60 uniform rough surface: Maximizes primary frictional grip to prevent rotational micro-motion.",
+    "Circumferential micro-grooves: Enhances mechanical interlocking and accelerates deep bone ingrowth.",
+    "Perimeter screw hole array: Permits rigid screw anchoring into surviving iliac bone columns.",
+    "Flattened apical dome: Prevents bottoming out against cotyloid floor, ensuring rim compression.",
+    "Pure titanium biocompatibility: Eliminates metal hypersensitivity risks in complex reconstructions."
+  ],
+  226: [
+    "Triaxial connector with rotational damping: Restores natural flexion and physiological rotation while relieving torsional stresses on the cement mantle and stem.",
+    "Modular diaphyseal osteotomy segments: Reconstructs massive femoral or tibial bone defects with customizable segment lengths.",
+    "Heavy-duty intramedullary stems: Ensures stable diaphyseal anchoring with optimized stiffness to prevent stem-tip pain.",
+    "Surface anodizing of titanium components: Forms an oxide barrier that dramatically improves corrosion resistance, wear performance, and fatigue life.",
+    "Replaceable UHMWPE rotational bushings: Dampens cyclic impact loads and allows straightforward replacement during maintenance without disrupting bone-fixed implants."
+  ],
+  227: [
+    "Sterile packaging and single-use design: Sterile packed for immediate use upon opening in the operating room.",
+    "Rotary thread demolding design: Ensures smooth, quick and effortless spacer removal once cement cures.",
+    "Medical-grade non-stick polypropylene (PP-R): Prevents acrylic cement adhesion, delivering smooth articular surfaces.",
+    "Gap measurement blocks included: Three sizes (5 mm, 10 mm, 12 mm) to accurately assess and balance joint laxity.",
+    "Wide range of models and specifications: Accurately matches diverse femoral and tibial patient anatomies."
+  ],
+  228: [
+    "Sterile single-use packaging: Packed sterile for immediate intraoperative use under strict aseptic conditions.",
+    "Non-stick PP-R polypropylene: Prevents PMMA cement adherence, delivering smooth articular surfaces.",
+    "Quick demolding mechanism: Facilitates clean extraction of cured cement spacers without damage.",
+    "Multiple head diameter options included: Matches patient acetabular dimension to restore joint stability.",
+    "Preserves limb length and muscle tension: Prevents soft tissue contracture between stages of infection management."
   ],
 };
