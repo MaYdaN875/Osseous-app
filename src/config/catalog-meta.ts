@@ -5688,6 +5688,153 @@ export const PRODUCT_FEATURES_ES: Record<number, string[]> = {
     "Protección de estructuras críticas: Reduce sustancialmente el riesgo de sangrado y lesiones neurológicas por desviación instrumental.",
     "Curva de aprendizaje optimizada: Facilita la estandarización y reproducibilidad de osteotomías complejas en deformidades espinales."
   ],
+  36: [
+    "Primer anclaje impreso en 3D: Fabricado mediante fusión por haz láser (LBM) con aleación de titanio TC4 ELI de grado médico de alta pureza.",
+    "Módulo elástico biomimético: Control preciso de la elasticidad para equiparar la del hueso humano, minimizando el daño óseo postoperatorio.",
+    "Superficie porosa osteoconductora: Rugosidad microporosa que potencia la adhesión celular, el crecimiento óseo interno y acelera la recuperación del paciente.",
+    "Rosca doble alta-baja autorroscante: Proporciona un agarre óseo superior comparable a anclajes metálicos macizos sin requerir perforación previa.",
+    "Orificio de sutura independiente: Diseño distal que previene activamente el enredo y anudado accidental de las hebras durante el tensado intraoperatorio."
+  ],
+  39: [
+    "Primer anclaje con recubrimiento de tantalio PVD: Tecnología pionera a nivel mundial que combina núcleo de titanio con revestimiento bioactivo de tantalio puro.",
+    "Propiedades osteogénicas y antibacterianas: Estimula activamente la diferenciación ósea celular y ofrece una acción bacteriostática que minimiza infecciones postoperatorias.",
+    "Resistencia anticorrosión superior: La capa de tantalio bloquea eficazmente la micro-liberación de iones metálicos y optimiza la biocompatibilidad articular.",
+    "Opciones monorrosca y doble rosca: Diseños MD(I) y MD(II) en calibres de 3.5 a 6.5 mm para adaptarse a diversas densidades óseas y requerimientos quirúrgicos.",
+    "Fijación multidireccional versátil: Excelente agarre en hueso esponjoso y cortical para intervenciones articulares mayores y de pequeñas articulaciones."
+  ],
+  51: [
+    "Aletas de retención de Nitinol: Aleación de níquel-titanio superelástica que se expande bajo la cortical proporcionando una resistencia a la tracción axial superior.",
+    "Diámetro ultrapequeño desde 1.3 mm: Preserva al máximo el lecho óseo, resultando ideal para ligamentos finos en pie, tobillo y dedos.",
+    "Diseño sin rosca de inserción rápida: Colocación directa por impacto y despliegue instantáneo que agiliza el procedimiento y reduce el tiempo quirúrgico.",
+    "Mínima pérdida ósea: Requiere un orificio guía diminuto que preserva la microarquitectura ósea circundante y favorece la cicatrización temprana.",
+    "Precargado con suturas UHMWPE: Equipado con hebras de alta tenacidad en configuraciones simples o dobles para un anudado seguro."
+  ],
+  48: [
+    "Punta autorroscante inferior: Permite la inserción directa en hueso con excelente penetración sin requerir perforación cortical previa.",
+    "Doble zona de rosca: Extremo proximal compatible con placas y rosca distal cortical para una sujeción intraósea inquebrantable.",
+    "Acabado anodizado antideslumbrante: Ofrece un marcado contraste visual que optimiza el control bajo visualización artroscópica o microscópica.",
+    "Suturas UHMWPE de alta tenacidad: Fibras de polietileno de ultra alto peso molecular con colores contrastantes para una fácil identificación de cabos.",
+    "Fijación no absorbible duradera: Resistencia mecánica permanente a la tracción cíclica sin riesgo de pérdida de tensión por degradación."
+  ],
+  149: [
+    "Arquitectura de doble rosca alta-baja: Distribución biespiral que maximiza la superficie de contacto óseo y la fuerza de agarre de partes blandas.",
+    "Punta autorroscante sin pretaladrado: Facilita una inserción directa y fluida en la cortical ósea sin requerir perforación instrumental previa.",
+    "Doble orificio independiente: Separa físicamente cada cabo de sutura, eliminando fricciones, deshilachamiento y nudos accidentales.",
+    "Suturas bicolores de alta visibilidad: Combinación de UHMWPE blanco y polipropileno azul para un trazado inmediato de los nudos intraoperatorios.",
+    "Insertador graduado con marcas láser: Control visual exacto de la profundidad de anclaje para garantizar una colocación a ras de la superficie ósea."
+  ],
+  150: [
+    "Arquitectura 100% textil sin metal: Elimina el implante rígido, previniendo el blindaje óseo y evitando artefactos en tomografías y resonancias.",
+    "Fijación subcortical por bobina expandida: Al traccionar la sutura, el manguito se repliega formando un anclaje esférico firme contra la cortical interna.",
+    "Mínima pérdida de volumen óseo: Requiere una perforación piloto de calibre mínimo, reduciendo el trauma óseo y preservando la anatomía nativa.",
+    "Mecanismo de disparo activo Fix(I): El cuerpo del anclaje viaja protegido dentro de la punta del insertador para una inserción segura y sin enganches.",
+    "Suturas de alta resistencia UHMWPE: Varias opciones precargadas en colores blanco, azul y azul-blanco para una identificación inequívoca."
+  ],
+  151: [
+    "Material PEEK biocompatible: Módulo de elasticidad cercano al hueso humano, alta resistencia a la fatiga y ausencia total de artefactos en RMN.",
+    "Estructura hueca osteoconductora: Proporciona una alta fuerza de sujeción a la vez que actúa como matriz morfológica para la integración ósea.",
+    "Menor volumen de implante: Reduce la masa de material extraño en el lecho óseo, disminuyendo la respuesta inflamatoria local.",
+    "Suturas UHMWPE de alta resistencia: Deslizamiento suave a través del tejido tendinoso y excelente estabilidad del nudo quirúrgico.",
+    "Libre de blindaje de tensiones: Elasticidad modulada que previene la reabsorción ósea perianclaje a largo plazo."
+  ],
+  44: [
+    "Material PEEK radiotransparente: Sin artefactos metálicos en radiografías ni resonancias magnéticas para un seguimiento postoperatorio limpio.",
+    "Modelos MB(II) y MB(III): Variantes de doble rosca parcial o roscado completo para maximizar la resistencia a la extracción según el lecho óseo.",
+    "Suturas UHMWPE de contraste: Combinación blanco puro y azul-blanco que simplifica el mapeo y anudado intraoperatorio.",
+    "Vástago graduado con marcas de profundidad: Permite supervisar con total claridad el avance milimétrico del perno de anclaje.",
+    "Gama dimensional completa: Múltiples diámetros y longitudes para cubrir los diferentes requerimientos anatómicos de cada articulación."
+  ],
+  57: [
+    "Tecnología sin nudos (Knotless): Elimina los nudos articulares voluminosos, reduciendo el riesgo de rozamiento y acortando los tiempos de cirugía.",
+    "Estructura hueca canulada: Facilita el paso de células osteogénicas hacia el interior del orificio óseo para una cicatrización acelerada.",
+    "Fijación roscada en doble hilera: Diseñado específicamente para asegurar cintas o suturas en la hilera lateral en reparaciones de manguito rotador.",
+    "Alta versatilidad de hebras: Compatible con suturas cilíndricas, cintas anchas planas o combinaciones de 4 a 8 hebras.",
+    "Material PEEK biocompatible: Libre de tensiones nocivas, sin degradación reactiva y totalmente limpio bajo imágenes de RMN."
+  ],
+  152: [
+    "Colocación por impacto (Knock-in): Técnica ágil que permite ajustar la tensión deseada sobre los tejidos blandos de forma previa a la fijación definitiva.",
+    "Amplia cobertura dimensional de 1.8 mm a 9 mm: Adaptabilidad total para pequeñas articulaciones (mano/pie) y grandes articulaciones (hombro/cadera/rodilla).",
+    "Fijación sin nudos de perfil plano: Evita el abultamiento y la fricción de nudos tradicionales en espacios articulares estrechos.",
+    "Biocompatibilidad PEEK inerte: Ausencia de blindaje de tensiones y excelente tolerancia biológica sin inflamación por degradación.",
+    "Compatibilidad limpia con RMN: Permite evaluar la reparación tendinosa y la cicatrización biológica en resonancia sin distorsión metálica."
+  ],
+  43: [
+    "Acero inoxidable importado de alta dureza: Filo afilado de larga duración que garantiza un corte limpio, rápido y sin desgarros tisulares.",
+    "Mecanismo de seguridad Snap-Lock: Acoplamiento firme a la pieza de mano que previene cualquier desprendimiento intraoperatorio.",
+    "Excelente concentricidad y mínimo cabeceo: Riguroso control de tolerancias mecánicas que asegura una rotación suave libre de vibraciones.",
+    "Codificación por colores: Interfaces coloreadas para una identificación visual inmediata del modelo y tamaño del cabezal.",
+    "Desechable de un solo uso: Erradica por completo el riesgo de infección cruzada y asegura un rendimiento de corte constante."
+  ],
+  49: [
+    "Cabezal de acero 30Cr13 de alta tenacidad: Dureza óptima que permite un desbridamiento óseo agresivo y controlado sin desgaste del filo.",
+    "Variantes cilíndricas y esféricas: Diseños adaptados para modelado de superficies planas o tallado de concavidades óseas estrechas.",
+    "Compatibilidad universal del 90%: Interfaz optimizada compatible con las consolas motorizadas artroscópicas más comunes.",
+    "Sistema de fijación Snap-Lock: Retención segura que previene desprendimientos o vibraciones a revoluciones elevadas.",
+    "Formato estéril de un solo uso: Rendimiento de corte original en cada cirugía sin contaminación cruzada ni desgaste acumulado."
+  ],
+  46: [
+    "Limitador de profundidad graduable: Permite fijar la penetración de la aguja, protegiendo vasos sanguíneos y nervios poplíteos.",
+    "Técnica All-Inside mínimamente invasiva: Pequeño implante de PEEK con sutura 2-0 de alta resistencia que minimiza el daño al tejido meniscal.",
+    "Activación activa con una sola mano: Mecanismo ergonómico de 360° que ofrece control total del tiempo de disparo con precisión táctil.",
+    "Múltiples angulaciones de aguja: Diseños recto, curva hacia arriba 12° y curva hacia abajo 12° para alcanzar cualquier cuadrante meniscal.",
+    "Nudo deslizante pretensado: Permite una compresión firme y uniforme de los bordes de la rotura meniscal para promover la cicatrización biológica."
+  ],
+  45: [
+    "Material PEEK atraumático: Roscas de borde romo que evitan el corte o maceración del injerto durante la inserción en el túnel óseo.",
+    "Total compatibilidad con RMN: Permite evaluar con total nitidez la osteointegración y revascularización del ligamento en resonancia.",
+    "Modelos JM y JQ con vaina: El sistema JQ incluye vaina protectora que distribuye las cargas de compresión en hueso de baja densidad.",
+    "Cuerpo canulado con insertador graduado: Inserción precisa guiada sobre aguja de Kirschner con marcas milimétricas de avance en el mango.",
+    "Fijación bicortical rígida: Elevada resistencia a la tracción que asegura una fijación primaria estable para la rehabilitación funcional temprana."
+  ],
+  41: [
+    "Aleación Co-Cr-Mo de alta resistencia: Extraordinaria rigidez mecánica y resistencia a la fatiga bajo cargas fisiológicas repetitivas.",
+    "Dientes de fijación antideslizamiento: Estrías retentivas en las patas que inmovilizan los tendones sin comprometer su vascularización.",
+    "Puntas afiladas de penetración ósea: Permiten un anclaje cortical firme y reproducible mediante instrumental de impacto.",
+    "Perfil bajo redondeado: Minimiza el relieve superficial para evitar molestias y fricción con las partes blandas suprayacentes.",
+    "Esterilización por radiación gamma: Suministro estéril desechable listo para su uso quirúrgico inmediato."
+  ],
+  42: [
+    "Fijación suspensoria cortical de alta resistencia: Gran superficie de contacto entre la placa y la cortical externa para soportar cargas cíclicas elevadas.",
+    "Ranuras de perfil bajo con acople limpio: Aloja las suturas y los lazos en ranuras pulidas que evitan el roce y salientes palpables.",
+    "Hilos de tracción y volteo incorporados: Facilitan el paso a través del túnel y la báscula de la placa sobre la cortical de manera rápida e intuitiva.",
+    "Compatibilidad con túneles reducidos: El bucle flexible atraviesa fácilmente túneles óseos estrechos sin deshilacharse.",
+    "Opciones fijas y ajustables: Variedad completa de longitudes de bucle para adaptarse a cualquier longitud de túnel femoral y longitud de injerto."
+  ],
+  56: [
+    "Ajuste continuo en tiempo real: Permite traccionar y tensar el injerto milimétricamente dentro del túnel óseo una vez basculada la placa.",
+    "Bloqueo unidireccional seguro: Mecanismo de autobloqueo que resiste las cargas de desplazamiento cíclicas sin elongación del bucle.",
+    "Máximo contacto hueso-injerto: Permite llevar el injerto hasta la profundidad completa del túnel femoral para acelerar la osteointegración.",
+    "Diseño atraumático de bajo perfil: Placa anatómica redondeada que minimiza las molestias en los tejidos blandos de la cara lateral del fémur.",
+    "Simplicidad intraoperatoria: Elimina la necesidad de disponer de múltiples tamaños de bucles fijos, reduciendo el stock y la complejidad."
+  ],
+  40: [
+    "Fibra UHMWPE de alta resistencia: Tejida con polietileno de ultra alto peso molecular que garantiza una resistencia a la tracción biomecánicamente insuperable.",
+    "Variedad cromática para navegación intraoperatoria: Disponible en blanco, azul y bicolor azul-blanco para una distinción inmediata de cabos en reparaciones complejas.",
+    "Superficie lisa y sin memoria: Hilos uniformes sin nudos que se deslizan suavemente a través de tejidos blandos sin desgarros ni deshilachamiento.",
+    "Agujas quirúrgicas de alta elasticidad: Agujas de acero inoxidable de calidad superior que ofrecen excelente rigidez torsional, flexibilidad y afilado de corte prolongado.",
+    "Rendimiento estable y duradero: Biocompatibilidad demostrada sin degradación química en aplicaciones de fijación ortopédica permanente."
+  ],
+  58: [
+    "Cierre dérmico rápido y ordenado: Afronta los bordes de la herida en una fracción del tiempo de una sutura tradicional.",
+    "Disparo regular sin saltos de grapa: Mecanismo interno de precisión que asegura una expulsión y doblado perfecto de cada grapa.",
+    "Grapas de acero médico biocompatible: Pulidas electrolíticamente para no adherirse a los tejidos ni causar dermatitis.",
+    "Menor traumatismo y cicatriz reducida: Altura libre sobre la piel que previene la necrosis de bordes y mejora el resultado estético.",
+    "Retiro suave e indoloro: Puntas afiladas y superficie lisa que se desprenden fácilmente con extractor de grapas convencional."
+  ],
+  47: [
+    "Tubo transparente con gestión de suturas: Facilita el paso, visualización y control de hilos sin enredos en el portal de trabajo.",
+    "Roscado exterior de alta estabilidad: Fija firmemente la cánula a la cápsula articular, evitando expulsiones o desplazamientos involuntarios.",
+    "Sellado hermético antifugas: Sistema de válvulas que reduce la pérdida de presión hídrica y de suero durante el intercambio de instrumental.",
+    "Diseño ergonómico: Permite un agarre seguro para la inserción suave y controlada a través de las partes blandas.",
+    "Gama de tamaños para cada articulación: Múltiples diámetros y longitudes para hombro, rodilla, cadera y codo."
+  ],
+  52: [
+    "Material de silicona suave atraumático: Minimiza el roce y la fricción sobre el cartílago articular y los tejidos periféricos.",
+    "Punta excéntrica Tipo II: Facilita la entrada a través de la cápsula y se adhiere a las partes blandas evitando que se salga.",
+    "Almohadilla en C de 5 mm de grosor: Regula y controla con precisión la profundidad efectiva de inserción en la articulación.",
+    "Doble capa estanca antifuga: Bloquea la extravasación de líquido hacia tejidos periarticulares durante la intervención.",
+    "Canal elástico para instrumental irregular: Su flexibilidad acomoda con soltura guías curvadas, fresas y pinzas de formas no cilíndricas."
+  ],
 };
 
 export const PRODUCT_FEATURES_EN: Record<number, string[]> = {
@@ -6200,5 +6347,152 @@ export const PRODUCT_FEATURES_EN: Record<number, string[]> = {
     "Unilateral & Bilateral Variants: Types I and II for unilateral bone cuts; Type III for comprehensive bilateral osteotomies.",
     "Neural & Vascular Protection: Shields critical structures, reducing intraoperative bleeding and neurological complications.",
     "Standardized Surgical Execution: Shortens the surgical learning curve in complex sagittal deformity realignments."
+  ],
+  36: [
+    "Pioneering 3D-Printed Anchor: Fabricated via Laser Beam Melting (LBM) using high-purity medical TC4 ELI titanium alloy powder.",
+    "Biomimetic Elastic Modulus: Tailored additive matrix matches human bone elasticity, mitigating stress shielding and local bone damage.",
+    "Osteoconductive Porous Surface: Optimized micro-rough topography maximizes cell adhesion, tissue ingrowth, and clinical recovery.",
+    "Self-Tapping High-Low Double Thread: Delivers superior primary fixation strength without requiring pilot hole drilling.",
+    "Independent Suture Eyelet: Prevents suture twisting, knotting, and entanglement during intraoperative tensioning and knot tying."
+  ],
+  39: [
+    "PVD Tantalum Coating: Pioneering surface technology uniting titanium alloy elasticity with tantalum's bio-inductive matrix.",
+    "Osteogenic & Antibacterial Activity: Enhances cellular proliferation and alkaline phosphatase activity while reducing postoperative infection risk.",
+    "Corrosion Resistance & Barrier: Highly stable inert surface completely prevents trace ion release into surrounding tissue.",
+    "Dual Thread Geometries: Offered in single-thread MD(I) and double-thread MD(II) profiles from 3.5 mm to 6.5 mm for versatile bone density matching.",
+    "Extensive Joint Compatibility: Indicated for soft tissue reattachment across shoulder, knee, elbow, ankle, and digit procedures."
+  ],
+  51: [
+    "Nitinol Retention Wings: Superelastic nickel-titanium wings expand subcortically to deliver exceptional axial pullout resistance.",
+    "Micro Diameters from 1.3 mm: Minimizes cortical disruption, making it an outstanding choice for foot, ankle, and digit ligament repairs.",
+    "Threadless Fast Insertion: Directly seated into the pilot hole and deployed, cutting down operative steps and surgical duration.",
+    "Bone-Preserving Profile: Diminutive drill hole dimensions preserve local bone stock and foster rapid post-op tissue recovery.",
+    "Pre-Loaded UHMWPE Sutures: Configured with one or two ultra-high molecular weight sutures for robust soft-tissue purchase."
+  ],
+  48: [
+    "Bottom Self-Tapping Tip: Enables direct penetration into cortical bone without incision, reducing operative preparation time.",
+    "Dual-Zone Thread Design: Proximal bone-plate matching threads combined with distal cortical threads ensure secure anchorage.",
+    "Anodized High-Contrast Finish: Provides excellent anti-glare visibility and manipulation clarity under arthroscopic camera illumination.",
+    "High-Strength Differentiated Sutures: Multi-color braided UHMWPE sutures facilitate straightforward knot management and tensioning.",
+    "Permanent Non-Absorbable Fixation: Delivers long-term structural integrity against physiological cyclic tensile loads."
+  ],
+  149: [
+    "High-Low Dual-Thread Architecture: Dual-pitch profile provides enhanced soft tissue compression and bone pullout resistance.",
+    "Self-Tapping Tip without Pre-Drilling: Enables direct, straightforward insertion into cortical bone, preserving operating time.",
+    "Independent Dual-Eyelet Design: Keeps sutures isolated in separate channels to prevent knotting, friction, and entanglement.",
+    "High-Contrast Bicolor Sutures: White UHMWPE and blue polypropylene strands allow unambiguous identification during knot tying.",
+    "Laser-Marked Depth Inserter: Inserter shaft features clear depth indicators for precise, flush seating against the bone cortex."
+  ],
+  150: [
+    "100% All-Suture Textile Architecture: Replaces rigid metal implants, eliminating stress shielding and artifacts on CT/MRI imaging.",
+    "Subcortical Bunching Fixation: Active tensioning bunches the braided sleeve into a dense ball for remarkable pullout resistance.",
+    "Minimal Bone Stock Disruption: Requires a diminutive pilot hole, conserving bone volume and minimizing cortical damage.",
+    "Fix(I) Concealed Deployment Tip: The anchor sleeve is concealed within the inserter tip, preventing premature catching during portal entry.",
+    "Pre-Loaded High-Tenacity UHMWPE Sutures: Configured in white, blue, and blue-white combinations for clear strand management."
+  ],
+  151: [
+    "Biocompatible PEEK Matrix: Elastic modulus matching human bone, superior fatigue strength, and complete absence of MRI artifacts.",
+    "Hollow Osteoconductive Profile: Delivers robust primary purchase while offering a structural channel for bone ingrowth.",
+    "Reduced Foreign Material Volume: Minimizes foreign body burden in the bone bed, dampening postoperative tissue reaction.",
+    "High-Strength UHMWPE Sutures: Ensures low-friction tendon passage and uncompromised knot security.",
+    "Zero Stress Shielding: Balanced mechanical properties prevent periprosthetic bone resorption."
+  ],
+  44: [
+    "Radiolucent PEEK Construction: Delivers pristine post-op radiographic and MRI visualization without metallic artifact scatter.",
+    "MB(II) and MB(III) Configurations: Tailored partial or fully threaded bodies optimizing pullout resistance across bone qualities.",
+    "High-Contrast UHMWPE Strands: Pre-installed white and blue-white sutures allow quick knot differentiation under the scope.",
+    "Laser Depth Gauge Inserter: Calibrated laser markings on the inserter drive rod ensure controlled, accurate cortical seating.",
+    "Complete Size Spectrum: Comprehensive dimensions to accommodate diverse open and arthroscopic reconstructive scenarios."
+  ],
+  57: [
+    "Knotless Technology: Eliminates bulky knot stacks, eliminating subacromial impingement and streamlining procedure steps.",
+    "Hollow Cannulated Structure: Promotes cellular infiltration and osteoblast colonization for rapid socket healing.",
+    "Optimized for Double-Row Repair: Specifically engineered for lateral-row compression in transosseous-equivalent cuff repairs.",
+    "Multi-Strand Compatibility: Supports round sutures, wide tapes, and combinations handling 4 to 8 strands with equal holding power.",
+    "PEEK Biocompatibility: Eliminates stress shielding, produces zero MRI artifacts, and guarantees long-term chemical inertness."
+  ],
+  152: [
+    "Knock-In Impaction Technique: Convenient surgical workflow enabling accurate intraoperative tension calibration before locking.",
+    "Broad Diameter Range (1.8 mm - 9.0 mm): Complete versatility spanning small-joint ligament reattachment to major joint stabilization.",
+    "Low-Profile Knotless Locking: Eliminates bulky knot stacks and mechanical impingement in tight articular spaces.",
+    "Inert PEEK Biocompatibility: Eliminates stress shielding, resists chemical breakdown, and triggers zero allergic response.",
+    "Artifact-Free MRI Imaging: Allows clear visualization of tendon healing and joint remodeling during postoperative follow-up."
+  ],
+  43: [
+    "Imported High-Strength Stainless Steel: Enduring cutting sharpness ensures clean, efficient soft tissue resection.",
+    "Snap-Lock Safety Design: Robust hub coupling effectively prevents intraoperative blade detachment during high-speed rotation.",
+    "Vibration-Free Concentricity: Strict runout testing delivers smooth, balanced rotation with minimal handpiece vibration.",
+    "Color-Coded Hubs: Instant visual recognition of diameter and tip geometry in the sterile field.",
+    "Single-Use Sterility: Eliminates cross-contamination hazards and ensures peak cutting performance in every case."
+  ],
+  49: [
+    "Hardened 30Cr13 Burr Head: Superior wear resistance provides aggressive, controlled bone removal without dulling.",
+    "Cylindrical & Spherical Geometries: Versatile tip profiles suited for flat bone resection or tight concavity sculpting.",
+    "Universal Compatibility (>90%): Hub connection fits seamlessly with standard commercial arthroscopic handpieces.",
+    "Snap-Lock Connection: Firmly secures the burr inside the drive sleeve, eliminating wobbling and high-speed detachment.",
+    "Single-Use Sterility: Guarantees peak cutting performance, eradicating cross-contamination and instrument fatigue."
+  ],
+  46: [
+    "Depth-Limiting Sheath: Adjustable stop prevents over-penetration, safeguarding popliteal vessels and nerves.",
+    "Minimally Invasive All-Inside Technique: Ultra-small PEEK bars paired with 2-0 suture minimize native meniscus disruption.",
+    "360° Single-Handed Firing: Active deployment trigger allows precise timing and tactile feedback during implant release.",
+    "Versatile Angular Options: Straight, 12° up-curved, and 12° down-curved profiles access difficult posterior horn tears.",
+    "Pre-Tensioned Sliding Knot: Delivers secure, uniform tear margin approximation to optimize vascular healing."
+  ],
+  45: [
+    "Atraumatic PEEK Profile: Rounded thread edges prevent graft fiber laceration during clockwise tunnel advancement.",
+    "Clean Postoperative MRI: Produces zero metallic distortion, allowing clear visualization of graft ligamentization.",
+    "JM & JQ Sheath Configurations: JQ model includes an expansion sheath distributing radial compression in cancellous bone.",
+    "Cannulated Insertion over Guide Wire: Driver handle features laser depth markings for precise tunnel depth monitoring.",
+    "Rigid Primary Fixation: High pullout strength supports immediate stability and accelerated knee rehabilitation."
+  ],
+  41: [
+    "Fatigue-Resistant Co-Cr-Mo Alloy: Exceptional yield strength and bending resistance under cyclic physiological loads.",
+    "Serrated Non-Slip Teeth: Retentive spikes clamp tissue firmly without compromising regional vascular supply.",
+    "Sharp Penetrating Prongs: Facilitates controlled, reproducible cortical bone seating using standard impaction drivers.",
+    "Low-Profile Contoured Bridge: Reduces soft-tissue impingement and hardware irritation under the skin.",
+    "Gamma Radiation Sterility: Single-use sterile packaging with a 5-year shelf life for immediate intraoperative readiness."
+  ],
+  42: [
+    "High-Strength Cortical Suspension: Broad contact footprint against the outer femoral cortex resists cyclic elongation.",
+    "Low-Profile Recessed Grooves: Recesses seat sutures and loops flush, eliminating irritation and sub-fascial prominence.",
+    "Integrated Pulling & Flipping Leads: Dedicated leads streamline tunnel passage and tactile confirmation of cortical flipping.",
+    "Small-Diameter Tunnel Passage: Highly pliable loop passes effortlessly through narrow bone tunnels without fraying.",
+    "Fixed & Adjustable Configurations: Complete spectrum of loop lengths tailored to diverse tunnel depths and graft lengths."
+  ],
+  56: [
+    "Continuous Real-Time Tensioning: Allows progressive graft advancement into the socket after cortical button deployment.",
+    "Reliable One-Way Locking: Proprietary self-locking loop structure prevents slippage under high cyclic loads.",
+    "Maximized Bone-Graft Interface: Draws the graft fully into the bone tunnel to optimize biological integration.",
+    "Atraumatic Low-Profile Button: Rounded edges prevent lateral femoral soft-tissue friction and iliotibial band irritation.",
+    "Streamlined Operative Workflow: One size fits all tunnel depths, reducing shelf inventory and simplifying decision-making."
+  ],
+  40: [
+    "High-Strength UHMWPE Yarn: Woven from ultra-high molecular weight polyethylene fiber for permanent, stable tension retention.",
+    "Multi-Color Knot Management: Offered in solid blue, pure white, and high-contrast blue-white combinations for unambiguous strand mapping.",
+    "Smooth Non-Abrasive Strands: Knot-free uniform surface glides through tissues with low drag and zero fiber shedding.",
+    "High-Elasticity Surgical Needles: Premium medical-grade stainless steel needles with sharp puncturing tip and bend resistance.",
+    "Non-Absorbable Biostability: Inert biocompatible performance without allergic degradation in reconstructive shoulder and knee surgeries."
+  ],
+  58: [
+    "Fast & Neat Wound Closure: Closes skin incisions in a fraction of the time required by traditional sutures.",
+    "Jam-Free Consistent Firing: Precision internal ejector delivers predictable, accurate staple placement every stroke.",
+    "Medical Stainless Steel Staples: High elasticity and tissue tolerance eliminate foreign-body dermal reactions.",
+    "Minimal Trauma & Thin Scarring: Raised formed staple crown relieves skin tension and reduces postoperative scar marking.",
+    "Smooth Skin Extraction: Polished staple surfaces glide out cleanly with standard staple extractors."
+  ],
+  47: [
+    "Transparent Tube with Suture Control: High optical clarity prevents suture entanglement during intra-articular shuttling.",
+    "Fully Threaded Body: Ensures exceptional capsular purchase, eliminating inadvertent cannula displacement.",
+    "Fluid-Tight Sealing Valves: Prevents irrigation fluid spray and maintains intra-articular pressure during tool exchanges.",
+    "Ergonomic Flange Design: Provides comfortable, positive grip for controlled percutaneous insertion.",
+    "Comprehensive Dimensional Range: Sized to accommodate all standard arthroscopic portals across knee, shoulder, and hip."
+  ],
+  52: [
+    "Atraumatic Soft Silicone Construction: Dampens tissue shear stress, safeguarding sensitive articular cartilage surfaces.",
+    "Type II Eccentric Tip Geometry: Smoothly passes through the capsule and anchors gently to prevent retraction.",
+    "5 mm C-Shaped Limiter Pad: Provides reliable tactile control over the effective working depth within the joint.",
+    "Dual-Layer Watertight Seal: Effectively eliminates fluid extravasation into surrounding muscle and subcutaneous spaces.",
+    "Flexible Channel for Curved Instruments: Pliable lumen readily accommodates angled probes, curved shavers, and specialized tools."
   ],
 };
