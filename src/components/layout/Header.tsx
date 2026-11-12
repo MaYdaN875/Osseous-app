@@ -230,6 +230,14 @@ export function Header() {
             <img src={FOOTER_LOGO} alt="Osseous" />
             <span className="site-head__logo-tagline">Innovación, confianza y resultados.</span>
           </Link>
+          <button
+            type="button"
+            className="site-head__nav-mobile-close"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-label="Cerrar menú"
+          >
+            ✕
+          </button>
         </div>
 
         <div className="wrap site-head__nav-inner">
