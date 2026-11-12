@@ -15,6 +15,8 @@ import {
   PRODUCT_DESC_EN,
   PRODUCT_SPECS_ES,
   PRODUCT_SPECS_EN,
+  PRODUCT_FEATURES_ES,
+  PRODUCT_FEATURES_EN,
 } from "@/config/catalog-meta";
 
 export function getCategoryTitle(id: number, originalTitle: string, lang: "es" | "en"): string {
@@ -51,6 +53,12 @@ export function getProductSpecs(productId: number | undefined, categoryId: numbe
     }
   }
   return getCategorySpecs(categoryId, lang);
+}
+
+export function getProductFeatures(productId: number | undefined, lang: "es" | "en"): string[] | undefined {
+  if (!productId) return undefined;
+  const dict = lang === "en" ? PRODUCT_FEATURES_EN : PRODUCT_FEATURES_ES;
+  return dict[productId];
 }
 
 const data = raw as CatalogData;

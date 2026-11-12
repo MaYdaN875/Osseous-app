@@ -7,6 +7,7 @@ import {
   getCategoryDesc,
   getProductDesc,
   getProductSpecs,
+  getProductFeatures,
   getCategoryTitle,
   getProductTitle,
   asset,
@@ -64,6 +65,7 @@ export function ProductPage({ productId }: { productId: number }) {
   const image = mainSrc || asset(product.image);
   // Las especificaciones y descripciones específicas del producto (o fallback por categoría)
   const specs = getProductSpecs(product.id, category.id, lang);
+  const features = getProductFeatures(product.id, lang);
   const customDesc = getProductDesc(product.id, lang);
   const categoryDesc = getCategoryDesc(category.id, lang);
 
@@ -152,6 +154,32 @@ export function ProductPage({ productId }: { productId: number }) {
                 ))}
               </div>
             </div>
+
+            {/* Características */}
+            {features && features.length > 0 && (
+              <div style={{ marginTop: "24px" }}>
+                <h3 className="detail__spec-title">
+                  {lang === "en" ? "Features" : "Características"}
+                </h3>
+                <div className="product-features">
+                  <ol>
+                    {features.map((feat, idx) => {
+                      const colonIdx = feat.indexOf(":");
+                      if (colonIdx !== -1) {
+                        const title = feat.slice(0, colonIdx);
+                        const rest = feat.slice(colonIdx + 1);
+                        return (
+                          <li key={idx}>
+                            <strong>{title}:</strong>{rest}
+                          </li>
+                        );
+                      }
+                      return <li key={idx}>{feat}</li>;
+                    })}
+                  </ol>
+                </div>
+              </div>
+            )}
             <div className="detail__actions">
               <button type="button" className="btn-primary" onClick={() => showToast(t("catalog.quote_toast"))}>
                 {t("detail.availability")}
