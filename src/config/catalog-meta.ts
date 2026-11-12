@@ -176,6 +176,9 @@ export const PRODUCT_DESC_ES: Record<number, string> = {
   230: "El lavador pulsátil eléctrico es un sistema médico desechable de irrigación pulsátil y aspiración simultánea de alta eficacia diseñado para la limpieza y desbridamiento tisular en cirugías ortopédicas y artroplastias. Compuesto por una pieza de mano ergonómica ligera con micro-motor eléctrico integrado, tubo coaxial de doble vía para entrada de solución salina y evacuación de detritos, y boquillas intercambiables femoral y de superficie.\n\nEmite un chorro pulsátil calibrado que remueve con rapidez grasa medular, microcoágulos, restos necróticos y detritos óseos de la superficie esponjosa sin dañar los tejidos osteoblastos viables. Limpia a fondo el lecho óseo antes del cementado, multiplicando la penetración y adherencia del cemento óseo acrílico en el hueso trabecular, reduciendo drásticamente las infecciones periprotésicas y el aflojamiento temprano de los implantes.",
   231: "La cabeza femoral de cerámica BIOLOX® delta está fabricada a partir de un material compuesto cerámico de matriz de alúmina reforzada con circonia (ZTA) de cuarta generación. Esta microestructura avanzada confiere propiedades mecánicas excepcionales combinando la altísima dureza de la alúmina con la resistencia al impacto y tenacidad a la fractura de la circonia tetragonal estabilizada con itrio.\n\nOfrece una superficie articular hidrófila con un coeficiente de fricción ultra bajo y una resistencia sobresaliente al rayado por partículas extrañas, minimizando la generación de detritos de desgaste en contacto con insertos de polietileno altamente entrecruzado (HXLPE) o copas cerámicas. Indicada para artroplastia total de cadera en pacientes jóvenes o con alta demanda de actividad física, eliminando el riesgo de alergias a metales.",
   232: "La cabeza femoral con sistema de manguito adaptador TF está diseñada para resolver discrepancias de longitud de extremidad y permitir el rescate inmediato de conos femorales desgastados o con daño superficial leve durante cirugías primarias y de revisión. Compuesta por una cabeza esférica metálica o cerámica acoplada a un manguito de titanio mecanizado de alta precisión que actúa como interfaz protectora del cono del vástago.\n\nPermite al cirujano corregir de forma milimétrica el offset femoral y la longitud de cuello intraoperatoria sin necesidad de extraer un vástago femoral firmemente osteointegrado, preservando el lecho óseo del paciente. Indicada para artroplastia total de cadera de revisión y ajustes de estabilidad articular, garantizando un bloqueo por fricción cónica rígido y eliminando el riesgo de corrosión por frotamiento (fretting corrosion).",
+  66: "La sierra ósea eléctrica quirúrgica es un sistema motorizado de alta precisión diseñado para el aserrado y corte eficiente de tejido óseo en procedimientos ortopédicos, artroplastias y traumatología. Equipada con un motor profesional brushless (sin escobillas) de alta potencia basado en tecnología superconductora, entrega una potencia constante y duradera con una elevación térmica mínima sobre el tejido perióstico, reduciendo sustancialmente el riesgo de necrosis térmica ósea y operando con un nivel de ruido acústico ultra bajo.\n\nIncorpora un sistema de control de accionamiento gobernado por chip inteligente de protección múltiple (sobrecarga, sobrecalentamiento y bloqueo) junto con un botón de seguridad que previene activaciones involuntarias. Su cabezal de trabajo permite una rotación completa de 360 grados en 8 posiciones indexables para abordar cortes en cualquier ángulo anatómico, e integra un mecanismo patentado anticaída de la hoja de corte y conmutación de doble velocidad (10.000 y 12.000 oscilaciones/min) para una máxima adaptabilidad clínica.",
+  67: "El taladro óseo eléctrico quirúrgico es un equipo motorizado cannulado de alto rendimiento concebido para el perforado, ensanchado y escariado óseo en cirugía traumatológica mayor, reemplazo articular y cirugía de columna. Impulsado por un motor alemán brushless de tecnología superconductora de alta gama, genera un par de torsión (torque) elevado y constante, asegurando una penetración ósea controlada y suave sin pérdida de potencia en corticales densas ni sobrecalentamiento tisular.\n\nDispone de un eje canulado de amplia luz interna compatible con el guiado concéntrico de agujas de Kirschner y clavos intramedulares. Su electrónica inteligente permite conmutar en tiempo real entre alta velocidad para perforación rápida (1.200 rpm) y baja velocidad de alto torque para fresado cotiloideo o medular (270 rpm), con cambio instantáneo de giro (avance/reversa), botón de bloqueo de seguridad y recuperación automática tras sobreesfuerzo mecánico.",
+  68: "El equipo quirúrgico a batería para tejido óseo es una plataforma motorizada multidisciplinaria de alta versatilidad diseñada para osteotomías mayores, resección ósea y cirugías reconstructivas ortopédicas y torácicas. Construido con un motor sin escobillas superconductor de última generación y alimentado por una batería de litio de alta densidad energética de 4000 mAh, proporciona una autonomía prolongada durante intervenciones complejas de larga duración sin pérdida de potencia ni necesidad de recargas intraoperatorias.\n\nSu diseño modular de acople multifuncional permite transformar la unidad en sierra oscilante ortopédica o sierra esternal (sternum saw) mediante la fijación de arcos protectores estériles para precautelar el mediastino y los tejidos blandos subyacentes. Integra un microcontrolador inteligente con protección integral contra sobrecarga y sobrecalentamiento térmico, doble velocidad seleccionable (10.000 y 12.000 oscilaciones/min) y sistema de fijación firme anticaída de cuchillas para una seguridad operativa insuperable.",
 };
 
 export const PRODUCT_DESC_EN: Record<number, string> = {
@@ -273,6 +276,9 @@ export const PRODUCT_DESC_EN: Record<number, string> = {
   230: "The electric pulse washer is a sterile single-use orthopedic pulsed lavage and concurrent suction system designed for bone bed preparation and soft-tissue debridement. Comprising a lightweight ergonomic handpiece with an integrated electric motor, a dual-lumen coaxial irrigation and evacuation tubing harness, and interchangeable femoral and fan-spray nozzles.\n\nIt generates high-frequency pulsed saline streams that swiftly clear intramedullary fat, hematomas, necrotic bone debris, and bacteria without injuring viable osteoblasts. Thoroughly debriding cancellous bone prior to cementing, it multiplies bone cement interdigitation depth, drastically cutting down periprosthetic joint infection (PJI) rates and early loosening.",
   231: "The BIOLOX® delta ceramic femoral head is manufactured from fourth-generation zirconia-toughened alumina (ZTA) ceramic nanocomposite. This advanced microstructure delivers exceptional mechanical properties by combining the extreme hardness and wear resistance of alumina with the superior fracture toughness and impact resistance of yttria-stabilized tetragonal zirconia.\n\nIt features an exceptionally wettable hydrophilic articulating surface with an ultra-low friction coefficient and unmatched scratch resistance against third-body wear debris, minimizing volumetric wear rates against HXLPE or ceramic liners. Indicated for primary and revision total hip arthroplasty in young or highly active patients, completely eliminating metal hypersensitivity risks.",
   232: "The TF femoral ball head system with adapter sleeve is designed for immediate taper revision and intraoperative neck length restoration during primary and complex revision hip arthroplasty. It pairs a spherical modular head with an internal precision-machined titanium taper sleeve that shields the underlying trunnion.\n\nThis system allows surgeons to finely calibrate femoral offset and leg length discrepancy without removing well-fixed, well-integrated femoral stems, preserving vital bone stock. Indicated for revision total hip arthroplasty, minor trunnion damage, and recurrent instability, ensuring a robust frictional taper lock while mitigating fretting and crevice corrosion.",
+  66: "The surgical electric bone saw is a high-precision motorized system engineered for the efficient cutting and sawing of bone tissue during orthopedic reconstruction, total joint arthroplasty, and trauma surgeries. Powered by a high-output brushless motor incorporating superconducting technology, it delivers relentless and durable cutting torque with minimal temperature rise, effectively preventing bone thermal necrosis while maintaining exceptionally quiet operation.\n\nIt features an intelligent multi-protection drive control chip offering real-time safeguards against overload, overheating, and mechanical stalls, combined with a tactile safety interlock button to eliminate accidental operation. Its versatile modular oscillating head provides 360-degree rotation across 8 indexed positions for unrestricted anatomical access, alongside a patented anti-drop blade clamping mechanism and selectable dual-speed gearing (10,000 and 12,000 oscillations/min) for optimal clinical versatility.",
+  67: "The surgical electric bone drill is a high-performance cannulated motorized instrument engineered for precision drilling, reaming, and tapping in major trauma surgery, joint reconstruction, and spine interventions. Driven by an advanced German-engineered brushless motor with superconducting technology, it delivers high, sustained torque with minimal thermal output, ensuring smooth, controlled bone penetration through dense cortices without stall-out or tissue burning.\n\nIt features a wide fully cannulated drive shaft accommodating direct concentric passage of Kirschner wires and intramedullary guide pins. Its intelligent drive control electronics provide seamless switching between high-speed drilling mode (1,200 rpm) and low-speed, high-torque reaming mode (270 rpm), accompanied by forward/reverse rotation toggles, tactile misoperation interlocks, and automatic restart upon stall recovery.",
+  68: "The battery-powered bone tissue surgical equipment is a heavy-duty multidisciplinary motorized surgical platform engineered for major osteotomies, bone resection, orthopedic reconstruction, and cardiothoracic procedures. Powered by a state-of-the-art superconducting brushless motor and a high-density 4000 mAh rechargeable lithium power pack, it delivers exceptional runtime and unwavering torque output throughout prolonged and demanding procedures without intraoperative battery swaps.\n\nIts versatile multi-attachment interface allows seamless conversion between an oscillating orthopedic bone saw and a sternal saw equipped with a dedicated sterile protective sternum guard to safeguard the mediastinum and deep anatomical structures. It features an intelligent microcontroller managing comprehensive overload and thermal protections, selectable dual-speed gearing (10,000 and 12,000 oscillations/min), and an anti-drop blade retention collar for absolute intraoperative stability.",
 };
 
 // ==========================================
@@ -2724,6 +2730,84 @@ export const PRODUCT_SPECS_ES: Record<number, [string, string][]> = {
       "Radiación gamma - Vida útil estéril de 5 años"
     ]
   ],
+  66: [
+    [
+      "Tipo de motor",
+      "Motor brushless (sin escobillas) con tecnología superconductora"
+    ],
+    [
+      "Frecuencia de oscilación",
+      "Doble velocidad: Alta (12.000 opm) y Baja (10.000 opm)"
+    ],
+    [
+      "Orientación del cabezal",
+      "Rotación de 360° indexable en 8 posiciones de bloqueo"
+    ],
+    [
+      "Sistema de seguridad",
+      "Chip inteligente multiprotección (sobrecarga, temperatura y bloqueo)"
+    ],
+    [
+      "Batería y alimentación",
+      "Pack de batería de litio recargable con carga rápida de alta corriente"
+    ],
+    [
+      "Esterilización",
+      "Pieza de mano autoclavable a 134 °C (batería en canal aséptico)"
+    ]
+  ],
+  67: [
+    [
+      "Tipo de motor",
+      "Motor brushless de origen alemán con tecnología superconductora"
+    ],
+    [
+      "Velocidad de rotación",
+      "Doble régimen: Alta velocidad (1.200 rpm) y Baja velocidad (270 rpm)"
+    ],
+    [
+      "Canulación central",
+      "Eje hueco cannulado para agujas de Kirschner y clavos guía"
+    ],
+    [
+      "Control de giro",
+      "Selector de rotación avance, reversa y neutro con botón de seguridad"
+    ],
+    [
+      "Acople de accesorios",
+      "Mandril de acople rápido universal (Quick-Change) para brocas y fresas"
+    ],
+    [
+      "Esterilización",
+      "Cuerpo y mandril autoclavables a 134 °C (batería no esterilizable)"
+    ]
+  ],
+  68: [
+    [
+      "Tipo de motor",
+      "Motor brushless superconductor de alta potencia para tejido duro"
+    ],
+    [
+      "Frecuencia de oscilación",
+      "Doble velocidad programable: Alta (12.000 opm) y Baja (10.000 opm)"
+    ],
+    [
+      "Capacidad de batería",
+      "Batería de iones de litio de gran capacidad de 4000 mAh"
+    ],
+    [
+      "Versatilidad quirúrgica",
+      "Convertible a sierra esternal con arco de protección mediastínica"
+    ],
+    [
+      "Seguridad del accesorio",
+      "Bloqueo mecánico patentado anticaída de hojas de corte"
+    ],
+    [
+      "Esterilización",
+      "Pieza de mano esterilizable en autoclave a vapor a 134 °C"
+    ]
+  ],
 };
 
 export const PRODUCT_SPECS_EN: Record<number, [string, string][]> = {
@@ -5171,6 +5255,84 @@ export const PRODUCT_SPECS_EN: Record<number, [string, string][]> = {
       "Gamma irradiation - 5-year sterile shelf life"
     ]
   ],
+  66: [
+    [
+      "Motor type",
+      "Heavy-duty brushless motor with superconducting technology"
+    ],
+    [
+      "Oscillation frequency",
+      "Dual speed: High (12,000 opm) and Low (10,000 opm)"
+    ],
+    [
+      "Working head articulation",
+      "360° rotation across 8 indexed locking gears"
+    ],
+    [
+      "Safety system",
+      "Intelligent multi-protection chip (overload, thermal, and stall)"
+    ],
+    [
+      "Power & battery",
+      "Rechargeable lithium battery pack with high-current rapid charging"
+    ],
+    [
+      "Sterilization",
+      "Handpiece autoclavable at 134 °C (battery via aseptic transfer shield)"
+    ]
+  ],
+  67: [
+    [
+      "Motor type",
+      "High-performance German-engineered brushless superconducting motor"
+    ],
+    [
+      "Rotation speed",
+      "Dual mode: High speed (1,200 rpm) and Low speed/reaming (270 rpm)"
+    ],
+    [
+      "Cannulation",
+      "Hollow-bore drive shaft compatible with Kirschner wires and guide pins"
+    ],
+    [
+      "Rotation control",
+      "Forward, reverse, and safety lock neutral modes with tactical trigger"
+    ],
+    [
+      "Tool interface",
+      "Universal quick-change connector chuck for surgical drills and reamers"
+    ],
+    [
+      "Sterilization",
+      "Autoclavable drive handpiece at 134 °C (aseptic battery funnel system)"
+    ]
+  ],
+  68: [
+    [
+      "Motor type",
+      "Heavy-duty superconducting brushless motor for hard tissue resection"
+    ],
+    [
+      "Oscillating frequency",
+      "Dual programmable speeds: High (12,000 opm) and Low (10,000 opm)"
+    ],
+    [
+      "Battery capacity",
+      "High-capacity 4000 mAh rechargeable lithium-ion battery pack"
+    ],
+    [
+      "Surgical versatility",
+      "Convertible to sternum saw with dedicated protective mediastinal guard bow"
+    ],
+    [
+      "Blade retention",
+      "Patented positive mechanical anti-drop blade clamping mechanism"
+    ],
+    [
+      "Sterilization",
+      "Handpiece fully steam-autoclavable at 134 °C (aseptic battery protocol)"
+    ]
+  ],
 };
 
 // ==========================================
@@ -5835,6 +5997,30 @@ export const PRODUCT_FEATURES_ES: Record<number, string[]> = {
     "Doble capa estanca antifuga: Bloquea la extravasación de líquido hacia tejidos periarticulares durante la intervención.",
     "Canal elástico para instrumental irregular: Su flexibilidad acomoda con soltura guías curvadas, fresas y pinzas de formas no cilíndricas."
   ],
+  66: [
+    "Motor brushless superconductor: Máxima eficiencia de corte con mínima elevación térmica tisular y marcha silenciosa.",
+    "Cabezal orientable 360° en 8 posiciones: Permite posicionar la hoja de corte en ángulos complejos sin flexionar la muñeca.",
+    "Conmutación de doble velocidad: Selección instantánea entre 12.000 y 10.000 oscilaciones por minuto según la densidad ósea.",
+    "Mecanismo de seguridad anticaída de hoja: Asegura un bloqueo mecánico positivo y rígido de la cuchilla quirúrgica.",
+    "Protección inteligente contra sobrecargas: Chip electrónico que previene el sobrecalentamiento y bloqueos durante el aserrado.",
+    "Diseño ergonómico y carcasa antirrayaduras: Distribución equilibrada del peso que reduce la fatiga del cirujano en cirugías largas."
+  ],
+  67: [
+    "Motor alemán de alto torque continuo: Perforación potente y estable sin atascos en hueso cortical esclerótico.",
+    "Eje hueco cannulado integrado: Facilita el paso y posicionamiento exacto de agujas guía y de Kirschner.",
+    "Doble régimen de velocidad (1.200 / 270 rpm): Transición rápida entre perforación ósea veloz y fresado de alto torque.",
+    "Control de inversión y botón de seguridad: Cambio ágil entre avance y reversa con protección contra accionamientos accidentales.",
+    "Función de recuperación automática tras bloqueo: Restablece la marcha de inmediato cuando cede la resistencia mecánica.",
+    "Conector de acople rápido (Quick-Change): Reemplazo veloz e intuitivo de brocas, mandriles y fresadores en mesa quirúrgica."
+  ],
+  68: [
+    "Batería de litio de 4000 mAh: Gran autonomía que cubre procedimientos quirúrgicos prolongados sin interrupciones.",
+    "Adaptabilidad a sierra esternal: Compatible con arco protector para corte seguro del esternón en cirugía torácica.",
+    "Motor brushless superconductor: Alto poder de corte continuado con baja emisión de calor y funcionamiento silencioso.",
+    "Doble velocidad de oscilación (12.000 / 10.000 opm): Corte rápido y controlado adaptado a hueso compacto o esponjoso.",
+    "Sistema de fijación de hoja anticaída: Retención positiva que evita el desprendimiento accidental de la sierra.",
+    "Carga rápida de alta corriente: Reduce drásticamente el tiempo de preparación del equipo entre cirugías."
+  ],
 };
 
 export const PRODUCT_FEATURES_EN: Record<number, string[]> = {
@@ -6494,5 +6680,29 @@ export const PRODUCT_FEATURES_EN: Record<number, string[]> = {
     "5 mm C-Shaped Limiter Pad: Provides reliable tactile control over the effective working depth within the joint.",
     "Dual-Layer Watertight Seal: Effectively eliminates fluid extravasation into surrounding muscle and subcutaneous spaces.",
     "Flexible Channel for Curved Instruments: Pliable lumen readily accommodates angled probes, curved shavers, and specialized tools."
+  ],
+  66: [
+    "Superconducting brushless motor: High cutting efficiency with minimal bone temperature rise and ultra-quiet execution.",
+    "360° articulating head in 8 indexed gears: Aligns blade trajectory precisely to complex osteotomies without wrist straining.",
+    "Dual-speed electronic switching: Rapid toggling between 12,000 and 10,000 oscillations/min tailored to bone mineral density.",
+    "Anti-drop blade locking mechanism: Provides positive, vibration-proof retention of oscillating surgical saw blades.",
+    "Intelligent overload & thermal defense: Microprocessor continuously prevents device stalling and overheating under heavy loads.",
+    "Scratch-resistant ergonomic chassis: Perfectly balanced center of gravity minimizing hand and wrist fatigue in long surgeries."
+  ],
+  67: [
+    "German high-torque brushless drive: Robust continuous rotational torque without stalling in dense sclerotic bone.",
+    "Integrated hollow cannulation: Accommodates seamless coaxial passage of Kirschner wires and guiding pins.",
+    "Dual speed regimes (1,200 / 270 rpm): Swift switching between high-speed osteotomy drilling and high-torque reaming.",
+    "Forward/reverse toggle & safety lock: Instant direction control with tactile misoperation prevention latch.",
+    "Automatic stall recovery: Resumes operation smoothly as soon as excessive mechanical resistance clears.",
+    "Quick-change modular chuck: Facilitates rapid, tool-free swaps of drill bits, reamers, and pin drivers."
+  ],
+  68: [
+    "High-capacity 4000 mAh lithium battery: Extended operating endurance across complex procedures without mid-case swaps.",
+    "Sternum saw modular conversion: Accommodates sterile protective sternal bow guard for safe cardiothoracic osteotomy.",
+    "Superconducting brushless drive: Delivers uncompromising cutting power with negligible heat buildup and whisper-quiet noise.",
+    "Dual oscillating speeds (12,000 / 10,000 opm): Tuned cutting rates optimized for both compact cortical and cancellous bone.",
+    "Anti-drop blade locking collar: Eliminates blade dislodgement or vibration slippage under heavy shear force.",
+    "High-current fast charging station: Substantially curtails turnover and sterilization turnaround time between surgical cases."
   ],
 };
