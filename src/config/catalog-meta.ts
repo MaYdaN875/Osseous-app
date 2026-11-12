@@ -5555,6 +5555,139 @@ export const PRODUCT_FEATURES_ES: Record<number, string[]> = {
     "Múltiples diámetros de cabeza incluidos: Permite adaptar el tamaño cefálico al lecho acetabular del paciente.",
     "Mantiene la longitud del miembro y tensión muscular: Evita la retracción de partes blandas durante el intervalo entre cirugías."
   ],
+  2: [
+    "Tantalio poroso puro CVD: Fabricación pionera por deposición química en fase de vapor sin desprendimiento de partículas y con alta tenacidad.",
+    "Módulo de elasticidad biomimético: Congruente con el hueso esponjoso humano, evitando el blindaje de tensiones y la subsidencia.",
+    "Porosidad interconectada optimizada: Favorece la adhesión osteoblástica, migración celular y osteointegración trabecular profunda.",
+    "Superficies de anclaje dentadas: Excelente estabilidad primaria que previene la expulsión o migración postoperatoria de la caja.",
+    "Restauración de alineación sagital: Recupera la altura del espacio intervertebral y la curvatura lordótica fisiológica."
+  ],
+  154: [
+    "Primera placa laminar impresa en 3D: Tecnología patentada de manufactura aditiva que calca la anatomía de la osteotomía vertebral.",
+    "Zonas porosas que prescinden de injerto: La estructura trabecular sustituye el injerto óseo complementario, optimizando el espacio del canal.",
+    "Superficie interna lisa atraumática: Protege el conducto espinal y la duramadre, reduciendo el riesgo de adherencias e irritación.",
+    "Estabilidad de fijación primaria rígida: Fija sólidamente la lámina descompresiva abierta previniendo el cierre elástico postoperatorio.",
+    "Múltiples configuraciones de orificios: Opciones versátiles de angulación de tornillos que facilitan la técnica del cirujano."
+  ],
+  34: [
+    "Diseño autoestabilizable ALIF integrado: Suprime la necesidad de instrumentación pedicular posterior complementaria en casos seleccionados.",
+    "Cuatro tornillos bloqueados divergentes: Forman un anclaje rígido en cuña dentro de los cuerpos vertebrales que previene la migración.",
+    "Conexión no rígida placa-espaciador: Transmite las cargas compresivas a través del injerto óseo, acelerando la fusión sólida.",
+    "Restauración de lordosis lumbosacra: Diversos ángulos lordóticos que optimizan el balance sagital y descomprimen raíces nerviosas.",
+    "Recuperación funcional acelerada: Menor invasión quirúrgica que reduce el dolor postoperatorio y favorece la deambulación precoz."
+  ],
+  69: [
+    "Estructura de 49 filamentos trenzados: Extraordinaria flexibilidad y suavidad de manejo que previene roturas por fatiga mecánica.",
+    "Clip con ángulo ajustable de 20°: Se adapta a la anatomía de la lámina facilitando el paso del cable y el tensado simétrico.",
+    "Biocompatibilidad de titanio: Reduce drásticamente reacciones a cuerpo extraño e infecciones, permitiendo implantes duraderos.",
+    "Flexibilidad protectora neural: Se desliza suavemente bajo la lámina vertebral con menor riesgo de lesión de la duramadre.",
+    "Compatibilidad con sistemas de barras: Conectable de forma híbrida con sistemas de tornillos pediculares y de masa lateral."
+  ],
+  26: [
+    "Cuerpo elástico en forma de U: Amortigua las tensiones axiales y preserva la altura foraminal y la movilidad segmentaria.",
+    "Estructura serrada antirrotacional: Cuatro placas con dientes de retención que inmovilizan el implante y evitan la cifosis.",
+    "Diseño desfasado para dos niveles: Permite tratar dos segmentos lumbares adyacentes sin choque entre las aletas de los implantes.",
+    "Orificios para sutura ligamentaria: Ranuras circulares diseñadas para refijar el ligamento supraespinoso y reforzar la estabilidad.",
+    "Mínimamente invasivo sin fusión: Preserva la anatomía ósea sin requerir tornillos pediculares ni resección articular agresiva."
+  ],
+  155: [
+    "Estructura trabecular biomimética 3D: Módulo de elasticidad similar al hueso esponjoso que previene el hundimiento y el blindaje de cargas.",
+    "Ambiente osteogénico óptimo: Red de microporos continuos que promueve la angiogénesis y la osteointegración temprana y firme.",
+    "Platillos anatómicos angulados: Diversas cuñas lordóticas y cifóticas que restauran fielmente la alineación de la columna.",
+    "Modelos específicos cervical y toracolumbar: Tamaños I-A y I-B optimizados para la biomecánica de cada nivel espinal.",
+    "Alta resistencia mecánica a la compresión: Soporta las máximas cargas axiales fisiológicas de la columna anterior con total estabilidad."
+  ],
+  71: [
+    "Ángulo de oscilación poliaxial de hasta 100°: Facilita la alineación con la barra incluso en anatomías anatómicas complejas o distorsionadas.",
+    "Placa occipital medial rígida: Fijación occipital primaria sólida con soporte bilateral suplementario.",
+    "Barras precurvadas y precortadas: Eliminan la necesidad de doblado manual agresivo en quirófano, reduciendo riesgos de fatiga del metal.",
+    "Tornillos adaptados a masa lateral y pedículo: Diseños específicos de rosca y longitud para masa lateral (20 mm).",
+    "Perfil bajo de bajo relieve: Minimiza el volumen del implante sobre la fascia cervical posterior, previniendo molestias y fístulas."
+  ],
+  156: [
+    "Platillos arciformes cóncavo-convexos: Calcan la concavidad anatómica vertebral, distribuyendo las fuerzas axiales y evitando el hundimiento.",
+    "Autoestabilización inmediata: Estructura dentada de agarre que fija el implante al hueso sin deslizamientos hacia el canal raquídeo.",
+    "Ajuste cilíndrico centralizado: Permite graduar con precisión milimétrica la altura y distracción del segmento resecado.",
+    "Amplio espacio para injerto óseo: Diseño abierto que permite rellenar con abundante masa ósea para una artrodesis continua.",
+    "Compatibilidad toracolumbar completa: Diseñado para trabajar sinérgicamente con barras y tornillos pediculares posteriores."
+  ],
+  157: [
+    "Diseño Zero-Profile (Perfil Cero): Queda confinada en el espacio intersomático, evitando el contacto con el esófago y reduciendo la disfagia.",
+    "Tornillos con anillo de autobloqueo: Bloqueo seguro que previene el desatornillado espontáneo sin añadir volumen anterior.",
+    "Uso independiente sin placa adicional: Simplifica la técnica quirúrgica y acorta sensiblemente el tiempo operatorio.",
+    "Variantes lordóticas de 0° a 8°: Adapta la corrección sagital a las características cervicales de cada paciente.",
+    "Amplia cavidad para injerto óseo: Gran volumen interno que favorece una artrodesis ósea sólida y temprana."
+  ],
+  158: [
+    "Titanio puro de alta plasticidad: Permite un ajuste milimétrico fácil a los contornos óseos sin fatiga del material.",
+    "Ranura de retención de lámina integrada: Mantiene la lámina en posición de descompresión abierta sin necesidad de injerto óseo.",
+    "Perfil ultra bajo anti-irritación: Reduce al mínimo el roce con los músculos posteriores del cuello y previene dolor axial.",
+    "Preservación de la movilidad cervical: Descomprime la médula espinal manteniendo la estabilidad biomecánica de la columna.",
+    "Protección del conducto raquídeo: Evita el colapso secundario o cierre elástico de la lámina vertebral osteotomizada."
+  ],
+  159: [
+    "Técnica percutánea mínimamente invasiva: Reduce la pérdida hemática, el daño muscular y acelera la recuperación postoperatoria.",
+    "Brazos de extensión prolongados: Facilitan la inserción guiada de tornillos y la reducción fluida de la barra sin instrumental voluminoso.",
+    "Tornillos de doble rosca autorroscante: Duplican la velocidad de inserción y brindan un agarre superior en el pedículo vertebral.",
+    "Prisionero con rosca cuadrada y cabeza Torx: Elimina el trasrosque y garantiza un torque de apriete fiable sin deslizamiento del destornillador.",
+    "Compatibilidad con sistemas 5.5 mm y 6.0 mm: Adaptabilidad total para patología degenerativa, fracturas y deformidades toracolumbares."
+  ],
+  160: [
+    "Conexión directa tornillo-barra: Suprime los conectores laterales voluminosos, logrando un perfil plano que evita úlceras por decúbito.",
+    "Punto de entrada sub-EIPS: Respeta la cresta ósea y reduce el dolor en la zona glútea y pélvica tras la cirugía.",
+    "Caña lisa protectora sacroilíaca: Evita que las roscas dañen el cartílago de la articulación sacroilíaca.",
+    "Tornillos canulados versátiles: Aptos para colocación guiada por navegación percutánea o abordajes abiertos tradicionales.",
+    "Anclaje pélvico de alta rigidez: Soporta las enormes fuerzas de flexión y cizallamiento en artrodesis largas de columna."
+  ],
+  14: [
+    "Trayectoria ósea cortical (CBT): Maximiza el contacto con hueso cortical denso, proporcionando fijación rígida en columnas osteoporóticas.",
+    "Rosca Hook-Lock anti-expansión: Transmite las cargas en sentido vertical, eliminando la apertura o distracción del cabezal del tornillo.",
+    "Doble rosca con 29% menos corte óseo: Facilita una inserción rápida y reduce la destrucción del canal pedicular.",
+    "Abordaje de incisión reducida: Trayectoria medial que minimiza la disección muscular lateral en comparación con tornillos estándar.",
+    "Bloqueo interno con cabeza Torx: Transmite el torque de apriete sin deslizamiento y reduce las rebabas al partir el vástago."
+  ],
+  164: [
+    "Fenestraciones laterales calibradas: Distribución homogénea del cemento óseo en el lecho esponjoso vertebral sin extravasación hacia el canal.",
+    "Estabilidad inmediata superior: La interfase cemento-tornillo-hueso multiplica la resistencia al arrancamiento en hueso osteoporótico.",
+    "Tres configuraciones de rosca: Diseños adaptados que maximizan el agarre en hueso de baja densidad mineral.",
+    "Opciones de brazos prolongados: Compatibilidad con cirugía mínimamente invasiva (MIS) percutánea sin desmontaje instrumental.",
+    "Excelente versatilidad reconstructiva: Indicado en fracturas patológicas, osteoporosis severa y rescate en revisiones complejas."
+  ],
+  166: [
+    "Diseño anatómico precurvado: Se ajusta a la lordosis cervical natural, reduciendo los tiempos de ajuste y moldeado quirúrgico.",
+    "Bordes biselados de bajo perfil: Protege el esófago y las partes blandas prevertebrales, disminuyendo las tasas de disfagia.",
+    "Mecanismo antirretracción integrado: Bloquea los tornillos de manera rápida y segura sin riesgo de aflojamiento anterior.",
+    "Gran ventana de visualización: Permite evaluar con total nitidez la evolución de la fusión ósea y del injerto intersomático.",
+    "Múltiples longitudes mononivel y multinivel: Placas disponibles de 1 a 4 niveles con orificios para tornillos fijos y variables."
+  ],
+  70: [
+    "Estructura trabecular microporosa 3D (50%-80%): Facilita la migración celular, neovascularización y osteointegración de alta solidez.",
+    "Módulo elástico de compatibilidad biológica: Reduce la concentración de tensiones en los platillos vertebrales, evitando el hundimiento.",
+    "Alto coeficiente de fricción antideslizamiento: Brinda una estabilidad primaria extraordinaria contra fuerzas de cizallamiento.",
+    "Modelos específicos para cervical y toracolumbar: Cajas adaptadas geométricamente para accesos anteriores, oblicuos y transforaminales.",
+    "Ángulos lordóticos fisiológicos: Restituyen la altura del espacio intervertebral y la alineación sagital natural de la columna."
+  ],
+  72: [
+    "Malla tubular con paso óseo omnidireccional: Permite el crecimiento del hueso a través de todas las ventanas de la malla de titanio.",
+    "Longitudes precalibradas de 1-2 mm: Elimina la necesidad de recortar la malla en quirófano, suprimiendo rebabas metálicas.",
+    "Tapas terminales arciformes protectoras: Nueve perfiles de tapas que evitan el hundimiento y restauran la alineación de la columna.",
+    "Bordes corrugados de sujeción: Facilitan la manipulación con instrumental de inserción y reducen el tiempo operatorio.",
+    "Titanio puro biocompatible: Libre de toxicidad, con excelente osteoconducción e imágenes radiológicas claras."
+  ],
+  169: [
+    "Material PEEK con módulo cortical: Transmite las cargas compresivas de manera uniforme y suprime el blindaje de tensiones.",
+    "Estrías en diente de sierra inversa: Gran resistencia al cizallamiento que previene la expulsión de la caja hacia el conducto raquídeo.",
+    "Ventana de injerto extragrande: Permite un contacto íntimo y directo del injerto con los platillos vertebrales superior e inferior.",
+    "Mantenimiento de la altura y lordosis: Previene la pérdida de altura del espacio discal y mantiene la reducción de espondilolistesis.",
+    "Marcadores de tantalio radiopacos: Permiten verificar con precisión la posición de la caja bajo control fluoroscópico sin artefactos."
+  ],
+  171: [
+    "Diseño paciente-específico en PA12: Fabricada a medida según la anatomía tomográfica 3D del paciente con calce exacto.",
+    "Navegación y guiado milimétrico: Define con exactitud el nivel y ángulo de la osteotomía vertebral, reduciendo el tiempo operatorio.",
+    "Modelos unilaterales y bilaterales: Versiones Tipo I y II para cortes unilaterales y Tipo III para osteotomías complejas bilaterales.",
+    "Protección de estructuras críticas: Reduce sustancialmente el riesgo de sangrado y lesiones neurológicas por desviación instrumental.",
+    "Curva de aprendizaje optimizada: Facilita la estandarización y reproducibilidad de osteotomías complejas en deformidades espinales."
+  ],
 };
 
 export const PRODUCT_FEATURES_EN: Record<number, string[]> = {
@@ -5934,5 +6067,138 @@ export const PRODUCT_FEATURES_EN: Record<number, string[]> = {
     "Quick demolding mechanism: Facilitates clean extraction of cured cement spacers without damage.",
     "Multiple head diameter options included: Matches patient acetabular dimension to restore joint stability.",
     "Preserves limb length and muscle tension: Prevents soft tissue contracture between stages of infection management."
+  ],
+  2: [
+    "CVD Pure Porous Tantalum: Manufactured via world-leading chemical vapor deposition ensuring extreme toughness without particle shedding.",
+    "Biomimetic Elastic Modulus: Matches human cancellous bone elasticity, preventing stress shielding and cage subsidence.",
+    "Interconnected Porosity: Promotes cellular ingrowth, osteoblast proliferation, and deep bone-implant integration.",
+    "Serrated Grip Surfaces: Superior primary mechanical anchoring prevents postoperative cage migration or retropulsion.",
+    "Sagittal Alignment Restoration: Re-establishes anatomical disc space height and physiological lordotic curvature."
+  ],
+  154: [
+    "Pioneering 3D-Printed Lamina Plate: Patented additive design precisely matching the geometry of spinal canal enlargement osteotomies.",
+    "Porous Graft-Free Matrix: Integrated 3D trabecular regions eliminate the need for harvested bone graft while restoring canal space.",
+    "Atraumatic Inner Contouring: Smooth internal face protects the spinal thecal sac and minimizes adjacent tissue friction.",
+    "Rigid Open-Door Stabilization: Securely maintains laminar elevation, preventing postoperative recoil or re-stenosis.",
+    "Versatile Screw Hole Arrays: Diversified hole patterns accommodate variable pedicle and lateral mass screw trajectories."
+  ],
+  34: [
+    "Integrated Self-Stabilizing ALIF: Eliminates the necessity for supplementary posterior pedicle screws in primary cases.",
+    "Four Divergent Locking Screws: Anchors firmly into adjacent vertebral bodies as a biomechanical bone wedge.",
+    "Non-Rigid Load-Sharing Interface: Directs physiological compressive loads onto the graft matrix, promoting rapid fusion.",
+    "Lordotic Restoration: Multiple lordotic angulations restore anatomical lumbosacral alignment and neural foramen volume.",
+    "Streamlined Anterior Workflow: Minimizes surgical dissection and postoperative pain, facilitating early patient mobilization."
+  ],
+  69: [
+    "49-Strand Braided Construction: Delivers superior flexibility and bend fatigue resistance, eliminating kink snapping.",
+    "20° Adjustable Locking Clip: Accommodates anatomical contours, streamlining instrument tensioning and crimping.",
+    "Titanium Biocompatibility: Eliminates adverse foreign-body reactions and supports long-term intraosseous stability.",
+    "Atraumatic Sublaminar Passage: Pliable cable negotiates the spinal canal smoothly, safeguarding thecal sac integrity.",
+    "Hybrid System Integration: Connects seamlessly with occipitocervical and lateral mass screw-rod systems."
+  ],
+  26: [
+    "U-Shaped Shock-Absorbing Core: Dampens axial loads while maintaining neuroforaminal height and segmental kinematics.",
+    "Serrated Anti-Rotational Wings: Four gripping flanges secure the spinous processes against hyper-extension and kyphosis.",
+    "Staggered Multi-Level Flanges: Enables contiguous two-level intervention without adjacent hardware overlap.",
+    "Ligament Suture Eyelets: Integrated holes allow secure supraspinous and interspinous ligament repair.",
+    "Motion-Preserving Decompression: Delivers indirect canal expansion without destructive bone resection or rigid fusion."
+  ],
+  155: [
+    "3D Biomimetic Trabecular Architecture: Cancellous-like modulus prevents stress concentration and endplate subsidence.",
+    "Osteoinductive Microenvironment: Continuous interconnected porosity fosters rapid cellular migration and solid osseointegration.",
+    "Anatomically Angled Endplates: Diverse lordotic profiles restore physiological sagittal balance and curvature.",
+    "Cervical & Thoracolumbar Models: Tailored I-A (cervical) and I-B (thoracolumbar) configurations for segmental anatomy.",
+    "High Compressive Load Capacity: Withstands rigorous anterior spinal column axial forces with durable structural integrity."
+  ],
+  71: [
+    "Up to 100° Polyaxial Cone of Angulation: Greatly simplifies rod engagement across challenging cervical trajectories.",
+    "Rigid Midline Occipital Plate: Delivers uncompromised craniocervical anchorage with supplementary lateral wing screws.",
+    "Pre-Bent & Pre-Cut Titanium Rods: Eliminates notch sensitivity and fatigue risks associated with acute manual rod bending.",
+    "Dedicated Lateral Mass & Pedicle Screws: Specific screw threads for lateral mass (20 mm).",
+    "Low-Profile Posterior Contour: Reduces hardware prominence beneath the posterior cervical musculature."
+  ],
+  156: [
+    "Arcuate Concave-Convex Footprints: Distributes axial loads across dense peripheral bone, drastically reducing subsidence.",
+    "Immediate Self-Stabilization: Interlocking serrations anchor into subchondral bone, eliminating risk of canal migration.",
+    "Central Cylindrical Height Adjustment: Delivers controlled distraction and reliable locking to restore anterior column height.",
+    "Large Bone Graft Chamber: Expansive aperture provides direct endplate-to-endplate biological fusion continuity.",
+    "Thoracolumbar System Synergy: Pairs seamlessly with posterior pedicle screw and rod instrumentation."
+  ],
+  157: [
+    "Zero-Profile Architecture: Resides entirely within the disc interspace, drastically reducing postoperative dysphagia.",
+    "Self-Locking Ring Screws: Securely locks the screw into the plate, eliminating the risk of screw extrusion.",
+    "Standalone Fixation: Eliminates the need for supplementary anterior cervical plates, minimizing operative trauma.",
+    "Lordotic Variations (0° to 8°): Restores natural cervical alignment according to patient-specific anatomy.",
+    "Generous Graft Aperture: Expansive internal chamber supports robust through-growth fusion."
+  ],
+  158: [
+    "High-Plasticity Pure Titanium: Enables smooth, notch-free intraoperative contouring to vertebral lamina.",
+    "Integrated Lamina Retention Slot: Locks the osteotomized lamina securely open without mandatory bone grafting.",
+    "Low-Profile Contouring: Significantly mitigates muscle impingement and chronic axial neck pain.",
+    "Motion-Preserving Decompression: Expands the spinal canal while preserving physiological cervical motion.",
+    "Spinal Canal Protection: Eliminates postoperative laminar spring-back and protects the decompressed cord."
+  ],
+  159: [
+    "Percutaneous MIS Technique: Significantly reduces blood loss, tissue trauma, and postoperative recovery time.",
+    "Extra-Long Extension Towers: Provide intuitive percutaneous guide-wire tracking and effortless rod reduction.",
+    "Dual-Lead Thread Profile: Speeds insertion while delivering superior cortical and cancellous pullout anchoring.",
+    "Square-Thread Torx Setscrew: Prevents cross-threading and driver cam-out during final torque tightening.",
+    "Dual Rod Caliber (5.5 / 6.0 mm): Versatility across degenerative, traumatic, and deformity indications."
+  ],
+  160: [
+    "Direct Screw-to-Rod Connection: Eliminates bulky offset links, resulting in a low profile that prevents soft-tissue ulceration.",
+    "Sub-PSIS Entry Point: Sits 15 mm below the iliac crest, preserving bone stock and mitigating chronic post-op pain.",
+    "Smooth Sacroiliac Shank: Prevents thread purchase across the SI joint, safeguarding the articular cartilage.",
+    "Cannulated Versatility: Accommodates percutaneous navigated insertion as well as traditional open approaches.",
+    "High-Rigidity Pelvic Foundation: Resists massive cantilever bending loads in long-segment spinal reconstructions."
+  ],
+  14: [
+    "Cortical Bone Trajectory (CBT): Engages four dense cortical margins, delivering exceptional purchase in osteoporotic bone.",
+    "Hook-Lock Anti-Splay Thread: Converts radial stresses into axial retention, preventing tulip expansion.",
+    "Dual-Lead Thread Profile: Cuts 29% less bone volume during driving, speeding insertion and enhancing purchase.",
+    "Reduced Midline Exposure: Medial start point requires less lateral paraspinal muscle dissection.",
+    "Burr-Free Torx Setscrew: Low tightening torque with clean internal break-off reduces surrounding soft-tissue irritation."
+  ],
+  164: [
+    "Calibrated Side Fenestrations: Directs uniform cement interdigitation into trabecular bone, preventing canal leakage.",
+    "Superior Immediate Anchorage: The PMMA-screw-bone composite provides immense resistance against pullout and cyclic loosening.",
+    "Three Thread Geometries: Optimized thread profiles maximize initial stability in osteopenic cancellous bone.",
+    "Extended-Arm MIS Towers: Supports percutaneous minimally invasive instrumentation with streamlined screw delivery.",
+    "Broad Reconstructive Utility: Indicated for severe osteoporosis, pathological fractures, and complex revision salvage."
+  ],
+  166: [
+    "Anatomically Pre-Bent Lordosis: Replicates natural cervical lordosis, eliminating tedious intraoperative plate bending.",
+    "Beveled Low-Profile Margins: Protects the esophagus and anterior soft tissue, significantly mitigating dysphagia.",
+    "Integrated Anti-Retraction Lock: Secures screws swiftly with tactile locking confirmation, preventing screw back-out.",
+    "Expansive Inspection Window: Enables unambiguous fluoroscopic and visual confirmation of graft positioning.",
+    "Single & Multi-Level Options: 1- to 4-level plating configurations supporting fixed and variable-angle screws."
+  ],
+  70: [
+    "Biomimetic 3D Porosity (50%-80%): Interconnected pores foster cellular colonization, angiogenesis, and rapid solid fusion.",
+    "Bone-Matching Elastic Modulus: Suppresses stress shielding, preventing peripheral bone loss and endplate subsidence.",
+    "High Frictional Grip Coefficient: Exceptional primary shear resistance eliminates cage dislodgement risks.",
+    "Dedicated Cervical & Thoracolumbar Models: Tailored footprints suited for anterior, oblique, and transforaminal approaches.",
+    "Physiological Lordotic Profiles: Restores anatomical intervertebral disc height and sagittal spinal balance."
+  ],
+  72: [
+    "Omnidirectional Mesh Porosity: Fenestrated walls allow bone trabeculae to bridge freely throughout the cage core.",
+    "Pre-Calibrated 1-2 mm Increments: Eliminates sharp edges, metal debris, and tedious intraoperative trimming.",
+    "Arcuate End Caps (9 Footprints): Distribute axial loads to prevent endplate subsidence and restore anatomical alignment.",
+    "Corrugated Insertion Margins: Ensure positive instrument engagement for rapid, controlled cage advancement.",
+    "Pure Titanium Biocompatibility: Non-toxic formulation delivers clear fluoroscopic imaging and superior tissue tolerance."
+  ],
+  169: [
+    "Cortical-Matching PEEK Modulus: Ensures balanced load sharing across the interspace, eliminating stress shielding.",
+    "Reverse-Serrated Retention Teeth: Enhances friction, resisting postoperative retropulsion into the spinal canal.",
+    "Extra-Large Bone Graft Window: Supports expansive endplate contact for rapid through-growth fusion.",
+    "Disc Space & Lordosis Preservation: Long-term maintenance of disc height relieves neural foramen stenosis.",
+    "Tantalum Radiopaque Markers: Enables precise fluoroscopic visualization of cage seating without imaging artifacts."
+  ],
+  171: [
+    "Patient-Specific PA12 Construction: Tailored from preoperative 3D CT reconstruction for snug anatomical registration.",
+    "Millimetric Trajectory Guidance: Exactly dictates osteotomy depth and resection angles, streamlining operative flow.",
+    "Unilateral & Bilateral Variants: Types I and II for unilateral bone cuts; Type III for comprehensive bilateral osteotomies.",
+    "Neural & Vascular Protection: Shields critical structures, reducing intraoperative bleeding and neurological complications.",
+    "Standardized Surgical Execution: Shortens the surgical learning curve in complex sagittal deformity realignments."
   ],
 };
