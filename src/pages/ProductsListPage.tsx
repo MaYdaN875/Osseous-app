@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
 import { getOsseousCategories } from "@/lib/osseous-products";
 import { useLanguage } from "@/context/LanguageContext";
@@ -113,6 +113,7 @@ function ProductCard({ product, categoryId }: ProductCardProps) {
 }
 
 export function ProductsListPage() {
+  const navigate = useNavigate();
   const { categorySlug } = useParams<{ categorySlug: string }>();
   const [searchQuery, setSearchQuery] = useState("");
   const { lang, t } = useLanguage();
@@ -137,7 +138,16 @@ export function ProductsListPage() {
       <main className="section">
         <div className="wrap">
           <p>{t("list.line_not_found")}</p>
-          <Link className="back-link" to="/productos">
+          <Link
+            className="back-link"
+            to="/productos"
+            onClick={(e) => {
+              if (window.history.length > 1) {
+                e.preventDefault();
+                navigate(-1);
+              }
+            }}
+          >
             <span className="circle">←</span> {t("list.back_categories")}
           </Link>
         </div>
@@ -161,7 +171,16 @@ export function ProductsListPage() {
 
       <main className="list-container section">
         <div className="wrap">
-          <Link className="back-link" to="/productos">
+          <Link
+            className="back-link"
+            to="/productos"
+            onClick={(e) => {
+              if (window.history.length > 1) {
+                e.preventDefault();
+                navigate(-1);
+              }
+            }}
+          >
             <span className="circle">←</span> {t("list.back_categories")}
           </Link>
 

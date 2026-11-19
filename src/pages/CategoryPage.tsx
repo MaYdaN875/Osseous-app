@@ -1,12 +1,13 @@
 // La página de una categoría del catálogo (/catalogo/6, por ejemplo):
 // muestra sus productos en cuadrícula, con unas "píldoras" arriba para
 // brincar rápido entre categorías sin regresar al catálogo.
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
 import { getCategories, getCategoryDesc, getCategoryTitle, getProductTitle, asset } from "@/lib/catalog";
 import { useLanguage } from "@/context/LanguageContext";
 
 export function CategoryPage({ categoryId }: { categoryId: number }) {
+  const navigate = useNavigate();
   const categories = getCategories();
   const cat = categories.find((c) => c.id === categoryId);
   const { lang, t } = useLanguage();
@@ -17,7 +18,16 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
       <main className="section">
         <div className="wrap">
           <p>{t("catalog.cat_not_found")}</p>
-          <Link className="back-link" to="/catalogo">
+          <Link
+            className="back-link"
+            to="/catalogo"
+            onClick={(e) => {
+              if (window.history.length > 1) {
+                e.preventDefault();
+                navigate(-1);
+              }
+            }}
+          >
             <span className="circle">←</span> {t("catalog.back")}
           </Link>
         </div>
@@ -40,7 +50,16 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
       </PageHero>
       <main className="section">
         <div className="wrap">
-          <Link className="back-link" to="/catalogo">
+          <Link
+            className="back-link"
+            to="/catalogo"
+            onClick={(e) => {
+              if (window.history.length > 1) {
+                e.preventDefault();
+                navigate(-1);
+              }
+            }}
+          >
             <span className="circle">←</span> {t("catalog.back")}
           </Link>
           <div className="pills">

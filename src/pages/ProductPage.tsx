@@ -2,7 +2,7 @@
 // galería con miniaturas, SKU, especificaciones técnicas, botones de acción
 // y una sección de productos compatibles al final.
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   getCategoryDesc,
   getProductDesc,
@@ -33,6 +33,7 @@ function showToast(message: string) {
 }
 
 export function ProductPage({ productId }: { productId: number }) {
+  const navigate = useNavigate();
   const found = getProductById(productId);
   const [mainSrc, setMainSrc] = useState<string | null>(null);
   const { lang, t } = useLanguage();
@@ -86,7 +87,16 @@ export function ProductPage({ productId }: { productId: number }) {
   return (
     <main className="section">
       <div className="wrap">
-        <Link className="back-link" to={`/catalogo/${category.id}`}>
+        <Link
+          className="back-link"
+          to={`/catalogo/${category.id}`}
+          onClick={(e) => {
+            if (window.history.length > 1) {
+              e.preventDefault();
+              navigate(-1);
+            }
+          }}
+        >
           <span className="circle">←</span> {t("detail.back_to", { category: categoryTitle })}
         </Link>
         <nav className="detail-crumbs">

@@ -1,7 +1,7 @@
 // Detalle de producto desde la sección Productos (/ficha/:slug/:productSlug).
 // Mantiene exactamente el mismo diseño visual, datos, chips y especificaciones del catálogo (/producto/:id).
 import { useEffect, useMemo, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { useElementorStyles } from "@/lib/elementor";
 import { getOsseousCategories } from "@/lib/osseous-products";
 import rawCatalog from "@/data/catalog-data.json";
@@ -40,6 +40,7 @@ const CATEGORY_MAP: Record<string, number> = {
 };
 
 export function FichaPage() {
+  const navigate = useNavigate();
   const { slug = "", productSlug = "" } = useParams();
   const { lang, t } = useLanguage();
   const [active, setActive] = useState(0);
@@ -125,7 +126,16 @@ export function FichaPage() {
   return (
     <main className="section">
       <div className="wrap">
-        <Link className="back-link" to={`/productos/${slug}`}>
+        <Link
+          className="back-link"
+          to={`/productos/${slug}`}
+          onClick={(e) => {
+            if (window.history.length > 1) {
+              e.preventDefault();
+              navigate(-1);
+            }
+          }}
+        >
           <span className="circle">←</span> {t("detail.back_to", { category: categoryTitle })}
         </Link>
         <nav className="detail-crumbs">
