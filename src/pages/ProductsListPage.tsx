@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { PageHero } from "@/components/ui/PageHero";
 import { getOsseousCategories } from "@/lib/osseous-products";
 import { useLanguage } from "@/context/LanguageContext";
@@ -50,10 +50,28 @@ function ProductCard({ product, categoryId }: ProductCardProps) {
     setCurrentIdx(idx);
   };
 
+  const saveCardPos = (e: React.MouseEvent | React.TouchEvent) => {
+    const card = e.currentTarget as HTMLElement;
+    if (card) {
+      try {
+        sessionStorage.setItem("osseous_restore_id", `prod-card-${product.slug}`);
+        sessionStorage.setItem("osseous_restore_top", String(card.getBoundingClientRect().top));
+        sessionStorage.setItem("osseous_restore_scrollY", String(window.scrollY));
+      } catch {
+        // Ignorar
+      }
+    }
+  };
+
   return (
     <Link
       className="product-card-osseous reveal"
+      id={`prod-card-${product.slug}`}
+      data-scroll-anchor={`prod-card-${product.slug}`}
       to={`/ficha/${categoryId}/${product.slug}`}
+      onMouseDown={saveCardPos}
+      onTouchStart={saveCardPos}
+      onClick={saveCardPos}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -113,6 +131,7 @@ function ProductCard({ product, categoryId }: ProductCardProps) {
 }
 
 export function ProductsListPage() {
+  const navigate = useNavigate();
   const { categorySlug } = useParams<{ categorySlug: string }>();
   const [searchQuery, setSearchQuery] = useState("");
   const { lang, t } = useLanguage();
@@ -137,7 +156,16 @@ export function ProductsListPage() {
       <main className="section">
         <div className="wrap">
           <p>{t("list.line_not_found")}</p>
-          <Link className="back-link" to="/productos">
+          <Link
+            className="back-link"
+            to="/productos"
+            onClick={(e) => {
+              if (window.history.length > 1) {
+                e.preventDefault();
+                navigate(-1);
+              }
+            }}
+          >
             <span className="circle">←</span> {t("list.back_categories")}
           </Link>
         </div>
@@ -161,7 +189,16 @@ export function ProductsListPage() {
 
       <main className="list-container section">
         <div className="wrap">
-          <Link className="back-link" to="/productos">
+          <Link
+            className="back-link"
+            to="/productos"
+            onClick={(e) => {
+              if (window.history.length > 1) {
+                e.preventDefault();
+                navigate(-1);
+              }
+            }}
+          >
             <span className="circle">←</span> {t("list.back_categories")}
           </Link>
 
