@@ -82,7 +82,13 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
             {cat.products.map((p) => {
               const productTitle = getProductTitle(p.id, p.title, lang);
               return (
-                <Link className="prod-card" key={p.id} to={`/producto/${p.id}`}>
+                <Link
+                  className="prod-card"
+                  key={p.id}
+                  id={`prod-card-${p.id}`}
+                  data-scroll-anchor={`prod-card-${p.id}`}
+                  to={`/producto/${p.id}`}
+                >
                   <div className="prod-card__media">
                     <img src={asset(p.image)} alt={productTitle} loading="lazy" />
                   </div>

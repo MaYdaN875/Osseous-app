@@ -32,40 +32,54 @@ export function ScrollRestoration() {
     }
   }, []);
 
-  // Escuchamos el scroll de la página actual y guardamos la posición
+  // Guardar la posición de scroll en tiempo real mientras el usuario se desplaza
+  // y en el instante de hacer clic en un enlace (antes de que la página se desmonte o encoja)
   useEffect(() => {
-    let debounceTimer: number;
-
-    const onScroll = () => {
-      // Si estamos en proceso de restauración activa, no sobreescribir con valores intermedios
+    const saveCurrentScroll = () => {
       if (isRestoringRef.current) return;
-
       const y = window.scrollY;
       scrollPositions.set(location.pathname, y);
+      try {
+        sessionStorage.setItem(`osseous_scroll_${location.pathname}`, String(y));
+      } catch {
+        // Ignorar
+      }
+    };
 
-      window.clearTimeout(debounceTimer);
-      debounceTimer = window.setTimeout(() => {
-        try {
-          sessionStorage.setItem(`osseous_scroll_${location.pathname}`, String(y));
-        } catch {
-          // Ignorar si sessionStorage no está disponible
+    const onScroll = () => {
+      if (isRestoringRef.current) return;
+      saveCurrentScroll();
+    };
+
+    // Guardar también al presionar cualquier enlace/botón (captura previa a la navegación)
+    const onPointerDown = (e: MouseEvent | TouchEvent) => {
+      if (isRestoringRef.current) return;
+      saveCurrentScroll();
+
+      // Si se hizo clic en una tarjeta de producto, guardamos su anclaje de respaldo
+      const target = e.target as HTMLElement | null;
+      const card = target?.closest("[data-scroll-anchor]");
+      if (card) {
+        const anchorId = card.getAttribute("data-scroll-anchor");
+        if (anchorId) {
+          try {
+            sessionStorage.setItem(`osseous_last_anchor_${location.pathname}`, anchorId);
+          } catch {
+            // Ignorar
+          }
         }
-      }, 100);
+      }
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("pointerdown", onPointerDown, { capture: true, passive: true });
+
     return () => {
-      if (!isRestoringRef.current) {
-        const y = window.scrollY;
-        scrollPositions.set(location.pathname, y);
-        try {
-          sessionStorage.setItem(`osseous_scroll_${location.pathname}`, String(y));
-        } catch {
-          // Ignorar
-        }
-      }
+      // IMPORTANTE: NUNCA guardar window.scrollY en la limpieza (cleanup),
+      // porque en React 18/19 la nueva página ya montó y el navegador
+      // recortó (clamp) window.scrollY a la altura menor de la nueva página.
       window.removeEventListener("scroll", onScroll);
-      window.clearTimeout(debounceTimer);
+      window.removeEventListener("pointerdown", onPointerDown, { capture: true });
     };
   }, [location.pathname]);
 
@@ -101,6 +115,14 @@ export function ScrollRestoration() {
         }
       }
 
+      const lastAnchor = (() => {
+        try {
+          return sessionStorage.getItem(`osseous_last_anchor_${currentPath}`);
+        } catch {
+          return null;
+        }
+      })();
+
       if (savedY !== undefined && savedY > 0) {
         isRestoringRef.current = true;
         instantScrollTo(savedY);
@@ -108,7 +130,7 @@ export function ScrollRestoration() {
         // Realizamos reintentos con requestAnimationFrame para sincronizar exactamente con el renderizado del DOM
         let rafId: number;
         let attempts = 0;
-        const maxAttempts = 30; // ~500ms cubriendo múltiples frames
+        const maxAttempts = 25;
 
         const checkAndRestore = () => {
           attempts++;
@@ -119,7 +141,7 @@ export function ScrollRestoration() {
           if (Math.abs(window.scrollY - target) < 5 || attempts >= maxAttempts) {
             window.setTimeout(() => {
               isRestoringRef.current = false;
-            }, 100);
+            }, 80);
           } else {
             rafId = window.requestAnimationFrame(checkAndRestore);
           }
@@ -131,6 +153,15 @@ export function ScrollRestoration() {
           window.cancelAnimationFrame(rafId);
           isRestoringRef.current = false;
         };
+      } else if (lastAnchor) {
+        const el = document.getElementById(lastAnchor);
+        if (el) {
+          isRestoringRef.current = true;
+          el.scrollIntoView({ block: "center", behavior: "instant" });
+          window.setTimeout(() => {
+            isRestoringRef.current = false;
+          }, 80);
+        }
       }
     }
 

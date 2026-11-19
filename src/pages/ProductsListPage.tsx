@@ -53,6 +53,8 @@ function ProductCard({ product, categoryId }: ProductCardProps) {
   return (
     <Link
       className="product-card-osseous reveal"
+      id={`prod-card-${product.slug}`}
+      data-scroll-anchor={`prod-card-${product.slug}`}
       to={`/ficha/${categoryId}/${product.slug}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
