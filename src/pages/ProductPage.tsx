@@ -55,13 +55,17 @@ export function ProductPage({ productId }: { productId: number }) {
   const categoryTitle = getCategoryTitle(category.id, category.title, lang);
   const productTitle = getProductTitle(product.id, product.title, lang);
 
-  // Del resto de productos de la categoría saco 2 como "vistas" extra para la
-  // galería y otros 3 como compatibles. Uso el índice del producto con módulo
-  // para que a cada producto le toquen distintos y no se repitan entre sí.
+  // Del resto de productos de la categoría saco vistas y compatibles sin duplicar
   const others = category.products.filter((p) => p.id !== product.id && p.image);
-  const idx = category.products.findIndex((p) => p.id === product.id);
-  const views = [0, 1].map((k) => others[(idx + k) % others.length]).filter(Boolean);
-  const related = [0, 1, 2].map((k) => others[(idx + 2 + k) % others.length]).filter(Boolean);
+
+  // Vistas para la galería: hasta 2 productos distintos (sin repetir)
+  const views = others.slice(0, 2);
+
+  // Compatibles: hasta 3 productos distintos garantizando IDs estrictamente únicos
+  const relatedCandidates = others.length > 3
+    ? others.slice(2, 5).concat(others.slice(0, 2))
+    : others;
+  const related = Array.from(new Map(relatedCandidates.map((p) => [p.id, p])).values()).slice(0, 3);
   const image = mainSrc || asset(product.image);
   // Las especificaciones y descripciones específicas del producto (o fallback por categoría)
   const specs = getProductSpecs(product.id, category.id, lang);
