@@ -9,12 +9,23 @@ function isDetailRoute(path: string): boolean {
   return path.startsWith("/producto/") || path.startsWith("/ficha/");
 }
 
+// Salto de scroll instantáneo y exacto (sin animaciones que retrasen o desfasen la posición)
+function instantScrollTo(targetY: number) {
+  if (typeof window === "undefined") return;
+  const html = document.documentElement;
+  const prevBehavior = html.style.scrollBehavior;
+  html.style.scrollBehavior = "auto";
+  window.scrollTo({ top: targetY, left: 0, behavior: "instant" as ScrollBehavior });
+  html.style.scrollBehavior = prevBehavior;
+}
+
 export function ScrollRestoration() {
   const location = useLocation();
   const navType = useNavigationType(); // "POP" | "PUSH" | "REPLACE"
   const prevPathRef = useRef<string>(location.pathname);
+  const isRestoringRef = useRef<boolean>(false);
 
-  // Configuramos el scrollRestoration del navegador en manual para evitar saltos no deseados
+  // Configuramos el scrollRestoration del navegador en manual para controlar nosotros la restauración
   useEffect(() => {
     if (typeof window !== "undefined" && "scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
@@ -26,6 +37,9 @@ export function ScrollRestoration() {
     let debounceTimer: number;
 
     const onScroll = () => {
+      // Si estamos en proceso de restauración activa, no sobreescribir con valores intermedios
+      if (isRestoringRef.current) return;
+
       const y = window.scrollY;
       scrollPositions.set(location.pathname, y);
 
@@ -41,13 +55,14 @@ export function ScrollRestoration() {
 
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
-      // Guardar la última posición antes de desmontar o cambiar de ruta
-      const y = window.scrollY;
-      scrollPositions.set(location.pathname, y);
-      try {
-        sessionStorage.setItem(`osseous_scroll_${location.pathname}`, String(y));
-      } catch {
-        // Ignorar
+      if (!isRestoringRef.current) {
+        const y = window.scrollY;
+        scrollPositions.set(location.pathname, y);
+        try {
+          sessionStorage.setItem(`osseous_scroll_${location.pathname}`, String(y));
+        } catch {
+          // Ignorar
+        }
       }
       window.removeEventListener("scroll", onScroll);
       window.clearTimeout(debounceTimer);
@@ -60,11 +75,11 @@ export function ScrollRestoration() {
     const prevPath = prevPathRef.current;
     prevPathRef.current = currentPath;
 
-    // 1. Si la URL incluye ancla (#id), nos desplazamos al ancla
+    // 1. Si la URL incluye ancla (#id), nos desplazamos al ancla suavemente
     if (location.hash) {
       const targetElement = document.getElementById(location.hash.slice(1));
       if (targetElement) {
-        targetElement.scrollIntoView();
+        targetElement.scrollIntoView({ behavior: "smooth" });
         return;
       }
     }
@@ -87,27 +102,49 @@ export function ScrollRestoration() {
       }
 
       if (savedY !== undefined && savedY > 0) {
-        // Intento inmediato
-        window.scrollTo(0, savedY);
+        isRestoringRef.current = true;
+        instantScrollTo(savedY);
 
-        // Reintentos automáticos para esperar el renderizado de la cuadrícula de productos
+        // Realizamos reintentos con requestAnimationFrame para sincronizar exactamente con el renderizado del DOM
+        let rafId: number;
         let attempts = 0;
-        const intervalId = window.setInterval(() => {
+        const maxAttempts = 30; // ~500ms cubriendo múltiples frames
+
+        const checkAndRestore = () => {
           attempts++;
           const target = savedY as number;
-          if (Math.abs(window.scrollY - target) < 15 || attempts > 15) {
-            window.clearInterval(intervalId);
-          } else {
-            window.scrollTo(0, target);
-          }
-        }, 35);
+          instantScrollTo(target);
 
-        return () => window.clearInterval(intervalId);
+          // Si ya estamos a menos de 5px del destino deseado o se superaron los intentos
+          if (Math.abs(window.scrollY - target) < 5 || attempts >= maxAttempts) {
+            window.setTimeout(() => {
+              isRestoringRef.current = false;
+            }, 100);
+          } else {
+            rafId = window.requestAnimationFrame(checkAndRestore);
+          }
+        };
+
+        rafId = window.requestAnimationFrame(checkAndRestore);
+
+        return () => {
+          window.cancelAnimationFrame(rafId);
+          isRestoringRef.current = false;
+        };
       }
     }
 
     // 3. Si es una navegación nueva hacia adelante (PUSH), empezamos desde arriba
-    window.scrollTo(0, 0);
+    isRestoringRef.current = true;
+    instantScrollTo(0);
+    const topTimeout = window.setTimeout(() => {
+      isRestoringRef.current = false;
+    }, 50);
+
+    return () => {
+      window.clearTimeout(topTimeout);
+      isRestoringRef.current = false;
+    };
   }, [location.pathname, location.hash, navType]);
 
   return null;
