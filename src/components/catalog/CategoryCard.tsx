@@ -16,8 +16,29 @@ export function CategoryCard({ id, index }: { id: number; index: number }) {
   // El numerito "01", "02"... según la posición de la tarjeta
   const num = String(index + 1).padStart(2, "0");
 
+  const savePos = (e: React.MouseEvent | React.TouchEvent) => {
+    const card = e.currentTarget as HTMLElement;
+    if (card) {
+      try {
+        sessionStorage.setItem("osseous_restore_id", `cat-card-${cat.id}`);
+        sessionStorage.setItem("osseous_restore_top", String(card.getBoundingClientRect().top));
+        sessionStorage.setItem("osseous_restore_scrollY", String(window.scrollY));
+      } catch {
+        // Ignorar
+      }
+    }
+  };
+
   return (
-    <Link className="cat-card" to={`/catalogo/${cat.id}`}>
+    <Link
+      className="cat-card"
+      id={`cat-card-${cat.id}`}
+      data-scroll-anchor={`cat-card-${cat.id}`}
+      to={`/catalogo/${cat.id}`}
+      onMouseDown={savePos}
+      onTouchStart={savePos}
+      onClick={savePos}
+    >
       <div className="cat-card__media">
         <span className="cat-card__num">{num}</span>
         <span className="cat-card__count">{t("catalog.prod_count", { count: cat.products.length })}</span>

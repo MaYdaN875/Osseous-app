@@ -50,12 +50,28 @@ function ProductCard({ product, categoryId }: ProductCardProps) {
     setCurrentIdx(idx);
   };
 
+  const saveCardPos = (e: React.MouseEvent | React.TouchEvent) => {
+    const card = e.currentTarget as HTMLElement;
+    if (card) {
+      try {
+        sessionStorage.setItem("osseous_restore_id", `prod-card-${product.slug}`);
+        sessionStorage.setItem("osseous_restore_top", String(card.getBoundingClientRect().top));
+        sessionStorage.setItem("osseous_restore_scrollY", String(window.scrollY));
+      } catch {
+        // Ignorar
+      }
+    }
+  };
+
   return (
     <Link
       className="product-card-osseous reveal"
       id={`prod-card-${product.slug}`}
       data-scroll-anchor={`prod-card-${product.slug}`}
       to={`/ficha/${categoryId}/${product.slug}`}
+      onMouseDown={saveCardPos}
+      onTouchStart={saveCardPos}
+      onClick={saveCardPos}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

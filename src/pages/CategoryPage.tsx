@@ -81,6 +81,18 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
           <div className="prod-grid">
             {cat.products.map((p) => {
               const productTitle = getProductTitle(p.id, p.title, lang);
+              const saveCardPos = (e: React.MouseEvent | React.TouchEvent) => {
+                const card = e.currentTarget as HTMLElement;
+                if (card) {
+                  try {
+                    sessionStorage.setItem("osseous_restore_id", `prod-card-${p.id}`);
+                    sessionStorage.setItem("osseous_restore_top", String(card.getBoundingClientRect().top));
+                    sessionStorage.setItem("osseous_restore_scrollY", String(window.scrollY));
+                  } catch {
+                    // Ignorar
+                  }
+                }
+              };
               return (
                 <Link
                   className="prod-card"
@@ -88,6 +100,9 @@ export function CategoryPage({ categoryId }: { categoryId: number }) {
                   id={`prod-card-${p.id}`}
                   data-scroll-anchor={`prod-card-${p.id}`}
                   to={`/producto/${p.id}`}
+                  onMouseDown={saveCardPos}
+                  onTouchStart={saveCardPos}
+                  onClick={saveCardPos}
                 >
                   <div className="prod-card__media">
                     <img src={asset(p.image)} alt={productTitle} loading="lazy" />

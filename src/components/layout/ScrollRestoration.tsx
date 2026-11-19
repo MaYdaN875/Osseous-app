@@ -15,7 +15,7 @@ function instantScrollTo(targetY: number) {
   const html = document.documentElement;
   const prevBehavior = html.style.scrollBehavior;
   html.style.scrollBehavior = "auto";
-  window.scrollTo({ top: targetY, left: 0, behavior: "instant" as ScrollBehavior });
+  window.scrollTo({ top: Math.max(0, targetY), left: 0, behavior: "instant" as ScrollBehavior });
   html.style.scrollBehavior = prevBehavior;
 }
 
@@ -32,10 +32,9 @@ export function ScrollRestoration() {
     }
   }, []);
 
-  // Guardar la posición de scroll en tiempo real mientras el usuario se desplaza
-  // y en el instante de hacer clic en un enlace (antes de que la página se desmonte o encoja)
+  // Escuchar el scroll del usuario para guardar la posición general
   useEffect(() => {
-    const saveCurrentScroll = () => {
+    const onScroll = () => {
       if (isRestoringRef.current) return;
       const y = window.scrollY;
       scrollPositions.set(location.pathname, y);
@@ -46,40 +45,9 @@ export function ScrollRestoration() {
       }
     };
 
-    const onScroll = () => {
-      if (isRestoringRef.current) return;
-      saveCurrentScroll();
-    };
-
-    // Guardar también al presionar cualquier enlace/botón (captura previa a la navegación)
-    const onPointerDown = (e: MouseEvent | TouchEvent) => {
-      if (isRestoringRef.current) return;
-      saveCurrentScroll();
-
-      // Si se hizo clic en una tarjeta de producto, guardamos su anclaje de respaldo
-      const target = e.target as HTMLElement | null;
-      const card = target?.closest("[data-scroll-anchor]");
-      if (card) {
-        const anchorId = card.getAttribute("data-scroll-anchor");
-        if (anchorId) {
-          try {
-            sessionStorage.setItem(`osseous_last_anchor_${location.pathname}`, anchorId);
-          } catch {
-            // Ignorar
-          }
-        }
-      }
-    };
-
     window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("pointerdown", onPointerDown, { capture: true, passive: true });
-
     return () => {
-      // IMPORTANTE: NUNCA guardar window.scrollY en la limpieza (cleanup),
-      // porque en React 18/19 la nueva página ya montó y el navegador
-      // recortó (clamp) window.scrollY a la altura menor de la nueva página.
       window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("pointerdown", onPointerDown, { capture: true });
     };
   }, [location.pathname]);
 
@@ -99,12 +67,31 @@ export function ScrollRestoration() {
     }
 
     // 2. Determinar si debemos restaurar la posición anterior:
-    //    - Navegación hacia atrás/adelante en historial (POP: botón atrás, gesto de deslizar, navigate(-1))
-    //    - O si estamos regresando de un detalle de producto hacia un listado de catálogo/productos
     const isReturningFromDetail = isDetailRoute(prevPath) && !isDetailRoute(currentPath);
     const shouldRestore = navType === "POP" || isReturningFromDetail;
 
     if (shouldRestore) {
+      // Evitar que el navegador auto-enfoque elementos previos y desplace la vista
+      if (document.activeElement && document.activeElement instanceof HTMLElement && document.activeElement !== document.body) {
+        document.activeElement.blur();
+      }
+
+      const restoreId = (() => {
+        try {
+          return sessionStorage.getItem("osseous_restore_id");
+        } catch {
+          return null;
+        }
+      })();
+
+      const restoreTopStr = (() => {
+        try {
+          return sessionStorage.getItem("osseous_restore_top");
+        } catch {
+          return null;
+        }
+      })();
+
       let savedY = scrollPositions.get(currentPath);
       if (savedY === undefined) {
         try {
@@ -115,29 +102,64 @@ export function ScrollRestoration() {
         }
       }
 
-      const lastAnchor = (() => {
-        try {
-          return sessionStorage.getItem(`osseous_last_anchor_${currentPath}`);
-        } catch {
-          return null;
-        }
-      })();
+      isRestoringRef.current = true;
 
+      // Prioridad 1: Si tenemos la tarjeta exacta clickeada, restaurar su posición visual idéntica
+      if (restoreId && restoreTopStr !== null) {
+        const expectedTop = parseFloat(restoreTopStr);
+        let attempts = 0;
+        const maxAttempts = 35; // ~550ms
+        let rafId: number;
+
+        const alignCard = () => {
+          attempts++;
+          const card = document.getElementById(restoreId);
+          if (card) {
+            const currentTop = card.getBoundingClientRect().top;
+            const diff = currentTop - expectedTop;
+            if (Math.abs(diff) > 2) {
+              instantScrollTo(window.scrollY + diff);
+            }
+          } else if (savedY !== undefined && savedY > 0) {
+            instantScrollTo(savedY);
+          }
+
+          if (attempts < maxAttempts) {
+            rafId = window.requestAnimationFrame(alignCard);
+          } else {
+            window.setTimeout(() => {
+              isRestoringRef.current = false;
+              try {
+                sessionStorage.removeItem("osseous_restore_id");
+                sessionStorage.removeItem("osseous_restore_top");
+              } catch {
+                // Ignorar
+              }
+            }, 100);
+          }
+        };
+
+        rafId = window.requestAnimationFrame(alignCard);
+
+        return () => {
+          window.cancelAnimationFrame(rafId);
+          isRestoringRef.current = false;
+        };
+      }
+
+      // Prioridad 2: Si no hay tarjeta guardada, restaurar por coordenada exacta en Y
       if (savedY !== undefined && savedY > 0) {
-        isRestoringRef.current = true;
         instantScrollTo(savedY);
 
-        // Realizamos reintentos con requestAnimationFrame para sincronizar exactamente con el renderizado del DOM
         let rafId: number;
         let attempts = 0;
-        const maxAttempts = 25;
+        const maxAttempts = 30;
 
         const checkAndRestore = () => {
           attempts++;
           const target = savedY as number;
           instantScrollTo(target);
 
-          // Si ya estamos a menos de 5px del destino deseado o se superaron los intentos
           if (Math.abs(window.scrollY - target) < 5 || attempts >= maxAttempts) {
             window.setTimeout(() => {
               isRestoringRef.current = false;
@@ -153,15 +175,6 @@ export function ScrollRestoration() {
           window.cancelAnimationFrame(rafId);
           isRestoringRef.current = false;
         };
-      } else if (lastAnchor) {
-        const el = document.getElementById(lastAnchor);
-        if (el) {
-          isRestoringRef.current = true;
-          el.scrollIntoView({ block: "center", behavior: "instant" });
-          window.setTimeout(() => {
-            isRestoringRef.current = false;
-          }, 80);
-        }
       }
     }
 
